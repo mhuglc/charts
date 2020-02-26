@@ -70,15 +70,8 @@
     var metric3 = ES.metrics.TP_L_S;
     var metric4 = ES.metrics.TP_FWMS_S;
     var metric_discharge = ES.metrics.Discharge_S;
-
-    init();
-
-
-    $.getJSON("../data/ErieStat_2019.json", function(d){
-        data = d;
-    }).done(function () {
-        ES.init(data);
-    });
+    var initWatershed = 'Maumee';
+    var selectedFeature;
 
     var map = L.map("map").setView([42.1, -82.0], 7);
     L.esri.basemapLayer("Topographic").addTo(map);
@@ -90,23 +83,44 @@
         opacity: 0.7
     }).addTo(map);
 
-//    var monitoringLocLayer =
-    L.esri.featureLayer({
-        url: "https://services7.arcgis.com/Tk0IbKIKhaoYn5sa/arcgis/rest/services/ErieStat_Monitoring/FeatureServer/0",
-        where: "SPRING = 'Y'",
-        pointToLayer: function (geojson, latlng) {
-            var p = L.circle(latlng, {
-                radius: 50,
-                color: "#A80084"
-            });
 
-            p.bindPopup("<table>" +
-                //                    "<tr><th>Program: </th><td>{{geojson.properties.Program}}</td></tr>" +
-                "<tr><th>Monitoring Station: </th><td>" + geojson.properties.Station + "</td></tr>" +
-                "</table>");
-            return p;
-        },
-    }).addTo(map);
+    // Hide tabs
+    var tabs = document.getElementsByClassName("tab");
+    for (i = 0; i < tabs.length; i++) {
+        tabs[i].style.display = "none";
+    }
+    // Show intro
+    // $("#intro").html(ES.intro_SRP);
+
+    $.getJSON("../data/ErieStat_2019.json", function(d){
+        data = d;
+    }).done(function () {
+        ES.init(data);
+    }).then(function () {
+        L.esri.featureLayer({
+            url: "https://services7.arcgis.com/Tk0IbKIKhaoYn5sa/arcgis/rest/services/ErieStat_Monitoring/FeatureServer/0",
+            where: "SPRING = 'Y'",
+            pointToLayer: function (geojson, latlng) {
+                var p = L.circle(latlng, {
+                    radius: 50,
+                    color: "#A80084"
+                });
+
+                p.bindPopup("<table>" +
+                    //                    "<tr><th>Program: </th><td>{{geojson.properties.Program}}</td></tr>" +
+                    "<tr><th>Monitoring Station: </th><td>" + geojson.properties.Station + "</td></tr>" +
+                    "</table>");
+                return p;
+            }
+        }).addTo(map);
+
+        // Default to Maumee river when page initialize
+        ES.buildNarratives(initWatershed + ' River');
+        loadChart(initWatershed + " River");
+        renderWatershed(initWatershed);
+    });
+
+
 
     // var boundary_query = L.esri.query({
     //     url: serviceURL + "/0"
@@ -115,7 +129,6 @@
     //     map.fitBounds(latlngbounds);
     // });
 
-    var selectedFeature;
     map.on("click", function (e){
         if(selectedFeature){
             map.removeLayer(selectedFeature);
@@ -125,7 +138,76 @@
                 $("#intro").css("visibility", "hidden");
                 $(".tab").css("display", "block");
                 document.getElementById("defaultOpen").click();
-                for(var i = 0; i < featureCollection.features.length; i++){
+                if (featureCollection.features.length > 0) {
+                    var name = ES.watershedNames[featureCollection.features[0].properties["Watershed Name"]];
+                    var label = featureCollection.features[0].properties["Label"];
+                    if (ES.buildNarratives(name)) {
+                        loadChart(name);
+                    } else {
+                        $(".charts").html("");
+                    }
+                    renderWatershed(label);
+                }
+            }
+        })
+    });
+
+    function loadChart(name) {
+        var s1_data = ES.getWatershedData(name, metric1.name);
+        var s2_data = ES.getWatershedData(name, metric2.name);
+        var s3_data = ES.getWatershedData(name, metric3.name);
+        var s4_data = ES.getWatershedData(name, metric4.name);
+        var discharge_data = ES.getWatershedData(name, metric_discharge.name);
+
+        if(s1_data.length > 0 /*&& discharge_data.length > 0*/){
+            var chart1 = BA.buildDualAxesChart(s1_data, metric1.name, metric1.unit, BA.ColorPicker.blue7, "column",
+                discharge_data, metric_discharge.name, metric_discharge.unit, BA.ColorPicker.blue6, "line",
+                "chart1", name + " " + metric1.name + " and " + metric_discharge.name, "<i>*SRP: Soluble reactive phosphorus</i>",
+                ES.xAxis_start, ES.targets[name][metric1.name], null, //ES.targets[name][metric2.name],
+                (window.innerHeight  - $("#narrative-section").height()) * 0.7
+            );
+        }else{
+            $("#chart1").html("<i>* Data under development.</i>");
+        }
+
+        if(s2_data.length > 0){
+            var chart2 = BA.buildSingleChart("line", s2_data, metric2.name, metric2.unit, BA.ColorPicker.blue7,
+                ES.xAxis_start, name + " " + metric2.name, "<i>*SRP: Soluble reactive phosphorus</i><br><i>*FWMC: Flow-weighted mean concentration</i>",
+                ES.targets[name][metric2.name], "chart2", (window.innerHeight  - $("#narrative-section").height()) * 0.7
+            );
+        }
+        else {
+            $("#chart2").html("<i>* Data under development.</i>");
+        }
+
+        if(s3_data.length > 0){
+            var chart3 = BA.buildDualAxesChart(s3_data, metric3.name, metric3.unit, BA.ColorPicker.blue7, "column",
+                discharge_data, metric_discharge.name, metric_discharge.unit, BA.ColorPicker.blue6, "line",
+                "chart3", name + " " + metric3.name + " and " + metric_discharge.name, "<i>*TP: Total phosphorus</i>",
+                ES.xAxis_start, ES.targets[name][metric3.name], null, //ES.targets[name][metric2.name],
+                (window.innerHeight  - $("#narrative-section").height()) * 0.7
+            );
+        }else{
+            $("#chart3").html("<i>* Data under development.</i>");
+        }
+
+        if(s4_data.length > 0){
+            var chart4 = BA.buildSingleChart("line", s4_data, metric4.name, metric4.unit, BA.ColorPicker.blue7,
+                ES.xAxis_start, name + " " + metric4.name, "<i>*TP: Total phosphorus</i><br><i>*FWMC: Flow-weighted mean concentration</i>",
+                ES.targets[name][metric4.name], "chart4", (window.innerHeight  - $("#narrative-section").height()) * 0.7
+            );
+        }else{
+            $("#chart4").html("<i>* Data under development.</i>");
+        }
+    }
+
+    function renderWatershed(label) {
+        watersheds.find().layers('1').text(label).fields('Label').simplify(map, 0.5).run(function (error, featureCollection) {
+            if (featureCollection.features.length > 0) {
+                $("#intro").css("visibility", "hidden");
+                $(".tab").css("display", "block");
+                document.getElementById("defaultOpen").click();
+                for (var i = 0; i < featureCollection.features.length; i++) {
                     selectedFeature = L.geoJSON(featureCollection.features[i]);
                     selectedFeature.setStyle({
                         fill: false,
@@ -133,73 +215,10 @@
                         color: "#F3A51E"
                     });
                     selectedFeature.addTo(map);
-                    var name = ES.watershedNames[featureCollection.features[i].properties["Watershed Name"]];
-                    if(ES.buildNarratives(name)){
-                        var s1_data = ES.getWatershedData(name, metric1.name);
-                        var s2_data = ES.getWatershedData(name, metric2.name);
-                        var s3_data = ES.getWatershedData(name, metric3.name);
-                        var s4_data = ES.getWatershedData(name, metric4.name);
-                        var discharge_data = ES.getWatershedData(name, metric_discharge.name);
-
-                        if(s1_data.length > 0 /*&& discharge_data.length > 0*/){
-                            var chart1 = BA.buildDualAxesChart(s1_data, metric1.name, metric1.unit, BA.ColorPicker.blue7, "column",
-                                discharge_data, metric_discharge.name, metric_discharge.unit, BA.ColorPicker.blue6, "line",
-                                "chart1", name + " " + metric1.name + " and " + metric_discharge.name, "<i>*SRP: Soluble reactive phosphorus</i>",
-                                ES.xAxis_start, ES.targets[name][metric1.name], null, //ES.targets[name][metric2.name],
-                                (window.innerHeight  - $("#narrative-section").height()) * 0.7
-                            );
-                        }else{
-                            $("#chart1").html("<i>* Data under development.</i>");
-                        }
-
-                        if(s2_data.length > 0){
-                            var chart2 = BA.buildSingleChart("line", s2_data, metric2.name, metric2.unit, BA.ColorPicker.blue7,
-                                ES.xAxis_start, name + " " + metric2.name, "<i>*SRP: Soluble reactive phosphorus</i><br><i>*FWMC: Flow-weighted mean concentration</i>",
-                                ES.targets[name][metric2.name], "chart2", (window.innerHeight  - $("#narrative-section").height()) * 0.7
-                            );
-                        }
-                        else {
-                            $("#chart2").html("<i>* Data under development.</i>");
-                        }
-
-                        if(s3_data.length > 0){
-                            var chart3 = BA.buildDualAxesChart(s3_data, metric3.name, metric3.unit, BA.ColorPicker.blue7, "column",
-                                discharge_data, metric_discharge.name, metric_discharge.unit, BA.ColorPicker.blue6, "line",
-                                "chart3", name + " " + metric3.name + " and " + metric_discharge.name, "<i>*TP: Total phosphorus</i>",
-                                ES.xAxis_start, ES.targets[name][metric3.name], null, //ES.targets[name][metric2.name],
-                                (window.innerHeight  - $("#narrative-section").height()) * 0.7
-                            );
-                        }else{
-                            $("#chart3").html("<i>* Data under development.</i>");
-                        }
-
-                        if(s4_data.length > 0){
-                            var chart4 = BA.buildSingleChart("line", s4_data, metric4.name, metric4.unit, BA.ColorPicker.blue7,
-                                ES.xAxis_start, name + " " + metric4.name, "<i>*TP: Total phosphorus</i><br><i>*FWMC: Flow-weighted mean concentration</i>",
-                                ES.targets[name][metric4.name], "chart4", (window.innerHeight  - $("#narrative-section").height()) * 0.7
-                            );
-                        }else{
-                            $("#chart4").html("<i>* Data under development.</i>");
-                        }
-                    }else{
-                        $(".charts").html("");
-                    }
-                    break;
                 }
             }
-        })
-
-    });
-
-    function init(){
-        // Hide tabs
-        var tabs = document.getElementsByClassName("tab");
-        for (i = 0; i < tabs.length; i++) {
-            tabs[i].style.display = "none";
-        }
-        // Show intro
-        $("#intro").html(ES.intro_SRP);
-    };
+        });
+    }
 
     function openFractionChart(evt, fraction) {
         // Declare all variables
