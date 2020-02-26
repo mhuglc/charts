@@ -78,6 +78,11 @@
     }).addTo(map);
 
     var selectedFeature;
+    // Hide tabs
+    var tabs = document.getElementsByClassName("tab");
+    for (i = 0; i < tabs.length; i++) {
+        tabs[i].style.display = "none";
+    }
 
     $.getJSON("../data/ErieStat_2019.json", function(d){
         data = d;
@@ -102,37 +107,11 @@
             }
         }).addTo(map);
 
-        // Hide tabs
-        var tabs = document.getElementsByClassName("tab");
-        for (i = 0; i < tabs.length; i++) {
-            tabs[i].style.display = "none";
-        }
-
         // Default to Maumee river when page initialize
-        // watersheds.find().layers('1').text(initWatershed).fields('Label').simplify(map, 0.5).run(function (error, featureCollection) {
-        //     if (featureCollection.features.length > 0) {
-        //         document.getElementById("defaultOpen").click();
-        //         $("#intro").css("visibility", "visible");
-        //         $(".tab").css("display", "block");
-        //         ES.buildNarratives(initWatershed + ' River');
-        //         document.getElementById("defaultOpen").click();
-        //         for (var i = 0; i < featureCollection.features.length; i++) {
-        //             selectedFeature = L.geoJSON(featureCollection.features[i]);
-        //             selectedFeature.setStyle({
-        //                 fill: false,
-        //                 weight: 4,
-        //                 color: "#F3A51E"
-        //             });
-        //             selectedFeature.addTo(map);
-        //         }
-        //     }
-        // });
         ES.buildNarratives(initWatershed + ' River');
         loadChart(initWatershed + " River");
         renderWatershed(initWatershed);
     });
-
-
 
     // var boundary_query = L.esri.query({
     //     url: serviceURL + "/0"
@@ -163,8 +142,6 @@
             }
         })
     });
-
-    // init();
 
     function loadChart(name) {
         var s1_data = ES.getWatershedData(name, metric1.name);
@@ -199,18 +176,6 @@
             });
 
     }
-
-    // function init(){
-    //     // Hide tabs
-    //     var tabs = document.getElementsByClassName("tab");
-    //     for (i = 0; i < tabs.length; i++) {
-    //         tabs[i].style.display = "none";
-    //     }
-    //     // Show intro
-    //     // $("#intro").html(ES.intro_TP);
-    //
-    //     // renderWatershed(initWatershed + " River", initWatershed);
-    // }
 
     function openFractionChart(evt, fraction) {
         // Declare all variables
