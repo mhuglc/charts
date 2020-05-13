@@ -3578,6 +3578,13 @@
   },
   {
     "River": "Sandusky River",
+    "Year": 2019,
+    "Fraction": "Spring Discharge",
+    "Value": 575,
+    "Source": "Greg Koltun"
+  },
+  {
+    "River": "Sandusky River",
     "Year": 2008,
     "Fraction": "Spring TP Loading",
     "Value": 366.9,
