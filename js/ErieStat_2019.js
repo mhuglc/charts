@@ -143,7 +143,7 @@ function ErieStat() {
         "Sandusky River": {
             "Annual TP Loading": 660,
             "Spring TP Loading": 230,
-            "Spring SRP Loading": 43,
+            "Spring SRP Loading": 44,
             "Spring TP FWMC": 0.23,
             "Spring SRP FWMC": 0.05
         },
