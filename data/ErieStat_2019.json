@@ -4499,5 +4499,509 @@
     "Fraction": "Annual TP FWMC",
     "Value": 0.73112044,
     "Source": "Santina and Maccoux"
-  }
+  },
+  {
+    "River": "Thames River",
+    "Year": 2008,
+    "Fraction": "Spring TP FWMC",
+    "Value": 0.074,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2009,
+    "Fraction": "Spring TP FWMC",
+    "Value": 0.097,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2010,
+    "Fraction": "Spring TP FWMC",
+    "Value": 0.070,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2011,
+    "Fraction": "Spring TP FWMC",
+    "Value": 0.238,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2012,
+    "Fraction": "Spring TP FWMC",
+    "Value": 0.078,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2013,
+    "Fraction": "Spring TP FWMC",
+    "Value": 0.068,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2014,
+    "Fraction": "Spring TP FWMC",
+    "Value": 0.171,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2015,
+    "Fraction": "Spring TP FWMC",
+    "Value": 0.182,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2016,
+    "Fraction": "Spring TP FWMC",
+    "Value": 0.047,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2017,
+    "Fraction": "Spring TP FWMC",
+    "Value": 0.183,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2018,
+    "Fraction": "Spring TP FWMC",
+    "Value": 0.167,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2019,
+    "Fraction": "Spring TP FWMC",
+    "Value": 0.239,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2008,
+    "Fraction": "Spring SRP FWMC",
+    "Value": 0.011,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2009,
+    "Fraction": "Spring SRP FWMC",
+    "Value": 0.022,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2010,
+    "Fraction": "Spring SRP FWMC",
+    "Value": 0.008,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2011,
+    "Fraction": "Spring SRP FWMC",
+    "Value": 0.084,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2012,
+    "Fraction": "Spring SRP FWMC",
+    "Value": 0.014,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2013,
+    "Fraction": "Spring SRP FWMC",
+    "Value": 0.024,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2014,
+    "Fraction": "Spring SRP FWMC",
+    "Value": 0.058,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2015,
+    "Fraction": "Spring SRP FWMC",
+    "Value": 0.064,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2016,
+    "Fraction": "Spring SRP FWMC",
+    "Value": 0.008,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2017,
+    "Fraction": "Spring SRP FWMC",
+    "Value": 0.032,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2018,
+    "Fraction": "Spring SRP FWMC",
+    "Value": 0.035,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2019,
+    "Fraction": "Spring SRP FWMC",
+    "Value": 0.058,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2008,
+    "Fraction": "Annual TP Loading",
+    "Value": 205,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2009,
+    "Fraction": "Annual TP Loading",
+    "Value": 402,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2010,
+    "Fraction": "Annual TP Loading",
+    "Value": 103,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2011,
+    "Fraction": "Annual TP Loading",
+    "Value": 622,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2012,
+    "Fraction": "Annual TP Loading",
+    "Value": 190,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2013,
+    "Fraction": "Annual TP Loading",
+    "Value": 383,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2014
+    "Fraction": "Annual TP Loading",
+    "Value": 585,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2015,
+    "Fraction": "Annual TP Loading",
+    "Value": 349,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2016,
+    "Fraction": "Annual TP Loading",
+    "Value": 301,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2017,
+    "Fraction": "Annual TP Loading",
+    "Value": 435,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2018,
+    "Fraction": "Annual TP Loading",
+    "Value": 623,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2019,
+    "Fraction": "Annual TP Loading",
+    "Value": 712,
+    "Source": "Daryl McGoldrick"
+  },
+{
+    "River": "Thames River",
+    "Year": 2008,
+    "Fraction": "Spring TP Loading",
+    "Value": 89,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2009,
+    "Fraction": "Spring TP Loading",
+    "Value": 139,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2010,
+    "Fraction": "Spring TP Loading",
+    "Value": 62,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2011,
+    "Fraction": "Spring TP Loading",
+    "Value": 501,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2012,
+    "Fraction": "Spring TP Loading",
+    "Value": 34,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2013,
+    "Fraction": "Spring TP Loading",
+    "Value": 102,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2014,
+    "Fraction": "Spring TP Loading",
+    "Value": 264,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2015,
+    "Fraction": "Spring TP Loading",
+    "Value": 217,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2016,
+    "Fraction": "Spring TP Loading",
+    "Value": 49,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2017,
+    "Fraction": "Spring TP Loading",
+    "Value": 251,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2018,
+    "Fraction": "Spring TP Loading",
+    "Value": 169,
+    "Source": "Daryl McGoldrick"
+  },
+ {
+    "River": "Thames River",
+    "Year": 2019,
+    "Fraction": "Spring TP Loading",
+    "Value": 371,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2008,
+    "Fraction": "Spring SRP Loading",
+    "Value": 15,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2009,
+    "Fraction": "Spring SRP Loading",
+    "Value": 27,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2010,
+    "Fraction": "Spring SRP Loading",
+    "Value": 8,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2011,
+    "Fraction": "Spring SRP Loading",
+    "Value": 176,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2012,
+    "Fraction": "Spring SRP Loading",
+    "Value": 7,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2013,
+    "Fraction": "Spring SRP Loading",
+    "Value": 33,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2014,
+    "Fraction": "Spring SRP Loading",
+    "Value": 88,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2015,
+    "Fraction": "Spring SRP Loading",
+    "Value": 75,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2016,
+    "Fraction": "Spring SRP Loading",
+    "Value": 10,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2017,
+    "Fraction": "Spring SRP Loading",
+    "Value": 40,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2018,
+    "Fraction": "Spring SRP Loading",
+    "Value": 32,
+    "Source": "Daryl McGoldrick"
+  },
+ {
+    "River": "Thames River",
+    "Year": 2019,
+    "Fraction": "Spring SRP Loading",
+    "Value": 88,
+    "Source": "Daryl McGoldrick"
+  },
+   {
+    "River": "Thames River",
+    "Year": 2008,
+    "Fraction": "Spring Discharge",
+    "Value": 72,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2009,
+    "Fraction": "Spring Discharge",
+    "Value": 83,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2010,
+    "Fraction": "Spring Discharge",
+    "Value": 52,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2011,
+    "Fraction": "Spring Discharge",
+    "Value": 117,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2012,
+    "Fraction": "Spring Discharge",
+    "Value": 27,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2013,
+    "Fraction": "Spring Discharge",
+    "Value": 88,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2014,
+    "Fraction": "Spring Discharge",
+    "Value": 86,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2015,
+    "Fraction": "Spring Discharge",
+    "Value": 67,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2016,
+    "Fraction": "Spring Discharge",
+    "Value": 64,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2017,
+    "Fraction": "Spring Discharge",
+    "Value": 77,
+    "Source": "Daryl McGoldrick"
+  },
+  {
+    "River": "Thames River",
+    "Year": 2018,
+    "Fraction": "Spring Discharge",
+    "Value": 57,
+    "Source": "Daryl McGoldrick"
+  },
+ {
+    "River": "Thames River",
+    "Year": 2019,
+    "Fraction": "Spring Discharge",
+    "Value": 86,
+    "Source": "Daryl McGoldrick"
+  },
 ]
