@@ -148,7 +148,7 @@ function ErieStat() {
             "Spring SRP FWMC": 0.05
         },
         "Thames River": {
-            "Annual TP Loading": null,
+            "Annual TP Loading": 123,
             "Spring TP Loading": null,
             "Spring SRP Loading": null,
             "Spring TP FWMC": null,
