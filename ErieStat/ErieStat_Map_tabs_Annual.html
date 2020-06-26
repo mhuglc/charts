@@ -66,6 +66,8 @@
     var metric2 = ES.metrics.Discharge;
     var selectedFeature;
 
+    const IS_EMPTY = (val) => val == "";
+
     var map = L.map("map").setView([42.1, -82.0], 7);
     L.esri.basemapLayer("Topographic").addTo(map);
 
@@ -140,11 +142,18 @@
     });
 
     function loadChart(name) {
+        function dataToArray(vals){
+            let array = []
+            for(let i =0;i < vals.length;i++){array.push(vals.get(i))}
+            return array;
+        }
+
         var s1_data = ES.getWatershedData(name, metric1.name);
 //                        var s2_data = ES.getWatershedData(name, metric2.name);
+        var s1_data_array = dataToArray(s1_data);
 
-        if (s1_data.length > 0) {
-            var chart1 = BA.buildSingleChart("column", s1_data, metric1.name, metric1.unit, BA.ColorPicker.blue7,
+        if(!s1_data_array.every(IS_EMPTY)){
+            var chart1 = BA.buildSingleChart("column", s1_data_array, metric1.name, metric1.unit, BA.ColorPicker.blue7,
                 ES.xAxis_start, name + " " + metric1.name, "<i>*TP: Total phosphorus</i>", ES.targets[name][metric1.name], "chart1",
                 (window.innerHeight - $("#narrative-section").height()) * 0.75
             );
