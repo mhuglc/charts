@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Annual TP Loading in ErieStat Watersheds</title>
+    <title>Spring SRP Loading in ErieStat Watersheds</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -11,7 +11,7 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
             integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
             crossorigin=""></script>
-    <script src="http://leaflet.github.io/Leaflet.label/leaflet.label.js"></script>
+    <script src="https://leaflet.github.io/Leaflet.label/leaflet.label.js"></script>
     <!-- Load Esri Leaflet from CDN -->
     <script src="https://unpkg.com/esri-leaflet@2.5.0/dist/esri-leaflet.js"
             integrity="sha512-ucw7Grpc+iEQZa711gcjgMBnmd9qju1CICsRaryvX7HJklK0pGl/prxKvtHwpgm5ZHdvAil7YPxI1oWPOWK3UQ=="
@@ -210,13 +210,13 @@
                 document.getElementById("defaultOpen").click();
                 if (featureCollection.features.length > 0) {
                     var name = ES.watershedNames[featureCollection.features[0].properties["MergeNm"]];
-                    var label = featureCollection.features[0].properties["Label"];
+                    // var label = featureCollection.features[0].properties["Label"];
                     if (ES.buildNarratives(name)) {
                         loadChart(name);
                     } else {
                         $(".charts").html("");
                     }
-                    renderWatershed(label);
+                    renderWatershed(featureCollection.features[0].properties["MergeNm"]);
                 }
             }
         })
@@ -284,7 +284,7 @@
     }
 
     function renderWatershed(label) {
-        srp_watershed_combined.query().where("Label='" + label + "'").simplify(map, 0.5).run(function (error, featureCollection) {
+        srp_watershed_combined.query().where("MergeNm='" + label + "'").simplify(map, 0.5).run(function (error, featureCollection) {
             if (featureCollection.features.length > 0) {
                 $("#intro").css("visibility", "hidden");
                 $(".tab").css("display", "block");
