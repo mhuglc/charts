@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Annual TP Loading in ErieStat Watersheds</title>
-<!--    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css">-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -93,7 +92,6 @@
     var map = L.map("map").setView([42.1, -82.0], 7);
     L.esri.basemapLayer("Topographic").addTo(map);
 
-
     var tp_watershed_individual = L.esri.featureLayer({
         url: serviceURL + "/2",
         simplifyFactor: 0.7,
@@ -117,7 +115,6 @@
         }
     }).addTo(map);
 
-
     var watersheds = L.esri.featureLayer({
         url: serviceURL + "/0",
         opacity: 0.7,
@@ -128,7 +125,6 @@
             fill: false,
         }
     }).addTo(map);
-
 
     // var labels = {};
 
@@ -147,30 +143,6 @@
       //     html: '<span>' + e.feature.properties.Label + '</span>'
       //   })
       // }).addTo(map);
-
-      var monitoring_location = L.esri.featureLayer({
-        url: "https://services7.arcgis.com/Tk0IbKIKhaoYn5sa/arcgis/rest/services/ErieStat_Monitoring/FeatureServer/0",
-        where: "ANNUAL = 'Y'",
-        pointToLayer: function (geojson, latlng) {
-          var p = L.circle(latlng, {
-            radius: 500,
-            color: "#A80084"
-          });
-
-          p.bindPopup("<table>" +
-          //                    "<tr><th>Program: </th><td>{{geojson.properties.Program}}</td></tr>" +
-          "<tr><th>Monitoring Station: </th><td>" + geojson.properties.Station + "</td></tr>" +
-          "</table>");
-          return p;
-        }
-      }).addTo(map);
-
-        // var label = new L.Label({
-        //     offset: [-50,-7]
-        // });
-        // label.setContent('<span>' + e.feature.properties.Label + '</span>');
-        // label.setLatLng(center);
-        // map.showLabel(label);
       labels[id] = label;
     });
 
@@ -180,23 +152,6 @@
         label.addTo(map);
       }
     });
-
-
-
-    // var watershed_label = {
-    //   symbol: {
-    //     type: "text",
-    //     color: "FFFFFF",
-    //     font: {
-    //       size: "12px",
-    //       family: "Noto Sans",
-    //     }
-    //   },
-    //   labelPlacement: "above-center"
-    //   labelExpressionInfo: {
-    //     expression: "$tp_watershed_combined.Label"
-    //   }
-    // }.addTo(map);
 
     var tabs = document.getElementsByClassName("tab");
     for (i = 0; i < tabs.length; i++) {
@@ -208,17 +163,27 @@
     }).done(function () {
         ES.init(data);
     }).then(function () {
+        L.esri.featureLayer({
+            url: "https://services7.arcgis.com/Tk0IbKIKhaoYn5sa/arcgis/rest/services/ErieStat_Monitoring/FeatureServer/0",
+            where: "ANNUAL = 'Y'",
+            pointToLayer: function (geojson, latlng) {
+                var p = L.circle(latlng, {
+                    radius: 500,
+                    color: "#A80084"
+                });
+
+                p.bindPopup("<table>" +
+                    //                    "<tr><th>Program: </th><td>{{geojson.properties.Program}}</td></tr>" +
+                    "<tr><th>Monitoring Station: </th><td>" + geojson.properties.Station + "</td></tr>" +
+                    "</table>");
+                return p;
+            }
+        }).addTo(map);
+
         ES.buildNarratives(initWatershed + ' River');
         loadChart(initWatershed + " River");
         renderWatershed(initWatershed);
     });
-
-    // var boundary_query = L.esri.query({
-    //     url: serviceURL + "/0"
-    // });
-    // boundary_query.bounds(function(error, latlngbounds){
-    //     map.fitBounds(latlngbounds);
-    // });
 
     map.on("click", function (e){
         if(selectedFeature){
@@ -231,20 +196,13 @@
                 document.getElementById("defaultOpen").click();
                 if (featureCollection.features.length > 0) {
                     var name = ES.watershedNames[featureCollection.features[0].properties["MergeNm"]];
-                    var label = featureCollection.features[0].properties["Label"];
+                    // var label = featureCollection.features[0].properties["Label"];
                     if (ES.buildNarratives(name)) {
                         loadChart(name);
                     } else {
                         $(".charts").html("");
                     }
-                    // renderWatershed(label);
-                    selectedFeature = L.geoJSON(featureCollection.features[0]);
-                    selectedFeature.setStyle({
-                        fill: false,
-                        weight: 4,
-                        color: "#F3A51E"
-                    });
-                    selectedFeature.addTo(map);
+                    renderWatershed(featureCollection.features[0].properties["MergeNm"]);
                 }
             }
         })
@@ -272,8 +230,8 @@
         }
     }
 
-    function renderWatershed(label) {
-        tp_watershed_combined.find().layers('1').text(label).fields('Label').simplify(map, 0.5).run(function (error, featureCollection) {
+    function renderWatershed(name) {
+        tp_watershed_combined.query().where("MergeNm='" + name + "'").simplify(map, 0.5).run(function (error, featureCollection) {
             if (featureCollection.features.length > 0) {
                 $("#intro").css("visibility", "hidden");
                 $(".tab").css("display", "block");

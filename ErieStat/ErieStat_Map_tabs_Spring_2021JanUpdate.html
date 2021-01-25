@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Spring SRP Loading in ErieStat Watersheds</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+    <script src="https://leaflet.github.io/Leaflet.label/leaflet.label.js"></script>
     <!-- Load Esri Leaflet from CDN -->
-    <script src="https://unpkg.com/esri-leaflet@2.1.3/dist/esri-leaflet.js"></script>
+    <script src="https://unpkg.com/esri-leaflet@2.5.0/dist/esri-leaflet.js"
+            integrity="sha512-ucw7Grpc+iEQZa711gcjgMBnmd9qju1CICsRaryvX7HJklK0pGl/prxKvtHwpgm5ZHdvAil7YPxI1oWPOWK3UQ=="
+            crossorigin=""></script>
     <script src="//code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <!--<script src="https://code.highcharts.com/modules/export-data.js"></script>-->
+    <!--<script src="https://code.highcharts.com/modules/export-data.js"></script> this module is not behaving as expected-->
+
     <script src="../js/BlueAccounting.js"></script>
     <script src="../js/ErieStat_2019.js"></script>
     <script src="../js/export-csv_glc.js"></script>
+
     <link rel="stylesheet" href="../css/BA_Style.css">
 
 </head>
@@ -100,7 +109,6 @@
 
     var srp_watershed_individual = L.esri.featureLayer({
         url: serviceURL + "/2",
-        opacity: 0.3,
         simplifyFactor: 0.7,
         weight: 1,
         style: {
@@ -133,38 +141,34 @@
         }
     }).addTo(map);
 
-// New lines
+    // var labels = {};
 
-// var labels = {};
+    srp_watershed_combined.on('createfeature', function (e) {
+      var id = e.feature.id;
+      var feature = srp_watershed_combined.getFeature(id);
+      var center = feature.getBounds().getCenter();
+      // var label = L.marker(center, {
+      //   icon: L.divIcon({
+      //     iconSize: null,
+      //     className: 'label',
+      //     html: '<div>' + e.feature.properties.Label + '</div>'
+      //   })
+      // }).addTo(map);
+        labels[id] = label;
+    });
 
-srp_watershed_combined.on('createfeature', function (e) {
-  var id = e.feature.id;
-  var feature = srp_watershed_combined.getFeature(id);
-  var center = feature.getBounds().getCenter();
-  // var label = L.marker(center, {
-  //   icon: L.divIcon({
-  //     iconSize: null,
-  //     className: 'label',
-  //     html: '<div>' + e.feature.properties.Label + '</div>'
-  //   })
-  // }).addTo(map);
-    labels[id] = label;
-});
-
-srp_watershed_combined.on('addfeature', function (e){
-  var label = labels[e.feature.id];
-  if (label){
-    label.addTo(map);
-  }
-});
+    srp_watershed_combined.on('addfeature', function (e){
+      var label = labels[e.feature.id];
+      if (label){
+        label.addTo(map);
+      }
+    });
 
     // Hide tabs
     var tabs = document.getElementsByClassName("tab");
     for (i = 0; i < tabs.length; i++) {
         tabs[i].style.display = "none";
     }
-    // Show intro
-    // $("#intro").html(ES.intro_SRP);
 
     $.getJSON("../data/ErieStat_2020.json", function(d){
         data = d;
@@ -188,22 +192,11 @@ srp_watershed_combined.on('addfeature', function (e){
             }
         }).addTo(map);
 
-
-
         // Default to Maumee river when page initialize
         ES.buildNarratives(initWatershed + ' River');
         loadChart(initWatershed + " River");
         renderWatershed(initWatershed);
     });
-
-
-
-    // var boundary_query = L.esri.query({
-    //     url: serviceURL + "/0"
-    // });
-    // boundary_query.bounds(function(error, latlngbounds){
-    //     map.fitBounds(latlngbounds);
-    // });
 
     map.on("click", function (e){
         if(selectedFeature){
@@ -216,13 +209,13 @@ srp_watershed_combined.on('addfeature', function (e){
                 document.getElementById("defaultOpen").click();
                 if (featureCollection.features.length > 0) {
                     var name = ES.watershedNames[featureCollection.features[0].properties["MergeNm"]];
-                    var label = featureCollection.features[0].properties["Label"];
+                    // var label = featureCollection.features[0].properties["Label"];
                     if (ES.buildNarratives(name)) {
                         loadChart(name);
                     } else {
                         $(".charts").html("");
                     }
-                    renderWatershed(label);
+                    renderWatershed(featureCollection.features[0].properties["MergeNm"]);
                 }
             }
         })
@@ -290,7 +283,7 @@ srp_watershed_combined.on('addfeature', function (e){
     }
 
     function renderWatershed(label) {
-        watersheds.find().layers('1').text(label).fields('Label').simplify(map, 0.5).run(function (error, featureCollection) {
+        srp_watershed_combined.query().where("MergeNm='" + label + "'").simplify(map, 0.5).run(function (error, featureCollection) {
             if (featureCollection.features.length > 0) {
                 $("#intro").css("visibility", "hidden");
                 $(".tab").css("display", "block");
