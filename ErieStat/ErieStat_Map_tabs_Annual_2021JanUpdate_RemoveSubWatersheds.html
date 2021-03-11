@@ -100,12 +100,13 @@
             color: "#93866E",
             fillColor: "#6DB227",
             fillOpacity: 0.8,
+            opacity: 0,
         }
     }).addTo(map);
 
     var tp_watershed_combined = L.esri.featureLayer({
         url: serviceURL + "/1",
-        opacity: 0.5,
+        opacity: 0.7,
         simplifyFactor: 0.7,
         weight: 2,
         style: {
