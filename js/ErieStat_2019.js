@@ -21,43 +21,43 @@ function ErieStat() {
     this.metrics = {
         "TP_L": {
             name: "Annual TP Loading",
-                unit: "metric tons"
+                unit: "metric tons per year"
         },
         "SRP_L": {
             name: "Annual SRP Loading",
-                unit: "metric tons"
+                unit: "metric tons per year"
         },
         "TP_FWMC": {
             name: "Annual TP FWMC",
-                unit: "milligrams / liter"
+                unit: "milligrams / liter per year"
         },
         "SRP_FWMC": {
             name: "Annual SRP FWMC",
-                unit: "milligrams / liter"
+                unit: "milligrams / liter per year"
         },
         "Discharge": {
             name: "Annual Discharge",
-                unit: "million cubic meters"
+                unit: "million cubic meters per year"
         },
         "TP_L_S": {
             name: "Spring TP Loading",
-                unit: "metric tons"
+                unit: "metric tons March through July"
         },
         "SRP_L_S": {
             name: "Spring SRP Loading",
-                unit: "metric tons"
+                unit: "metric tons March through July"
         },
         "TP_FWMS_S": {
             name: "Spring TP FWMC",
-                unit: "milligrams / liter"
+                unit: "milligrams / liter March through July"
         },
         "SRP_FWMC_S": {
             name: "Spring SRP FWMC",
-                unit: "milligrams / liter"
+                unit: "milligrams / liter March through July"
         },
         "Discharge_S": {
             name: "Spring Discharge",
-                unit: "million cubic meters"
+                unit: "million cubic meters March through July"
         }
     };
     this.units = {
@@ -220,7 +220,9 @@ function ErieStat() {
             return (a.Year > b.Year) ? 1 : ((a.Year < b.Year) ? -1 : 0);
         });
 
-        return vals.map((v) => vals[v].Value);
+        return vals.map(function (v){
+            return vals[v].Value
+        } );
     };
 
     this.buildNarratives = function (w_name) {
