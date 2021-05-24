@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lake Erie Bloom Severity Index</title>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+    <script src="//code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <!--<script src="js/ba_chart2.js"></script>-->
+    <script src="../js/BlueAccounting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="../js/export-csv_glc.js"></script>
+    <link rel="stylesheet" href="../css/BA_Style.css">
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Montserrat font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+</head>
+    
+<body>
+<!--<div id="chart-canvas">-->
+    <div id="chart" style="margin-right: 20px">
+    <!--</div>-->
+    <!--<div id="chart2" style="margin-right: 20px">-->
+    <!--</div>-->
+    <!--<div id="chart3">-->
+    <!--</div>-->
+</div>
+
+<script>
+    var data = [null , 0.3, 4.1, 2.7, 0.3, 1.3, 0.9, 6.2, 5.1, 5.8, 10, 2.9, 8.5, 6.6, 10.5, 3.2, 8, 3.6, 7.3, 3];
+
+    var BA = new BlueAccounting;
+
+    var chart = Highcharts.chart("chart", {
+        chart: {
+            type: "column",
+            backgroundColor: {                
+                linearGradient: {x1: 0, x2: 1, y1: 1, y2: 0},
+                stops: [
+                   [0, 'rgb(255,255,255)'],
+                   [1, '#F2FAFF']
+                ]
+            },
+            accessibility: {
+                description: 'Chart displays the annual severity index for cyanobacterial algae blooms in western Lake Erie for the years 2001 to 2020 and the current predicted bloom severity for 2021 as projected by the NOAA National Centers for Coastal Ocean Science. The chart also shows the annual severity index target of 2.9.'
+            },
+            events: {
+                load: function () {
+                    var logoX = 15;
+                    var size = this.plotBox.y;
+                    size -= 40;
+
+                    if(this.chartWidth < 500){
+                        logoX = 10;
+                        // size = this.chartWidth / 10;
+                    }
+                    var img_width = (this.chartWidth - 350)/2 - logoX;
+                    var img_height = size;
+                    // var img_url = "";
+                    if(img_width >= img_height*4){
+                        // wide logo
+                        this.renderer.image("https://c1.staticflickr.com/1/826/26966705327_f80fcd7af1_o.png", logoX, 0, size * 4, size ).add();
+                        // ErieStat logo. Change factor to 3
+                        // this.renderer.image("https://c1.staticflickr.com/1/956/27966542108_a46fd4fa96_o.png", logoX, 0, size*3 , size).add();
+                    }else{
+                        // cube logo
+                        this.renderer.image("https://c1.staticflickr.com/1/868/40969378165_8bd2c065b9_o.png", logoX, 0, size, size).add();
+                    }
+                    // var w = this.chartWidth - this.title.alignAttr.x;
+                    // Blue Accounting Cube logo
+                    // this.renderer.image("https://c1.staticflickr.com/1/868/40969378165_8bd2c065b9_o.png", logoX, 0, size, size).add();
+                    // Blue Accouting Logo
+                    // this.renderer.image("https://c1.staticflickr.com/1/826/26966705327_f80fcd7af1_o.png", logoX, 0, size * 4, size ).add();
+                    // Blue Accounting ErieStat Logo
+                    // this.renderer.image("https://c1.staticflickr.com/1/956/27966542108_a46fd4fa96_o.png", logoX, 0, size*3 , size).add();
+
+                    // this.renderer.image("https://c1.staticflickr.com/5/4382/36578347693_3c6032000b_o.png", 0, 0, chart_width, chart_height).add();   //red watermark
+//                if (isBgImg) {
+//                    this.renderer.image("img/background_draft.png", this.plotLeft, this.plotTop, this.plotWidth, this.plotHeight).add(); //grey watermark
+//                }
+                }
+            }
+        },
+        title: {
+            text: 'Lake Erie Bloom Severity Index',
+            margin: 40,
+            widthAdjust: -370,
+            style: {
+                color: '#000000',
+                fontWeight: 'bold'
+            }
+        },
+        
+        yAxis: {
+            title: {
+                text: 'Bloom Severity'
+            },
+            accessibility: {
+                description: "Cyanobacterial algae bloom severity",
+            }
+                
+        },
+            
+        legend: {
+            itemWidth: 200,
+            itemMarginBottom: 8,
+            symbolHeight: 11,
+            symbolWidth: 11,
+            symbolRadius: 0,
+            itemMarginBottom: 8,
+            itemStyle: '{"word-wrap": "break-word", color: "#000000", fontWeight: "normal" }'
+        },
+            
+        credits: {
+            enabled: false,
+        },
+        
+        caption: {
+            text: '<b>Chart source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/harmful-algal-blooms">https://www.blueaccounting.org/progress/harmful-algal-blooms</a></em> <br> <b>Data source: </b> <em><a href="https://tidesandcurrents.noaa.gov/hab/lakeerie.html">NOAA</a></em>'
+        },
+
+        plotOptions: {
+            column: {
+                grouping: false   // Exactly overlap
+            },
+            series: {
+                pointPadding: 0.05,
+                label: {
+                    connectorAllowed: false
+                },
+                pointStart: 2001
+            }
+        },
+
+        series: [{
+            name: 'Observed Bloom Severity',
+            data: [null , 0.3, 4.1, 2.7, 0.3, 1.3, 0.9, 6.2, 5.1, 5.8, 10, 2.9, 8.5, 6.6, 10.5, 3.2, 8, 3.6, 7.3, 3, null],
+            color: '#0D5E87'
+        }, {
+            name: 'Preliminary Forecast of 2021 Bloom Severity',
+            data: [null , null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 5],
+            color: '#6FC212'
+        }, {
+            name: "Target",
+            type: 'line',
+            lineWidth: 3,
+            marker: {
+                radius: 0
+            },
+            data: [2.9 , 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9],
+            color: "#E07000"
+        }],
+    });
+
+        
+
+
+//        ,{
+//        type: "line",
+//        name: "Target",
+//        data: BA.addTargetLine(2.9, x_axis),
+//        color: BA.ColorPicker.target_red,
+//        lineWidth: 3,
+//        marker: {
+//            radius: 0
+//        },
+</script>
+</body>
+</html>
