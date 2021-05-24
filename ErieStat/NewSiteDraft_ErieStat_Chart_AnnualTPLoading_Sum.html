@@ -31,7 +31,7 @@ Highcharts.setOptions({
     }
 });
 
-var chart = new Highcharts.chart("chart", {
+window.chart = new Highcharts.chart("chart", {
     chart: {
         type: "column",
         backgroundColor: {
@@ -220,12 +220,14 @@ var chart = new Highcharts.chart("chart", {
 }, function(chart){
 
     var setHeight = function() {
-        chart.setSize(chart.chartWidth, $(window).height() - 20);
+        chart.setSize(chart.chartWidth, $(window).height() - 20, {duration:0});
+        chart.yAxis[0].isDirty = true;
+        chart.redraw();
     }
     
     $(window).resize(setHeight);
        
-    setHeight();
+    setHeight();    
 });
 });
 </script>
