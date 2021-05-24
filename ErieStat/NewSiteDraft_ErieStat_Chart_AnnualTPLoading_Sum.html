@@ -31,7 +31,7 @@ Highcharts.setOptions({
     }
 });
 
-Highcharts.chart("chart", {
+var chart = new Highcharts.chart("chart", {
     chart: {
         type: "column",
         backgroundColor: {
@@ -217,6 +217,16 @@ Highcharts.chart("chart", {
             color: "#E07000"
         }
     ]
+}, function(chart){
+
+    var setHeight = function() {
+        chart.setSize(chart.chartWidth, $(window).height() - 20);
+    }
+    
+    $(window).resize(setHeight);
+       
+    setHeight();
+});
 });
 </script>
 </body>
