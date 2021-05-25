@@ -15,7 +15,7 @@
     <!-- Montserrat font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
     <script src="../js/export-csv_glc.js"></script>
-    <script src="../js/BlueAccounting_WP.js"></script>
+    <script src="../js/BlueAccounting.js"></script>
     <link rel="stylesheet" href="../css/BA_Style.css">
 </head>
 <body>
@@ -31,10 +31,9 @@ Highcharts.setOptions({
     }
 });
 
-Highcharts.chart("chart", {
+var chart = new Highcharts.chart("chart", {
     chart: {
         type: "column",
-        height: 600,
         backgroundColor: {
             linearGradient: {x1: 0, x2: 1, y1: 1, y2: 0},
             stops: [
@@ -45,10 +44,45 @@ Highcharts.chart("chart", {
         accessibility: {
             description: 'Chart displays total phosphorus loading to the Western and Central basins of Lake Erie. Tributary monitored nonpoint source (NPS) loading is the category that makes the largest contribution every year, followed by point sources and the adjustment factor for unmonitored areas. Lake Huron and atmospheric deposition represent relatively small contributions. The annual target of 6000 MTA has been exceeded in most years.'
         },
+        events: {
+            load: function () {
+                var logoX = 15;
+                var size = this.plotBox.y;
+                size -= 40;
 
+                if(this.chartWidth < 500){
+                    logoX = 10;
+                    // size = this.chartWidth / 10;
+                }
+                var img_width = (this.chartWidth - 350)/2 - logoX;
+                var img_height = size;
+                // var img_url = "";
+                if(img_width >= img_height*4){
+                    // wide logo
+                    this.renderer.image("https://c1.staticflickr.com/1/826/26966705327_f80fcd7af1_o.png", logoX, 0, size * 4, size ).add();
+                    // ErieStat logo. Change factor to 3
+                    // this.renderer.image("https://c1.staticflickr.com/1/956/27966542108_a46fd4fa96_o.png", logoX, 0, size*3 , size).add();
+                }else{
+                    // cube logo
+                    this.renderer.image("https://c1.staticflickr.com/1/868/40969378165_8bd2c065b9_o.png", logoX, 0, size, size).add();
+                }
+                // var w = this.chartWidth - this.title.alignAttr.x;
+                // Blue Accounting Cube logo
+                // this.renderer.image("https://c1.staticflickr.com/1/868/40969378165_8bd2c065b9_o.png", logoX, 0, size, size).add();
+                // Blue Accouting Logo
+                // this.renderer.image("https://c1.staticflickr.com/1/826/26966705327_f80fcd7af1_o.png", logoX, 0, size * 4, size ).add();
+                // Blue Accounting ErieStat Logo
+                // this.renderer.image("https://c1.staticflickr.com/1/956/27966542108_a46fd4fa96_o.png", logoX, 0, size*3 , size).add();
+
+                // this.renderer.image("https://c1.staticflickr.com/5/4382/36578347693_3c6032000b_o.png", 0, 0, chart_width, chart_height).add();   //red watermark
+//                if (isBgImg) {
+//                    this.renderer.image("img/background_draft.png", this.plotLeft, this.plotTop, this.plotWidth, this.plotHeight).add(); //grey watermark
+//                }
+            }
+        }
     },
     title: {
-        text: 'Total Phosphorus Loading, by Source, to the Western and Central Lake Erie Basins',
+        text: 'Provisional Total Phosphorus Loading to the Western and Central Lake Erie Basins',
         margin: 20,
         widthAdjust: -370,
         style: {
@@ -183,6 +217,16 @@ Highcharts.chart("chart", {
             color: "#E07000"
         }
     ]
+}, function(chart){
+
+    var setHeight = function() {
+        chart.setSize(chart.chartWidth, $(window).height() - 20);
+    }
+    
+    $(window).resize(setHeight);
+       
+    setHeight();
+});
 });
 </script>
 </body>
