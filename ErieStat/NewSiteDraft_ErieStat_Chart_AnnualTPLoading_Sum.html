@@ -15,7 +15,7 @@
     <!-- Montserrat font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
     <script src="../js/export-csv_glc.js"></script>
-    <script src="../js/BlueAccounting.js"></script>
+    <script src="../js/BlueAccounting_WP.js"></script>
     <link rel="stylesheet" href="../css/BA_Style.css">
 </head>
 <body>
@@ -31,9 +31,10 @@ Highcharts.setOptions({
     }
 });
 
-var chart = new Highcharts.chart("chart", {
+Highcharts.chart("chart", {
     chart: {
         type: "column",
+        height: 600,
         backgroundColor: {
             linearGradient: {x1: 0, x2: 1, y1: 1, y2: 0},
             stops: [
@@ -48,7 +49,7 @@ var chart = new Highcharts.chart("chart", {
             load: function () {
                 var logoX = 15;
                 var size = this.plotBox.y;
-                size -= 40;
+                size -= 20;
 
                 if(this.chartWidth < 500){
                     logoX = 10;
@@ -82,7 +83,7 @@ var chart = new Highcharts.chart("chart", {
         }
     },
     title: {
-        text: 'Provisional Total Phosphorus Loading to the Western and Central Lake Erie Basins',
+        text: 'Total Phosphorus Loading, by Source, to the Western and Central Lake Erie Basins',
         margin: 20,
         widthAdjust: -370,
         style: {
@@ -217,15 +218,6 @@ var chart = new Highcharts.chart("chart", {
             color: "#E07000"
         }
     ]
-}, function(chart){
-
-    var setHeight = function() {
-        chart.setSize(chart.chartWidth, $(window).height() - 20);
-    }
-    
-    $(window).resize(setHeight);
-       
-    setHeight();
 });
 </script>
 </body>
