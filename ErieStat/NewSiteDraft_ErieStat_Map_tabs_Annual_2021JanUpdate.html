@@ -64,11 +64,17 @@
             <p id="narrative-caption"></p>
             <p id="narrative-content"></p>
         </div>
+        <!-- Tab links -->
+        <div class="tab">
+            <button class="tablinks" onclick="openFractionChart(event, 'TP')" id="defaultOpen">Annual TP Loading<!-- and<br> Annual Discharge--></button>
+            <!--<button class="tablinks" onclick="openFractionChart(event, 'FWMC')">Annual TP FWMC</button>-->
+        </div>
 
         <!-- Tab content -->
-
+        <div id="TP" class="tabcontent">
             <!--<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>-->
-        <div id="chart1" class="charts"></div>
+            <div id="chart1" class="charts"></div>
+        </div>
 
         <!--<div id="FWMC" class="tabcontent">-->
             <!--<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>-->
