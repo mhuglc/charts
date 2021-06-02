@@ -273,6 +273,10 @@
         // Maintain current tab open
         evt.currentTarget.id = "defaultOpen";
     }
+    
+    document.querySelector('.et_pb_tab_1').addEventListener('click', e => {
+        chart.reflow();        
+    });
 
 </script>
 </body>
