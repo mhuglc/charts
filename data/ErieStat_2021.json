@@ -5040,6 +5040,13 @@
     "Source": ""
   },
   {
+    "River": "Thames River",
+    "Year": 2020,
+    "Fraction": "Annual TP Loading",
+    "Value": 424,
+    "Source": ""
+  },
+  {
     "River": "Vermilion River",
     "Year": 2008,
     "Fraction": "Annual TP Loading",
@@ -5121,6 +5128,13 @@
     "Year": 2019,
     "Fraction": "Annual TP Loading",
     "Value": 82,
+    "Source": ""
+  },
+  {
+    "River": "Vermilion River",
+    "Year": 2020,
+    "Fraction": "Annual TP Loading",
+    "Value": 47,
     "Source": ""
   },
   {
