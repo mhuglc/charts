@@ -4532,259 +4532,273 @@
     "River": "Thames River",
     "Year": 2008,
     "Fraction": "Spring Discharge",
-    "Value": 72,
+    "Value": 955,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2009,
     "Fraction": "Spring Discharge",
-    "Value": 83,
+    "Value": 1102,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2010,
     "Fraction": "Spring Discharge",
-    "Value": 52,
+    "Value": 691,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2011,
     "Fraction": "Spring Discharge",
-    "Value": 117,
+    "Value": 1543,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2012,
     "Fraction": "Spring Discharge",
-    "Value": 27,
+    "Value": 358,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2013,
     "Fraction": "Spring Discharge",
-    "Value": 88,
+    "Value": 1164,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2014,
     "Fraction": "Spring Discharge",
-    "Value": 86,
+    "Value": 1136,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2015,
     "Fraction": "Spring Discharge",
-    "Value": 67,
+    "Value": 879,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2016,
     "Fraction": "Spring Discharge",
-    "Value": 64,
+    "Value": 845,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2017,
     "Fraction": "Spring Discharge",
-    "Value": 77,
+    "Value": 1017,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2018,
     "Fraction": "Spring Discharge",
-    "Value": 57,
+    "Value": 755,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2019,
     "Fraction": "Spring Discharge",
-    "Value": 86,
+    "Value": 1137,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2020,
     "Fraction": "Spring Discharge",
-    "Value": 86,
+    "Value": 647,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2008,
     "Fraction": "Spring TP Loading",
-    "Value": 85,
+    "Value": 71,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2009,
     "Fraction": "Spring TP Loading",
-    "Value": 132,
+    "Value": 106,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2010,
     "Fraction": "Spring TP Loading",
-    "Value": 59,
+    "Value": 49,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2011,
     "Fraction": "Spring TP Loading",
-    "Value": 473,
+    "Value": 367,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2012,
     "Fraction": "Spring TP Loading",
-    "Value": 32,
+    "Value": 28,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2013,
     "Fraction": "Spring TP Loading",
-    "Value": 97,
+    "Value": 79,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2014,
     "Fraction": "Spring TP Loading",
-    "Value": 249,
+    "Value": 194,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2015,
-    "Fraction": "Spring TP Loading",
-    "Value": 205,
-    "Source": ""
-  },
-  {
-    "River": "Thames River",
-    "Year": 2016,
-    "Fraction": "Spring TP Loading",
-    "Value": 47,
-    "Source": ""
-  },
-  {
-    "River": "Thames River",
-    "Year": 2017,
-    "Fraction": "Spring TP Loading",
-    "Value": 237,
-    "Source": ""
-  },
-  {
-    "River": "Thames River",
-    "Year": 2018,
     "Fraction": "Spring TP Loading",
     "Value": 160,
     "Source": ""
   },
   {
     "River": "Thames River",
+    "Year": 2016,
+    "Fraction": "Spring TP Loading",
+    "Value": 40,
+    "Source": ""
+  },
+  {
+    "River": "Thames River",
+    "Year": 2017,
+    "Fraction": "Spring TP Loading",
+    "Value": 186,
+    "Source": ""
+  },
+  {
+    "River": "Thames River",
+    "Year": 2018,
+    "Fraction": "Spring TP Loading",
+    "Value": 126,
+    "Source": ""
+  },
+  {
+    "River": "Thames River",
     "Year": 2019,
     "Fraction": "Spring TP Loading",
-    "Value": 350,
+    "Value": 272,
+    "Source": ""
+  },
+  {
+    "River": "Thames River",
+    "Year": 2020,
+    "Fraction": "Spring TP Loading",
+    "Value": 89,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2008,
     "Fraction": "Spring SRP Loading",
-    "Value": 14,
+    "Value": 11,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2009,
     "Fraction": "Spring SRP Loading",
-    "Value": 27,
+    "Value": 24,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2010,
     "Fraction": "Spring SRP Loading",
-    "Value": 7,
+    "Value": 6,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2011,
     "Fraction": "Spring SRP Loading",
-    "Value": 166,
+    "Value": 130,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2012,
     "Fraction": "Spring SRP Loading",
-    "Value": 7,
+    "Value": 5,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2013,
     "Fraction": "Spring SRP Loading",
-    "Value": 31,
+    "Value": 27,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2014,
     "Fraction": "Spring SRP Loading",
-    "Value": 83,
+    "Value": 66,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2015,
     "Fraction": "Spring SRP Loading",
-    "Value": 71,
+    "Value": 56,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2016,
     "Fraction": "Spring SRP Loading",
-    "Value": 9,
+    "Value": 7,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2017,
     "Fraction": "Spring SRP Loading",
-    "Value": 38,
+    "Value": 32,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2018,
     "Fraction": "Spring SRP Loading",
-    "Value": 31,
+    "Value": 26,
     "Source": ""
   },
   {
     "River": "Thames River",
     "Year": 2019,
     "Fraction": "Spring SRP Loading",
-    "Value": 83,
+    "Value": 67,
+    "Source": ""
+  },
+  {
+    "River": "Thames River",
+    "Year": 2020,
+    "Fraction": "Spring SRP Loading",
+    "Value": 36,
     "Source": ""
   },
   {
@@ -4873,6 +4887,13 @@
   },
   {
     "River": "Thames River",
+    "Year": 2020,
+    "Fraction": "Spring TP FWMC",
+    "Value": 0.138,
+    "Source": ""
+  },
+  {
+    "River": "Thames River",
     "Year": 2008,
     "Fraction": "Spring SRP FWMC",
     "Value": 0.011,
@@ -4953,6 +4974,13 @@
     "Year": 2019,
     "Fraction": "Spring SRP FWMC",
     "Value": 0.058,
+    "Source": ""
+  },
+  {
+    "River": "Thames River",
+    "Year": 2020,
+    "Fraction": "Spring SRP FWMC",
+    "Value": 0.056,
     "Source": ""
   },
   {
