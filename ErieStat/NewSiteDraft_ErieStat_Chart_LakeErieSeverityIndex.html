@@ -165,6 +165,9 @@
             type: 'errorbar',
             whiskerLength: 3,
             stemWidth: 2,
+            tooltip: {
+                pointFormat: '(error range: {point.low}-{point.high} mm)<br/>'
+            },
             data: [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [2, 4.5]],
             color: 'black'
         }, {
@@ -172,6 +175,9 @@
             type: 'scatter',
             marker: {
                 radius: 7,
+            },
+            tooltip: {
+                pointFormat: '<span style="font-weight: bold; color: {series.color}">{series.name}</span>: <b>{point.y:.1f}</b> '
             },
             data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 3.0],
             color: '#6FC212'
