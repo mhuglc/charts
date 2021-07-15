@@ -181,9 +181,9 @@
                 radius: 7,
             },
             tooltip: {
-                formatter: function() {
-                    return '<b>2021</b><br>'+ 'NOAA Forecast: ' +  {point.y:.1f};
-                }
+                headerFormat: '<b>2021</b><br>',
+                pointFormat: 'NOAA Forecast: {point.y:.1f}<br>'
+
             },
             data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 3.0],
             color: '#6FC212'
