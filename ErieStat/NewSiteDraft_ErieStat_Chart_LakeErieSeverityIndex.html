@@ -134,12 +134,6 @@
         },
 
         tooltip: {
-            formatter: function () {
-                return this.points.reduce(function (s, point) {
-                    return s + '<br/>' + point.series.name + ': ' +
-                    point.y;
-                }, '<b>' + this.x + '</b>');
-            },
             shared: true
         },
 
@@ -175,7 +169,7 @@
             whiskerLength: 3,
             stemWidth: 2,
             tooltip: {
-                pointFormat: 'likely range: {point.low}-{point.high}'
+                pointFormat: 'likely range: {point.low}-{point.high}<br>'
             },
             data: [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [2, 4.5]],
             color: 'black'
@@ -186,7 +180,9 @@
                 radius: 7,
             },
             tooltip: {
-                pointFormat: '2021 NOAA Forecast: {point.y:.1f}'
+                formatter: function() {
+                    return '<b>2021</b><br>'+ 'NOAA Forecast: ' + this.y;
+                }
             },
             data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 3.0],
             color: '#6FC212'
