@@ -98,7 +98,8 @@
             },
             accessibility: {
                 description: "Cyanobacterial algae bloom severity",
-            }
+            },
+            reversedStacks: false 
                 
         },
             
@@ -181,7 +182,7 @@
             },
             tooltip: {
                 formatter: function() {
-                    return '<b>2021</b><br>'+ 'NOAA Forecast: ' + this.y;
+                    return '<b>2021</b><br>'+ 'NOAA Forecast: ' +  {point.y:.1f};
                 }
             },
             data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 3.0],
