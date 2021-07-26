@@ -23,6 +23,15 @@
   <div id="chart2" class="inline"></div>
 </body>
 
+<style>
+    body, svg, text {
+        font-family: "Montserrat", sans-serif;
+    }
+    .inline {
+        display: inline-block;
+    }
+</style>
+    
 <script>
     var BA = new BlueAccounting;
 Highcharts.setOptions({
@@ -155,58 +164,58 @@ Highcharts.chart("chart1", {
         {
             name: "Steel",
             data: [3890558,3369294,4735753,4158315,3902060,5111465,5657221],
-            color: "#0092B0"
+            color: "#f9f871"
         },
         {
             name: "Other Liquid Bulk",
             data: [1959768,2216777,2305645,2540666,2632155,2451757,2994719],
-            color: "#00C7C3"
+            color: "#0c698f"
         },
 
         {
             name: "Petroleum",
             data: [33783710,28799577,29552597,30653143,36107228,37690943,39240360],
-            color: "#7CFAC3"
+            color: "#dcf177"
         },
         {
             name: "Grain",
             data: [20136224,16469507,23378074,20881690,22018800,20953658,22211754],
-            color: "#27651F"
+            color: "#0b7596"
         },
         {
             name: "Cement",
             data: [10082703,9882009,9981193,10610312,10018612,10528759,8821955],
-            color: "red"
+            color: "#beea7d"
         },
         {
             name: "Coal",
             data: [49420556,50333677,50549972,42434375,34388680,36140643,30735941],
-            color: "turquoise"
+            color: "#0a819b"
         },
         {
             name: "Iron Ore",
             data: [118108544,117128910,118715662,104194207,109809166,118133254,121755301],
-            color: "pink"
+            color: "#a1e283"
         },
         {
             name: "Salt",
             data: [1416172,1257683,1894327,1676734,6878302,7253499,7845065],
-            color: "gray"
+            color: "#088da0"
         },
         {
             name: "Other Dry Bulk",
             data: [20867388,22131874,28034952,28132519,17241130,18760956,18183959],
-            color: "black"
+            color: "#82da8a"
         },
         {
             name: "Stone/Aggregate",
             data: [50450218,51945087,49507577,53274886,48397496,53068966,51027877],
-            color: "orange"
+            color: "#0599a4"
         },
         {
             name: "Unknown Commodity",
             data: [42350764,40544409,39232415,36608898,36289785,39017150,39803950],
-            color: "yellow"
+            color: "#60d191"
         }
     ]
 });
