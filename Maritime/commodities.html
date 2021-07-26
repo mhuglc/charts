@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Total Phosphorus Loading Estimates to Lake Erie</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="//code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Montserrat font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <script src="../js/export-csv_glc.js"></script>
+    <script src="../js/BlueAccounting.js"></script>
+    <link rel="stylesheet" href="../css/BA_Style.css">
+</head>
+<body>
+  <div id="chart1" class="inline"></div>
+  <div id="chart2" class="inline"></div>
+</body>
+
+<script>
+    var BA = new BlueAccounting;
+Highcharts.setOptions({
+    lang: {
+        numericSymbols: null,
+        thousandsSep: ','
+    }
+});
+
+Highcharts.chart("chart1", {
+    chart: {
+        width: window.innerWidth / 2 - 5,
+        type: "column",
+        backgroundColor: {
+            linearGradient: {x1: 0, x2: 1, y1: 1, y2: 0},
+            stops: [
+               [0, 'rgb(255,255,255)'],
+               [1, '#F2FAFF']
+            ]
+        },
+        accessibility: {
+            description: 'Chart displays the tonnage of cargo handled by the Marine Transportation System for the years 2012-2018. Iron ore makes up the largest fraction every year, followed by stone/aggregate. The total is approximately 350 million short tons every year.'
+        },
+    },
+    title: {
+        text: 'Tonnage handled by commodity on the Maritime Transportation System',
+        margin: 20,
+        style: {
+            color: '#000000',
+            fontWeight: 'bold'
+        }
+    },
+    xAxis: {
+        accessibility: {
+            description: "Years from 2012 to 2018"
+        },
+        style: {
+            fontSize: "13px"
+        }
+    },
+    yAxis: {
+        title: {
+            text: 'Short tons'
+        },
+        subtitle: {
+            text: "Click on commodities in legend to remove/add categories from chart"
+        },
+        accessibility: {
+            description: "Short tons of each commodity per year"
+        },
+        style: {
+            fontSize: "13px"
+        }
+    },
+    legend: {
+        width: 900,
+        itemWidth: 180,
+        useHTML: 'True',
+        align: 'left',
+        itemMarginBottom: 8,
+        itemStyle : { "word-wrap": "break-word", "textOverflow": "undefined"},
+        symbolHeight: 11,
+        symbolWidth: 11,
+        symbolRadius: 0
+    },
+    credits: {
+        enabled: false,
+    },
+    caption: {
+        text: '<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/lake-erie-total-phosphorus-loading">https://www.blueaccounting.org/progress/lake-erie-total-phosphorus-loading</a></em>'
+    },
+    plotOptions: {
+        column: {
+            stacking: 'normal',
+            groupPadding: 0.1,
+        },
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            pointStart: 2012
+        }
+    },
+
+    // series: [
+    //     // alternative color theme: Blue 2547316
+    //     {
+    //         name: "Load, all sources",
+    //         data: [23437,27944,26977,23724,18077,22271,20485],
+    //         color: "#7C5B40"
+    //     },
+    //     {
+    //         name: "Adjustment for Unmonitored Area",
+    //         data: [null, null, null, null, null, null, null,2028,956,2705,2011,3272,1140,1608,1163,1670,1063,1931,1421,1753,1293,1329,828,2858,1249,638,1543,981,1621,2378,4345,2669,1088,1626,1391,1635,1148,1747,1382,1398,2010,1243,930,661,1627,1441,1872,1688,1283,984],
+    //         color: "#FFC000"
+    //     },
+    //     {
+    //         name: "Tributary Monitored NPS",
+    //         data: [null, null, null, null, null, null, null,7679,3619,4397,3818,8471,3856,6985,4508,6448,4566,6545,5872,5447,2970,2508,4154,6205,6060,3914,7092,3120,2784,5613,8546,6192,2007,2915,2536,4332,4009,4488,4883,4281,6763,6373,4337,2783,6515,4351,4662,4173,3549,2272],
+    //         color: "#3618E8"
+    //     },
+    //     {
+    //         name: "Lake Huron Input",
+    //         data: [null, null, null, null, null, null, null,822,799,758,665,653,708,743,710,656,681,651,698,740,675,582,515,463,467,476,485,501,482,506,560,528,435,406,398,406,366,364,354,335,325,321,321,321,321,321,321,321,321,321],
+    //         color: "#FFFF99"
+    //     },
+    //     {
+    //         name: "Atmospheric Deposition",
+    //         data: [null, null, null, null, null, null, null,560,560,1119,1119,879,1550,1550,729,660,362,392,291,357,471,372,310,467,333,264,337,403,377,516,520,694,485,788,537,694,813,511,363,632,432,380,503,318,424,237,434,270,345,334],
+    //         color: "#ED1313"
+    //     },
+    //     {
+    //         name: "Indirect Point Sources",
+    //         data: [null, null, null, null, null, null, null,1284,1284,1156,1467,1566,1467,1275,1074,1035,840,900,881,754,757,777,653,589,587,554,547,473,404,663,562,532,529,478,454,536,433,485,467,494,489,437,422,349,390,356,370,327,337,332],
+    //         color: "#16EA48"
+    //     },
+    //     {
+    //         name: "Direct Point Sources",
+    //         data: [null, null, null, null, null, null, null,7103,5735,4959,5081,4163,2848,2357,1901,1455,1970,2027,1671,1727,1811,1774,1542,1701,1804,1523,1539,1681,1503,1334,1800,1543,1419,1569,1335,1456,1256,1410,1444,1476,1519,1419,1266,1117,1112,904,771,797,912,916],
+    //         color: "#00B0F0"
+    //     }
+    // ],
+
+    series: [
+        {
+            name: "General Cargo",
+            data: [2524347,2591296,3702226,3751079,4163976,3722114,4198529],
+            color: "#0D5E87"
+        },
+        {
+            name: "Steel",
+            data: [3890558,3369294,4735753,4158315,3902060,5111465,5657221],
+            color: "#0092B0"
+        },
+        {
+            name: "Other Liquid Bulk",
+            data: [1959768,2216777,2305645,2540666,2632155,2451757,2994719],
+            color: "#00C7C3"
+        },
+
+        {
+            name: "Petroleum",
+            data: [33783710,28799577,29552597,30653143,36107228,37690943,39240360],
+            color: "#7CFAC3"
+        },
+        {
+            name: "Grain",
+            data: [20136224,16469507,23378074,20881690,22018800,20953658,22211754],
+            color: "#27651F"
+        },
+        {
+            name: "Cement",
+            data: [10082703,9882009,9981193,10610312,10018612,10528759,8821955],
+            color: "red"
+        },
+        {
+            name: "Coal",
+            data: [49420556,50333677,50549972,42434375,34388680,36140643,30735941],
+            color: "turquoise"
+        },
+        {
+            name: "Iron Ore",
+            data: [118108544,117128910,118715662,104194207,109809166,118133254,121755301],
+            color: "pink"
+        },
+        {
+            name: "Salt",
+            data: [1416172,1257683,1894327,1676734,6878302,7253499,7845065],
+            color: "gray"
+        },
+        {
+            name: "Other Dry Bulk",
+            data: [20867388,22131874,28034952,28132519,17241130,18760956,18183959],
+            color: "black"
+        },
+        {
+            name: "Stone/Aggregate",
+            data: [50450218,51945087,49507577,53274886,48397496,53068966,51027877],
+            color: "orange"
+        },
+        {
+            name: "Unknown Commodity",
+            data: [42350764,40544409,39232415,36608898,36289785,39017150,39803950],
+            color: "yellow"
+        }
+    ]
+});
+  
+Highcharts.chart("chart2", {
+    chart: {
+        width: window.innerWidth / 2 - 5,
+        type: "column",
+        backgroundColor: {
+            linearGradient: {x1: 0, x2: 1, y1: 1, y2: 0},
+            stops: [
+               [0, 'rgb(255,255,255)'],
+               [1, '#F2FAFF']
+            ]
+        },
+        accessibility: {
+            description: 'Chart displays the value of cargo handled by the Marine Transportation System for the years 2012-2018. Iron ore makes up the largest fraction every year, followed by stone/aggregate. The total is approximately 350 million short tons every year.'
+        },
+    },
+    title: {
+        text: 'Value of commodities handled on the Maritime Transportation System',
+        margin: 20,
+        style: {
+            color: '#000000',
+            fontWeight: 'bold'
+        }
+    },
+    xAxis: {
+        accessibility: {
+            description: "Years from 2012 to 2018"
+        },
+        style: {
+            fontSize: "13px"
+        }
+    },
+    yAxis: {
+        title: {
+            text: 'Short tons'
+        },
+        subtitle: {
+            text: "Click on commodities in legend to remove/add categories from chart"
+        },
+        accessibility: {
+            description: "2019 US Dollars"
+        },
+        style: {
+            fontSize: "13px"
+        }
+    },
+    legend: {
+        width: 900,
+        itemWidth: 180,
+        useHTML: 'True',
+        align: 'left',
+        itemMarginBottom: 8,
+        itemStyle : { "word-wrap": "break-word", "textOverflow": "undefined"},
+        symbolHeight: 11,
+        symbolWidth: 11,
+        symbolRadius: 0
+    },
+    credits: {
+        enabled: false,
+    },
+    caption: {
+        text: '<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/lake-erie-total-phosphorus-loading">https://www.blueaccounting.org/progress/lake-erie-total-phosphorus-loading</a></em>'
+    },
+    plotOptions: {
+        column: {
+            stacking: 'normal',
+            groupPadding: 0.1,
+        },
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            pointStart: 2012
+        }
+    },
+
+    // series: [
+    //     // alternative color theme: Blue 2547316
+    //     {
+    //         name: "Load, all sources",
+    //         data: [23437,27944,26977,23724,18077,22271,20485],
+    //         color: "#7C5B40"
+    //     },
+    //     {
+    //         name: "Adjustment for Unmonitored Area",
+    //         data: [null, null, null, null, null, null, null,2028,956,2705,2011,3272,1140,1608,1163,1670,1063,1931,1421,1753,1293,1329,828,2858,1249,638,1543,981,1621,2378,4345,2669,1088,1626,1391,1635,1148,1747,1382,1398,2010,1243,930,661,1627,1441,1872,1688,1283,984],
+    //         color: "#FFC000"
+    //     },
+    //     {
+    //         name: "Tributary Monitored NPS",
+    //         data: [null, null, null, null, null, null, null,7679,3619,4397,3818,8471,3856,6985,4508,6448,4566,6545,5872,5447,2970,2508,4154,6205,6060,3914,7092,3120,2784,5613,8546,6192,2007,2915,2536,4332,4009,4488,4883,4281,6763,6373,4337,2783,6515,4351,4662,4173,3549,2272],
+    //         color: "#3618E8"
+    //     },
+    //     {
+    //         name: "Lake Huron Input",
+    //         data: [null, null, null, null, null, null, null,822,799,758,665,653,708,743,710,656,681,651,698,740,675,582,515,463,467,476,485,501,482,506,560,528,435,406,398,406,366,364,354,335,325,321,321,321,321,321,321,321,321,321],
+    //         color: "#FFFF99"
+    //     },
+    //     {
+    //         name: "Atmospheric Deposition",
+    //         data: [null, null, null, null, null, null, null,560,560,1119,1119,879,1550,1550,729,660,362,392,291,357,471,372,310,467,333,264,337,403,377,516,520,694,485,788,537,694,813,511,363,632,432,380,503,318,424,237,434,270,345,334],
+    //         color: "#ED1313"
+    //     },
+    //     {
+    //         name: "Indirect Point Sources",
+    //         data: [null, null, null, null, null, null, null,1284,1284,1156,1467,1566,1467,1275,1074,1035,840,900,881,754,757,777,653,589,587,554,547,473,404,663,562,532,529,478,454,536,433,485,467,494,489,437,422,349,390,356,370,327,337,332],
+    //         color: "#16EA48"
+    //     },
+    //     {
+    //         name: "Direct Point Sources",
+    //         data: [null, null, null, null, null, null, null,7103,5735,4959,5081,4163,2848,2357,1901,1455,1970,2027,1671,1727,1811,1774,1542,1701,1804,1523,1539,1681,1503,1334,1800,1543,1419,1569,1335,1456,1256,1410,1444,1476,1519,1419,1266,1117,1112,904,771,797,912,916],
+    //         color: "#00B0F0"
+    //     }
+    // ],
+
+    series: [
+        {
+            name: "General Cargo",
+            data: [4047392337,3795269911,5449717821,4941212979,4549958856,4041842537,4466120288],
+            color: "#0D5E87"
+        },
+        {
+            name: "Steel",
+            data: [4509869237,3323000737,4374561409,3190406563,2477477165,3848075943,4609546480],
+            color: "#0092B0"
+        },
+        {
+            name: "Other Liquid Bulk",
+            data: [1450432629,1536861784,1577988712,1326374499,1117941231,1117518639,1447650542],
+            color: "#00C7C3"
+        },
+
+        {
+            name: "Petroleum",
+            data: [30834647775,25459798378,24291661006,15167200288,14047932643,17174078038,21332960939],
+            color: "#7CFAC3"
+        },
+        {
+            name: "Grain",
+            data: [10941069782,8666319953,9925186482,7833041330,7214678934,6617960678,7084535693],
+            color: "#27651F"
+        },
+        {
+            name: "Cement",
+            data: [1020238505,1049715596,1075672134,1236343156,1203779382,1305677745,1108328112],
+            color: "red"
+        },
+        {
+            name: "Coal",
+            data: [5088774887,5040131357,5027189397,3940056993,3011345792,2977547214,2487621290],
+            color: "turquoise"
+        },
+        {
+            name: "Iron Ore",
+            data: [8341349221,5809581546,6279483124,5371562640,5331684529,6085505453,6504331600],
+            color: "pink"
+        },
+        {
+            name: "Salt",
+            data: [29118372.65,32671421,49152063,50404517,203775360,234401031,256622111],
+            color: "gray"
+        },
+        {
+            name: "Other Dry Bulk",
+            data: [724757874.1,707371003,805011683,689206033,408517052,430603547,407045373],
+            color: "black"
+        },
+        {
+            name: "Stone/Aggregate",
+            data: [779000816.4,737493438,585681589,629363892,515154293,546051079,504204548],
+            color: "orange"
+
+        }
+    ]
+});
+</script>
+</html>
