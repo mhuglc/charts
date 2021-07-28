@@ -96,11 +96,9 @@
     var metric2 = ES.metrics.Discharge;
     var selectedFeature;
     
-    var gray1 = L.layerGroup();
+    var gray1 = L.esri.Vector.vectorTileLayer("5f7becb4a173426ab8070691bc30bdcc", {apiKey: "AAPK58650c913093468cb730b917301196e0ivsVrrT_ghV_VjFooGm75QCtdR285831SeUdRcXWoPZhtUVAKzA-50tVTLWV-1ZU"});
 
-    L.esri.Vector.vectorTileLayer("a4491c548e224efd9b93965d48cc1e56", {apiKey: "AAPK58650c913093468cb730b917301196e0ivsVrrT_ghV_VjFooGm75QCtdR285831SeUdRcXWoPZhtUVAKzA-50tVTLWV-1ZU", zIndex: 1}).addTo(gray1);
-    L.esri.Vector.vectorTileLayer("c24a800f1f5c4bf8a7f54fad1fcf9d3f", {apiKey: "AAPK58650c913093468cb730b917301196e0ivsVrrT_ghV_VjFooGm75QCtdR285831SeUdRcXWoPZhtUVAKzA-50tVTLWV-1ZU", zIndex: 3}).addTo(gray1);
-  
+    
     var topo = L.esri.basemapLayer("Topographic"),
         sat = L.esri.basemapLayer("Imagery");
   
