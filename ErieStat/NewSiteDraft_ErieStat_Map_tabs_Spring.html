@@ -2,30 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Spring SRP Loading in ErieStat Watersheds</title>
+    <title>Annual TP Loading in ErieStat Watersheds</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <!-- subresource integrity is a security feature ensuring that fetched resources are not manipulated -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
           integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
           crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
             integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
             crossorigin=""></script>
-    <!-- script src="https://leaflet.github.io/Leaflet.label/leaflet.label.js"></script> -->
+    <!--<script src="https://leaflet.github.io/Leaflet.label/leaflet.label.js"></script> -->
     <!-- Load Esri Leaflet from CDN -->
     <script src="https://unpkg.com/esri-leaflet@3.0.1/dist/esri-leaflet.js"
         integrity="sha512-JmpptMCcCg+Rd6x0Dbg6w+mmyzs1M7chHCd9W8HPovnImG2nLAQWn3yltwxXRM7WjKKFFHOAKjjF2SC4CgiFBg=="
         crossorigin=""></script>
-            <!--mapbox-gl-js is a dependency for esri-leaflet-vector -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+        <!--mapbox-gl-js is a dependency for esri-leaflet-vector -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
     <script src="https://unpkg.com/esri-leaflet-vector@3.0.0/dist/esri-leaflet-vector.js"
             integrity="sha512-i3LCZC/OnZR2VtZJ7ftXbZivyjPVBKeOqWuJ9SqaBnuiG18GyzTrHWYPgf1geE1LmI9yRENWSEI3jcpKx1dgqg=="
             crossorigin=""></script>
     <script src="//code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
 
     <!--<script src="https://code.highcharts.com/modules/export-data.js"></script> this module is not behaving as expected-->
 
@@ -37,7 +37,6 @@
 
 </head>
 <body>
-<!-- // New line  -->
 <style>
   .label {
     font-weight: 700;
@@ -56,7 +55,6 @@
   }
 
 </style>
-
 <div>
     <div id="map"></div>
     <div class="vl"></div>
@@ -68,31 +66,21 @@
         </div>
         <!-- Tab links -->
         <div class="tab">
-            <button class="tablinks" onclick="openFractionChart(event, 'SRP_S')" id="defaultOpen">Spring SRP Loading and<br> Spring Discharge</button>
-            <button class="tablinks" onclick="openFractionChart(event, 'SRP_FWMC')">Spring SRP FWMC</button>
-            <button class="tablinks" onclick="openFractionChart(event, 'TP_S')" >Spring TP Loading and<br> Spring Discharge</button>
-            <button class="tablinks" onclick="openFractionChart(event, 'TP_FWMC_S')">Spring TP FWMC</button>
+            <button class="tablinks" onclick="openFractionChart(event, 'TP')" id="defaultOpen">Annual TP Loading<!-- and<br> Annual Discharge--></button>
+            <button class="tablinks" onclick="openFractionChart(event, '%RED')">Annual TP % Reduction <br>(2008 Baseline)</button>
         </div>
 
         <!-- Tab content -->
-        <div id="SRP_S" class="tabcontent">
+        <div id="TP" class="tabcontent">
             <!--<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>-->
             <div id="chart1" class="charts"></div>
         </div>
 
-        <div id="SRP_FWMC" class="tabcontent">
+        <div id="%RED" class="tabcontent">
             <!--<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>-->
             <div>
-                <div id="chart2" class="charts"></div>
+                <div id="chart2"></div>
             </div>
-        </div>
-        <div id="TP_S" class="tabcontent">
-            <!--<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>-->
-            <div id="chart3" class="charts"></div>
-        </div>
-        <div id="TP_FWMC_S" class="tabcontent">
-            <!--<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>-->
-            <div id="chart4" class="charts"></div>
         </div>
     </div>
 </div>
@@ -100,35 +88,35 @@
 
 <script>
     var data;
-    var serviceURL = "https://services7.arcgis.com/Tk0IbKIKhaoYn5sa/arcgis/rest/services/ErieStat_SpringSRP_Map_WFL1/FeatureServer";
+    var serviceURL = "https://services7.arcgis.com/Tk0IbKIKhaoYn5sa/arcgis/rest/services/ErieStat_AnnualTP_Map_Nov2020_WFL1/FeatureServer";
     var BA = new BlueAccounting();
     var ES = new ErieStat();
-    var metric1 = ES.metrics.SRP_L_S;
-    var metric2 = ES.metrics.SRP_FWMC_S;
-    var metric3 = ES.metrics.TP_L_S;
-    var metric4 = ES.metrics.TP_FWMS_S;
-    var metric_discharge = ES.metrics.Discharge_S;
     var initWatershed = 'Maumee';
+    var metric1 = ES.metrics.TP_L;
+    var metric2 = ES.metrics.Discharge;
+    var metric3 = ES.metrics.PercentReduction;
     var selectedFeature;
 
     var gray1 = L.esri.Vector.vectorTileLayer("5f7becb4a173426ab8070691bc30bdcc", {apiKey: "AAPK58650c913093468cb730b917301196e0ivsVrrT_ghV_VjFooGm75QCtdR285831SeUdRcXWoPZhtUVAKzA-50tVTLWV-1ZU"});
-  
+
+
     var topo = L.esri.basemapLayer("Topographic"),
         sat = L.esri.basemapLayer("Imagery");
-  
+
     var baseMaps = {
       "Accessible Grayscale": gray1,
       "Topographic": topo,
       "Satellite": sat
     };
-  
+
     var map = L.map("map", {layers: [gray1]}).setView([42.1, -82.0], 7);
-    
+
     L.control.layers(baseMaps).addTo(map);
 
     const IS_EMPTY = (val) => val == "";
-    
-    var srp_watershed_individual = L.esri.featureLayer({
+
+
+    var tp_watershed_individual = L.esri.featureLayer({
         url: serviceURL + "/2",
         simplifyFactor: 0.7,
         weight: 1,
@@ -139,7 +127,7 @@
         }
     }).addTo(map);
 
-    var srp_watershed_combined = L.esri.featureLayer({
+    var tp_watershed_combined = L.esri.featureLayer({
         url: serviceURL + "/1",
         opacity: 0.5,
         simplifyFactor: 0.7,
@@ -162,36 +150,38 @@
         }
     }).addTo(map);
 
-    var labels = {};
+    // var labels = {};
 
-    srp_watershed_combined.on('createfeature', function (e) {
+    tp_watershed_combined.on('createfeature', function (e) {
       var id = e.feature.id;
-      var feature = srp_watershed_combined.getFeature(id);
+      var feature = tp_watershed_combined.getFeature(id);
       var center = feature.getBounds().getCenter();
+      if (e.feature.properties.Label === 'Portage River'){
+          center.lat += 0.0;
+          center.lng -= 0.5;
+      }
       // var label = L.marker(center, {
       //   icon: L.divIcon({
       //     iconSize: null,
       //     className: 'label',
-      //     html: '<div>' + e.feature.properties.Label + '</div>'
+      //     html: '<span>' + e.feature.properties.Label + '</span>'
       //   })
       // }).addTo(map);
-       // labels[id] = label;
+      // labels[id] = label;
     });
 
-    srp_watershed_combined.on('addfeature', function (e){
+    tp_watershed_combined.on('addfeature', function (e){
       var label = labels[e.feature.id];
       if (label){
         label.addTo(map);
       }
     });
 
-    // Hide tabs
     var tabs = document.getElementsByClassName("tab");
     for (i = 0; i < tabs.length; i++) {
         tabs[i].style.display = "none";
     }
-    
-  
+
     $.getJSON("../data/ErieStat_2021.json", function(d){
         data = d;
     }).done(function () {
@@ -199,10 +189,10 @@
     }).then(function () {
         L.esri.featureLayer({
             url: "https://services7.arcgis.com/Tk0IbKIKhaoYn5sa/arcgis/rest/services/ErieStat_Monitoring/FeatureServer/0",
-            where: "SPRING = 'Y'",
+            where: "ANNUAL = 'Y'",
             pointToLayer: function (geojson, latlng) {
                 var p = L.circle(latlng, {
-                    radius: 50,
+                    radius: 500,
                     opacity: 0,
                     color: "#A80084"
                 });
@@ -215,16 +205,14 @@
             }
         }).addTo(map);
 
-        // Default to Maumee river when page initialize
         ES.buildNarratives(initWatershed + ' River');
         loadChart(initWatershed + " River");
         renderWatershed(initWatershed);
     });
 
-
     map.on("click", function (e){
 
-        srp_watershed_combined.query().nearby(e.latlng, 100).simplify(map, 0.5).run(function (error, featureCollection){
+        tp_watershed_combined.query().nearby(e.latlng, 100).simplify(map, 0.5).run(function (error, featureCollection){
             if(featureCollection.features.length >0){
                 $("#intro").css("visibility", "hidden");
                 $(".tab").css("display", "block");
@@ -241,6 +229,7 @@
                 }
             }
         })
+
     });
 
     function loadChart(name) {
@@ -251,71 +240,25 @@
         }
 
         var s1_data = ES.getWatershedData(name, metric1.name);
-        var s2_data = ES.getWatershedData(name, metric2.name);
-        var s3_data = ES.getWatershedData(name, metric3.name);
-        var s4_data = ES.getWatershedData(name, metric4.name);
-        var discharge_data = ES.getWatershedData(name, metric_discharge.name);
-
+//                        var s2_data = ES.getWatershedData(name, metric2.name);
         var s1_data_array = dataToArray(s1_data);
-        var s2_data_array = dataToArray(s2_data);
-        var s3_data_array = dataToArray(s3_data);
-        var s4_data_array = dataToArray(s4_data);
-        var discharge_data_array = dataToArray(discharge_data);
 
-        if(!s1_data_array.every(IS_EMPTY) || !discharge_data_array.every(IS_EMPTY)){
-            var chart1 = BA.buildDualAxesChart(s1_data_array, metric1.name, metric1.unit, '#0D5E87', "column",
-                discharge_data_array, metric_discharge.name, metric_discharge.unit, "#0092B0", "line",
-                "chart1", "<b>" + name + " " + metric1.name + " and " + metric_discharge.name + "</b>", "<i>*SRP: Soluble reactive phosphorus</i>",
-                'Chart displays two datasets, spring discharge and spring soluble reactive phosphorus loading, to the Western Basin of Lake Erie for the selected watershed for the years 2008 to 2019. A target line on the chart marks the spring SRP loading target for the watershed.',
-                ES.xAxis_start, ES.targets[name][metric1.name], null, //ES.targets[name][metric2.name],
+        if(!s1_data_array.every(IS_EMPTY)){
+            var chart1 = BA.buildSingleChart("column", s1_data_array, metric1.name, metric1.unit, '#0D5E87',
+                ES.xAxis_start, name + " " + metric1.name, "<i>*TP: Total phosphorus</i>", 
+                'Chart displays the annual total phosphorus loading, or TP, to Lake Erie for the selected watershed for the years 2008 to 2019. A target line on the chart marks the annual TP loading target for the watershed.',
+                ES.targets[name][metric1.name], "chart1",
                 '<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data are provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
-                (window.innerHeight  - $("#narrative-section").height()) * 0.7
+                (window.innerHeight - $("#narrative-section").height()) * 0.75, null, null
             );
+            chart1.reflow();
         }else{
             $("#chart1").html("<i>* Data under development.</i>");
         }
-
-        if(!s2_data_array.every(IS_EMPTY)){
-            var chart2 = BA.buildSingleChart("line", s2_data_array, metric2.name, metric2.unit, '#0D5E87',
-                ES.xAxis_start,  "<b>" + name + " " + metric2.name + "</b>", "<i>*SRP: Soluble reactive phosphorus</i><br><i>*FWMC: Flow-weighted mean concentration</i>",
-                'Chart displays the flow-weighted mean concentration of soluble reactive phosphorus loading, or SRP, to the Western Basin of Lake Erie for the selected watershed for the years 2008 to 2019. A target line on the chart marks the spring SRP FWMC target for the watershed.',
-                ES.targets[name][metric2.name], "chart2", 
-                '<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data is provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
-                (window.innerHeight  - $("#narrative-section").height()) * 0.7
-            );
-        }
-        else {
-            $("#chart2").html("<i>* Data under development.</i>");
-        }
-
-        if(!s3_data_array.every(IS_EMPTY) || !discharge_data_array.every(IS_EMPTY)){
-            var chart3 = BA.buildDualAxesChart(s3_data_array, metric3.name, metric3.unit, '#0D5E87', "column",
-                discharge_data_array, metric_discharge.name, metric_discharge.unit, "#0092B0", "line",
-                "chart3",  "<b>" + name + " " + metric3.name + " and " + metric_discharge.name + "</b>", "<i>*TP: Total phosphorus</i>",
-                'Chart displays two datasets, spring discharge and spring total phosphorus loading, to the Western Basin of Lake Erie for the selected watershed for the years 2008 to 2019. A target line on the chart marks the spring TP loading target for the watershed.',
-                ES.xAxis_start, ES.targets[name][metric3.name], null, //ES.targets[name][metric2.name],
-                '<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data is provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
-                (window.innerHeight  - $("#narrative-section").height()) * 0.7
-            );
-        }else{
-            $("#chart3").html("<i>* Data under development.</i>");
-        }
-
-        if(!s4_data_array.every(IS_EMPTY)){
-            var chart4 = BA.buildSingleChart("line", s4_data_array, metric4.name, metric4.unit, '#0D5E87',
-                ES.xAxis_start, "<b>" + name + " " + metric4.name + "</b>", "<i>*TP: Total phosphorus</i><br><i>*FWMC: Flow-weighted mean concentration</i>",
-                'Chart displays the flow-weighted mean concentration of total phosphorus loading, or TP, to the Western Basin of Lake Erie for the selected watershed for the years 2008 to 2019. A target line on the chart marks the spring TP FWMC target for the watershed.',
-                ES.targets[name][metric4.name], "chart4", 
-                '<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data is provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
-                (window.innerHeight  - $("#narrative-section").height()) * 0.7
-            );
-        }else{
-            $("#chart4").html("<i>* Data under development.</i>");
-        }
     }
 
-    function renderWatershed(label) {
-        srp_watershed_combined.query().where("MergeNm='" + label + "'").simplify(map, 0.5).run(function (error, featureCollection) {
+    function renderWatershed(name) {
+        tp_watershed_combined.query().where("MergeNm='" + name + "'").simplify(map, 0.5).run(function (error, featureCollection) {
             if (featureCollection.features.length > 0) {
                 $("#intro").css("visibility", "hidden");
                 $(".tab").css("display", "block");
@@ -323,18 +266,17 @@
                 if(selectedFeature){
                     map.removeLayer(selectedFeature);
                 }
-                for (var i = 0; i < featureCollection.features.length; i++) {
-                    selectedFeature = L.geoJSON(featureCollection.features[i]);
-                    selectedFeature.setStyle({
-                        fillColor: "#E07000",
-                        weight: 4,
-                        opacity: 1,
-                        color: "#2C2C2C"
-                    });
-                    selectedFeature.addTo(map);
-                    selectedFeature.bringToFront();
-                }
-                
+                // for (var i = 0; i < featureCollection.features.length; i++) {
+                selectedFeature = L.geoJSON(featureCollection.features[0]);
+                selectedFeature.setStyle({
+                    fillColor: "#E07000",
+                    weight: 4,
+                    opacity: 1,
+                    color: "#2C2C2C"
+                });
+                selectedFeature.addTo(map);
+                selectedFeature.bringToFront();
+                // }
             }
         });
     }
@@ -362,7 +304,11 @@
 
         // Maintain current tab open
         evt.currentTarget.id = "defaultOpen";
-    }
+
+    };
+
+
+
 </script>
 </body>
 </html>
