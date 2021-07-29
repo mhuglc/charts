@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,7 +80,7 @@
         <div id="%RED" class="tabcontent">
             <!--<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>-->
             <div>
-                <div id="chart2" class="charts"></div>
+                <div id="chart2"></div>
             </div>
         </div>
     </div>
@@ -240,10 +241,8 @@
         }
 
         var s1_data = ES.getWatershedData(name, metric1.name);
-        var s2_data = ES.getWatershedData(name, metric2.name);
 //                        var s2_data = ES.getWatershedData(name, metric2.name);
         var s1_data_array = dataToArray(s1_data);
-        var s2_data_array = dataToArray(s2_data);
 
         if(!s1_data_array.every(IS_EMPTY)){
             var chart1 = BA.buildSingleChart("column", s1_data_array, metric1.name, metric1.unit, '#0D5E87',
@@ -257,8 +256,6 @@
         }else{
             $("#chart1").html("<i>* Data under development.</i>");
         }
-        
-
     }
 
     function renderWatershed(name) {
