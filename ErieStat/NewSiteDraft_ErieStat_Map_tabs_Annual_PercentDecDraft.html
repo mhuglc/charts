@@ -79,7 +79,7 @@
         <div id="%RED" class="tabcontent">
             <!--<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>-->
             <div>
-                <div id="chart2"></div>
+                <div id="chart2" class="charts"></div>
             </div>
         </div>
     </div>
@@ -96,23 +96,23 @@
     var metric2 = ES.metrics.Discharge;
     var metric3 = ES.metrics.PercentReduction;
     var selectedFeature;
-
+    
     var gray1 = L.esri.Vector.vectorTileLayer("5f7becb4a173426ab8070691bc30bdcc", {apiKey: "AAPK58650c913093468cb730b917301196e0ivsVrrT_ghV_VjFooGm75QCtdR285831SeUdRcXWoPZhtUVAKzA-50tVTLWV-1ZU"});
 
-
+    
     var topo = L.esri.basemapLayer("Topographic"),
         sat = L.esri.basemapLayer("Imagery");
-
+  
     var baseMaps = {
       "Accessible Grayscale": gray1,
       "Topographic": topo,
       "Satellite": sat
     };
-
+  
     var map = L.map("map", {layers: [gray1]}).setView([42.1, -82.0], 7);
-
+    
     L.control.layers(baseMaps).addTo(map);
-
+    
     const IS_EMPTY = (val) => val == "";
 
 
@@ -240,8 +240,10 @@
         }
 
         var s1_data = ES.getWatershedData(name, metric1.name);
+        var s2_data = ES.getWatershedData(name, metric2.name);
 //                        var s2_data = ES.getWatershedData(name, metric2.name);
         var s1_data_array = dataToArray(s1_data);
+        var s2_data_array = dataToArray(s2_data);
 
         if(!s1_data_array.every(IS_EMPTY)){
             var chart1 = BA.buildSingleChart("column", s1_data_array, metric1.name, metric1.unit, '#0D5E87',
@@ -255,6 +257,8 @@
         }else{
             $("#chart1").html("<i>* Data under development.</i>");
         }
+        
+
     }
 
     function renderWatershed(name) {
@@ -307,7 +311,7 @@
 
     };
 
-
+    
 
 </script>
 </body>
