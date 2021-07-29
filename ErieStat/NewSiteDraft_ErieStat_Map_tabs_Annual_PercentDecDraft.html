@@ -240,8 +240,10 @@
         }
 
         var s1_data = ES.getWatershedData(name, metric1.name);
+        var s3_data = ES.getWatershedData(name, metric3.name);
 //                        var s2_data = ES.getWatershedData(name, metric2.name);
         var s1_data_array = dataToArray(s1_data);
+        var s3_data_array = dataToArray(s3_data);
 
         if(!s1_data_array.every(IS_EMPTY)){
             var chart1 = BA.buildSingleChart("column", s1_data_array, metric1.name, metric1.unit, '#0D5E87',
@@ -254,6 +256,19 @@
             chart1.reflow();
         }else{
             $("#chart1").html("<i>* Data under development.</i>");
+        }
+        
+        if(!s3_data_array.every(IS_EMPTY)){
+            var chart2 = BA.buildSingleChart("line", s3_data_array, metric3.name, metric3.unit, '#0D5E87',
+                ES.xAxis_start,  "<b>" + name + " " + metric3.name + "</b>", "<i>*Percent reduction in total phosphorus relative to the 2008 baseline</i>",
+                'Chart displays the percent reduction in total phosphorus loading, or TP, to the Western Basin of Lake Erie for the selected watershed for the years 2008 to 2019 relative to the baseline year of 2008. A target line on the chart marks the target 40% reduction for the watershed.',
+                ES.targets[name][metric3.name], "chart2", 
+                '<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data is provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
+                (window.innerHeight  - $("#narrative-section").height()) * 0.75, null, null
+            );
+        }
+        else {
+            $("#chart2").html("<i>* Data under development.</i>");
         }
     }
 
