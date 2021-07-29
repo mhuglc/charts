@@ -58,7 +58,11 @@ function ErieStat() {
         "Discharge_S": {
             name: "Spring Discharge",
                 unit: "million cubic meters March through July"
-        }
+        },
+        "PercentReduction": {
+            name: "Percent Reduction",
+                unit: "relative to 2008 baseline"
+        },
     };
     this.units = {
     };
