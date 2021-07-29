@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -97,23 +96,23 @@
     var metric2 = ES.metrics.Discharge;
     var metric3 = ES.metrics.PercentReduction;
     var selectedFeature;
-    
+
     var gray1 = L.esri.Vector.vectorTileLayer("5f7becb4a173426ab8070691bc30bdcc", {apiKey: "AAPK58650c913093468cb730b917301196e0ivsVrrT_ghV_VjFooGm75QCtdR285831SeUdRcXWoPZhtUVAKzA-50tVTLWV-1ZU"});
 
-    
+
     var topo = L.esri.basemapLayer("Topographic"),
         sat = L.esri.basemapLayer("Imagery");
-  
+
     var baseMaps = {
       "Accessible Grayscale": gray1,
       "Topographic": topo,
       "Satellite": sat
     };
-  
+
     var map = L.map("map", {layers: [gray1]}).setView([42.1, -82.0], 7);
-    
+
     L.control.layers(baseMaps).addTo(map);
-    
+
     const IS_EMPTY = (val) => val == "";
 
 
@@ -183,7 +182,7 @@
         tabs[i].style.display = "none";
     }
 
-    $.getJSON("../data/ErieStat_2021_test.json", function(d){
+    $.getJSON("../data/ErieStat_2021.json", function(d){
         data = d;
     }).done(function () {
         ES.init(data);
@@ -308,7 +307,7 @@
 
     };
 
-    
+
 
 </script>
 </body>
