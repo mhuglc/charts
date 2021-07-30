@@ -262,7 +262,7 @@
         
         if(!s2_data_array.every(IS_EMPTY) || !s3_data_array.every(IS_EMPTY)){
             var chart2 = BA.buildDualChartSingleAxis(s2_data_array, metric2.name, '#0D5E87', "scatter",
-                s3_data_array, metric3.name, "#0092B0", "line", metric2.unit, "chart2", 
+                s3_data_array, metric3.name, "#0092B0", "spline", metric2.unit, "chart2", 
                 "<b>" + name + " " + metric2.name + "</b>", "<i>*TP: Total phosphorus</i>",
                 'Chart displays the percent decrease in annual total phosphorus loading for the selected watershed for the years 2008 to 2019, relative to the baseline year of 2008 established by the binational Domestic Action Plans for Lake Erie. A target line on the chart marks the percent decrease target for the watershed.',
                 ES.xAxis_start, ES.targets[name][metric2.name], 
