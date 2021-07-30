@@ -434,6 +434,10 @@ function BlueAccounting(){
                     pointStart: startingYear
                 }
             },
+            tooltip: {
+                valueDecimals: 2,
+                valueSuffix: '%'
+            },
             series: [{
                 name: seriesName1,
                 type: chartType1,
