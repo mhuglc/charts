@@ -60,11 +60,11 @@ function ErieStat() {
                 unit: "million cubic meters March through July"
         },
         "AnnPercentReduction": {
-            name: "Annual TP Percent Reduction",
+            name: "Percent Reduction in Annual TP Load Relative to 2008",
                 unit: "relative to 2008 baseline"
         },
         "AnnPercentReduction5Y": {
-            name: "5 Year Average of Annual TP Percent Reduction",
+            name: "5 Year Average of Percent Reduction Relative to 2008",
                 unit: "relative to 2008 baseline"
         },
     };
