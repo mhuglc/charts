@@ -435,6 +435,8 @@ function BlueAccounting(){
                 }
             },
             tooltip: {
+                headerFormat: '{point.x}<br>',
+                pointFormat: '{series.name}: <b>{point.y}</b>',
                 valueDecimals: 2,
                 valueSuffix: '%'
             },
