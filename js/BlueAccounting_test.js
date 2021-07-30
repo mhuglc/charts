@@ -444,7 +444,7 @@ function BlueAccounting(){
                 name: seriesName2,
                 type: chartType2,
                 marker: {
-                    enabled: false,
+                    radius: 0,
                 },
                 unit: seriesUnit,
                 data: series2,
