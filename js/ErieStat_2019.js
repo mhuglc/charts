@@ -59,8 +59,12 @@ function ErieStat() {
             name: "Spring Discharge",
                 unit: "million cubic meters March through July"
         },
-        "PercentReduction": {
-            name: "Percent Reduction",
+        "AnnPercentReduction": {
+            name: "Annual TP Percent Reduction",
+                unit: "relative to 2008 baseline"
+        },
+        "AnnPercentReduction5Y": {
+            name: "5 Year Average of Annual TP Percent Reduction",
                 unit: "relative to 2008 baseline"
         },
     };
