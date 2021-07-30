@@ -73,7 +73,7 @@ function ErieStat() {
     this.targets = {
         "Cattaraugus River": {
             "Annual TP Loading": null,
-            "Annual TP Percent Reduction": null,
+            "Percent Reduction in Annual TP Load Relative to 2008": null,
             "Spring TP Loading": null,
             "Spring SRP Loading": null,
             "Spring TP FWMC": null,
@@ -81,7 +81,7 @@ function ErieStat() {
         },
         "Cedar-Toussaint": {
             "Annual TP Loading": null,
-            "Annual TP Percent Reduction": null,
+            "Percent Reduction in Annual TP Load Relative to 2008": null,
             "Spring TP Loading": null,
             "Spring SRP Loading": null,
             "Spring TP FWMC": null,
@@ -89,7 +89,7 @@ function ErieStat() {
         },
         "Cuyahoga River": {
             "Annual TP Loading": 271,
-            "Annual TP Percent Reduction": 40,
+            "Percent Reduction in Annual TP Load Relative to 2008": 40,
             "Spring TP Loading": null,
             "Spring SRP Loading": null,
             "Spring TP FWMC": null,
@@ -97,7 +97,7 @@ function ErieStat() {
         },
         "Detroit River (U.S.)": {
             "Annual TP Loading": 756,
-            "Annual TP Percent Reduction": 40,
+            "Percent Reduction in Annual TP Load Relative to 2008": 40,
             "Spring TP Loading": null,
             "Spring SRP Loading": null,
             "Spring TP FWMC": null,
@@ -105,7 +105,7 @@ function ErieStat() {
         },
         "Grand River-OH": {
             "Annual TP Loading": 99,
-            "Annual TP Percent Reduction": 40,
+            "Percent Reduction in Annual TP Load Relative to 2008": 40,
             "Spring TP Loading": null,
             "Spring SRP Loading": null,
             "Spring TP FWMC": null,
@@ -113,7 +113,7 @@ function ErieStat() {
         },
         "Grand (Ontario) River": {
             "Annual TP Loading": null,
-            "Annual TP Percent Reduction": null,
+            "Percent Reduction in Annual TP Load Relative to 2008": null,
             "Spring TP Loading": null,
             "Spring SRP Loading": null,
             "Spring TP FWMC": null,
@@ -121,7 +121,7 @@ function ErieStat() {
         },
         "Huron River-OH": {
             "Annual TP Loading": 123,
-            "Annual TP Percent Reduction": 40,
+            "Percent Reduction in Annual TP Load Relative to 2008": 40,
             "Spring TP Loading": null,
             "Spring SRP Loading": null,
             "Spring TP FWMC": null,
@@ -129,7 +129,7 @@ function ErieStat() {
         },
         "Leamington Tributaries": {
             "Annual TP Loading": null,
-            "Annual TP Percent Reduction": null,
+            "Percent Reduction in Annual TP Load Relative to 2008": null,
             "Spring TP Loading": null,
             "Spring SRP Loading": null,
             "Spring TP FWMC": null,
@@ -137,7 +137,7 @@ function ErieStat() {
         },
         "Maumee River": {
             "Annual TP Loading": 2287,
-            "Annual TP Percent Reduction": 40,
+            "Percent Reduction in Annual TP Load Relative to 2008": 40,
             "Spring TP Loading": 860,
             "Spring SRP Loading": 186,
             "Spring TP FWMC": 0.23,
@@ -145,7 +145,7 @@ function ErieStat() {
         },
         "Portage River": {
             "Annual TP Loading": 215,
-            "Annual TP Percent Reduction": 40,
+            "Percent Reduction in Annual TP Load Relative to 2008": 40,
             "Spring TP Loading": null,
             "Spring SRP Loading": null,
             "Spring TP FWMC": 0.27,
@@ -153,7 +153,7 @@ function ErieStat() {
         },
         "River Raisin": {
             "Annual TP Loading": 157,
-            "Annual TP Percent Reduction": 40,
+            "Percent Reduction in Annual TP Load Relative to 2008": 40,
             "Spring TP Loading": 50,
             "Spring SRP Loading": null,
             "Spring TP FWMC": 0.09,
@@ -161,7 +161,7 @@ function ErieStat() {
         },
         "Sandusky River": {
             "Annual TP Loading": 660,
-            "Annual TP Percent Reduction": 40,
+            "Percent Reduction in Annual TP Load Relative to 2008": 40,
             "Spring TP Loading": 230,
             "Spring SRP Loading": 43,
             "Spring TP FWMC": 0.23,
@@ -169,7 +169,7 @@ function ErieStat() {
         },
         "Thames River": {
             "Annual TP Loading": null,
-            "Annual TP Percent Reduction": null,
+            "Percent Reduction in Annual TP Load Relative to 2008": null,
             "Spring TP Loading": null,
             "Spring SRP Loading": null,
             "Spring TP FWMC": null,
@@ -177,7 +177,7 @@ function ErieStat() {
         },
         "Vermilion River": {
             "Annual TP Loading": 121,
-            "Annual TP Percent Reduction": 40,
+            "Percent Reduction in Annual TP Load Relative to 2008": 40,
             "Spring TP Loading": null,
             "Spring SRP Loading": null,
             "Spring TP FWMC": null,
