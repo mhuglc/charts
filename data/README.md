@@ -34,3 +34,6 @@ We intend to use the ErieStat_data.json instead. This may be in effect for the n
 
 ## Nitrate_data.json 
 For SWI Nutrient goal.
+
+## OIT json files
+Source data for the AIS Organisms in Trade dashboard based in PowerBI
