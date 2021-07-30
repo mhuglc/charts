@@ -443,6 +443,9 @@ function BlueAccounting(){
             }, {
                 name: seriesName2,
                 type: chartType2,
+                marker: {
+                    enabled: false,
+                },
                 unit: seriesUnit,
                 data: series2,
                 color: color2,
