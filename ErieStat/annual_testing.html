@@ -284,6 +284,7 @@
               });
           }
       })
+    })
 
     function renderWatershed(name) {
         tp_watershed_combined.query().where("MergeNm='" + name + "'").simplify(map, 0.5).run(function (error, featureCollection) {
