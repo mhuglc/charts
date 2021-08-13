@@ -77,7 +77,7 @@
         <!-- Tab content -->
         <div id="TP" class="tabcontent">
             <!--<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>-->
-            <div id="chart" class="charts"></div>
+            <div id="chart1" class="charts"></div>
         </div>
 
     </div>
@@ -259,7 +259,7 @@
 
               if (data.item.value == 'Total Loading') {
                   chart = BA.buildDualChartSingleAxis(s2_data_array, metric2.name, '#0D5E87', "scatter",
-                  s3_data_array, metric3.name, "#0092B0", "spline", metric2.unit, "chart",  "<b>" + name + " " + metric2.name + "</b>", 
+                  s3_data_array, metric3.name, "#0092B0", "spline", metric2.unit, "chart1",  "<b>" + name + " " + metric2.name + "</b>", 
                   "<i>*TP: Total phosphorus</i>", 'Chart displays the percent decrease in annual total phosphorus loading for the selected watershed for the years 2008 to 2019, relative to the baseline year of 2008 established by the binational Domestic Action Plans for Lake Erie. A target line on the chart marks the percent decrease target for the watershed.',
                   ES.xAxis_start, ES.targets[name][metric2.name], 
                   '<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data is provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
@@ -270,7 +270,7 @@
                   chart = BA.buildSingleChart("column", s1_data_array, metric1.name, metric1.unit, '#0D5E87',
                   ES.xAxis_start, name + " " + metric1.name, "<i>*TP: Total phosphorus</i>", 
                   'Chart displays the annual total phosphorus loading, or TP, to Lake Erie for the selected watershed for the years 2008 to 2019. A target line on the chart marks the annual TP loading target for the watershed.',
-                  ES.targets[name][metric1.name], "chart",
+                  ES.targets[name][metric1.name], "chart1",
                   '<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data are provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
                   (window.innerHeight - $("#narrative-section").height()) * 0.75, null, null
                 );
