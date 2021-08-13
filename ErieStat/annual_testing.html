@@ -5,7 +5,7 @@
     <title>Annual TP Loading in ErieStat Watersheds</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <link rel="StyleSheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
           integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -216,7 +216,6 @@
             if(featureCollection.features.length >0){
                 $("#intro").css("visibility", "hidden");
                 $(".tab").css("display", "block");
-                document.getElementById("defaultOpen").click();
                 if (featureCollection.features.length > 0) {
                     var name = ES.watershedNames[featureCollection.features[0].properties["MergeNm"]];
                     // var label = featureCollection.features[0].properties["Label"];
@@ -267,7 +266,6 @@
                   '<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data is provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
                   (window.innerHeight  - $("#narrative-section").height()) * 0.7, null, null
                   );
-                  openFractionChart(event, 'TP')
                 } else if (data.item.value == 'Percent Decrease') {
                   chart = BA.buildSingleChart("column", s1_data_array, metric1.name, metric1.unit, '#0D5E87',
                   ES.xAxis_start, name + " " + metric1.name, "<i>*TP: Total phosphorus</i>", 
