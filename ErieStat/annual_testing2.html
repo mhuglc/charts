@@ -205,7 +205,8 @@
         }).addTo(map);
 
         ES.buildNarratives(initWatershed + ' River');
-        loadChart(initWatershed + " River");
+        loadWatershedData(initWatershed + " River");
+        loadChart(initWatershed + " River", metric1);
         renderWatershed(initWatershed);
     });
 
@@ -220,7 +221,8 @@
                     var name = ES.watershedNames[featureCollection.features[0].properties["MergeNm"]];
                     // var label = featureCollection.features[0].properties["Label"];
                     if (ES.buildNarratives(name)) {
-                        loadChart(name);
+                        loadWatershedData(name);
+                        loadChart(name, metric1);
                     } else {
                         $(".charts").html("");
                     }
@@ -231,7 +233,7 @@
 
     });
 
-    function loadChart(name) {
+    function loadWatershedData(name) {
         function dataToArray(vals){
             let array = []
             for(let i =0;i < vals.length;i++){array.push(vals.get(i))}
@@ -241,7 +243,9 @@
         var s1_data = ES.getWatershedData(name, metric1.name);
 //                        var s2_data = ES.getWatershedData(name, metric2.name);
         var s1_data_array = dataToArray(s1_data);
+    }
 
+    function loadChart(name, metric) {
         if(!s1_data_array.every(IS_EMPTY)){
             var chart1 = BA.buildSingleChart("column", s1_data_array, metric1.name, metric1.unit, '#0D5E87',
                 ES.xAxis_start, name + " " + metric1.name, "<i>*TP: Total phosphorus</i>", 
