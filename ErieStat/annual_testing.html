@@ -192,12 +192,12 @@
         renderWatershed(initWatershed);
     });
 
+    // handle map clicks
     map.on("click", function (e){
 
         tp_watershed_combined.query().nearby(e.latlng, 100).simplify(map, 0.5).run(function (error, featureCollection){
             if(featureCollection.features.length >0){
                 $("#intro").css("visibility", "hidden");
-                $(".tab").css("display", "block");
                 if (featureCollection.features.length > 0) {
                     var name = ES.watershedNames[featureCollection.features[0].properties["MergeNm"]];
                     // var label = featureCollection.features[0].properties["Label"];
@@ -271,7 +271,6 @@
         tp_watershed_combined.query().where("MergeNm='" + name + "'").simplify(map, 0.5).run(function (error, featureCollection) {
             if (featureCollection.features.length > 0) {
                 $("#intro").css("visibility", "hidden");
-                $(".tab").css("display", "block");
                 if(selectedFeature){
                     map.removeLayer(selectedFeature);
                 }
