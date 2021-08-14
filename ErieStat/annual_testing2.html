@@ -243,9 +243,11 @@
         var s1_data = ES.getWatershedData(name, metric1.name);
 //                        var s2_data = ES.getWatershedData(name, metric2.name);
         var s1_data_array = dataToArray(s1_data);
+        return s1_data_array;
     }
 
     function loadChart(name, metric) {
+        var s1_data_array = loadWatershedData();
         if(!s1_data_array.every(IS_EMPTY)){
             var chart1 = BA.buildSingleChart("column", s1_data_array, metric1.name, metric1.unit, '#0D5E87',
                 ES.xAxis_start, name + " " + metric1.name, "<i>*TP: Total phosphorus</i>", 
