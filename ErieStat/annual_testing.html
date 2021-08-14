@@ -98,8 +98,8 @@
     var metric3 = ES.metrics.AnnPercentReduction5Y;
     var selectedFeature;
 	
-    <!--Map setup-->
-    <!--Basemaps-->
+    // Map setup
+    // Basemaps
     
     var gray1 = L.esri.Vector.vectorTileLayer("5f7becb4a173426ab8070691bc30bdcc", {apiKey: "AAPK58650c913093468cb730b917301196e0ivsVrrT_ghV_VjFooGm75QCtdR285831SeUdRcXWoPZhtUVAKzA-50tVTLWV-1ZU"});
 
@@ -119,7 +119,7 @@
     
     const IS_EMPTY = (val) => val == "";
     
-    <!--Watershed polygone-->
+    // Watershed polygone
 
     var tp_watershed_individual = L.esri.featureLayer({
         url: serviceURL + "/2",
@@ -182,11 +182,7 @@
       }
     });
 
-    var tabs = document.getElementsByClassName("tab");
-    for (i = 0; i < tabs.length; i++) {
-        tabs[i].style.display = "none";
-    }
-
+    // init
     $.getJSON("../data/ErieStat_2021_test.json", function(d){
         data = d;
     }).done(function () {
