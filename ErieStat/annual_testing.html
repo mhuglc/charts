@@ -78,10 +78,9 @@
         </div>
 
         <!-- Tab content -->
-        <div id="TP" class="tabcontent">
             <!--<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>-->
-            <div id="container" class="charts"></div>
-        </div>
+        <div id="container" class="charts">
+	</div>
 
     </div>
 </div>
@@ -279,34 +278,6 @@
             }
         });
     }
-
-    function openFractionChart(evt, fraction) {
-        // Declare all variables
-        var i, tabcontent, tablinks;
-
-        // Get all elements with class="tabcontent" and hide them
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-
-        // Get all elements with class="tablinks" and remove the class "active"
-        tablinks = document.getElementsByClassName("page-content");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-            tablinks[i].id = "";
-        }
-
-        // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById(fraction).style.display = "block";
-        evt.currentTarget.className += " active";
-
-        // Maintain current tab open
-        evt.currentTarget.id = "defaultOpen";
-
-    };
-
-    
 
 </script>
 </body>
