@@ -77,26 +77,21 @@ Highcharts.chart('container', {
         let ren = this.renderer,
           data = this.series[0].data
 
-        if (this.customCircle) {
-          this.customCircle.destroy()
-          this.customCircle = undefined
-        }
-        this.customCircle = this.renderer.g('customCircle').add()
-
         data.forEach(el => {
           if (el.mid) {
             let distX = this.yAxis[0].toPixels(el.mid),
             distY = this.xAxis[0].toPixels(el.index) 
 						
-            ren.circle(distX, distY, 3).attr({
-              fill: 'red',
-              stroke: 'red',
-              'stroke-width': 2
-            }).add(this.customCircle);
+            ren.test('|', distX, distY, 3).attr({
+		    rotation: 0
+	    })
+            .css({
+	        color: '#4572A7',
+	        fontSize: '16px'
+            }).add();
           }
         })
       }
-    }
   },
   xAxis: {
     type: 'category'
@@ -105,6 +100,18 @@ Highcharts.chart('container', {
     name: 'Life expectancy change',
     data: data
   }]
+}, function (chart) { // on complete
+
+    chart.renderer.text('|', 140, 140)
+        .attr({
+            rotation: -25
+        })
+        .css({
+            color: '#4572A7',
+            fontSize: '16px'
+        })
+        .add();
+
 });
 </script>
 </body>
