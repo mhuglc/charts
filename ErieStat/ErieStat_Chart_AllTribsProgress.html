@@ -82,7 +82,7 @@ Highcharts.chart('container', {
             let distX = this.yAxis[0].toPixels(el.mid),
             distY = this.xAxis[0].toPixels(el.index) 
 						
-            ren.test('|', distX, distY, 3).attr({
+            ren.text('|', distX, distY, 3).attr({
 		    rotation: 0
 	    })
             .css({
