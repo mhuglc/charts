@@ -24,52 +24,52 @@
 
 <script>
 var data = [{
-  name: 'Austria',
-  low: 69,
-  high: 82,
-  mid: 77
+  name: 'Maumee River',
+  baseline: 3812,
+  current: 2647.8,
+  target: 2287
 }, {
   name: 'Belgium',
-  low: 70,
-  high: 81,
-  mid: 72
+  baseline: 70,
+  current: 81,
+  target: 72
 }, {
   name: 'Bulgaria',
-  low: 69,
-  high: 75,
-  mid: 70
+  baseline: 69,
+  current: 75,
+  target: 70
 }, {
   name: 'Croatia',
-  low: 65,
-  high: 78
+  baseline: 65,
+  current: 78
 }, {
   name: 'Cyprus',
-  low: 70,
-  high: 81
+  baseline: 70,
+  current: 81
 }, {
   name: 'Czech Republic',
-  low: 70,
-  high: 79
+  baseline: 70,
+  current: 79
 }, {
   name: 'Denmark',
-  low: 72,
-  high: 81
+  baseline: 72,
+  current: 81
 }, {
   name: 'Estonia',
-  low: 68,
-  high: 78
+  baseline: 68,
+  current: 78
 }, {
   name: 'Finland',
-  low: 69,
-  high: 81
+  baseline: 69,
+  current: 81
 }, {
   name: 'France',
-  low: 70,
-  high: 83
+  baseline: 70,
+  current: 83
 }, {
   name: 'Greece',
-  low: 68,
-  high: 81
+  baseline: 68,
+  current: 81
 }];
 
 Highcharts.chart('container', {
@@ -88,8 +88,8 @@ Highcharts.chart('container', {
         this.customCircle = this.renderer.g('customCircle').add()
 
         data.forEach(el => {
-          if (el.mid) {
-            let distX = this.yAxis[0].toPixels(el.mid),
+          if (el.target) {
+            let distX = this.yAxis[0].toPixels(el.target),
             distY = this.xAxis[0].toPixels(el.index) 
 						
             ren.circle(distX, distY, 3).attr({
