@@ -24,52 +24,48 @@
 
 <script>
 var data = [{
+  name: 'Detroit River (U.S.)',
+  low: 69,
+  high: 82,
+  mid: 77
+}, {
+  name: 'River Raisin',
+  low: 70,
+  high: 81,
+  mid: 72
+}, {
   name: 'Maumee River',
-  baseline: 3812,
-  current: 2647.8,
-  target: 2500
+  low: 69,
+  high: 75,
+  mid: 70
 }, {
-  name: 'Belgium',
-  baseline: 70,
-  current: 81,
-  target: 72
+  name: 'Portage River',
+  low: 65,
+  high: 78
 }, {
-  name: 'Bulgaria',
-  baseline: 69,
-  current: 75,
-  target: 70
+  name: 'Sandusky River',
+  low: 70,
+  high: 81
 }, {
-  name: 'Croatia',
-  baseline: 65,
-  current: 78
+  name: 'Huron River',
+  low: 70,
+  high: 79
 }, {
-  name: 'Cyprus',
-  baseline: 70,
-  current: 81
+  name: 'Vermilion River',
+  low: 72,
+  high: 81
 }, {
-  name: 'Czech Republic',
-  baseline: 70,
-  current: 79
+  name: 'Cuyahoga River',
+  low: 68,
+  high: 78
 }, {
-  name: 'Denmark',
-  baseline: 72,
-  current: 81
+  name: 'Grand River',
+  low: 69,
+  high: 81
 }, {
-  name: 'Estonia',
-  baseline: 68,
-  current: 78
-}, {
-  name: 'Finland',
-  baseline: 69,
-  current: 81
-}, {
-  name: 'France',
-  baseline: 70,
-  current: 83
-}, {
-  name: 'Greece',
-  baseline: 68,
-  current: 81
+  name: 'Thames River',
+  low: 70,
+  high: 83
 }];
 
 Highcharts.chart('container', {
@@ -88,8 +84,8 @@ Highcharts.chart('container', {
         this.customCircle = this.renderer.g('customCircle').add()
 
         data.forEach(el => {
-          if (el.target) {
-            let distX = this.yAxis[0].toPixels(el.target),
+          if (el.mid) {
+            let distX = this.yAxis[0].toPixels(el.mid),
             distY = this.xAxis[0].toPixels(el.index) 
 						
             ren.circle(distX, distY, 3).attr({
