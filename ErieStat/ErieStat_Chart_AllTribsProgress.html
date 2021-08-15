@@ -17,6 +17,26 @@
     <script src="../js/export-csv_glc.js"></script>
     <script src="../js/BlueAccounting.js"></script>
     <link rel="stylesheet" href="../css/BA_Style.css">
+
+    <style>
+		.size {
+			font-size: 25px;
+		}
+
+		.startDot {
+		  color: #FFFFFF;
+
+		}
+
+		.nowDot {
+		  color: #2C2C2C;
+		}
+
+		.target2025Line {
+		  color: #0074B2;
+		}
+	</style>
+	
 </head>
 <body>
     <div id="container" style="margin-right: 20px">
@@ -113,7 +133,7 @@ Highcharts.chart('container', {
   subtitle: {
     useHTML: true,
     verticalAlign: 'bottom',
-    text: '<span class="blueDot size">&bull;</span> 0-17 year-olds<br/><span class="redDot size" >&bull;</span> 66 year-old or more<br/><span class="greenDot size" >&bull;</span> Total'
+    text: '<span class="startDot size">&bull;</span> Annual TP load in baseline year     <span class="nowDot size" >&bull;</span> Current load (5-year average, 2016-2020)<br/><span class="targetLine2025 size" >&vert;</span> 2025 Target'
     },
   xAxis: {
     type: 'category'
