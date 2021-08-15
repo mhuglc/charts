@@ -37,7 +37,7 @@
 		}
 	    
 		.greenDot {
-		  color: #D91F26;
+		  color: #68B044;
 		}
 
 	
@@ -62,7 +62,7 @@ var data = [{
   low: 192.6,
   high: 261.7,
   mid: 157,
-  lowColor: 'EEC21A'
+  lowColor: '#EEC21A'
 }, {
   name: 'Maumee River',
   low: 2687.1,
@@ -146,7 +146,7 @@ Highcharts.chart('container', {
   subtitle: {
     useHTML: true,
     verticalAlign: 'bottom',
-    text: '<span class="startDot size">&bull;</span> Annual TP load in baseline year     <span class="greenDot size" >&bull;</span> Progress on track or better     <span class="yellowDot size" >&bull;</span> Slower progress     <span class="redDot size" >&bull;</span> Negative progress<br/><span class="targetLine2025 size" >&vert;</span> 2025 Target'
+    text: '<span class="startDot size">&bull;</span> Annual TP load in baseline year</ br>Current TP load (5-year average, 2016-2020):<span class="greenDot size" >&bull;</span> Progress on track or better     <span class="yellowDot size" >&bull;</span> Slower progress     <span class="redDot size" >&bull;</span> Negative progress     <span class="blackDot size" >&bull;</span> Target not established<br/><span class="targetLine2025 size" style="color:0074B2;" >&vert;</span> 2025 Target'
     },
   xAxis: {
     type: 'category'
@@ -154,7 +154,7 @@ Highcharts.chart('container', {
   series: [{
     name: 'Life expectancy change',
     data: data,
-    lowColor: "green",
+    lowColor: "#68B044",
     marker: {
 	fillColor: "#a4a4a4"
     }
