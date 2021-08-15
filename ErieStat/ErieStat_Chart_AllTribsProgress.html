@@ -79,6 +79,31 @@ Highcharts.chart("chart", {
         type: "dumbbell",
         inverted: true,
         events: {
+          render: function() {
+            let ren = this.renderer,
+              data = this.series[0].data
+
+            if (this.customCircle) {
+              this.customCircle.destroy()
+              this.customCircle = undefined
+            }
+            this.customCircle = this.renderer.g('customCircle').add()
+
+            data.forEach(el => {
+              if (el.mid) {
+                let distX = this.yAxis[0].toPixels(el.mid),
+                distY = this.xAxis[0].toPixels(el.index) 
+
+                ren.circle(distX, distY, 3).attr({
+                  fill: 'red',
+                  stroke: 'red',
+                  'stroke-width': 2
+                }).add(this.customCircle);
+              }
+            })
+          }
+        }
+        events: {
             load: function () {
                 var logoX = 15;
                 var size = this.plotBox.y;
