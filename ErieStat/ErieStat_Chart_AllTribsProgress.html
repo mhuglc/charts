@@ -45,28 +45,33 @@ var data = [{
   mid: 215
 }, {
   name: 'Sandusky River',
-  low: 70,
-  high: 81
+  low: 696.3,
+  high: 1101,
+  mid: 660
 }, {
   name: 'Huron River',
-  low: 70,
-  high: 79
+  low: 242.8,
+  high: 204.9,
+  mid: 123
 }, {
   name: 'Vermilion River',
-  low: 72,
-  high: 81
+  low: 73.6,
+  high: 202.4,
+  mid: 121
 }, {
   name: 'Cuyahoga River',
-  low: 68,
-  high: 78
+  low: 302.1,
+  high: 451.7,
+  mid:271
 }, {
   name: 'Grand River',
-  low: 69,
-  high: 81
+  low: 222,
+  high: 165.2,
+  mid: 99
 }, {
   name: 'Thames River',
-  low: 70,
-  high: 83
+  low: 476.1,
+  high: 196.2
 }];
 
 Highcharts.chart('container', {
@@ -81,7 +86,7 @@ Highcharts.chart('container', {
         data.forEach(el => {
           if (el.mid) {
             let distX = this.yAxis[0].toPixels(el.mid),
-            distY = this.xAxis[0].toPixels(el.index)+8 
+            distY = this.xAxis[0].toPixels(el.index)+4 
 						
             ren.text('|', distX, distY, 3).attr({
 		    rotation: 0
