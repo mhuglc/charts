@@ -24,7 +24,7 @@
 		}
 
 		.startDot {
-		  color: #FFFFFF;
+		  color: #a4a4a4;
 
 		}
 
@@ -140,7 +140,11 @@ Highcharts.chart('container', {
   },
   series: [{
     name: 'Life expectancy change',
-    data: data
+    data: data,
+    lowColor: "#a4a4a4",
+    marker: {
+	fillColor: "#2c2c2c"
+    }
   }]
 
 });
