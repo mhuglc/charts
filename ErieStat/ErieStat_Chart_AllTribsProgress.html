@@ -52,7 +52,8 @@ var data = [{
   name: 'River Raisin',
   low: 192.6,
   high: 261.7,
-  mid: 157
+  mid: 157,
+  lowColor: 'yellow'
 }, {
   name: 'Maumee River',
   low: 2687.1,
@@ -73,11 +74,7 @@ var data = [{
   low: 242.8,
   high: 204.9,
   mid: 123,
-  marker: {
-      fillColor: 'white',
-      lineWidth: 2,
-      lineColor: 'red',
-  }
+  lowColor: 'red',
 }, {
   name: 'Vermilion River',
   low: 73.6,
@@ -92,11 +89,13 @@ var data = [{
   name: 'Grand River',
   low: 222,
   high: 165.2,
-  mid: 99
+  mid: 99,
+  lowColor: 'red'
 }, {
   name: 'Thames River',
   low: 476.1,
-  high: 196.2
+  high: 196.2,
+  lowColor: 'black'
 }];
 
 Highcharts.chart('container', {
@@ -146,7 +145,7 @@ Highcharts.chart('container', {
   series: [{
     name: 'Life expectancy change',
     data: data,
-    lowColor: "#2c2c2c",
+    lowColor: "green",
     marker: {
 	fillColor: "#a4a4a4"
     }
