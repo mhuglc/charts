@@ -28,10 +28,19 @@
 
 		}
 
-		.nowDot {
-		  color: #2C2C2C;
+		.redDot {
+		  color: #D91F26;
 		}
 
+		.yellowDot {
+		  color: #EEC21A;
+		}
+	    
+		.greenDot {
+		  color: #D91F26;
+		}
+
+	
 		.target2025Line {
 		  color: #0074B2;
 		}
@@ -53,7 +62,7 @@ var data = [{
   low: 192.6,
   high: 261.7,
   mid: 157,
-  lowColor: 'yellow'
+  lowColor: 'EEC21A'
 }, {
   name: 'Maumee River',
   low: 2687.1,
@@ -74,7 +83,7 @@ var data = [{
   low: 242.8,
   high: 204.9,
   mid: 123,
-  lowColor: 'red',
+  lowColor: '#D91F26',
 }, {
   name: 'Vermilion River',
   low: 73.6,
@@ -90,7 +99,7 @@ var data = [{
   low: 222,
   high: 165.2,
   mid: 99,
-  lowColor: 'red'
+  lowColor: '#D91F26'
 }, {
   name: 'Thames River',
   low: 476.1,
@@ -137,7 +146,7 @@ Highcharts.chart('container', {
   subtitle: {
     useHTML: true,
     verticalAlign: 'bottom',
-    text: '<span class="startDot size">&bull;</span> Annual TP load in baseline year     <span class="nowDot size" >&bull;</span> Current load (5-year average, 2016-2020)<br/><span class="targetLine2025 size" >&vert;</span> 2025 Target'
+    text: '<span class="startDot size">&bull;</span> Annual TP load in baseline year     <span class="greenDot size" >&bull;</span> Progress on track or better     <span class="yellowDot size" >&bull;</span> Slower progress     <span class="redDot size" >&bull;</span> Negative progress<br/><span class="targetLine2025 size" >&vert;</span> 2025 Target'
     },
   xAxis: {
     type: 'category'
