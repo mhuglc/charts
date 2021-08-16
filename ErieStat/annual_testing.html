@@ -219,8 +219,8 @@
         data = d;
     }).done(function () {
         ES.init(data);
-        ES.buildNarratives(initWatershed + ' River');
-        loadChart("Total Loading", initWatershed + " River");
+        ES.buildNarratives(ES.watershedNames[initWatershed]);
+        loadChart("Total Loading", ES.watershedNames[initWatershed]);
         renderWatershed(initWatershed);
     });
 
