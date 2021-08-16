@@ -4,7 +4,7 @@ body{
     padding: 0;
 }
 #container {
-   height: 80%;
+   height: 70%;
 
 }
 #map { position: absolute; top:0; bottom:0; right:50%; left:0;}
