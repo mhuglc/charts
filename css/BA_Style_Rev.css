@@ -4,13 +4,14 @@ body{
     padding: 0;
 }
 #container {
+   height: 80%;
+
 }
 #map { position: absolute; top:0; bottom:0; right:50%; left:0;}
 #right-panel {
     margin-left: 50%;
     padding-left: 6px;
     margin-right: 10px;
-    position: absolute; top:0; bottom:0; right:0; left:50%;
 }
 #intro{
     /*font-style: italic;*/
