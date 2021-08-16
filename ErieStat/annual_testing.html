@@ -219,6 +219,7 @@
         data = d;
     }).done(function () {
         ES.init(data);
+	console.log(ES.watershedNames[initWatershed]);
         ES.buildNarratives(ES.watershedNames[initWatershed]);
         loadChart("Total Loading", ES.watershedNames[initWatershed]);
         renderWatershed(initWatershed);
