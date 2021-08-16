@@ -8,6 +8,9 @@ body{
     margin-left: 50%;
     padding-left: 6px;
     margin-right: 10px;
+    fullscreen {background-color: rgba(255,255,255,0);
+    -webkit-full-screen {background-color: rgba(255,255,255,0);
+    -moz-full-screen {background-color: rgba(255,255,255,0);
 }
 #intro{
     /*font-style: italic;*/
