@@ -52,7 +52,7 @@
 	
 </head>
 <body>
-    <div id="container" style="margin-right: 20px height: 600px">
+    <div id="container" style="margin-right: 20px">
     </div>
 
 <script>
@@ -114,6 +114,7 @@ var data = [{
 Highcharts.chart('container', {
   chart: {
     type: 'dumbbell',
+    height: 600,
     inverted: true,
     events: {
       render: function() {
