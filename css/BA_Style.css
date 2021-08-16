@@ -2,6 +2,7 @@ body{
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #FFFFFF;
 }
 *:fullscreen, *:-webkit-full-screen, *:-moz-full-screen {
     background-color: rgba(255,255,255,0);
