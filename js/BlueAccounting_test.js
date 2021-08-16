@@ -99,15 +99,9 @@ function BlueAccounting(){
                         }
                         var img_width = (this.chartWidth - 350)/2 - logoX;
                         var img_height = size;
-                        if(img_width >= img_height*4){
-                            // wide logo. local resource
-                            this.renderer.image("https://c1.staticflickr.com/1/826/26966705327_f80fcd7af1_o.png", logoX, 0, size * 4, size ).add();
-                            // ErieStat logo. Change factor to 3
-                            // this.renderer.image("https://c1.staticflickr.com/1/956/27966542108_a46fd4fa96_o.png", logoX, 0, size*3 , size).add();
-                        }else{
+
                             // cube logo
-                            this.renderer.image("https://c1.staticflickr.com/1/868/40969378165_8bd2c065b9_o.png", logoX, 0, size, size).add();
-                        }
+                        this.renderer.image("https://c1.staticflickr.com/1/868/40969378165_8bd2c065b9_o.png", logoX, 0, size, size).add();
                         // var w = this.chartWidth - this.title.alignAttr.x;
                         // Blue Accounting Cube logo
                         // this.renderer.image("https://c1.staticflickr.com/1/868/40969378165_8bd2c065b9_o.png", logoX, 0, size, size).add();
@@ -223,15 +217,8 @@ function BlueAccounting(){
                         }
                         var img_width = (this.chartWidth - 350)/2 - logoX;
                         // var img_height = size;
-                        if(img_width >= size * 4){
-                            // wide logo
-                            this.renderer.image("https://c1.staticflickr.com/1/826/26966705327_f80fcd7af1_o.png", logoX, 0, size * 4, size ).add();
-                            // ErieStat logo. Change factor to 3
-                            // this.renderer.image("https://c1.staticflickr.com/1/956/27966542108_a46fd4fa96_o.png", logoX, 0, size*3 , size).add();
-                        }else{
                             // cube logo
-                            this.renderer.image("https://c1.staticflickr.com/1/868/40969378165_8bd2c065b9_o.png", logoX, 0, size, size).add();
-                        }
+                        this.renderer.image("https://c1.staticflickr.com/1/868/40969378165_8bd2c065b9_o.png", logoX, 0, size, size).add();
                         // var w = this.chartWidth - this.title.alignAttr.x;
                         // Blue Accounting Cube logo
                         // this.renderer.image("https://c1.staticflickr.com/1/868/40969378165_8bd2c065b9_o.png", logoX, 0, size, size).add();
