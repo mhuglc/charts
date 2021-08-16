@@ -3,14 +3,15 @@ body{
     margin: 0;
     padding: 0;
 }
+*:fullscreen, *:-webkit-full-screen, *:-moz-full-screen {
+    background-color: rgba(255,255,255,0);
+}
+
 #map { position: absolute; top:0; bottom:0; right:50%; left:0;}
 #right-panel {
     margin-left: 50%;
     padding-left: 6px;
     margin-right: 10px;
-    fullscreen {background-color: rgba(255,255,255,0);
-    -webkit-full-screen {background-color: rgba(255,255,255,0);
-    -moz-full-screen {background-color: rgba(255,255,255,0);
 }
 #intro{
     /*font-style: italic;*/
