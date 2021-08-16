@@ -124,7 +124,7 @@ Highcharts.chart('container', {
 	},
     inverted: true,
     events: {
-      render: function() {
+      load: function() {
         let ren = this.renderer,
           data = this.series[0].data
 
