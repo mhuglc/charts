@@ -178,6 +178,10 @@ li {
     margin-left: -3px;
     top: 0;
 }
+.hl {
+    border-top: 6px solid #1b75ba;
+    width: 100%;
+}
 .highcharts-root text{
     /*font-family: Lato, sans-serif;*/
     font-family: "Montserrat", sans-serif;
