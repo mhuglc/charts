@@ -289,7 +289,7 @@
 					'Chart displays the percent decrease in annual total phosphorus loading for the selected watershed for the years 2008 to 2019, relative to the baseline year of 2008 established by the binational Domestic Action Plans for Lake Erie. A target line on the chart marks the percent decrease target for the watershed.',
 					ES.xAxis_start, ES.targets[name][metric2.name], 
 					'<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data is provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
-					(window.innerHeight*0.75), null, null
+					(window.innerHeight - $("#narrative-section").height() - $("#selectors").height())*0.9, null, null
 				);
 			}
 			else {
