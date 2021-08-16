@@ -120,7 +120,11 @@
     var serviceURL = "https://services7.arcgis.com/Tk0IbKIKhaoYn5sa/arcgis/rest/services/ErieStat_AnnualTP_Map_Nov2020_WFL1/FeatureServer";
     var BA = new BlueAccounting();
     var ES = new ErieStat();
-    var initWatershed = 'Maumee';
+	var searchParams = new URLSearchParams(window.location.search);
+	if (searchParams.has("init") == true):
+		var initWatershed = searchParams.get("init")
+	}else{var initWatershed = 'Maumee'
+	};
     var metric1 = ES.metrics.TP_L;
     var metric2 = ES.metrics.AnnPercentReduction;
     var metric3 = ES.metrics.AnnPercentReduction5Y;
