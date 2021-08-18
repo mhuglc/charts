@@ -160,7 +160,7 @@ Highcharts.chart('container', {
     useHTML: true,
     formatter: function() {
       debugger;
-      return '<b>' + this.points[0].point.name + '</b> <br/> Baseline (2008) TP load: ' + this.points[0].point.high + ' MTA' + '<br/>Current 5-year average load: ' + this.points[0].point.low + ' MTA' + '<br/>Target load: ' + this.points[0].point.mid + ' MTA';
+      return '<b>' + this.points[0].point.name + '</b> <br/> Baseline (2008) TP load: ' + this.points[0].point.high + ' MTA' + '<br/>Target load: ' + this.points[0].point.mid + ' MTA (40% reduction)'  + '<br/>Current 5-year average load: ' + this.points[0].point.low + ' MTA (' + Math.round((this.points[0].point.high - this.points[0].point.low)/this.points[0].point.high * 100[0]) + ' % decrease';
     }
   },
 	
