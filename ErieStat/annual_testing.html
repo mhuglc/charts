@@ -171,7 +171,7 @@
             fillColor: "#FFC461",
             fillOpacity: 0
         }
-    }).bindTooltip("test").addTo(map);
+    }).addTo(map);
 	
     var watersheds = L.esri.featureLayer({
         url: serviceURL + "/0",
@@ -182,7 +182,7 @@
             color: "#80735D",
             fill: false,
         }
-    }).addTo(map);
+    }).bindTooltip("test").addTo(map);
 
     // var labels = {};
 
