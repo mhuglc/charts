@@ -171,8 +171,8 @@
             fillColor: "#FFC461",
             fillOpacity: 0
         }
-    }).addTo(map);
-
+    }).bindTooltip("test").addTo(map);
+	
     var watersheds = L.esri.featureLayer({
         url: serviceURL + "/0",
         opacity: 0.7,
