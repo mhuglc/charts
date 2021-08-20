@@ -139,7 +139,10 @@
       "Satellite": sat
     };
   
-    var map = L.map("map", {layers: [gray1]}).setView([42.1, -82.0], 7);
+    var map = L.map("map", {
+	    scrollWheelZoom: false
+	    layers: [gray1]
+    }).setView([42.1, -82.0], 7);
     
     L.control.layers(baseMaps).addTo(map);
     
