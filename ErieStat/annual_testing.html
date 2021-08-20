@@ -109,7 +109,7 @@
 
 <div id="wrapper">
 
-<span class="fullscreen_button material-icons open" id='fullToggle' onclick="toggleMaker()">&#xe5d0</span>
+<span class="fullscreen_button material-icons-round" onclick="toggleMaker()" id="fullToggle">fullscreen_exit</span>
 
 </div>
 
@@ -341,11 +341,11 @@
 	
     function toggleMaker() {
 		var toggleElement = document.getElementById("fullToggle");
-		console.log(toggleElement);
-		if(toggleElement.innerHTML === &#xe5d0) {
-			toggleElement.innerHTML = &#xe5d1;
+		console.log(toggleElement.innerHTML);
+		if(toggleElement.innerHTML === 'fullscreen') {
+			toggleElement.innerHTML = 'fullscreen_exit';
 		} else {
-			toggleElement.innerHTML = &#xe5d0;
+			toggleElement.innerHTML = 'fullscreen';
 		}
 	}
 </script>
