@@ -49,11 +49,6 @@
     font-size: 11px;
     opacity: 0.5;
   }
-	
-  .material-icons-round {
-    color: #828282;
-    font-size: 48px;  /* Preferred icon size */
-  }
 
   .label div {
     position: relative;
@@ -109,7 +104,7 @@
 
 <div id="wrapper">
 
-<span class="fullscreen_button material-icons-round" onclick="toggleMaker()" id="fullToggle" title="Toggle fullscreen">&#xe5d0</span>
+<span class="fullscreen_button material-icons">&#xf1ce</span>
 
 </div>
 
@@ -145,7 +140,7 @@
     };
   
     var map = L.map("map", {
-	    scrollWheelZoom: false,
+	    scrollWheelZoom: false
 	    layers: [gray1]
     }).setView([42.1, -82.0], 7);
     
@@ -177,7 +172,7 @@
             fillOpacity: 0
         }
     }).addTo(map);
-	
+
     var watersheds = L.esri.featureLayer({
         url: serviceURL + "/0",
         opacity: 0.7,
@@ -332,22 +327,12 @@
 
     // Enable fullscreen
     $(document).ready(function(){
-		$(".fullscreen_button").on("click", function() {
-			document.fullScreenElement && null !== document.fullScreenElement || !document.mozFullScreen && !document.webkitIsFullScreen ? document.documentElement.requestFullScreen ? document.documentElement.requestFullScreen() : document.documentElement.mozRequestFullScreen ? document.documentElement.mozRequestFullScreen() : document.documentElement.webkitRequestFullScreen && document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT) : document.cancelFullScreen ? document.cancelFullScreen() : document.mozCancelFullScreen ? document.mozCancelFullScreen() : document.webkitCancelFullScreen && document.webkitCancelFullScreen();
-			document.getElementById('right-panel').contentDocument.location.reload(true);
-		});
+	$(".fullscreen_button").on("click", function() {
+		document.fullScreenElement && null !== document.fullScreenElement || !document.mozFullScreen && !document.webkitIsFullScreen ? document.documentElement.requestFullScreen ? document.documentElement.requestFullScreen() : document.documentElement.mozRequestFullScreen ? document.documentElement.mozRequestFullScreen() : document.documentElement.webkitRequestFullScreen && document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT) : document.cancelFullScreen ? document.cancelFullScreen() : document.mozCancelFullScreen ? document.mozCancelFullScreen() : document.webkitCancelFullScreen && document.webkitCancelFullScreen();
+		document.getElementById('right-panel').contentDocument.location.reload(true);
+	});
 
     });
-	
-    function toggleMaker() {
-		var toggleElement = document.getElementById("fullToggle");
-		console.log(toggleElement.innerHTML);
-		if(toggleElement.innerHTML === '&#xe5d0') {
-			toggleElement.innerHTML = '&#xe5d1';
-		} else {
-			toggleElement.innerHTML = '&#xe5d0';
-		}
-	}
 </script>
 	
 </body>
