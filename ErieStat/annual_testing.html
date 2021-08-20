@@ -104,7 +104,7 @@
 
 <div id="wrapper">
 
-<span class="fullscreen_button material-icons">&#xf1ce</span>
+<span class="fullscreen_button material-icons" onclick="toggleMaker" id="fullToggle">&#xf1ce</span>
 
 </div>
 
@@ -140,7 +140,7 @@
     };
   
     var map = L.map("map", {
-	    scrollWheelZoom: false
+	    scrollWheelZoom: false,
 	    layers: [gray1]
     }).setView([42.1, -82.0], 7);
     
@@ -333,6 +333,17 @@
 	});
 
     });
+	
+	function toggleMaker() {
+		var toggleElement = document.getElementById("fullToggle");
+		console.log(toggleElement.innerHTML);
+		if(toggleElement.innerHTML === '&#xf1ce') {
+			toggleElement.innerHTML = '&#xe5d1';
+		} else {
+			toggleElement.innerHTML = '&#xf1ce';
+		}
+	}
+
 </script>
 	
 </body>
