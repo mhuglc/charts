@@ -109,7 +109,7 @@
 
 <div id="wrapper">
 
-<span class="material-icons-round" onclick="toggleMaker()" id="fullToggle">fullscreen</span>
+<span class="fullscreen_button material-icons-round" onclick="toggleMaker()" id="fullToggle">e5d0</span>
 
 </div>
 
@@ -332,7 +332,7 @@
 
     // Enable fullscreen
     $(document).ready(function(){
-		$(".fullToggle").on("click", function() {
+		$(".fullscreen_button").on("click", function() {
 			document.fullScreenElement && null !== document.fullScreenElement || !document.mozFullScreen && !document.webkitIsFullScreen ? document.documentElement.requestFullScreen ? document.documentElement.requestFullScreen() : document.documentElement.mozRequestFullScreen ? document.documentElement.mozRequestFullScreen() : document.documentElement.webkitRequestFullScreen && document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT) : document.cancelFullScreen ? document.cancelFullScreen() : document.mozCancelFullScreen ? document.mozCancelFullScreen() : document.webkitCancelFullScreen && document.webkitCancelFullScreen();
 			document.getElementById('right-panel').contentDocument.location.reload(true);
 		});
@@ -342,10 +342,10 @@
     function toggleMaker() {
 		var toggleElement = document.getElementById("fullToggle");
 		console.log(toggleElement.innerHTML);
-		if(toggleElement.innerHTML === 'fullscreen') {
-			toggleElement.innerHTML = 'fullscreen_exit';
+		if(toggleElement.innerHTML === 'e5d0') {
+			toggleElement.innerHTML = 'e5d1';
 		} else {
-			toggleElement.innerHTML = 'fullscreen';
+			toggleElement.innerHTML = 'e5d0';
 		}
 	}
 </script>
