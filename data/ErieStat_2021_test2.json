@@ -1,0 +1,7121 @@
+[
+    {
+        "River": "Cattaraugus Creek",
+        "Year": 2008,
+        "Fraction": "Annual TP Loading",
+        "Value": null,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cattaraugus Creek",
+        "Year": 2009,
+        "Fraction": "Annual TP Loading",
+        "Value": 44.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cattaraugus Creek",
+        "Year": 2010,
+        "Fraction": "Annual TP Loading",
+        "Value": 36.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cattaraugus Creek",
+        "Year": 2011,
+        "Fraction": "Annual TP Loading",
+        "Value": 476.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cattaraugus Creek",
+        "Year": 2012,
+        "Fraction": "Annual TP Loading",
+        "Value": 559.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cattaraugus Creek",
+        "Year": 2013,
+        "Fraction": "Annual TP Loading",
+        "Value": 254.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cattaraugus Creek",
+        "Year": 2014,
+        "Fraction": "Annual TP Loading",
+        "Value": 371.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cattaraugus Creek",
+        "Year": 2015,
+        "Fraction": "Annual TP Loading",
+        "Value": 20.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cattaraugus Creek",
+        "Year": 2016,
+        "Fraction": "Annual TP Loading",
+        "Value": 274.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cattaraugus Creek",
+        "Year": 2009,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.039287586,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cattaraugus Creek",
+        "Year": 2010,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.05177608,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cattaraugus Creek",
+        "Year": 2011,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.324819146,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cattaraugus Creek",
+        "Year": 2012,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.675095901,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cattaraugus Creek",
+        "Year": 2013,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.299907433,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2014,
+        "Fraction": "Annual TP Loading",
+        "Value": 126.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2015,
+        "Fraction": "Annual TP Loading",
+        "Value": 96.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2016,
+        "Fraction": "Annual TP Loading",
+        "Value": 129.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2008,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2009,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2010,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2011,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2012,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2013,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2014,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2015,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2016,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2017,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2018,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2019,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2020,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2008,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2009,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2010,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2011,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2012,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2013,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2014,
+        "Fraction": "Spring TP Loading",
+        "Value": 48.7,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2015,
+        "Fraction": "Spring TP Loading",
+        "Value": 88.8,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2016,
+        "Fraction": "Spring TP Loading",
+        "Value": 52.7,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2017,
+        "Fraction": "Spring TP Loading",
+        "Value": 92.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2018,
+        "Fraction": "Spring TP Loading",
+        "Value": 54.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2019,
+        "Fraction": "Spring TP Loading",
+        "Value": 119.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2020,
+        "Fraction": "Spring TP Loading",
+        "Value": 75.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2008,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2009,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2010,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2011,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2012,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2013,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2014,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2015,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2016,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2017,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2018,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2019,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2020,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2008,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2009,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2010,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2011,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2012,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2013,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2014,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2015,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2016,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2017,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2018,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2019,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2020,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2008,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2009,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2010,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2011,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2012,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2013,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2014,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2015,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2016,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2017,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2018,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2019,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cedar-Toussaint",
+        "Year": 2020,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Chagrin River",
+        "Year": 2014,
+        "Fraction": "Annual TP Loading",
+        "Value": 14.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Chagrin River",
+        "Year": 2015,
+        "Fraction": "Annual TP Loading",
+        "Value": 23.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2008,
+        "Fraction": "Spring Discharge",
+        "Value": 560.23,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2009,
+        "Fraction": "Spring Discharge",
+        "Value": 371.3,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2010,
+        "Fraction": "Spring Discharge",
+        "Value": 374.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2011,
+        "Fraction": "Spring Discharge",
+        "Value": 856.44,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2012,
+        "Fraction": "Spring Discharge",
+        "Value": 273.87,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2013,
+        "Fraction": "Spring Discharge",
+        "Value": 432.34,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2014,
+        "Fraction": "Spring Discharge",
+        "Value": 556.99,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2015,
+        "Fraction": "Spring Discharge",
+        "Value": 631.89,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2016,
+        "Fraction": "Spring Discharge",
+        "Value": 359.77,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2008,
+        "Fraction": "Spring TP Loading",
+        "Value": 138.9,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2009,
+        "Fraction": "Spring TP Loading",
+        "Value": 154.1,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2010,
+        "Fraction": "Spring TP Loading",
+        "Value": 98.2,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2011,
+        "Fraction": "Spring TP Loading",
+        "Value": 190.5,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2012,
+        "Fraction": "Spring TP Loading",
+        "Value": 51.8,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2013,
+        "Fraction": "Spring TP Loading",
+        "Value": 111.4,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2014,
+        "Fraction": "Spring TP Loading",
+        "Value": 170.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2015,
+        "Fraction": "Spring TP Loading",
+        "Value": 145.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2016,
+        "Fraction": "Spring TP Loading",
+        "Value": 48.4,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2008,
+        "Fraction": "Spring SRP Loading",
+        "Value": 14.3,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2009,
+        "Fraction": "Spring SRP Loading",
+        "Value": 11.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2010,
+        "Fraction": "Spring SRP Loading",
+        "Value": 13.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2011,
+        "Fraction": "Spring SRP Loading",
+        "Value": 12.7,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2012,
+        "Fraction": "Spring SRP Loading",
+        "Value": 7.6,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2013,
+        "Fraction": "Spring SRP Loading",
+        "Value": 10.6,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2014,
+        "Fraction": "Spring SRP Loading",
+        "Value": 7.5,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2015,
+        "Fraction": "Spring SRP Loading",
+        "Value": 9.7,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2016,
+        "Fraction": "Spring SRP Loading",
+        "Value": 8.7,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2008,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.248,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2009,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.415,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2010,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.263,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2011,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.222,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2012,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.189,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2013,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.258,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2014,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.305,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2015,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.229,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2016,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.135,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2008,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.026,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2009,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.03,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2010,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.035,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2011,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.015,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2012,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.028,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2013,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.024,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2014,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.014,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2015,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.015,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2016,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.024,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2008,
+        "Fraction": "Annual TP Loading",
+        "Value": 452.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2009,
+        "Fraction": "Annual TP Loading",
+        "Value": 398.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2010,
+        "Fraction": "Annual TP Loading",
+        "Value": 269.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2011,
+        "Fraction": "Annual TP Loading",
+        "Value": 468.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2012,
+        "Fraction": "Annual TP Loading",
+        "Value": 299.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2013,
+        "Fraction": "Annual TP Loading",
+        "Value": 389.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2014,
+        "Fraction": "Annual TP Loading",
+        "Value": 350.0,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2015,
+        "Fraction": "Annual TP Loading",
+        "Value": 304.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2016,
+        "Fraction": "Annual TP Loading",
+        "Value": 213.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2017,
+        "Fraction": "Annual TP Loading",
+        "Value": 344.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2018,
+        "Fraction": "Annual TP Loading",
+        "Value": 307.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2019,
+        "Fraction": "Annual TP Loading",
+        "Value": 384.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2020,
+        "Fraction": "Annual TP Loading",
+        "Value": 263.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2008,
+        "Fraction": "Percent Reduction",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2009,
+        "Fraction": "Percent Reduction",
+        "Value": 11.9469,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2010,
+        "Fraction": "Percent Reduction",
+        "Value": 40.4867,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2011,
+        "Fraction": "Percent Reduction",
+        "Value": -3.5398,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2012,
+        "Fraction": "Percent Reduction",
+        "Value": 33.8495575221,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2013,
+        "Fraction": "Percent Reduction",
+        "Value": 13.9381,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2014,
+        "Fraction": "Percent Reduction",
+        "Value": 22.5664,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2015,
+        "Fraction": "Percent Reduction",
+        "Value": 32.7434,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2016,
+        "Fraction": "Percent Reduction",
+        "Value": 52.8761,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2017,
+        "Fraction": "Percent Reduction",
+        "Value": 23.8938,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2018,
+        "Fraction": "Percent Reduction",
+        "Value": 32.0796,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2019,
+        "Fraction": "Percent Reduction",
+        "Value": 15.0442,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2020,
+        "Fraction": "Percent Reduction",
+        "Value": 41.8142,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2008,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.301977222,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2009,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.357797964,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2010,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.299718739,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2011,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.267023455,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2012,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.216860636,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2013,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.30742119,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2008,
+        "Fraction": "Annual TP Loading",
+        "Value": 1261.0,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2009,
+        "Fraction": "Annual TP Loading",
+        "Value": 1242.0,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2010,
+        "Fraction": "Annual TP Loading",
+        "Value": 1241.0,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2011,
+        "Fraction": "Annual TP Loading",
+        "Value": 1216.0,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2012,
+        "Fraction": "Annual TP Loading",
+        "Value": 1014.0,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2013,
+        "Fraction": "Annual TP Loading",
+        "Value": 958.0,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2014,
+        "Fraction": "Annual TP Loading",
+        "Value": 625.0,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2015,
+        "Fraction": "Annual TP Loading",
+        "Value": 738.0,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2016,
+        "Fraction": "Annual TP Loading",
+        "Value": 699.0,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2017,
+        "Fraction": "Annual TP Loading",
+        "Value": 758.0,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2018,
+        "Fraction": "Annual TP Loading",
+        "Value": 869.0,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2019,
+        "Fraction": "Annual TP Loading",
+        "Value": 985.0,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2020,
+        "Fraction": "Annual TP Loading",
+        "Value": 912.0,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2008,
+        "Fraction": "Annual TP Loading",
+        "Value": 165.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2009,
+        "Fraction": "Annual TP Loading",
+        "Value": 66.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2010,
+        "Fraction": "Annual TP Loading",
+        "Value": 55.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2011,
+        "Fraction": "Annual TP Loading",
+        "Value": 108.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2012,
+        "Fraction": "Annual TP Loading",
+        "Value": 52.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2013,
+        "Fraction": "Annual TP Loading",
+        "Value": 54.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2014,
+        "Fraction": "Annual TP Loading",
+        "Value": 36.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2015,
+        "Fraction": "Annual TP Loading",
+        "Value": 65.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2016,
+        "Fraction": "Annual TP Loading",
+        "Value": 32.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2017,
+        "Fraction": "Annual TP Loading",
+        "Value": 132.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2018,
+        "Fraction": "Annual TP Loading",
+        "Value": 243.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2019,
+        "Fraction": "Annual TP Loading",
+        "Value": 481.0,
+        "Source": ""
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2020,
+        "Fraction": "Annual TP Loading",
+        "Value": 222.0,
+        "Source": ""
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2008,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.135839371,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2009,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.081662635,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2010,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.081968074,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2011,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.085383106,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2012,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.053293104,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2013,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.052083094,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-MI",
+        "Year": 2014,
+        "Fraction": "Annual TP Loading",
+        "Value": 94.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-MI",
+        "Year": 2015,
+        "Fraction": "Annual TP Loading",
+        "Value": 106.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-MI",
+        "Year": 2016,
+        "Fraction": "Annual TP Loading",
+        "Value": 77.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2008,
+        "Fraction": "Annual TP Loading",
+        "Value": 205.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2009,
+        "Fraction": "Annual TP Loading",
+        "Value": 32.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2010,
+        "Fraction": "Annual TP Loading",
+        "Value": 69.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2011,
+        "Fraction": "Annual TP Loading",
+        "Value": 70.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2012,
+        "Fraction": "Annual TP Loading",
+        "Value": 48.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2013,
+        "Fraction": "Annual TP Loading",
+        "Value": 157.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2014,
+        "Fraction": "Annual TP Loading",
+        "Value": 63.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2015,
+        "Fraction": "Annual TP Loading",
+        "Value": 20.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2016,
+        "Fraction": "Annual TP Loading",
+        "Value": 79.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2017,
+        "Fraction": "Annual TP Loading",
+        "Value": 157.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2018,
+        "Fraction": "Annual TP Loading",
+        "Value": 308.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2019,
+        "Fraction": "Annual TP Loading",
+        "Value": 378.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2020,
+        "Fraction": "Annual TP Loading",
+        "Value": 292.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2008,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.314785001,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2009,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.08196612,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2010,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.329266522,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2011,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.120277279,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2012,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.112806944,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2013,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.325223467,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2008,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2009,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2010,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2011,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2012,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2013,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2014,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2015,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2016,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2017,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2018,
+        "Fraction": "Spring Discharge",
+        "Value": 167.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2019,
+        "Fraction": "Spring Discharge",
+        "Value": 221.0,
+        "Source": ""
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2020,
+        "Fraction": "Spring Discharge",
+        "Value": 201.0,
+        "Source": ""
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2008,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2009,
+        "Fraction": "Spring TP Loading",
+        "Value": 10.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2010,
+        "Fraction": "Spring TP Loading",
+        "Value": 29.9,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2011,
+        "Fraction": "Spring TP Loading",
+        "Value": 20.8,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2012,
+        "Fraction": "Spring TP Loading",
+        "Value": 3.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2013,
+        "Fraction": "Spring TP Loading",
+        "Value": 37.4,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2014,
+        "Fraction": "Spring TP Loading",
+        "Value": 17.9,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2015,
+        "Fraction": "Spring TP Loading",
+        "Value": 10.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2016,
+        "Fraction": "Spring TP Loading",
+        "Value": 25.9,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2017,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2018,
+        "Fraction": "Spring TP Loading",
+        "Value": 63.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2019,
+        "Fraction": "Spring TP Loading",
+        "Value": 94.0,
+        "Source": ""
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2020,
+        "Fraction": "Spring TP Loading",
+        "Value": 135.0,
+        "Source": ""
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2008,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2009,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2010,
+        "Fraction": "Spring SRP Loading",
+        "Value": 7.6,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2011,
+        "Fraction": "Spring SRP Loading",
+        "Value": 14.3,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2012,
+        "Fraction": "Spring SRP Loading",
+        "Value": 1.1,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2013,
+        "Fraction": "Spring SRP Loading",
+        "Value": 10.3,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2014,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2015,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2016,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2017,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2018,
+        "Fraction": "Spring SRP Loading",
+        "Value": 7.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2019,
+        "Fraction": "Spring SRP Loading",
+        "Value": 9.0,
+        "Source": ""
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2020,
+        "Fraction": "Spring SRP Loading",
+        "Value": 8.0,
+        "Source": ""
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2008,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2009,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2010,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2011,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2012,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2013,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2014,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2015,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2016,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2017,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2018,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.377,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2019,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.424,
+        "Source": ""
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2020,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.672,
+        "Source": ""
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2008,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2009,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2010,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2011,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2012,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2013,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2014,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2015,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2016,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2017,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2018,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.043,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2019,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.041,
+        "Source": ""
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2020,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.037,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2008,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2009,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2010,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2011,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2012,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2013,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2014,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2015,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2016,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2008,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2009,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2010,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2011,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2012,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2013,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2014,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2015,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2016,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2008,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2009,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2010,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2011,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2012,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2013,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2014,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2015,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2016,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2008,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2009,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2010,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2011,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2012,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2013,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2014,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2015,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2016,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2008,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2009,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2010,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2011,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2012,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2013,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2014,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2015,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Leamington Tributaries",
+        "Year": 2016,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": ""
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2008,
+        "Fraction": "Spring Discharge",
+        "Value": 3756.45,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2009,
+        "Fraction": "Spring Discharge",
+        "Value": 3335.14,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2010,
+        "Fraction": "Spring Discharge",
+        "Value": 3612.8,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2011,
+        "Fraction": "Spring Discharge",
+        "Value": 5097.13,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2012,
+        "Fraction": "Spring Discharge",
+        "Value": 1038.78,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2013,
+        "Fraction": "Spring Discharge",
+        "Value": 3341.66,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2014,
+        "Fraction": "Spring Discharge",
+        "Value": 3474.71,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2015,
+        "Fraction": "Spring Discharge",
+        "Value": 5546.94,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2016,
+        "Fraction": "Spring Discharge",
+        "Value": 2490.47,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2017,
+        "Fraction": "Spring Discharge",
+        "Value": 4367.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2018,
+        "Fraction": "Spring Discharge",
+        "Value": 3019.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2019,
+        "Fraction": "Spring Discharge",
+        "Value": 4982.52,
+        "Source": ""
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2020,
+        "Fraction": "Spring Discharge",
+        "Value": 2815.0,
+        "Source": ""
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2008,
+        "Fraction": "Spring TP Loading",
+        "Value": 1414.1,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2009,
+        "Fraction": "Spring TP Loading",
+        "Value": 1369.7,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2010,
+        "Fraction": "Spring TP Loading",
+        "Value": 1307.4,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2011,
+        "Fraction": "Spring TP Loading",
+        "Value": 2317.99,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2012,
+        "Fraction": "Spring TP Loading",
+        "Value": 393.06,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2013,
+        "Fraction": "Spring TP Loading",
+        "Value": 1249.5,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2014,
+        "Fraction": "Spring TP Loading",
+        "Value": 1155.23,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2015,
+        "Fraction": "Spring TP Loading",
+        "Value": 2059.64,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2016,
+        "Fraction": "Spring TP Loading",
+        "Value": 755.29,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2017,
+        "Fraction": "Spring TP Loading",
+        "Value": 1905.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2018,
+        "Fraction": "Spring TP Loading",
+        "Value": 1079.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2019,
+        "Fraction": "Spring TP Loading",
+        "Value": 2041.97,
+        "Source": ""
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2020,
+        "Fraction": "Spring TP Loading",
+        "Value": 1405.0,
+        "Source": ""
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2008,
+        "Fraction": "Spring SRP Loading",
+        "Value": 302.25,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2009,
+        "Fraction": "Spring SRP Loading",
+        "Value": 211.18,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2010,
+        "Fraction": "Spring SRP Loading",
+        "Value": 323.79,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2011,
+        "Fraction": "Spring SRP Loading",
+        "Value": 430.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2012,
+        "Fraction": "Spring SRP Loading",
+        "Value": 63.75,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2013,
+        "Fraction": "Spring SRP Loading",
+        "Value": 288.91,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2014,
+        "Fraction": "Spring SRP Loading",
+        "Value": 306.48,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2015,
+        "Fraction": "Spring SRP Loading",
+        "Value": 609.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2016,
+        "Fraction": "Spring SRP Loading",
+        "Value": 143.98,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2017,
+        "Fraction": "Spring SRP Loading",
+        "Value": 399.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2018,
+        "Fraction": "Spring SRP Loading",
+        "Value": 217.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2019,
+        "Fraction": "Spring SRP Loading",
+        "Value": 345.45,
+        "Source": ""
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2020,
+        "Fraction": "Spring SRP Loading",
+        "Value": 215.0,
+        "Source": ""
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2008,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.376,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2009,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.411,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2010,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.362,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2011,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.455,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2012,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.378,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2013,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.374,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2014,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.332,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2015,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.371,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2016,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.303,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2017,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.44,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2018,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.36,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2019,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.41,
+        "Source": ""
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2020,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.499,
+        "Source": ""
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2008,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.08,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2009,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.063,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2010,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.09,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2011,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.084,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2012,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.061,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2013,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.086,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2014,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.088,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2015,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.11,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2016,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.058,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2017,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.091,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2018,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.072,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2019,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.069,
+        "Source": ""
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2020,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.076,
+        "Source": ""
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2008,
+        "Fraction": "Annual TP Loading",
+        "Value": 3812.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2009,
+        "Fraction": "Annual TP Loading",
+        "Value": 2329.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2010,
+        "Fraction": "Annual TP Loading",
+        "Value": 1679.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2011,
+        "Fraction": "Annual TP Loading",
+        "Value": 3007.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2012,
+        "Fraction": "Annual TP Loading",
+        "Value": 2411.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2013,
+        "Fraction": "Annual TP Loading",
+        "Value": 2287.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2014,
+        "Fraction": "Annual TP Loading",
+        "Value": 2213.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2015,
+        "Fraction": "Annual TP Loading",
+        "Value": 2467.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2016,
+        "Fraction": "Annual TP Loading",
+        "Value": 1309.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2017,
+        "Fraction": "Annual TP Loading",
+        "Value": 3138.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2018,
+        "Fraction": "Annual TP Loading",
+        "Value": 2437.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2019,
+        "Fraction": "Annual TP Loading",
+        "Value": 3888.0,
+        "Source": ""
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2020,
+        "Fraction": "Annual TP Loading",
+        "Value": 2664.0,
+        "Source": ""
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2008,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.456447108,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2009,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.439831621,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2010,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.346261584,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2011,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.452990225,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2012,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.388362502,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2013,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.435902298,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2008,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2009,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2010,
+        "Fraction": "Spring Discharge",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2011,
+        "Fraction": "Spring Discharge",
+        "Value": 415.75,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2012,
+        "Fraction": "Spring Discharge",
+        "Value": 94.36,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2013,
+        "Fraction": "Spring Discharge",
+        "Value": 218.64,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2014,
+        "Fraction": "Spring Discharge",
+        "Value": 186.73,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2015,
+        "Fraction": "Spring Discharge",
+        "Value": 388.79,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2016,
+        "Fraction": "Spring Discharge",
+        "Value": 193.6,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2017,
+        "Fraction": "Spring Discharge",
+        "Value": 292.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2018,
+        "Fraction": "Spring Discharge",
+        "Value": 189.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2019,
+        "Fraction": "Spring Discharge",
+        "Value": 387.0,
+        "Source": ""
+    },
+    {
+        "River": "Portage River",
+        "Year": 2020,
+        "Fraction": "Spring Discharge",
+        "Value": 181.0,
+        "Source": ""
+    },
+    {
+        "River": "Portage River",
+        "Year": 2008,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2009,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2010,
+        "Fraction": "Spring TP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2011,
+        "Fraction": "Spring TP Loading",
+        "Value": 171.4,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2012,
+        "Fraction": "Spring TP Loading",
+        "Value": 32.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2013,
+        "Fraction": "Spring TP Loading",
+        "Value": 71.9,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2014,
+        "Fraction": "Spring TP Loading",
+        "Value": 62.4,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2015,
+        "Fraction": "Spring TP Loading",
+        "Value": 111.4,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2016,
+        "Fraction": "Spring TP Loading",
+        "Value": 67.3,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2017,
+        "Fraction": "Spring TP Loading",
+        "Value": 115.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2018,
+        "Fraction": "Spring TP Loading",
+        "Value": 69.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2019,
+        "Fraction": "Spring TP Loading",
+        "Value": 147.0,
+        "Source": ""
+    },
+    {
+        "River": "Portage River",
+        "Year": 2020,
+        "Fraction": "Spring TP Loading",
+        "Value": 93.0,
+        "Source": ""
+    },
+    {
+        "River": "Portage River",
+        "Year": 2008,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2009,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2010,
+        "Fraction": "Spring SRP Loading",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2011,
+        "Fraction": "Spring SRP Loading",
+        "Value": 32.6,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2012,
+        "Fraction": "Spring SRP Loading",
+        "Value": 6.6,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2013,
+        "Fraction": "Spring SRP Loading",
+        "Value": 21.9,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2014,
+        "Fraction": "Spring SRP Loading",
+        "Value": 14.1,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2015,
+        "Fraction": "Spring SRP Loading",
+        "Value": 40.1,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2016,
+        "Fraction": "Spring SRP Loading",
+        "Value": 11.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2017,
+        "Fraction": "Spring SRP Loading",
+        "Value": 29.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2018,
+        "Fraction": "Spring SRP Loading",
+        "Value": 15.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2019,
+        "Fraction": "Spring SRP Loading",
+        "Value": 29.0,
+        "Source": ""
+    },
+    {
+        "River": "Portage River",
+        "Year": 2020,
+        "Fraction": "Spring SRP Loading",
+        "Value": 13.0,
+        "Source": ""
+    },
+    {
+        "River": "Portage River",
+        "Year": 2008,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2009,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2010,
+        "Fraction": "Spring TP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2011,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.412,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2012,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.339,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2013,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.329,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2014,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.334,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2015,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.287,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2016,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.348,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2017,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.4,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2018,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.36,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2019,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.38,
+        "Source": ""
+    },
+    {
+        "River": "Portage River",
+        "Year": 2020,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.514,
+        "Source": ""
+    },
+    {
+        "River": "Portage River",
+        "Year": 2008,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2009,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2010,
+        "Fraction": "Spring SRP FWMC",
+        "Value": null,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2011,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.078,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2012,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.07,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2013,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.1,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2014,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.076,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2015,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.103,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2016,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.057,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2017,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.101,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2018,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.081,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2019,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.076,
+        "Source": ""
+    },
+    {
+        "River": "Portage River",
+        "Year": 2020,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.07,
+        "Source": ""
+    },
+    {
+        "River": "Portage River",
+        "Year": 2008,
+        "Fraction": "Annual TP Loading",
+        "Value": 359.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2009,
+        "Fraction": "Annual TP Loading",
+        "Value": 255.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2010,
+        "Fraction": "Annual TP Loading",
+        "Value": 131.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2011,
+        "Fraction": "Annual TP Loading",
+        "Value": 544.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2012,
+        "Fraction": "Annual TP Loading",
+        "Value": 452.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2013,
+        "Fraction": "Annual TP Loading",
+        "Value": 305.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2014,
+        "Fraction": "Annual TP Loading",
+        "Value": 235.0,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2015,
+        "Fraction": "Annual TP Loading",
+        "Value": 178.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2016,
+        "Fraction": "Annual TP Loading",
+        "Value": 149.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2017,
+        "Fraction": "Annual TP Loading",
+        "Value": 230.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2018,
+        "Fraction": "Annual TP Loading",
+        "Value": 263.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2019,
+        "Fraction": "Annual TP Loading",
+        "Value": 379.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2020,
+        "Fraction": "Annual TP Loading",
+        "Value": 254.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2008,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.55414874,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2009,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.723349792,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2010,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.523589186,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2011,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.935957175,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2012,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.893687606,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2013,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.813314531,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2008,
+        "Fraction": "Spring Discharge",
+        "Value": 561.85,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2009,
+        "Fraction": "Spring Discharge",
+        "Value": 574.69,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2010,
+        "Fraction": "Spring Discharge",
+        "Value": 536.7,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2011,
+        "Fraction": "Spring Discharge",
+        "Value": 691.09,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2012,
+        "Fraction": "Spring Discharge",
+        "Value": 249.95,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2013,
+        "Fraction": "Spring Discharge",
+        "Value": 444.88,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2014,
+        "Fraction": "Spring Discharge",
+        "Value": 455.3,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2015,
+        "Fraction": "Spring Discharge",
+        "Value": 511.22,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2016,
+        "Fraction": "Spring Discharge",
+        "Value": 333.19,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2017,
+        "Fraction": "Spring Discharge",
+        "Value": 498.7,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2018,
+        "Fraction": "Spring Discharge",
+        "Value": 516.1,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2019,
+        "Fraction": "Spring Discharge",
+        "Value": 607.0,
+        "Source": ""
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2020,
+        "Fraction": "Spring Discharge",
+        "Value": 446.0,
+        "Source": ""
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2008,
+        "Fraction": "Spring TP Loading",
+        "Value": 83.5,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2009,
+        "Fraction": "Spring TP Loading",
+        "Value": 92.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2010,
+        "Fraction": "Spring TP Loading",
+        "Value": 68.2,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2011,
+        "Fraction": "Spring TP Loading",
+        "Value": 133.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2012,
+        "Fraction": "Spring TP Loading",
+        "Value": 27.1,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2013,
+        "Fraction": "Spring TP Loading",
+        "Value": 56.9,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2014,
+        "Fraction": "Spring TP Loading",
+        "Value": 58.8,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2015,
+        "Fraction": "Spring TP Loading",
+        "Value": 74.9,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2016,
+        "Fraction": "Spring TP Loading",
+        "Value": 40.2,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2017,
+        "Fraction": "Spring TP Loading",
+        "Value": 115.8,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2018,
+        "Fraction": "Spring TP Loading",
+        "Value": 88.8,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2019,
+        "Fraction": "Spring TP Loading",
+        "Value": 129.0,
+        "Source": ""
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2020,
+        "Fraction": "Spring TP Loading",
+        "Value": 85.0,
+        "Source": ""
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2008,
+        "Fraction": "Spring SRP Loading",
+        "Value": 19.6,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2009,
+        "Fraction": "Spring SRP Loading",
+        "Value": 16.7,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2010,
+        "Fraction": "Spring SRP Loading",
+        "Value": 16.7,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2011,
+        "Fraction": "Spring SRP Loading",
+        "Value": 29.4,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2012,
+        "Fraction": "Spring SRP Loading",
+        "Value": 6.4,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2013,
+        "Fraction": "Spring SRP Loading",
+        "Value": 14.3,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2014,
+        "Fraction": "Spring SRP Loading",
+        "Value": 17.8,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2015,
+        "Fraction": "Spring SRP Loading",
+        "Value": 24.1,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2016,
+        "Fraction": "Spring SRP Loading",
+        "Value": 9.1,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2017,
+        "Fraction": "Spring SRP Loading",
+        "Value": 20.9,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2018,
+        "Fraction": "Spring SRP Loading",
+        "Value": 18.9,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2019,
+        "Fraction": "Spring SRP Loading",
+        "Value": 25.0,
+        "Source": ""
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2020,
+        "Fraction": "Spring SRP Loading",
+        "Value": 19.0,
+        "Source": ""
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2008,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.149,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2009,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.16,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2010,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.127,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2011,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.192,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2012,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.108,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2013,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.128,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2014,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.129,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2015,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.146,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2016,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.121,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2017,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.23,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2018,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.17,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2019,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.213,
+        "Source": ""
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2020,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.19,
+        "Source": ""
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2008,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.035,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2009,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.029,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2010,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.031,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2011,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.043,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2012,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.025,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2013,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.032,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2014,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.039,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2015,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.047,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2016,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.027,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2017,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.042,
+        "Source": "Santina August 2018"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2018,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.037,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2019,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.04,
+        "Source": ""
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2019,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.042,
+        "Source": ""
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2008,
+        "Fraction": "Annual TP Loading",
+        "Value": 262.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2009,
+        "Fraction": "Annual TP Loading",
+        "Value": 172.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2010,
+        "Fraction": "Annual TP Loading",
+        "Value": 161.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2011,
+        "Fraction": "Annual TP Loading",
+        "Value": 185.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2012,
+        "Fraction": "Annual TP Loading",
+        "Value": 201.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2013,
+        "Fraction": "Annual TP Loading",
+        "Value": 88.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2014,
+        "Fraction": "Annual TP Loading",
+        "Value": 95.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2015,
+        "Fraction": "Annual TP Loading",
+        "Value": 105.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2016,
+        "Fraction": "Annual TP Loading",
+        "Value": 76.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2017,
+        "Fraction": "Annual TP Loading",
+        "Value": 219.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2018,
+        "Fraction": "Annual TP Loading",
+        "Value": 183.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2019,
+        "Fraction": "Annual TP Loading",
+        "Value": 243.0,
+        "Source": ""
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2020,
+        "Fraction": "Annual TP Loading",
+        "Value": 242.0,
+        "Source": ""
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2008,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.197845756,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2009,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.150076414,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2010,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.17753563,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2011,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.172402302,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2012,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.178978244,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2013,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.124600968,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2008,
+        "Fraction": "Spring Discharge",
+        "Value": 962.07,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2009,
+        "Fraction": "Spring Discharge",
+        "Value": 437.34,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2010,
+        "Fraction": "Spring Discharge",
+        "Value": 731.45,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2011,
+        "Fraction": "Spring Discharge",
+        "Value": 1293.68,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2012,
+        "Fraction": "Spring Discharge",
+        "Value": 270.61,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2013,
+        "Fraction": "Spring Discharge",
+        "Value": 871.69,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2014,
+        "Fraction": "Spring Discharge",
+        "Value": 650.95,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2015,
+        "Fraction": "Spring Discharge",
+        "Value": 911.14,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2016,
+        "Fraction": "Spring Discharge",
+        "Value": 494.83,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2017,
+        "Fraction": "Spring Discharge",
+        "Value": 781.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2018,
+        "Fraction": "Spring Discharge",
+        "Value": 574.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2019,
+        "Fraction": "Spring Discharge",
+        "Value": 903.0,
+        "Source": ""
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2020,
+        "Fraction": "Spring Discharge",
+        "Value": 550.0,
+        "Source": ""
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2008,
+        "Fraction": "Spring TP Loading",
+        "Value": 366.9,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2009,
+        "Fraction": "Spring TP Loading",
+        "Value": 201.6,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2010,
+        "Fraction": "Spring TP Loading",
+        "Value": 311.6,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2011,
+        "Fraction": "Spring TP Loading",
+        "Value": 700.8,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2012,
+        "Fraction": "Spring TP Loading",
+        "Value": 142.7,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2013,
+        "Fraction": "Spring TP Loading",
+        "Value": 364.4,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2014,
+        "Fraction": "Spring TP Loading",
+        "Value": 269.8,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2015,
+        "Fraction": "Spring TP Loading",
+        "Value": 328.9,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2016,
+        "Fraction": "Spring TP Loading",
+        "Value": 160.1,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2017,
+        "Fraction": "Spring TP Loading",
+        "Value": 350.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2018,
+        "Fraction": "Spring TP Loading",
+        "Value": 244.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2019,
+        "Fraction": "Spring TP Loading",
+        "Value": 418.0,
+        "Source": ""
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2020,
+        "Fraction": "Spring TP Loading",
+        "Value": 329.0,
+        "Source": ""
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2008,
+        "Fraction": "Spring SRP Loading",
+        "Value": 69.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2009,
+        "Fraction": "Spring SRP Loading",
+        "Value": 29.5,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2010,
+        "Fraction": "Spring SRP Loading",
+        "Value": 66.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2011,
+        "Fraction": "Spring SRP Loading",
+        "Value": 126.7,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2012,
+        "Fraction": "Spring SRP Loading",
+        "Value": 15.5,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2013,
+        "Fraction": "Spring SRP Loading",
+        "Value": 87.8,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2014,
+        "Fraction": "Spring SRP Loading",
+        "Value": 59.6,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2015,
+        "Fraction": "Spring SRP Loading",
+        "Value": 91.9,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2016,
+        "Fraction": "Spring SRP Loading",
+        "Value": 30.6,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2017,
+        "Fraction": "Spring SRP Loading",
+        "Value": 90.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2018,
+        "Fraction": "Spring SRP Loading",
+        "Value": 50.0,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2019,
+        "Fraction": "Spring SRP Loading",
+        "Value": 79.0,
+        "Source": ""
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2020,
+        "Fraction": "Spring SRP Loading",
+        "Value": 50.0,
+        "Source": ""
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2008,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.381,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2009,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.461,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2010,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.426,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2011,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.542,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2012,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.527,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2013,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.418,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2014,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.414,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2015,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.361,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2016,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.323,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2017,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.45,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2018,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.43,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2019,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.462,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2020,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.599,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2008,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.072,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2009,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.067,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2010,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.09,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2011,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.098,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2012,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.057,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2013,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.101,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2014,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.092,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2015,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.101,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2016,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.062,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2017,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.115,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2018,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.087,
+        "Source": "Greg Koltun"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2019,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.087,
+        "Source": ""
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2020,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.091,
+        "Source": ""
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2008,
+        "Fraction": "Annual TP Loading",
+        "Value": 1101.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2009,
+        "Fraction": "Annual TP Loading",
+        "Value": 511.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2010,
+        "Fraction": "Annual TP Loading",
+        "Value": 429.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2011,
+        "Fraction": "Annual TP Loading",
+        "Value": 1165.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2012,
+        "Fraction": "Annual TP Loading",
+        "Value": 793.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2013,
+        "Fraction": "Annual TP Loading",
+        "Value": 773.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2014,
+        "Fraction": "Annual TP Loading",
+        "Value": 698.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2015,
+        "Fraction": "Annual TP Loading",
+        "Value": 456.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2016,
+        "Fraction": "Annual TP Loading",
+        "Value": 389.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2017,
+        "Fraction": "Annual TP Loading",
+        "Value": 683.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2018,
+        "Fraction": "Annual TP Loading",
+        "Value": 762.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2019,
+        "Fraction": "Annual TP Loading",
+        "Value": 1031.0,
+        "Source": ""
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2020,
+        "Fraction": "Annual TP Loading",
+        "Value": 616.0,
+        "Source": ""
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2008,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.472805958,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2009,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.44124554,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2010,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.397040894,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2011,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.500175761,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2012,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.4257791,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2008,
+        "Fraction": "Spring Discharge",
+        "Value": 955.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2009,
+        "Fraction": "Spring Discharge",
+        "Value": 1102.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2010,
+        "Fraction": "Spring Discharge",
+        "Value": 691.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2011,
+        "Fraction": "Spring Discharge",
+        "Value": 1543.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2012,
+        "Fraction": "Spring Discharge",
+        "Value": 358.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2013,
+        "Fraction": "Spring Discharge",
+        "Value": 1164.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2014,
+        "Fraction": "Spring Discharge",
+        "Value": 1136.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2015,
+        "Fraction": "Spring Discharge",
+        "Value": 879.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2016,
+        "Fraction": "Spring Discharge",
+        "Value": 845.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2017,
+        "Fraction": "Spring Discharge",
+        "Value": 1017.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2018,
+        "Fraction": "Spring Discharge",
+        "Value": 755.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2019,
+        "Fraction": "Spring Discharge",
+        "Value": 1137.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2020,
+        "Fraction": "Spring Discharge",
+        "Value": 647.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2008,
+        "Fraction": "Spring TP Loading",
+        "Value": 71.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2009,
+        "Fraction": "Spring TP Loading",
+        "Value": 106.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2010,
+        "Fraction": "Spring TP Loading",
+        "Value": 49.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2011,
+        "Fraction": "Spring TP Loading",
+        "Value": 367.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2012,
+        "Fraction": "Spring TP Loading",
+        "Value": 28.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2013,
+        "Fraction": "Spring TP Loading",
+        "Value": 79.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2014,
+        "Fraction": "Spring TP Loading",
+        "Value": 194.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2015,
+        "Fraction": "Spring TP Loading",
+        "Value": 160.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2016,
+        "Fraction": "Spring TP Loading",
+        "Value": 40.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2017,
+        "Fraction": "Spring TP Loading",
+        "Value": 186.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2018,
+        "Fraction": "Spring TP Loading",
+        "Value": 126.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2019,
+        "Fraction": "Spring TP Loading",
+        "Value": 272.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2020,
+        "Fraction": "Spring TP Loading",
+        "Value": 89.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2008,
+        "Fraction": "Spring SRP Loading",
+        "Value": 11.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2009,
+        "Fraction": "Spring SRP Loading",
+        "Value": 24.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2010,
+        "Fraction": "Spring SRP Loading",
+        "Value": 6.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2011,
+        "Fraction": "Spring SRP Loading",
+        "Value": 130.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2012,
+        "Fraction": "Spring SRP Loading",
+        "Value": 5.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2013,
+        "Fraction": "Spring SRP Loading",
+        "Value": 27.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2014,
+        "Fraction": "Spring SRP Loading",
+        "Value": 66.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2015,
+        "Fraction": "Spring SRP Loading",
+        "Value": 56.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2016,
+        "Fraction": "Spring SRP Loading",
+        "Value": 7.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2017,
+        "Fraction": "Spring SRP Loading",
+        "Value": 32.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2018,
+        "Fraction": "Spring SRP Loading",
+        "Value": 26.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2019,
+        "Fraction": "Spring SRP Loading",
+        "Value": 67.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2020,
+        "Fraction": "Spring SRP Loading",
+        "Value": 36.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2008,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.074,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2009,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.097,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2010,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.07,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2011,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.238,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2012,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.078,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2013,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.068,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2014,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.171,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2015,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.182,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2016,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.047,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2017,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.183,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2018,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.167,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2019,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.239,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2020,
+        "Fraction": "Spring TP FWMC",
+        "Value": 0.138,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2008,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.011,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2009,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.022,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2010,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.008,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2011,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.084,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2012,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.014,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2013,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.024,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2014,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.058,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2015,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.064,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2016,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.008,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2017,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.032,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2018,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.035,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2019,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.058,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2020,
+        "Fraction": "Spring SRP FWMC",
+        "Value": 0.056,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2008,
+        "Fraction": "Annual TP Loading",
+        "Value": 196.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2009,
+        "Fraction": "Annual TP Loading",
+        "Value": 382.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2010,
+        "Fraction": "Annual TP Loading",
+        "Value": 99.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2011,
+        "Fraction": "Annual TP Loading",
+        "Value": 588.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2012,
+        "Fraction": "Annual TP Loading",
+        "Value": 180.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2013,
+        "Fraction": "Annual TP Loading",
+        "Value": 362.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2014,
+        "Fraction": "Annual TP Loading",
+        "Value": 553.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2015,
+        "Fraction": "Annual TP Loading",
+        "Value": 330.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2016,
+        "Fraction": "Annual TP Loading",
+        "Value": 285.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2017,
+        "Fraction": "Annual TP Loading",
+        "Value": 411.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2018,
+        "Fraction": "Annual TP Loading",
+        "Value": 588.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2019,
+        "Fraction": "Annual TP Loading",
+        "Value": 672.0,
+        "Source": ""
+    },
+    {
+        "River": "Thames River",
+        "Year": 2020,
+        "Fraction": "Annual TP Loading",
+        "Value": 424.0,
+        "Source": ""
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2008,
+        "Fraction": "Annual TP Loading",
+        "Value": 202.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2009,
+        "Fraction": "Annual TP Loading",
+        "Value": 21.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2010,
+        "Fraction": "Annual TP Loading",
+        "Value": 47.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2011,
+        "Fraction": "Annual TP Loading",
+        "Value": 142.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2012,
+        "Fraction": "Annual TP Loading",
+        "Value": 113.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2013,
+        "Fraction": "Annual TP Loading",
+        "Value": 215.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2014,
+        "Fraction": "Annual TP Loading",
+        "Value": 140.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2015,
+        "Fraction": "Annual TP Loading",
+        "Value": 19.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2016,
+        "Fraction": "Annual TP Loading",
+        "Value": 92.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2017,
+        "Fraction": "Annual TP Loading",
+        "Value": 94.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2018,
+        "Fraction": "Annual TP Loading",
+        "Value": 53.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2019,
+        "Fraction": "Annual TP Loading",
+        "Value": 82.0,
+        "Source": ""
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2020,
+        "Fraction": "Annual TP Loading",
+        "Value": 47.0,
+        "Source": ""
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2008,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.445048267,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2009,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.092179736,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2010,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.269369401,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2011,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.376533409,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2012,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.404885848,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2013,
+        "Fraction": "Annual TP FWMC",
+        "Value": 0.73112044,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2008,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2009,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 11.9469026549,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2010,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 40.4867256637,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2011,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -3.5398230088,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2012,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 33.8495575221,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2013,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 13.9380530973,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2014,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 22.5663716814,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2015,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 32.7433628319,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2016,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 52.8761061947,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2017,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 23.8938053097,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2018,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 32.0796460177,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2019,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 15.0442477876,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2020,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 41.814159292,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 21.0113780025,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 19.6460176991,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 21.5486725664,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 14.6017699115,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 23.6093552465,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 19.5322376738,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 38.5271807838,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 40.417193426,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 36.6371681416,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 20.8154235145,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 24.7155499368,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Cuyahoga River",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 41.814159292,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2008,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2009,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 1.506740682,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2010,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 1.5860428232,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2011,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 3.5685963521,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2012,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 19.587628866,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2013,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 24.0285487708,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2014,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 50.4361617764,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2015,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 41.4750198255,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2016,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 44.5678033307,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2017,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 39.8889770024,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2018,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 31.0864393339,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2019,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 21.8873909596,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2020,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 27.6764472641,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -8.604228441e-16,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 1.0989010989,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 0.8315395944,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 6.8041237113,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 14.5168233828,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 31.818284808,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 41.4568936218,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 47.2391526,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 42.5557947207,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 39.882179676,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 30.0872323553,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 24.490766965,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Detroit River (U.S.)",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 27.091877195,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2008,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2009,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 60.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2010,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 66.6666666667,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2011,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 34.5454545455,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2012,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 68.4848484848,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2013,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 67.2727272727,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2014,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 78.1818181818,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2015,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 60.6060606061,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2016,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 80.6060606061,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2017,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 20.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2018,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -47.2727272727,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2019,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -191.5151515152,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2020,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -34.5454545455,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 54.1818181818,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 58.9264069264,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 52.2077922078,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 55.7575757576,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 74.8051948052,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 69.038961039,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 76.3982683983,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 64.1385281385,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 32.3636363636,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -85.7142857143,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -133.2813852814,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Grand River-OH",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -34.5454545455,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2008,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2009,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 84.3902439024,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2010,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 66.3414634146,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2011,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 65.8536585366,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2012,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 76.5853658537,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2013,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 23.4146341463,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2014,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 69.2682926829,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2015,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 90.243902439,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2016,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 61.4634146341,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2017,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 23.4146341463,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2018,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -50.243902439,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2019,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -84.3902439024,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2020,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -42.4390243902,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 65.3240418118,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 77.1707317073,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 71.7491289199,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 56.181184669,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 48.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 60.7804878049,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 84.6411149826,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 67.1916376307,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 14.7177700348,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -46.9407665505,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -74.7317073171,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Huron River-OH",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -42.4390243902,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2008,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2009,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 38.9034627492,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2010,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 55.9548793284,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2011,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 21.1175236097,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2012,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 36.7523609654,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2013,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 40.0052465897,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2014,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 41.9464847849,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2015,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 35.2833158447,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2016,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 65.6610703043,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2017,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 17.6810073452,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2018,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 36.0703043022,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2019,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -1.9937040923,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2020,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 30.1154249738,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 39.6050067456,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 44.6065057712,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 35.2788187678,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 30.4159796133,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 41.5792235047,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 37.4089341928,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 49.0870933893,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 43.364563034,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 40.6138509969,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 14.6889521811,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 14.8748313596,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 29.0945885175,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2008,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2009,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 28.9693593315,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2010,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 63.5097493036,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2011,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -51.5320334262,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2012,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -25.9052924791,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2013,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 15.0417827298,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2014,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 34.5403899721,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2015,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 50.4178272981,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2016,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 58.495821727,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2017,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 35.9331476323,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2018,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 26.7409470752,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2019,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -5.5710306407,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2020,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 29.2479108635,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 42.7457222443,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 25.3322721846,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -15.9092717867,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -33.4978113808,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 10.3621169916,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 36.4265817748,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 52.0175089534,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 52.7656187823,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 42.8332670115,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 15.8774373259,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 7.918822125,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 29.2479108635,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2008,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2009,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 34.3511450382,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2010,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 38.5496183206,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2011,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 29.3893129771,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2012,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 23.2824427481,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2013,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 66.4122137405,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2014,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 63.7404580153,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2015,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 59.9236641221,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2016,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 70.9923664122,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2017,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 16.4122137405,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2018,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 30.1526717557,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2019,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 7.2519083969,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2020,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 7.6335877863,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 30.3271537623,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 38.5823336968,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 26.8375136314,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 35.387131952,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 54.4383860414,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 66.1941112323,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 68.2006543075,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 52.6063249727,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 36.8920392585,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 16.0196292257,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 14.3838604144,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 3.7731733915,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2008,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2009,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 53.5876475931,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2010,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 61.0354223433,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2011,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -5.812897366,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2012,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 27.974568574,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2013,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 29.7910990009,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2014,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 36.6030881017,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2015,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 58.583106267,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2016,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 64.6684831971,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2017,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 37.9654859219,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2018,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 30.7901907357,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2019,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 6.3578564941,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2020,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 44.050862852,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 52.0461917737,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 43.6278707668,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 20.5475541715,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 13.4397301155,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 32.0877124692,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 40.1375373037,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 57.3686259245,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 58.7362138316,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 45.6026988452,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 20.8330089529,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 18.4870896588,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 44.050862852,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2008,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2009,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -94.8979591837,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2010,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 49.4897959184,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2011,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -200.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2012,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 8.1632653061,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2013,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -84.693877551,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2014,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -182.1428571429,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2015,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -68.3673469388,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2016,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -45.4081632653,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2017,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -109.693877551,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2018,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -200.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2019,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -242.8571428571,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2020,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -116.3265306122,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -65.0728862974,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -3.8483965015,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -77.7696793003,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -61.9825072886,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -82.2740524781,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -77.7842565598,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -137.7551020408,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -94.5626822157,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -50.3498542274,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -110.7434402332,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -204.1545189504,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -217.8862973761,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": -116.3265306122,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2008,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2009,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 89.603960396,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2010,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 76.7326732673,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2011,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 29.702970297,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2012,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 44.0594059406,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2013,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": -6.4356435644,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2014,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 30.6930693069,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2015,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 90.5940594059,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2016,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 54.4554455446,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2017,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 53.4653465347,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2018,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 73.7623762376,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2019,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 59.4059405941,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2020,
+        "Fraction": "Percent Reduction in Annual TP Load Relative to 2008",
+        "Value": 76.7326732673,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 74.9646393211,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 74.3988684583,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 48.7128712871,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 20.1697312588,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 12.1923620934,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 35.3182461103,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 69.1654879774,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 66.8882602546,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 57.072135785,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 63.2814710042,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 67.8076379066,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Vermilion River",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
+        "Value": 76.7326732673,
+        "Source": "Santina and Maccoux"
+    }
+]
