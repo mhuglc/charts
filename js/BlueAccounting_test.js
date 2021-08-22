@@ -302,7 +302,8 @@ function BlueAccounting(){
             },
             xAxis: [{
                 title: {
-                    text: xAxis_title
+                    text: xAxis_title,
+                    type: 'linear'
                 }
             }],
             yAxis: { // Primary yAxis
