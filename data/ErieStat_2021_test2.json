@@ -5393,91 +5393,91 @@
         "River": "Cuyahoga River",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 0.0,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Cuyahoga River",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 21.0113780025,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Cuyahoga River",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 19.6460176991,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Cuyahoga River",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 21.5486725664,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Cuyahoga River",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 14.6017699115,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Cuyahoga River",
         "Year": 2013,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 23.6093552465,
+        "Value": 19.2782743591,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Cuyahoga River",
         "Year": 2014,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 19.5322376738,
+        "Value": 21.4023131844,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Cuyahoga River",
         "Year": 2015,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 38.5271807838,
+        "Value": 19.8738745335,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Cuyahoga River",
         "Year": 2016,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 40.417193426,
+        "Value": 31.1610380823,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Cuyahoga River",
         "Year": 2017,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 36.6371681416,
+        "Value": 29.1849901795,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Cuyahoga River",
         "Year": 2018,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 20.8154235145,
+        "Value": 32.804820245,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Cuyahoga River",
         "Year": 2019,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 24.7155499368,
+        "Value": 31.2852152829,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Cuyahoga River",
         "Year": 2020,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 41.814159292,
+        "Value": 33.1086628639,
         "Source": "Santina and Maccoux"
     },
     {
@@ -5575,91 +5575,91 @@
         "River": "Detroit River (U.S.)",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -8.604228441e-16,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Detroit River (U.S.)",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 1.0989010989,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Detroit River (U.S.)",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 0.8315395944,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Detroit River (U.S.)",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 6.8041237113,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Detroit River (U.S.)",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 14.5168233828,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Detroit River (U.S.)",
         "Year": 2013,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 31.818284808,
+        "Value": 10.0555114988,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Detroit River (U.S.)",
         "Year": 2014,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 41.4568936218,
+        "Value": 19.8413957177,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Detroit River (U.S.)",
         "Year": 2015,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 47.2391526,
+        "Value": 27.8191911182,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Detroit River (U.S.)",
         "Year": 2016,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 42.5557947207,
+        "Value": 36.0190325139,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Detroit River (U.S.)",
         "Year": 2017,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 39.882179676,
+        "Value": 40.0793021412,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Detroit River (U.S.)",
         "Year": 2018,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 30.0872323553,
+        "Value": 41.4908802538,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Detroit River (U.S.)",
         "Year": 2019,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 24.490766965,
+        "Value": 35.7811260904,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Detroit River (U.S.)",
         "Year": 2020,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 27.091877195,
+        "Value": 33.0258207772,
         "Source": "Santina and Maccoux"
     },
     {
@@ -5757,91 +5757,91 @@
         "River": "Grand River-OH",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 0.0,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Grand River-OH",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 54.1818181818,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Grand River-OH",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 58.9264069264,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Grand River-OH",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 52.2077922078,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Grand River-OH",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 55.7575757576,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Grand River-OH",
         "Year": 2013,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 74.8051948052,
+        "Value": 59.4167100823,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Grand River-OH",
         "Year": 2014,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 69.038961039,
+        "Value": 63.0229316299,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Grand River-OH",
         "Year": 2015,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 76.3982683983,
+        "Value": 61.8600978651,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Grand River-OH",
         "Year": 2016,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 64.1385281385,
+        "Value": 70.9905170803,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Grand River-OH",
         "Year": 2017,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 32.3636363636,
+        "Value": 61.2803646808,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Grand River-OH",
         "Year": 2018,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -85.7142857143,
+        "Value": 38.4252881127,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Grand River-OH",
         "Year": 2019,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -133.2813852814,
+        "Value": -15.3661149884,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Grand River-OH",
         "Year": 2020,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -34.5454545455,
+        "Value": -34.3417253044,
         "Source": "Santina and Maccoux"
     },
     {
@@ -5939,91 +5939,91 @@
         "River": "Huron River-OH",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 0.0,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Huron River-OH",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 65.3240418118,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Huron River-OH",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 77.1707317073,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Huron River-OH",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 71.7491289199,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Huron River-OH",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 56.181184669,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Huron River-OH",
         "Year": 2013,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 48.0,
+        "Value": 63.3183846984,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Huron River-OH",
         "Year": 2014,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 60.7804878049,
+        "Value": 60.2825711261,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Huron River-OH",
         "Year": 2015,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 84.6411149826,
+        "Value": 65.0921099641,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Huron River-OH",
         "Year": 2016,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 67.1916376307,
+        "Value": 64.2240441038,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Huron River-OH",
         "Year": 2017,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 14.7177700348,
+        "Value": 53.5863893434,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Huron River-OH",
         "Year": 2018,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -46.9407665505,
+        "Value": 38.8301563692,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Huron River-OH",
         "Year": 2019,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -74.7317073171,
+        "Value": 8.0772764212,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Huron River-OH",
         "Year": 2020,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -42.4390243902,
+        "Value": -18.4868461901,
         "Source": "Santina and Maccoux"
     },
     {
@@ -6121,91 +6121,91 @@
         "River": "Maumee River",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 0.0,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Maumee River",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 39.6050067456,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Maumee River",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 44.6065057712,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Maumee River",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 35.2788187678,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Maumee River",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 30.4159796133,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Maumee River",
         "Year": 2013,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 41.5792235047,
+        "Value": 38.5447158489,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Maumee River",
         "Year": 2014,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 37.4089341928,
+        "Value": 39.1521873118,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Maumee River",
         "Year": 2015,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 49.0870933893,
+        "Value": 35.0201762321,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Maumee River",
         "Year": 2016,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 43.364563034,
+        "Value": 43.9306253298,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Maumee River",
         "Year": 2017,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 40.6138509969,
+        "Value": 40.114503965,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Maumee River",
         "Year": 2018,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 14.6889521811,
+        "Value": 39.3254702445,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Maumee River",
         "Year": 2019,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 14.8748313596,
+        "Value": 30.5409961255,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Maumee River",
         "Year": 2020,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 29.0945885175,
+        "Value": 29.507866812,
         "Source": "Santina and Maccoux"
     },
     {
@@ -6303,91 +6303,91 @@
         "River": "Portage River",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 0.0,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Portage River",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 42.7457222443,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Portage River",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 25.3322721846,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Portage River",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -15.9092717867,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Portage River",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -33.4978113808,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Portage River",
         "Year": 2013,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 10.3621169916,
+        "Value": 5.9934889218,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Portage River",
         "Year": 2014,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 36.4265817748,
+        "Value": 7.141312447,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Portage River",
         "Year": 2015,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 52.0175089534,
+        "Value": 4.5283932528,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Portage River",
         "Year": 2016,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 52.7656187823,
+        "Value": 26.5420202326,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Portage River",
         "Year": 2017,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 42.8332670115,
+        "Value": 38.8832990397,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Portage River",
         "Year": 2018,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 15.8774373259,
+        "Value": 41.2412508612,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Portage River",
         "Year": 2019,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 7.918822125,
+        "Value": 33.2202830183,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Portage River",
         "Year": 2020,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 29.2479108635,
+        "Value": 28.9997347776,
         "Source": "Santina and Maccoux"
     },
     {
@@ -6485,91 +6485,91 @@
         "River": "River Raisin",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 0.0,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "River Raisin",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 30.3271537623,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "River Raisin",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 38.5823336968,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "River Raisin",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 26.8375136314,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "River Raisin",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 35.387131952,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "River Raisin",
         "Year": 2013,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 54.4383860414,
+        "Value": 38.3892616766,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "River Raisin",
         "Year": 2014,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 66.1941112323,
+        "Value": 44.2876377384,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "River Raisin",
         "Year": 2015,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 68.2006543075,
+        "Value": 48.5479272368,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "River Raisin",
         "Year": 2016,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 52.6063249727,
+        "Value": 56.8635579221,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "River Raisin",
         "Year": 2017,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 36.8920392585,
+        "Value": 55.4526828666,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "River Raisin",
         "Year": 2018,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 16.0196292257,
+        "Value": 48.1889214435,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "River Raisin",
         "Year": 2019,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 14.3838604144,
+        "Value": 36.8774337594,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "River Raisin",
         "Year": 2020,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 3.7731733915,
+        "Value": 26.3990811904,
         "Source": "Santina and Maccoux"
     },
     {
@@ -6667,91 +6667,91 @@
         "River": "Sandusky River",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 0.0,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Sandusky River",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 52.0461917737,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Sandusky River",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 43.6278707668,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Sandusky River",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 20.5475541715,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Sandusky River",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 13.4397301155,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Sandusky River",
         "Year": 2013,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 32.0877124692,
+        "Value": 33.3150131417,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Sandusky River",
         "Year": 2014,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 40.1375373037,
+        "Value": 29.922689771,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Sandusky River",
         "Year": 2015,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 57.3686259245,
+        "Value": 29.43840229,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Sandusky River",
         "Year": 2016,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 58.7362138316,
+        "Value": 43.5221396962,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Sandusky River",
         "Year": 2017,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 45.6026988452,
+        "Value": 45.5191736927,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Sandusky River",
         "Year": 2018,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 20.8330089529,
+        "Value": 45.7254491803,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Sandusky River",
         "Year": 2019,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 18.4870896588,
+        "Value": 39.6715636523,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Sandusky River",
         "Year": 2020,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 44.050862852,
+        "Value": 36.7556666763,
         "Source": "Santina and Maccoux"
     },
     {
@@ -6849,91 +6849,91 @@
         "River": "Thames River",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -65.0728862974,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Thames River",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -3.8483965015,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Thames River",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -77.7696793003,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Thames River",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -61.9825072886,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Thames River",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -82.2740524781,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Thames River",
         "Year": 2013,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -77.7842565598,
+        "Value": -64.2588062622,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Thames River",
         "Year": 2014,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -137.7551020408,
+        "Value": -81.6465875734,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Thames River",
         "Year": 2015,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -94.5626822157,
+        "Value": -105.1609385192,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Thames River",
         "Year": 2016,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -50.3498542274,
+        "Value": -74.2000978474,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Thames River",
         "Year": 2017,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -110.7434402332,
+        "Value": -97.8148442596,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Thames River",
         "Year": 2018,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -204.1545189504,
+        "Value": -120.800004077,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Thames River",
         "Year": 2019,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -217.8862973761,
+        "Value": -133.0033023483,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Thames River",
         "Year": 2020,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": -116.3265306122,
+        "Value": -142.6462614155,
         "Source": "Santina and Maccoux"
     },
     {
@@ -7031,91 +7031,91 @@
         "River": "Vermilion River",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 0.0,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Vermilion River",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 74.9646393211,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Vermilion River",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 74.3988684583,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Vermilion River",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 48.7128712871,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Vermilion River",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 20.1697312588,
+        "Value": null,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Vermilion River",
         "Year": 2013,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 12.1923620934,
+        "Value": 46.85765376,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Vermilion River",
         "Year": 2014,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 35.3182461103,
+        "Value": 35.0725007606,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Vermilion River",
         "Year": 2015,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 69.1654879774,
+        "Value": 37.8117548168,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Vermilion River",
         "Year": 2016,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 66.8882602546,
+        "Value": 42.7064394977,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Vermilion River",
         "Year": 2017,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 57.072135785,
+        "Value": 44.579125207,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Vermilion River",
         "Year": 2018,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 63.2814710042,
+        "Value": 60.5823264461,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Vermilion River",
         "Year": 2019,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 67.8076379066,
+        "Value": 66.3153167105,
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Vermilion River",
         "Year": 2020,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": 76.7326732673,
+        "Value": 63.6162265167,
         "Source": "Santina and Maccoux"
     }
 ]
