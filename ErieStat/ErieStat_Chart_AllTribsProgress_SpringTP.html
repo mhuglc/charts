@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Progress by Watershed towards 2025 Spring Phosphorus Load Reduction Goals</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="//code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/dumbbell.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Montserrat font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <script src="../js/export-csv_glc.js"></script>
+    <script src="../js/BlueAccounting.js"></script>
+    <link rel="stylesheet" href="../css/BA_Style.css">
+
+    <style>
+		.size {
+			font-size: 16px;
+			line-height: 0.25
+		}
+
+		.startDot {
+		  color: #0D5E87;
+
+		}
+
+		.redDot {
+		  color: #D91F26;
+		}
+
+		.yellowDot {
+		  color: #EEC21A;
+		}
+	    
+		.greenDot {
+		  color: #68B044;
+		}
+	    
+	    	    
+		.blackDot {
+		  color: #2c2c2c;
+		}
+	
+		.target2025Line {
+		  color: #E07000;
+		}
+	</style>
+	
+</head>
+<body>
+    <div id="container" style="margin-right: 20px">
+    </div>
+
+<script>
+var data = [{
+  name: 'River Raisin',
+  low: 92,
+  high: 83,
+  mid: 50,
+  lowColor: '#EEC21A'
+}, {
+  name: 'Maumee River',
+  low: 1437,
+  high: 1414,
+  mid: 860
+}, {
+  name: 'Portage River',
+  low: 98,
+  high: 195,
+  mid: 117
+}, {
+  name: 'Sandusky River',
+  low: 300,
+  high: 367,
+  mid: 230
+}, {
+  name: 'Thames River',
+  low: 143,
+  high: 71,
+  lowColor: '#2c2c2c'
+}];
+
+Highcharts.chart('container', {
+  chart: {
+    type: 'dumbbell',
+    height: 600,
+    backgroundColor: {
+        linearGradient: {x1: 0, x2: 1, y1: 1, y2: 0},
+    	stops: [
+       		[0, 'rgb(255,255,255)'],
+       		[1, '#F2FAFF']
+    	]
+	},
+    inverted: true,
+    events: {
+      load: function() {
+        let ren = this.renderer,
+          data = this.series[0].data
+
+        data.forEach(el => {
+          if (el.mid) {
+            let distX = this.yAxis[0].toPixels(el.mid),
+            distY = this.xAxis[0].toPixels(el.index)+4 
+						
+            ren.text('|', distX, distY, 3).attr({
+		    rotation: 0
+	    })
+            .css({
+	        color: '#E07000',
+	        fontSize: '16px',
+		fontFamily: 'Impact'
+            }).add();
+          }
+        })
+      }
+    }
+  },
+	
+  legend: {
+    enabled: false
+  },
+  credits: {
+    enabled: false
+  },
+	
+  tooltip: {
+    shared: true,
+    useHTML: true,
+    formatter: function() {
+      debugger;
+      return '<b>' + this.points[0].point.name + '</b> <br/> Baseline (2008) TP load: ' + this.points[0].point.high + ' MTA' + '<br/>Target load: ' + this.points[0].point.mid + ' MTA (40% reduction)'  + '<br/>Current 5-year average load: ' + this.points[0].point.low + ' MTA (' + Math.round((this.points[0].point.high - this.points[0].point.low)/this.points[0].point.high * 100) + '% reduction)';
+    }
+  },
+	
+  title: {
+    text: 'Progress towards spring total phosphorus load targets for Erie priority tributaries',
+    margin: 25
+  },
+	  
+  subtitle: {
+    useHTML: true,
+    verticalAlign: 'bottom',
+    text: '<span class="startDot size" style="font-size: 400%; vertical-align: sub">&bull;</span> <b>Spring TP load in baseline year (2008) <br> Current Spring TP load (5-year average, 2016-2020): </b><span class="greenDot size" style="font-size: 400%; vertical-align: sub">&bull;</span> Progress on track or better     <span class="yellowDot size" style="font-size: 400%; vertical-align: sub">&bull;</span> Slower progress     <span class="redDot size" style="font-size: 400%; vertical-align: sub">&bull;</span> Negative progress     <span class="blackDot size" style="font-size: 400%; vertical-align: sub">&bull;</span> Target not established<br/><span class="targetLine2025 size" style="color:#E07000; vertical-align: sub; line-height: 2" >&vert;</span><b> 2025 Target</b>'
+  },
+  xAxis: {
+    type: 'category'
+  },
+
+  yAxis: {
+    title: {
+      text: 'Spring total phosphorus (TP) loading: metric tons March-July'
+    }
+  },
+
+  series: [{
+    name: 'Change in Spring TP Load',
+    data: data,
+    lowColor: "#68B044",
+    connectorWidth: 3,
+    marker: {
+	fillColor: "#0D5E87",
+	radius: 6
+    }
+  }]
+
+});
+</script>
+</body>
+</html>
