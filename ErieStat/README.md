@@ -1,17 +1,21 @@
 # ErieStat Folder
-This folder hosts all visualizations for ErieStat pilot, except data and JS files.
+This folder hosts all visualizations for ErieStat pilot, except data, css and JS files.
 
 ## Annual loading
-ErieStat_Map_tabs_Annual.html
+Old site: ErieStat_Map_tabs_Annual_2021JanUpdate.html
+New site: annual_testing.html
 
 ## Spring loading
-ErieStat_Map_tabs_Spring.html
+Old site: ErieStat_Map_tabs_Spring_2021JanUpdate.html
+New site: springtesting.html
 
 ## Annual TP loading since 1967
-ErieStat_Chart_AnnualTPLoading.html
+Old site: ErieStat_Chart_AnnualTPLoading_Sum.html
+New site: NewSiteDraft_ErieStat_Chart_AnnualTPLoading_Sum.html
 
 ## Lake Erie Severity Index
-ErieStat_Chart_LakeErieSeverityIndex.html 
+Old site: ErieStat_Chart_LakeErieSeverityIndex.html 
+New site: NewSiteDraft_ErieStat_Chart_LakeErieSeverityIndex.html
 
 ## HAB tracker and Hypoxia forecast scraped from NOAA page
     HAB_tracker
