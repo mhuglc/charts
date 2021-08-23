@@ -67,6 +67,22 @@ function ErieStat() {
             name: "5 Year Average of Percent Reduction Relative to 2008",
                 unit: "relative to 2008 baseline"
         },
+        "S_TP_PercentReduction": {
+            name: "Spring TP Percent Reduction Relative to 2008",
+                unit: "relative to 2008 baseline"
+        },
+        "S_TP_PercentReduction5Y": {
+            name: "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+                unit: "relative to 2008 baseline"
+        },
+        "S_SRP_PercentReduction": {
+            name: "Spring SRP Percent Reduction Relative to 2008",
+                unit: "relative to 2008 baseline"
+        },
+        "S_SRP_PercentReduction5Y": {
+            name: "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+                unit: "relative to 2008 baseline"
+        },
     };
     this.units = {
     };
@@ -75,7 +91,9 @@ function ErieStat() {
             "Annual TP Loading": null,
             "Percent Reduction in Annual TP Load Relative to 2008": null,
             "Spring TP Loading": null,
+            "Percent Reduction in Spring TP Load Relative to 2008": null,
             "Spring SRP Loading": null,
+            "Percent Reduction in Spring SRP Load Relative to 2008": null,
             "Spring TP FWMC": null,
             "Spring SRP FWMC": null
         },
@@ -83,7 +101,9 @@ function ErieStat() {
             "Annual TP Loading": null,
             "Percent Reduction in Annual TP Load Relative to 2008": null,
             "Spring TP Loading": null,
+            "Percent Reduction in Spring TP Load Relative to 2008": null,
             "Spring SRP Loading": null,
+            "Percent Reduction in Spring SRP Load Relative to 2008": null,
             "Spring TP FWMC": null,
             "Spring SRP FWMC": null
         },
@@ -91,7 +111,9 @@ function ErieStat() {
             "Annual TP Loading": 271,
             "Percent Reduction in Annual TP Load Relative to 2008": 40,
             "Spring TP Loading": null,
+            "Percent Reduction in Spring TP Load Relative to 2008": null,
             "Spring SRP Loading": null,
+            "Percent Reduction in Spring SRP Load Relative to 2008": null,
             "Spring TP FWMC": null,
             "Spring SRP FWMC": null
         },
@@ -99,7 +121,9 @@ function ErieStat() {
             "Annual TP Loading": 756,
             "Percent Reduction in Annual TP Load Relative to 2008": 40,
             "Spring TP Loading": null,
+            "Percent Reduction in Spring TP Load Relative to 2008": null,
             "Spring SRP Loading": null,
+            "Percent Reduction in Spring SRP Load Relative to 2008": null,
             "Spring TP FWMC": null,
             "Spring SRP FWMC": null
         },
@@ -107,7 +131,9 @@ function ErieStat() {
             "Annual TP Loading": 99,
             "Percent Reduction in Annual TP Load Relative to 2008": 40,
             "Spring TP Loading": null,
+            "Percent Reduction in Spring TP Load Relative to 2008": null,
             "Spring SRP Loading": null,
+            "Percent Reduction in Spring SRP Load Relative to 2008": null,
             "Spring TP FWMC": null,
             "Spring SRP FWMC": null
         },
@@ -115,7 +141,9 @@ function ErieStat() {
             "Annual TP Loading": null,
             "Percent Reduction in Annual TP Load Relative to 2008": null,
             "Spring TP Loading": null,
+            "Percent Reduction in Spring TP Load Relative to 2008": null,
             "Spring SRP Loading": null,
+            "Percent Reduction in Spring SRP Load Relative to 2008": null,
             "Spring TP FWMC": null,
             "Spring SRP FWMC": null
         },
@@ -123,7 +151,9 @@ function ErieStat() {
             "Annual TP Loading": 123,
             "Percent Reduction in Annual TP Load Relative to 2008": 40,
             "Spring TP Loading": null,
+            "Percent Reduction in Spring TP Load Relative to 2008": null,
             "Spring SRP Loading": null,
+            "Percent Reduction in Spring SRP Load Relative to 2008": null,
             "Spring TP FWMC": null,
             "Spring SRP FWMC": null
         },
@@ -131,7 +161,9 @@ function ErieStat() {
             "Annual TP Loading": null,
             "Percent Reduction in Annual TP Load Relative to 2008": null,
             "Spring TP Loading": null,
+            "Percent Reduction in Spring TP Load Relative to 2008": null,
             "Spring SRP Loading": null,
+            "Percent Reduction in Spring SRP Load Relative to 2008": null,
             "Spring TP FWMC": null,
             "Spring SRP FWMC": null
         },
@@ -139,7 +171,9 @@ function ErieStat() {
             "Annual TP Loading": 2287,
             "Percent Reduction in Annual TP Load Relative to 2008": 40,
             "Spring TP Loading": 860,
+            "Percent Reduction in Spring TP Load Relative to 2008": 40,
             "Spring SRP Loading": 186,
+            "Percent Reduction in Sprint SRP Load Relative to 2008": 40,
             "Spring TP FWMC": 0.23,
             "Spring SRP FWMC": 0.05
         },
@@ -147,7 +181,9 @@ function ErieStat() {
             "Annual TP Loading": 215,
             "Percent Reduction in Annual TP Load Relative to 2008": 40,
             "Spring TP Loading": null,
+            "Percent Reduction in Spring TP Load Relative to 2008": 40,
             "Spring SRP Loading": null,
+            "Percent Reduction in Spring SRP Load Relative to 2008": 40,
             "Spring TP FWMC": 0.27,
             "Spring SRP FWMC": 0.05
         },
@@ -155,7 +191,9 @@ function ErieStat() {
             "Annual TP Loading": 157,
             "Percent Reduction in Annual TP Load Relative to 2008": 40,
             "Spring TP Loading": 50,
+            "Percent Reduction in Spring TP Load Relative to 2008": 40,
             "Spring SRP Loading": null,
+            "Percent Reduction in Spring SRP Load Relative to 2008": 40,
             "Spring TP FWMC": 0.09,
             "Spring SRP FWMC": null
         },
@@ -163,7 +201,9 @@ function ErieStat() {
             "Annual TP Loading": 660,
             "Percent Reduction in Annual TP Load Relative to 2008": 40,
             "Spring TP Loading": 230,
+            "Percent Reduction in Spring TP Load Relative to 2008": 40,
             "Spring SRP Loading": 43,
+            "Percent Reduction in Spring SRP Load Relative to 2008": 40,
             "Spring TP FWMC": 0.23,
             "Spring SRP FWMC": 0.05
         },
@@ -171,7 +211,9 @@ function ErieStat() {
             "Annual TP Loading": null,
             "Percent Reduction in Annual TP Load Relative to 2008": null,
             "Spring TP Loading": null,
+            "Percent Reduction in Spring TP Load Relative to 2008": null,
             "Spring SRP Loading": null,
+            "Percent Reduction in Spring SRP Load Relative to 2008": null,
             "Spring TP FWMC": null,
             "Spring SRP FWMC": null
         },
@@ -179,7 +221,9 @@ function ErieStat() {
             "Annual TP Loading": 121,
             "Percent Reduction in Annual TP Load Relative to 2008": 40,
             "Spring TP Loading": null,
+            "Percent Reduction in Spring TP Load Relative to 2008": null,
             "Spring SRP Loading": null,
+            "Percent Reduction in Spring SRP Load Relative to 2008": null,
             "Spring TP FWMC": null,
             "Spring SRP FWMC": null
         }
