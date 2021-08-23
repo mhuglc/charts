@@ -254,12 +254,20 @@
         })
     });
     
-    	// Handle switch between parameters
+	// Handle switch between parameters
 	$('#display').selectmenu({
 		change: function (event, data) {
-
 			chart = null;
-			loadChart(data.item.value, ES.watershedNames[initWatershed]);
+			var phos = $( "select#measure option:selected" ).val();
+			loadChart(phos, data.item.value, ES.watershedNames[initWatershed]);
+		}
+	});
+	
+	$('#measure').selectmenu({
+		change: function (event, data) {
+			chart = null;
+			var metric = $( "select#display option:selected" ).val();
+			loadChart(data.item.value, metric, ES.watershedNames[initWatershed]);
 		}
 	});
 
