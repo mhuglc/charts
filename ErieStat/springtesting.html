@@ -76,6 +76,10 @@
 	
   .ui-widget {
       font-size: 90% !important;
+	  
+  .dropdown{
+    min-width: 200px;
+  }
   }
 
 </style>
@@ -94,12 +98,12 @@
         <div class="page-content" id="selectors">
             <fieldset class="field_set">
 	      <legend>Select Chart Parameters</legend>
-              <select id="display" name="display" style="font-family: 'Montserrat', font-size: 16, sans-serif;">
+              <select id="display" name="display" class="dropdown" style="font-family: 'Montserrat', font-size: 16, sans-serif;">
                   <option value="Loading and Discharge" selected="selected">Total Loading</option>
                   <option value="Flow-Weighted Mean Concentration">FWMC</option>
 		  <option value="% Decrease in Loading Relative to 2008">Percent Decrease</option>
               </select>
-	      <select id="measure" name="measure" style="font-family: 'Montserrat', font-size: 16, sans-serif;">
+	      <select id="measure" name="measure" class="dropdown" style="font-family: 'Montserrat', font-size: 16, sans-serif;">
                   <option value="Total Phosphorus" selected="selected">Total Phosphorus</option>
                   <option value="Soluble Reactive Phosphorus">Soluble Reactive Phosphorus</option>
               </select>
