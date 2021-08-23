@@ -90,8 +90,13 @@
         <div class="page-content" id="selectors">
             <fieldset class="field_set">
               <select id="display" name="display" style="font-family: 'Montserrat', font-size: 16, sans-serif;">
-                  <option value="Total Loading" selected="selected">Total Loading</option>
-                  <option value="Percent Decrease">Percent Decrease</option>
+                  <option value="Loading and Discharge" selected="selected">Total Loading</option>
+                  <option value="Flow-Weighted Mean Concentration">FWMC</option>
+		  <option value="% Decrease in Loading Relative to 2008">Percent Decrease</option>
+              </select> <br>
+	      <select id="measure" name="measure" style="font-family: 'Montserrat', font-size: 16, sans-serif;">
+                  <option value="Total Phosphorus" selected="selected">Total Phosphorus</option>
+                  <option value="Soluble Reactive Phosphorus">Soluble Reactive Phosphorus</option>
               </select> <br>
           </fieldset>
         </div>
@@ -125,6 +130,11 @@
     var metric2 = ES.metrics.SRP_FWMC_S;
     var metric3 = ES.metrics.TP_L_S;
     var metric4 = ES.metrics.TP_FWMS_S;
+    var metric5 = ES.metrics.S_TP_PercentReduction;
+    var metric6 = ES.metrics.S_TP_PercentReduction5Y;
+    var metric7 = ES.metrics.S_SRP_PercentReduction;
+    var metric8 = ES.metrics.S_SRP_PercentReduction5Y;
+
     var metric_discharge = ES.metrics.Discharge_S;
     
 	var searchParams = new URLSearchParams(window.location.search);
@@ -209,15 +219,15 @@
       }
     });
 
- 
+	// init 
     $.getJSON("../data/ErieStat_2021_test2.json", function(d){
         data = d;
     }).done(function () {
         ES.init(data);
 
         // Default to Maumee river when page initialize
-        ES.buildNarratives(initWatershed + ' River');
-        loadChart(initWatershed + " River");
+        ES.buildNarratives(ES.watershedNames[initWatershed]);
+        loadChart("Total Phosphorus", "Loading and Discharge", ES.watershedNames[initWatershed]);
         renderWatershed(initWatershed);
     });
 
@@ -232,7 +242,8 @@
                     // var label = featureCollection.features[0].properties["Label"];
                     if (ES.buildNarratives(name)) {
                         var metric = $( "select#display option:selected" ).val();
-                        loadChart(name);
+						var phos = $( "select#measure option:selected" ).val();
+                        loadChart(phos, metric, name);
                     } else {
                         $(".charts").html("");
                     }
@@ -252,83 +263,86 @@
 		}
 	});
 
-    function loadChart(metric, name) {
+    function loadChart(phos, metric, name) {
         function dataToArray(vals){
             let array = []
             for(let i =0;i < vals.length;i++){array.push(vals.get(i))}
             return array;
         }
+	    
+		if(phos == "Total Phosphorus" && metric == "Loading and Discharge"){
+			var s3_data = ES.getWatershedData(name, metric3.name);
+			var discharge_data = ES.getWatershedData(name, metric_discharge.name);
+			var s3_data_array = dataToArray(s3_data);
+			var discharge_data_array = dataToArray(discharge_data);
+			if(!s3_data_array.every(IS_EMPTY) || !discharge_data_array.every(IS_EMPTY)){
+				var chart = BA.buildDualAxesChart(s3_data_array, metric3.name, metric3.unit, '#0D5E87', "column",
+					discharge_data_array, metric_discharge.name, metric_discharge.unit, "#0092B0", "line",
+					"container",  "<b>" + name + " " + metric3.name + " and " + metric_discharge.name + "</b>", "<i>*TP: Total phosphorus</i>",
+					'Chart displays two datasets, spring discharge and spring total phosphorus loading, to the Western Basin of Lake Erie for the selected watershed for the years 2008 to 2019. A target line on the chart marks the spring TP loading target for the watershed.',
+					ES.xAxis_start, ES.targets[name][metric3.name], null, //ES.targets[name][metric2.name],
+					'<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data is provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
+					(window.innerHeight  - $("#narrative-section").height()) * 0.7
+				);
+			}else{
+				$("#container").html("<i>* Data under development.</i>");
+			}
 
-        var s1_data = ES.getWatershedData(name, metric1.name);
-        var s2_data = ES.getWatershedData(name, metric2.name);
-        var s3_data = ES.getWatershedData(name, metric3.name);
-        var s4_data = ES.getWatershedData(name, metric4.name);
-        var discharge_data = ES.getWatershedData(name, metric_discharge.name);
+			if(phos == "Soluble Reactive Phosphorus" && metric == "Loading and Discharge"){
+				var s1_data = ES.getWatershedData(name, metric1.name);
+				var discharge_data = ES.getWatershedData(name, metric_discharge.name);
+				var s1_data_array = dataToArray(s1_data);
+				var discharge_data_array = dataToArray(discharge_data);
+				if(!s1_data_array.every(IS_EMPTY) || !discharge_data_array.every(IS_EMPTY)){
+				var chart = BA.buildDualAxesChart(s1_data_array, metric1.name, metric1.unit, '#0D5E87', "column",
+					discharge_data_array, metric_discharge.name, metric_discharge.unit, "#0092B0", "line",
+					"container", "<b>" + name + " " + metric1.name + " and " + metric_discharge.name + "</b>", "<i>*SRP: Soluble reactive phosphorus</i>",
+					'Chart displays two datasets, spring discharge and spring soluble reactive phosphorus loading, to the Western Basin of Lake Erie for the selected watershed for the years 2008 to 2019. A target line on the chart marks the spring SRP loading target for the watershed.',
+					ES.xAxis_start, ES.targets[name][metric1.name], null, //ES.targets[name][metric2.name],
+					'<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data are provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
+					(window.innerHeight  - $("#narrative-section").height()) * 0.7
+				);
+			}else{
+				$("#container").html("<i>* Data under development.</i>");
+			}
 
-        var s1_data_array = dataToArray(s1_data);
-        var s2_data_array = dataToArray(s2_data);
-        var s3_data_array = dataToArray(s3_data);
-        var s4_data_array = dataToArray(s4_data);
-        var discharge_data_array = dataToArray(discharge_data);
+			if(phos == "Total Phosphorus" && metric == "Flow-Weighted Mean Concentration"){
+				var s4_data = ES.getWatershedData(name, metric4.name);
+				var s4_data_array = dataToArray(s4_data);
+				if(!s4_data_array.every(IS_EMPTY)){
+				var chart = BA.buildSingleChart("line", s4_data_array, metric4.name, metric4.unit, '#0D5E87',
+					ES.xAxis_start, "<b>" + name + " " + metric4.name + "</b>", "<i>*TP: Total phosphorus</i><br><i>*FWMC: Flow-weighted mean concentration</i>",
+					'Chart displays the flow-weighted mean concentration of total phosphorus loading, or TP, to the Western Basin of Lake Erie for the selected watershed for the years 2008 to 2019. A target line on the chart marks the spring TP FWMC target for the watershed.',
+					ES.targets[name][metric4.name], "container", 
+					'<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data is provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
+					(window.innerHeight  - $("#narrative-section").height()) * 0.7
+				);
+			}else{
+				$("#container").html("<i>* Data under development.</i>");
+			}
 
-        if(!s1_data_array.every(IS_EMPTY) || !discharge_data_array.every(IS_EMPTY)){
-            var chart1 = BA.buildDualAxesChart(s1_data_array, metric1.name, metric1.unit, '#0D5E87', "column",
-                discharge_data_array, metric_discharge.name, metric_discharge.unit, "#0092B0", "line",
-                "chart1", "<b>" + name + " " + metric1.name + " and " + metric_discharge.name + "</b>", "<i>*SRP: Soluble reactive phosphorus</i>",
-                'Chart displays two datasets, spring discharge and spring soluble reactive phosphorus loading, to the Western Basin of Lake Erie for the selected watershed for the years 2008 to 2019. A target line on the chart marks the spring SRP loading target for the watershed.',
-                ES.xAxis_start, ES.targets[name][metric1.name], null, //ES.targets[name][metric2.name],
-                '<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data are provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
-                (window.innerHeight  - $("#narrative-section").height()) * 0.7
-            );
-        }else{
-            $("#chart1").html("<i>* Data under development.</i>");
-        }
-
-        if(!s2_data_array.every(IS_EMPTY)){
-            var chart2 = BA.buildSingleChart("line", s2_data_array, metric2.name, metric2.unit, '#0D5E87',
-                ES.xAxis_start,  "<b>" + name + " " + metric2.name + "</b>", "<i>*SRP: Soluble reactive phosphorus</i><br><i>*FWMC: Flow-weighted mean concentration</i>",
-                'Chart displays the flow-weighted mean concentration of soluble reactive phosphorus loading, or SRP, to the Western Basin of Lake Erie for the selected watershed for the years 2008 to 2019. A target line on the chart marks the spring SRP FWMC target for the watershed.',
-                ES.targets[name][metric2.name], "chart2", 
-                '<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data is provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
-                (window.innerHeight  - $("#narrative-section").height()) * 0.7
-            );
-        }
-        else {
-            $("#chart2").html("<i>* Data under development.</i>");
-        }
-
-        if(!s3_data_array.every(IS_EMPTY) || !discharge_data_array.every(IS_EMPTY)){
-            var chart3 = BA.buildDualAxesChart(s3_data_array, metric3.name, metric3.unit, '#0D5E87', "column",
-                discharge_data_array, metric_discharge.name, metric_discharge.unit, "#0092B0", "line",
-                "chart3",  "<b>" + name + " " + metric3.name + " and " + metric_discharge.name + "</b>", "<i>*TP: Total phosphorus</i>",
-                'Chart displays two datasets, spring discharge and spring total phosphorus loading, to the Western Basin of Lake Erie for the selected watershed for the years 2008 to 2019. A target line on the chart marks the spring TP loading target for the watershed.',
-                ES.xAxis_start, ES.targets[name][metric3.name], null, //ES.targets[name][metric2.name],
-                '<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data is provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
-                (window.innerHeight  - $("#narrative-section").height()) * 0.7
-            );
-        }else{
-            $("#chart3").html("<i>* Data under development.</i>");
-        }
-
-        if(!s4_data_array.every(IS_EMPTY)){
-            var chart4 = BA.buildSingleChart("line", s4_data_array, metric4.name, metric4.unit, '#0D5E87',
-                ES.xAxis_start, "<b>" + name + " " + metric4.name + "</b>", "<i>*TP: Total phosphorus</i><br><i>*FWMC: Flow-weighted mean concentration</i>",
-                'Chart displays the flow-weighted mean concentration of total phosphorus loading, or TP, to the Western Basin of Lake Erie for the selected watershed for the years 2008 to 2019. A target line on the chart marks the spring TP FWMC target for the watershed.',
-                ES.targets[name][metric4.name], "chart4", 
-                '<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data is provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
-                (window.innerHeight  - $("#narrative-section").height()) * 0.7
-            );
-        }else{
-            $("#chart4").html("<i>* Data under development.</i>");
-        }
-    }
+			if(phos == "Soluble Reactive Phosphorus" && metric == "Flow-Weighted Mean Concentration"){
+				var s2_data = ES.getWatershedData(name, metric2.name);
+				var s2_data_array = dataToArray(s2_data);
+				if(!s2_data_array.every(IS_EMPTY)){
+				var chart2 = BA.buildSingleChart("line", s2_data_array, metric2.name, metric2.unit, '#0D5E87',
+					ES.xAxis_start,  "<b>" + name + " " + metric2.name + "</b>", "<i>*SRP: Soluble reactive phosphorus</i><br><i>*FWMC: Flow-weighted mean concentration</i>",
+					'Chart displays the flow-weighted mean concentration of soluble reactive phosphorus loading, or SRP, to the Western Basin of Lake Erie for the selected watershed for the years 2008 to 2019. A target line on the chart marks the spring SRP FWMC target for the watershed.',
+					ES.targets[name][metric2.name], "chart2", 
+					'<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data is provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
+					(window.innerHeight  - $("#narrative-section").height()) * 0.7
+				);
+			}
+			else {
+				$("#chart2").html("<i>* Data under development.</i>");
+			}
+		}
+	}
 
     function renderWatershed(label) {
         srp_watershed_combined.query().where("MergeNm='" + label + "'").simplify(map, 0.5).run(function (error, featureCollection) {
             if (featureCollection.features.length > 0) {
                 $("#intro").css("visibility", "hidden");
-                $(".tab").css("display", "block");
-                document.getElementById("defaultOpen").click();
                 if(selectedFeature){
                     map.removeLayer(selectedFeature);
                 }
@@ -348,30 +362,17 @@
         });
     }
 
-    function openFractionChart(evt, fraction) {
-        // Declare all variables
-        var i, tabcontent, tablinks;
+    $(document).ready(function(){
+	$(".fullscreen_button").on("click", function() {
+		   $('#svgOpen').toggle();
+   		   $('#svgClose').toggle();
+		document.fullScreenElement && null !== document.fullScreenElement || !document.mozFullScreen && !document.webkitIsFullScreen ? document.documentElement.requestFullScreen ? document.documentElement.requestFullScreen() : document.documentElement.mozRequestFullScreen ? document.documentElement.mozRequestFullScreen() : document.documentElement.webkitRequestFullScreen && document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT) : document.cancelFullScreen ? document.cancelFullScreen() : document.mozCancelFullScreen ? document.mozCancelFullScreen() : document.webkitCancelFullScreen && document.webkitCancelFullScreen();
+		document.getElementById('right-panel').contentDocument.location.reload(true);
 
-        // Get all elements with class="tabcontent" and hide them
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
+	});
 
-        // Get all elements with class="tablinks" and remove the class "active"
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-            tablinks[i].id = "";
-        }
-
-        // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById(fraction).style.display = "block";
-        evt.currentTarget.className += " active";
-
-        // Maintain current tab open
-        evt.currentTarget.id = "defaultOpen";
-    }
+    });
+				
 </script>
 </body>
 </html>
