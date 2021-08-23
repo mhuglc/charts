@@ -3,7 +3,7 @@
         "River": "Cattaraugus Creek",
         "Year": 2008,
         "Fraction": "Annual TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
@@ -122,133 +122,133 @@
         "River": "Cedar-Toussaint",
         "Year": 2008,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2009,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2010,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2011,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2012,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2013,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2014,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2015,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2016,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2017,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2018,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2019,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2020,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2008,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2009,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2010,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2011,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2012,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2013,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
@@ -304,273 +304,273 @@
         "River": "Cedar-Toussaint",
         "Year": 2008,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2009,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2010,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2011,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2012,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2013,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2014,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2015,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2016,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2017,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2018,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2019,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2020,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2008,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2009,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2010,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2011,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2012,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2013,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2014,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2015,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2016,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2017,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2018,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2019,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2020,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2008,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2009,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2010,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2011,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2012,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2013,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2014,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2015,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2016,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2017,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2018,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2019,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Cedar-Toussaint",
         "Year": 2020,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
@@ -1508,70 +1508,70 @@
         "River": "Huron River-OH",
         "Year": 2008,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2009,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2010,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2011,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2012,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2013,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2014,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2015,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2016,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2017,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
@@ -1599,7 +1599,7 @@
         "River": "Huron River-OH",
         "Year": 2008,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
@@ -1662,7 +1662,7 @@
         "River": "Huron River-OH",
         "Year": 2017,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
@@ -1690,14 +1690,14 @@
         "River": "Huron River-OH",
         "Year": 2008,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2009,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
@@ -1732,28 +1732,28 @@
         "River": "Huron River-OH",
         "Year": 2014,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2015,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2016,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2017,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
@@ -1781,70 +1781,70 @@
         "River": "Huron River-OH",
         "Year": 2008,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2009,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2010,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2011,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2012,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2013,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2014,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2015,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2016,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2017,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
@@ -1872,70 +1872,70 @@
         "River": "Huron River-OH",
         "Year": 2008,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2009,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2010,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2011,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2012,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2013,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2014,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2015,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2016,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Huron River-OH",
         "Year": 2017,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
@@ -1963,315 +1963,315 @@
         "River": "Leamington Tributaries",
         "Year": 2008,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2009,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2010,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2011,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2012,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2013,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2014,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2015,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2016,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2008,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2009,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2010,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2011,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2012,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2013,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2014,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2015,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2016,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2008,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2009,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2010,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2011,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2012,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2013,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2014,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2015,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2016,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2008,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2009,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2010,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2011,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2012,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2013,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2014,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2015,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2016,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2008,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2009,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2010,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2011,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2012,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2013,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2014,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2015,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
         "River": "Leamington Tributaries",
         "Year": 2016,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": ""
     },
     {
@@ -2866,21 +2866,21 @@
         "River": "Portage River",
         "Year": 2008,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Portage River",
         "Year": 2009,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Portage River",
         "Year": 2010,
         "Fraction": "Spring Discharge",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
@@ -2957,21 +2957,21 @@
         "River": "Portage River",
         "Year": 2008,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Portage River",
         "Year": 2009,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Portage River",
         "Year": 2010,
         "Fraction": "Spring TP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
@@ -3048,21 +3048,21 @@
         "River": "Portage River",
         "Year": 2008,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Portage River",
         "Year": 2009,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Portage River",
         "Year": 2010,
         "Fraction": "Spring SRP Loading",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
@@ -3139,21 +3139,21 @@
         "River": "Portage River",
         "Year": 2008,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Portage River",
         "Year": 2009,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Portage River",
         "Year": 2010,
         "Fraction": "Spring TP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
@@ -3230,21 +3230,21 @@
         "River": "Portage River",
         "Year": 2008,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Portage River",
         "Year": 2009,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
         "River": "Portage River",
         "Year": 2010,
         "Fraction": "Spring SRP FWMC",
-        "Value": null,
+        "Value": "",
         "Source": "Greg Koltun"
     },
     {
@@ -5393,35 +5393,35 @@
         "River": "Cuyahoga River",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Cuyahoga River",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Cuyahoga River",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Cuyahoga River",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Cuyahoga River",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
@@ -5575,35 +5575,35 @@
         "River": "Detroit River (U.S.)",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Detroit River (U.S.)",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Detroit River (U.S.)",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Detroit River (U.S.)",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Detroit River (U.S.)",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
@@ -5757,35 +5757,35 @@
         "River": "Grand River-OH",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Grand River-OH",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Grand River-OH",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Grand River-OH",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Grand River-OH",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
@@ -5939,35 +5939,35 @@
         "River": "Huron River-OH",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Huron River-OH",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Huron River-OH",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Huron River-OH",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Huron River-OH",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
@@ -6121,35 +6121,35 @@
         "River": "Maumee River",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Maumee River",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Maumee River",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Maumee River",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Maumee River",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
@@ -6303,35 +6303,35 @@
         "River": "Portage River",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Portage River",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Portage River",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Portage River",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Portage River",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
@@ -6485,35 +6485,35 @@
         "River": "River Raisin",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "River Raisin",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "River Raisin",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "River Raisin",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "River Raisin",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
@@ -6667,35 +6667,35 @@
         "River": "Sandusky River",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Sandusky River",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Sandusky River",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Sandusky River",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Sandusky River",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
@@ -6849,35 +6849,35 @@
         "River": "Thames River",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Thames River",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Thames River",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Thames River",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Thames River",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
@@ -7031,35 +7031,35 @@
         "River": "Vermilion River",
         "Year": 2008,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Vermilion River",
         "Year": 2009,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Vermilion River",
         "Year": 2010,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Vermilion River",
         "Year": 2011,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
         "River": "Vermilion River",
         "Year": 2012,
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
-        "Value": null,
+        "Value": "",
         "Source": "Santina and Maccoux"
     },
     {
