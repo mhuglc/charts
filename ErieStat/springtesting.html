@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <title>Spring SRP Loading in ErieStat Watersheds</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- subresource integrity is a security feature ensuring that fetched resources are not manipulated -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
           integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -29,7 +32,7 @@
 
     <!--<script src="https://code.highcharts.com/modules/export-data.js"></script> this module is not behaving as expected-->
 
-    <script src="../js/BlueAccounting_WP.js"></script>
+    <script src="../js/BlueAccounting_test.js"></script>
     <script src="../js/ErieStat_2019.js"></script>
     <script src="../js/export-csv_glc.js"></script>
 
@@ -54,6 +57,22 @@
     top: 10px;
     /* text-shadow: 0px 2px 1px rgba(255,255,255,0.85); */
   }
+	
+  .field_set {
+    border-width: 0px;
+  }
+	
+  #wrapper {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+  }
+	
+  #page-content {margin: 0 0 0 60%;}
+	
+  .ui-widget {
+      font-size: 90% !important;
+  }
 
 </style>
 
@@ -67,34 +86,33 @@
             <p id="narrative-content"></p>
         </div>
         <!-- Tab links -->
-        <div class="tab">
-            <button class="tablinks" onclick="openFractionChart(event, 'SRP_S')" id="defaultOpen">Spring SRP Loading and<br> Spring Discharge</button>
-            <button class="tablinks" onclick="openFractionChart(event, 'SRP_FWMC')">Spring SRP FWMC</button>
-            <button class="tablinks" onclick="openFractionChart(event, 'TP_S')" >Spring TP Loading and<br> Spring Discharge</button>
-            <button class="tablinks" onclick="openFractionChart(event, 'TP_FWMC_S')">Spring TP FWMC</button>
+        <!-- Selectors -->
+        <div class="page-content" id="selectors">
+            <fieldset class="field_set">
+              <select id="display" name="display" style="font-family: 'Montserrat', font-size: 16, sans-serif;">
+                  <option value="Total Loading" selected="selected">Total Loading</option>
+                  <option value="Percent Decrease">Percent Decrease</option>
+              </select> <br>
+          </fieldset>
         </div>
 
         <!-- Tab content -->
-        <div id="SRP_S" class="tabcontent">
-            <!--<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>-->
-            <div id="chart1" class="charts"></div>
-        </div>
-
-        <div id="SRP_FWMC" class="tabcontent">
-            <!--<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>-->
-            <div>
-                <div id="chart2" class="charts"></div>
-            </div>
-        </div>
-        <div id="TP_S" class="tabcontent">
-            <!--<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>-->
-            <div id="chart3" class="charts"></div>
-        </div>
-        <div id="TP_FWMC_S" class="tabcontent">
-            <!--<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>-->
-            <div id="chart4" class="charts"></div>
-        </div>
+        <div id="container" class="charts">
+	    </div>
     </div>
+    
+    <div id="wrapper" title="Toggle full screen">
+        <svg id="svgOpen" class="fullscreen_button" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill="#828282">
+            <path d="M0 0h24v24H0V0z" fill="none"/>
+            <path d="M6 14c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1h3c.55 0 1-.45 1-1s-.45-1-1-1H7v-2c0-.55-.45-1-1-1zm0-4c.55 0 1-.45 1-1V7h2c.55 0 1-.45 1-1s-.45-1-1-1H6c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm11 7h-2c-.55 0-1 .45-1 1s.45 1 1 1h3c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1s-1 .45-1 1v2zM14 6c0 .55.45 1 1 1h2v2c0 .55.45 1 1 1s1-.45 1-1V6c0-.55-.45-1-1-1h-3c-.55 0-1 .45-1 1z"/>
+        </svg>
+        <svg id="svgClose" style="display: none;" class="fullscreen_button" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="36px" viewBox="0 0 24 24" width="36px" fill="#828282"><rect fill="none" height="24" width="24"/>
+            <path d="M21.29,4.12l-4.59,4.59l1.59,1.59c0.63,0.63,0.18,1.71-0.71,1.71H13c-0.55,0-1-0.45-1-1V6.41c0-0.89,1.08-1.34,1.71-0.71 l1.59,1.59l4.59-4.59c0.39-0.39,1.02-0.39,1.41,0v0C21.68,3.1,21.68,3.73,21.29,4.12z M4.12,21.29l4.59-4.59l1.59,1.59 c0.63,0.63,1.71,0.18,1.71-0.71V13c0-0.55-0.45-1-1-1H6.41c-0.89,0-1.34,1.08-0.71,1.71l1.59,1.59l-4.59,4.59 c-0.39,0.39-0.39,1.02,0,1.41l0,0C3.1,21.68,3.73,21.68,4.12,21.29z"/>
+        </svg>
+<!--span class="fullscreen_button" onclick="toggleMaker()" id="fullToggle">View<br>Fullscreen</span-->
+
+    </div>
+    
 </div>
 
 
@@ -108,7 +126,13 @@
     var metric3 = ES.metrics.TP_L_S;
     var metric4 = ES.metrics.TP_FWMS_S;
     var metric_discharge = ES.metrics.Discharge_S;
-    var initWatershed = 'Maumee';
+    
+	var searchParams = new URLSearchParams(window.location.search);
+	if (searchParams.has("init") == true){
+		var initWatershed = searchParams.get("init")
+	}else{
+        var initWatershed = 'Maumee'
+	};
     var selectedFeature;
 
     var gray1 = L.esri.Vector.vectorTileLayer("5f7becb4a173426ab8070691bc30bdcc", {apiKey: "AAPK58650c913093468cb730b917301196e0ivsVrrT_ghV_VjFooGm75QCtdR285831SeUdRcXWoPZhtUVAKzA-50tVTLWV-1ZU"});
@@ -122,7 +146,7 @@
       "Satellite": sat
     };
   
-    var map = L.map("map", {layers: [gray1]}).setView([42.1, -82.0], 7);
+    var map = L.map("map", {scrollWheelZoom: false, layers: [gray1]}).setView([42.1, -82.0], 7);
     
     L.control.layers(baseMaps).addTo(map);
 
@@ -185,35 +209,11 @@
       }
     });
 
-    // Hide tabs
-    var tabs = document.getElementsByClassName("tab");
-    for (i = 0; i < tabs.length; i++) {
-        tabs[i].style.display = "none";
-    }
-    
-  
+ 
     $.getJSON("../data/ErieStat_2021_test2.json", function(d){
         data = d;
     }).done(function () {
         ES.init(data);
-    }).then(function () {
-        L.esri.featureLayer({
-            url: "https://services7.arcgis.com/Tk0IbKIKhaoYn5sa/arcgis/rest/services/ErieStat_Monitoring/FeatureServer/0",
-            where: "SPRING = 'Y'",
-            pointToLayer: function (geojson, latlng) {
-                var p = L.circle(latlng, {
-                    radius: 50,
-                    opacity: 0,
-                    color: "#A80084"
-                });
-
-                p.bindPopup("<table>" +
-                    //                    "<tr><th>Program: </th><td>{{geojson.properties.Program}}</td></tr>" +
-                    "<tr><th>Monitoring Station: </th><td>" + geojson.properties.Station + "</td></tr>" +
-                    "</table>");
-                return p;
-            }
-        }).addTo(map);
 
         // Default to Maumee river when page initialize
         ES.buildNarratives(initWatershed + ' River');
@@ -227,23 +227,32 @@
         srp_watershed_combined.query().nearby(e.latlng, 100).simplify(map, 0.5).run(function (error, featureCollection){
             if(featureCollection.features.length >0){
                 $("#intro").css("visibility", "hidden");
-                $(".tab").css("display", "block");
-                document.getElementById("defaultOpen").click();
                 if (featureCollection.features.length > 0) {
                     var name = ES.watershedNames[featureCollection.features[0].properties["MergeNm"]];
                     // var label = featureCollection.features[0].properties["Label"];
                     if (ES.buildNarratives(name)) {
+                        var metric = $( "select#display option:selected" ).val();
                         loadChart(name);
                     } else {
                         $(".charts").html("");
                     }
                     renderWatershed(featureCollection.features[0].properties["MergeNm"]);
+                    initWatershed = featureCollection.features[0].properties["MergeNm"];
                 }
             }
         })
     });
+    
+    	// Handle switch between parameters
+	$('#display').selectmenu({
+		change: function (event, data) {
 
-    function loadChart(name) {
+			chart = null;
+			loadChart(data.item.value, ES.watershedNames[initWatershed]);
+		}
+	});
+
+    function loadChart(metric, name) {
         function dataToArray(vals){
             let array = []
             for(let i =0;i < vals.length;i++){array.push(vals.get(i))}
