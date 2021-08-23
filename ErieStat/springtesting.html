@@ -59,7 +59,7 @@
   }
 	
   .field_set {
-    border-width: 0px;
+    /*border-width: 0px;*/
   }
 	
   #wrapper {
@@ -68,7 +68,11 @@
     right: 5px;
   }
 	
-  #page-content {margin: 0 0 0 60%;}
+  #page-content {
+	  margin: 0 0 0 60%;
+	  display: flex;
+	  flex-wrap: wrap;
+  }
 	
   .ui-widget {
       font-size: 90% !important;
@@ -89,6 +93,7 @@
         <!-- Selectors -->
         <div class="page-content" id="selectors">
             <fieldset class="field_set">
+	      <legend>Select Chart Parameters</legend>
               <select id="display" name="display" style="font-family: 'Montserrat', font-size: 16, sans-serif;">
                   <option value="Loading and Discharge" selected="selected">Total Loading</option>
                   <option value="Flow-Weighted Mean Concentration">FWMC</option>
