@@ -336,16 +336,16 @@
 			var s2_data = ES.getWatershedData(name, metric2.name);
 			var s2_data_array = dataToArray(s2_data);
 			if(!s2_data_array.every(IS_EMPTY)){
-			var chart2 = BA.buildSingleChart("line", s2_data_array, metric2.name, metric2.unit, '#0D5E87',
+			var chart = BA.buildSingleChart("line", s2_data_array, metric2.name, metric2.unit, '#0D5E87',
 				ES.xAxis_start,  "<b>" + name + " " + metric2.name + "</b>", "<i>*SRP: Soluble reactive phosphorus</i><br><i>*FWMC: Flow-weighted mean concentration</i>",
 				'Chart displays the flow-weighted mean concentration of soluble reactive phosphorus loading, or SRP, to the Western Basin of Lake Erie for the selected watershed for the years 2008 to 2019. A target line on the chart marks the spring SRP FWMC target for the watershed.',
-				ES.targets[name][metric2.name], "chart2", 
+				ES.targets[name][metric2.name], "container", 
 				'<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data is provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
 				(window.innerHeight  - $("#narrative-section").height()) * 0.7
 				);
 			}
 			else {
-				$("#chart2").html("<i>* Data under development.</i>");
+				$("#container").html("<i>* Data under development.</i>");
 			}
 		}
 	}
