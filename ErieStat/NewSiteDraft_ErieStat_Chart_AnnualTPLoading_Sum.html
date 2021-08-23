@@ -127,6 +127,15 @@ Highcharts.chart("chart", {
     caption: {
         text: '<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/lake-erie-total-phosphorus-loading">https://www.blueaccounting.org/progress/lake-erie-total-phosphorus-loading</a></em>'
     },
+
+    tooltip: {
+        formatter: function() {
+              return '<b>' + this.x + '</b><br/>'+
+              this.series.name + ': ' + this.y + ' MTA<br/>'+
+              'Total: ' + this.point.total + ' MTA'
+        }
+    },
+    
     plotOptions: {
         column: {
             stacking: 'normal',
