@@ -34,14 +34,17 @@
           // get the first layer in the collection of operational layers in the WebMap
           // when the resources in the MapView have loaded.
           var featureLayer = webmap.layers.getItemAt(0);
+          var featureLayer2 = webmap.layers.getItemAt(1);
 
           var legend = new Legend({
             view: view,
             layerInfos: [
               {
                 layer: featureLayer,
+                title: "",
+              },{
+                layer: featureLayer2,
                 title: ""
-              }
             ]
           });
 
