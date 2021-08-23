@@ -7117,5 +7117,1825 @@
         "Fraction": "5 Year Average of Percent Reduction Relative to 2008",
         "Value": 63.6162265167,
         "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2008,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2009,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 3.1398062372,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2010,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 7.5454352592,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2011,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -63.9198076515,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2012,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 72.2042288381,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2013,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 11.6399123117,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2014,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 18.3063432572,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2015,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -45.6502368998,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2016,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 46.5886429531,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2017,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -34.7146595007,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2018,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 23.6970511279,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2019,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -44.400678877,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2020,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 0.6435188459,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2008,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2009,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 30.1306865178,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2010,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -7.1265508685,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2011,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -42.2663358147,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2012,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 78.9081885856,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2013,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 4.4135649297,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2014,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -1.3995037221,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2015,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -101.4888337469,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2016,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 52.3639371381,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2017,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -32.0099255583,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2018,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 28.2051282051,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2019,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -14.2928039702,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2020,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 28.8668320926,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2008,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2009,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2010,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2011,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 12.1025641026,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2012,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 83.5897435897,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2013,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 63.1282051282,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2014,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 68.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2015,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 42.8717948718,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2016,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 65.4871794872,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2017,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 41.0256410256,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2018,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 64.6153846154,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2019,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 24.6153846154,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2020,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 52.3076923077,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2008,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2009,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2010,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2011,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 11.8918918919,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2012,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 82.1621621622,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2013,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 40.8108108108,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2014,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 61.8918918919,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2015,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -8.3783783784,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2016,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 70.2702702703,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2017,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 21.6216216216,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2018,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 59.4594594595,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2019,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 21.6216216216,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2020,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 64.8648648649,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2008,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2009,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 45.0531479967,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2010,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 15.0722267648,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2011,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -91.0057236304,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2012,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 61.1065685473,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2013,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 0.6813845735,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2014,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 26.4649768329,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2015,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 10.3570455165,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2016,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 56.3641319161,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2017,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 4.6061597165,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2018,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 33.496865631,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2019,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -13.9275006814,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2020,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 10.3297901336,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2008,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2009,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 57.2463768116,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2010,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 4.347826087,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2011,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -83.6231884058,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2012,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 77.5362318841,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2013,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -27.2463768116,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2014,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 13.6231884058,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2015,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -33.1884057971,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2016,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 55.652173913,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2017,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -30.4347826087,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2018,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 27.5362318841,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2019,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -14.4927536232,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2020,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 27.5362318841,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2008,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2009,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -10.1796407186,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2010,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 18.3233532934,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2011,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -59.2814371257,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2012,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 67.5449101796,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2013,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 31.8562874251,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2014,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 29.5808383234,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2015,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 10.2994011976,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2016,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 51.8562874251,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2017,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -38.6826347305,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2018,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -6.3473053892,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2019,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -54.4910179641,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2020,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -1.7964071856,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2008,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2009,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 14.7959183673,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2010,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 14.7959183673,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2011,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -50.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2012,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 67.3469387755,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2013,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 27.0408163265,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2014,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 9.1836734694,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2015,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -22.9591836735,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2016,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 53.5714285714,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2017,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -6.6326530612,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2018,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 3.5714285714,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2019,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -27.5510204082,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2020,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 3.0612244898,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2008,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2009,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -49.2957746479,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2010,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 30.985915493,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2011,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -416.9014084507,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2012,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 60.5633802817,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2013,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -11.2676056338,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2014,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -173.2394366197,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2015,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -125.3521126761,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2016,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": 43.661971831,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2017,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -161.9718309859,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2018,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -77.4647887324,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2019,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -283.0985915493,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2020,
+        "Fraction": "Spring TP Percent Reduction Relative to 2008",
+        "Value": -25.3521126761,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2008,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 0.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2009,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -118.1818181818,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2010,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 45.4545454545,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2011,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -1081.8181818182,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2012,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 54.5454545455,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2013,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -145.4545454545,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2014,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -500.0,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2015,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -409.0909090909,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2016,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": 36.3636363636,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2017,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -190.9090909091,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2018,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -136.3636363636,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2019,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -509.0909090909,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2020,
+        "Fraction": "Spring SRP Percent Reduction Relative to 2008",
+        "Value": -227.2727272727,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 6.1225733819,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 6.1225733819,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 9.1564152102,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 9.1564152102,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": -1.4833379063,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": -1.4833379063,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 20.6181281769,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 20.6181281769,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": -0.7655002305,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": -0.7655002305,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 1.6459280338,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 1.6459280338,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": -10.8953760258,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": -10.8953760258,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": -1.6302421039,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Maumee River",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": -1.6302421039,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 52.9478632479,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 52.9478632479,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 56.7065384615,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 56.7065384615,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 53.9373333333,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 53.9373333333,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 64.6072820513,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 64.6072820513,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 56.0912820513,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 56.0912820513,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 56.3924102564,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 56.3924102564,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 47.7271468223,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 47.7271468223,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 49.6100186171,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Portage River",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 49.6100186171,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 6.1791272589,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 6.1791272589,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 2.4629180408,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 2.4629180408,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 1.5230723105,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 1.5230723105,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 30.9996456704,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 30.9996456704,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 19.711901712,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 19.711901712,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 26.2534139919,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 26.2534139919,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 18.1987300323,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 18.1987300323,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 18.1706562227,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Sandusky River",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 18.1706562227,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 9.6025402912,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 9.6025402912,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 17.5627583728,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 17.5627583728,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 15.9700437361,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 15.9700437361,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 38.2062189204,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 38.2062189204,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 16.9483679914,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 16.9483679914,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": 9.2929379109,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": 9.2929379109,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": -7.6227227988,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": -7.6227227988,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": -9.9600303298,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "River Raisin",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": -9.9600303298,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2008,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2009,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2010,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2011,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2012,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": "",
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": -77.347819952,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2013,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": -77.347819952,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": -102.2006490758,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2014,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": -102.2006490758,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": -133.5823338507,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2015,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": -133.5823338507,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": -41.2857344433,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2016,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": -41.2857344433,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": -85.7889092705,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2017,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": -85.7889092705,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": -99.1353181882,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2018,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": -99.1353181882,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": -121.0263863412,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2019,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": -121.0263863412,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Spring TP Percent Reduction Relative to 2008",
+        "Value": -101.1463242557,
+        "Source": "Santina and Maccoux"
+    },
+    {
+        "River": "Thames River",
+        "Year": 2020,
+        "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
+        "Value": -101.1463242557,
+        "Source": "Santina and Maccoux"
     }
 ]
