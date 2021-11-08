@@ -136,6 +136,12 @@
     var data;
     var serviceURL = "https://services7.arcgis.com/Tk0IbKIKhaoYn5sa/arcgis/rest/services/ErieStat_SpringSRP_Map_WFL1/FeatureServer";
     var BA = new BlueAccounting();
+    var ws_array = [
+        {init: "Ohio", ws: "Maumee"},
+	{init: "Michigan", ws: "Detroit"},
+	{init: "Indiana", ws: "Maumee"},
+	{init: "Ontario", ws: "Thames"},
+    ];
     var ES = new ErieStat();
     var metric1 = ES.metrics.SRP_L_S;
     var metric2 = ES.metrics.SRP_FWMC_S;
@@ -148,12 +154,14 @@
 
     var metric_discharge = ES.metrics.Discharge_S;
     
-	var searchParams = new URLSearchParams(window.location.search);
-	if (searchParams.has("init") == true){
-		var initWatershed = searchParams.get("init")
-	}else{
-        var initWatershed = 'Maumee'
-	};
+    var searchParams = new URLSearchParams(window.location.search);
+    if (searchParams.has("init") == true){
+	var initWatershed = searchParams.get("init");
+	var initWatershed = ws_array.find(x => x.init === init).ws;
+    }else{
+    var initWatershed = 'Maumee'
+    };
+	
     var selectedFeature;
 
     var gray1 = L.esri.Vector.vectorTileLayer("5f7becb4a173426ab8070691bc30bdcc", {apiKey: "AAPK58650c913093468cb730b917301196e0ivsVrrT_ghV_VjFooGm75QCtdR285831SeUdRcXWoPZhtUVAKzA-50tVTLWV-1ZU"});
