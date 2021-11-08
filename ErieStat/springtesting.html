@@ -138,7 +138,7 @@
     var BA = new BlueAccounting();
     var ws_array = [
         {init: "Ohio", ws: "Maumee"},
-	{init: "Michigan", ws: "Detroit"},
+	{init: "Michigan", ws: "Raisin"},
 	{init: "Indiana", ws: "Maumee"},
 	{init: "Ontario", ws: "Thames"},
     ];
@@ -156,7 +156,7 @@
     
     var searchParams = new URLSearchParams(window.location.search);
     if (searchParams.has("init") == true){
-	var initWatershed = searchParams.get("init");
+	var init = searchParams.get("init");
 	var initWatershed = ws_array.find(x => x.init === init).ws;
     }else{
     var initWatershed = 'Maumee'
