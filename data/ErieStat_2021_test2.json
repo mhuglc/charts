@@ -8109,7 +8109,7 @@
         "River": "Maumee River",
         "Year": 2013,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 6.1225733819,
+        "Value": 12.81252998,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8123,7 +8123,7 @@
         "River": "Maumee River",
         "Year": 2014,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 9.1564152102,
+        "Value": 6.506711309,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8137,7 +8137,7 @@
         "River": "Maumee River",
         "Year": 2015,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": -1.4833379063,
+        "Value": -12.36581517,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8151,7 +8151,7 @@
         "River": "Maumee River",
         "Year": 2016,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 20.6181281769,
+        "Value": 6.560044466,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8165,7 +8165,7 @@
         "River": "Maumee River",
         "Year": 2017,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": -0.7655002305,
+        "Value": -15.6234388,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8179,7 +8179,7 @@
         "River": "Maumee River",
         "Year": 2018,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 1.6459280338,
+        "Value": -10.86507572,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8193,7 +8193,7 @@
         "River": "Maumee River",
         "Year": 2019,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": -10.8953760258,
+        "Value": -13.44392386,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8207,7 +8207,7 @@
         "River": "Maumee River",
         "Year": 2020,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": -1.6302421039,
+        "Value": 12.60775789,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8291,7 +8291,7 @@
         "River": "Portage River",
         "Year": 2013,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 52.9478632479,
+        "Value": 45.03243243,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8305,7 +8305,7 @@
         "River": "Portage River",
         "Year": 2014,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 56.7065384615,
+        "Value": 49.22635135,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8319,7 +8319,7 @@
         "River": "Portage River",
         "Year": 2015,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 53.9373333333,
+        "Value": 37.70864865,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8333,7 +8333,7 @@
         "River": "Portage River",
         "Year": 2016,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 64.6072820513,
+        "Value": 49.38540541,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8347,7 +8347,7 @@
         "River": "Portage River",
         "Year": 2017,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 56.0912820513,
+        "Value": 37.25513514,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8361,7 +8361,7 @@
         "River": "Portage River",
         "Year": 2018,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 56.3924102564,
+        "Value": 40.96378378,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8375,7 +8375,7 @@
         "River": "Portage River",
         "Year": 2019,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 47.7271468223,
+        "Value": 32.68435409,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8389,7 +8389,7 @@
         "River": "Portage River",
         "Year": 2020,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 49.6100186171,
+        "Value": 47.54051867,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8473,7 +8473,7 @@
         "River": "Sandusky River",
         "Year": 2013,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 6.1791272589,
+        "Value": 5.667246377,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8487,7 +8487,7 @@
         "River": "Sandusky River",
         "Year": 2014,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 2.4629180408,
+        "Value": -3.083478261,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8501,7 +8501,7 @@
         "River": "Sandusky River",
         "Year": 2015,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 1.5230723105,
+        "Value": -10.61084058,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8515,7 +8515,7 @@
         "River": "Sandusky River",
         "Year": 2016,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 30.9996456704,
+        "Value": 17.26423188,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8529,7 +8529,7 @@
         "River": "Sandusky River",
         "Year": 2017,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 19.711901712,
+        "Value": -4.365853339,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8543,7 +8543,7 @@
         "River": "Sandusky River",
         "Year": 2018,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 26.2534139919,
+        "Value": 6.598660252,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8557,7 +8557,7 @@
         "River": "Sandusky River",
         "Year": 2019,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 18.1987300323,
+        "Value": 1.017693841,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8571,7 +8571,7 @@
         "River": "Sandusky River",
         "Year": 2020,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 18.1706562227,
+        "Value": 13.21563138,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8655,7 +8655,7 @@
         "River": "River Raisin",
         "Year": 2013,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 9.6025402912,
+        "Value": 14.6990658,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8669,7 +8669,7 @@
         "River": "River Raisin",
         "Year": 2014,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 17.5627583728,
+        "Value": 13.49839195,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8683,7 +8683,7 @@
         "River": "River Raisin",
         "Year": 2015,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 15.9700437361,
+        "Value": 5.948236255,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8697,7 +8697,7 @@
         "River": "River Raisin",
         "Year": 2016,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 38.2062189204,
+        "Value": 26.66394405,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8711,7 +8711,7 @@
         "River": "River Raisin",
         "Year": 2017,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 16.9483679914,
+        "Value": 11.8393674,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8725,7 +8725,7 @@
         "River": "River Raisin",
         "Year": 2018,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": 9.2929379109,
+        "Value": 7.145240717,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8739,7 +8739,7 @@
         "River": "River Raisin",
         "Year": 2019,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": -7.6227227988,
+        "Value": 0.295376793,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8753,7 +8753,7 @@
         "River": "River Raisin",
         "Year": 2020,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": -9.9600303298,
+        "Value": 5.863095298,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8837,7 +8837,7 @@
         "River": "Thames River",
         "Year": 2013,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": -77.347819952,
+        "Value": -264.7835559,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8851,7 +8851,7 @@
         "River": "Thames River",
         "Year": 2014,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": -102.2006490758,
+        "Value": -344.2890973,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8865,7 +8865,7 @@
         "River": "Thames River",
         "Year": 2015,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": -133.5823338507,
+        "Value": -440.3466894,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8879,7 +8879,7 @@
         "River": "Thames River",
         "Year": 2016,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": -41.2857344433,
+        "Value": -206.8977929,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8893,7 +8893,7 @@
         "River": "Thames River",
         "Year": 2017,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": -85.7889092705,
+        "Value": -257.9710145,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8907,7 +8907,7 @@
         "River": "Thames River",
         "Year": 2018,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": -99.1353181882,
+        "Value": -255.7961542,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8921,7 +8921,7 @@
         "River": "Thames River",
         "Year": 2019,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": -121.0263863412,
+        "Value": -256.6373023,
         "Source": "Santina and Maccoux"
     },
     {
@@ -8935,7 +8935,7 @@
         "River": "Thames River",
         "Year": 2020,
         "Fraction": "5 Year Average of Spring SRP Percent Reduction Relative to 2008",
-        "Value": -101.1463242557,
+        "Value": -218.1737236,
         "Source": "Santina and Maccoux"
     }
 ]
