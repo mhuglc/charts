@@ -45,7 +45,9 @@
 <figure class="highcharts-figure">
     <div id="container"></div>
     <p class="highcharts-description">
-        Add shading to 5-year average to show standard deviation? Color red or green on respective sides of the target line to make it clear which direction is 'good'?
+        Add shading to 5-year average to show standard deviation? <br>
+	Color red or green on respective sides of the target line to make it clear which direction is 'good'? <br>
+	Annotate baseline year?
     </p>
 </figure>
 
@@ -128,12 +130,7 @@ Highcharts.chart('container', {
 
     tooltip: {
         crosshairs: true,
-	formatter: function () {
-	    return this.points.reduce(function (s, point) {
-		    return s + '<br/>' + point.series.name + ': ' +
-                    point.y + '%';
-            }, '<b>' + this.x + '</b>');
-        },
+
         shared: true,
         valueSuffix: '%'
     },
@@ -169,7 +166,7 @@ Highcharts.chart('container', {
         },
 	tooltip: {
 	    pointFormatter: function() { 
-		return this.series.name + ' : <b>' +  ((this.points[0].point.high - this.points[0].point.low)/2 ) + '</b><br/>'; 
+		return this.series.name + ' : <b>' +  Math.abs((this.points[0].point.high - this.points[0].point.low)/2 ) + '</b><br/>'; 
         },
         shared: true
     },
