@@ -312,7 +312,9 @@ Highcharts.chart('container2', {
         },
 	tooltip: {
 	    pointFormatter: function() { 
-		return this.series.name + ' : <b>' +  ((-this.points[0].point.low - -this.points[0].point.high)/2 ) + '</b><br/>'; 
+		var low = this.series.point[0].point.low;
+		var min = this.series.points[0].y
+		return this.series.name + ' : <b> low ' + low + ' min ' + min + '</b><br/>'; 
         },
         shared: true
     },
