@@ -169,7 +169,7 @@ Highcharts.chart('container', {
         },
 	tooltip: {
 	    pointFormatter: function() { 
-		return this.series.name + ' : <b>' +  ((this.points[0].point.high - this.points[0].point.low)/2 )</b><br/>'; 
+		return this.series.name + ' : <b>' +  ((this.points[0].point.high - this.points[0].point.low)/2 ) + '</b><br/>'; 
         },
         shared: true
     },
