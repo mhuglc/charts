@@ -45,10 +45,7 @@
 <figure class="highcharts-figure">
     <div id="container"></div>
     <p class="highcharts-description">
-        Chart demonstrating using an arearange series in combination with a line
-        series. In this case, the arearange series is used to visualize the
-        temperature range per day, while the line series shows the average
-        temperature.
+        Add shading to 5-year average to show standard deviation? Color red or green on respective sides of the target line to make it clear which direction is 'good'?
     </p>
 </figure>
 
@@ -140,7 +137,7 @@ Highcharts.chart('container', {
         data: percents,
 	type: 'scatter',
         zIndex: 2,
-        color: '#0092B0',
+        color: '#0D5E87',
    }, {
         name: '5 Year Average',
         data: averages,
