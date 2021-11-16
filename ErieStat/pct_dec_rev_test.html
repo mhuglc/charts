@@ -46,9 +46,18 @@
 <figure class="highcharts-figure">
     <div id="container"></div>
     <p class="highcharts-description">
-        Add shading to 5-year average to show standard deviation? <br>
-	Color red or green on respective sides of the target line to make it clear which direction is 'good'? <br>
-	Annotate baseline year?
+        V1: Just plotting % change seems less confusing than % decrease <br>
+	Add shading to 5-year average to show standard deviation <br>
+	Color red or green on respective sides of the target line to make it clear which direction is 'good' <br>
+	Annotate baseline year
+    </p>
+	<br>
+	<br>
+    <div id="container2"></div>
+    <p class="highcharts-description">
+        V2: Add gray shading to 5-year average to show standard deviation <br>
+	Color whole background red or green on respective sides of the target line to make it clear which direction is 'good' <br>
+	Add actual line to mark baseline year
     </p>
 </figure>
 
@@ -183,6 +192,97 @@ Highcharts.chart('container', {
 	threshold: -40,
         color: '#D91F26',
         negativeColor: '#68B044',
+        fillOpacity: 0.3,
+        zIndex: 0,
+        marker: {
+            enabled: false
+        },
+	tooltip: {
+	    pointFormatter: function() { 
+		return this.series.name + ' : <b>' +  Math.abs((this.points[0].point.high - this.points[0].point.low)/2 ) + '</b><br/>'; 
+        },
+        shared: true
+    },
+    }, {
+	name: "Target",
+	data: target,
+        type: 'line',
+        lineWidth: 3,
+        marker: {
+                radius: 0
+        },
+        color: "#E07000"
+    }]
+});
+	
+	
+	
+Highcharts.chart('container2', {
+
+    title: {
+        text: 'Maumee River Percent Change in TP Load Relative to 2008'
+    },
+
+    xAxis: {
+        type: 'linear',
+        accessibility: {
+            rangeDescription: 'Year: 2008 to 2020.'
+        }
+    },
+
+    yAxis: {
+        title: {
+            text: 'Percent change'
+        },
+	plotBands: [{ // green 
+            color: '#D91F26',
+            from: -80,
+            to: -40
+	}, { // red
+	    color: '#68B044',
+            from: -40,
+            to: 20
+        }],
+    },
+	
+
+    tooltip: {
+        crosshairs: true,
+	formatter: function () {
+	    return this.points.reduce(function (s, point) {
+		    return s + '<br/>' + point.series.name + ': ' +
+                    point.y + '%';
+            }, '<b>' + this.x + '</b>');
+        },
+        shared: true,
+        valueSuffix: '%'
+    },
+
+    series: [{
+	name: 'Percent change',
+        data: percents,
+	type: 'scatter',
+        zIndex: 2,
+	tooltip: {
+	    shared: false,
+	},
+        color: '#0D5E87',
+   }, {
+        name: '5 Year Average',
+        data: averages,
+        zIndex: 1,
+	type: 'spline',
+	color: '#0092B0',
+	marker: {
+                    radius: 0,
+                },
+    }, {
+        name: 'St. Dev. of 5Y Average',
+        data: ranges,
+        type: 'arearange',
+        lineWidth: 0,
+        linkedTo: ':previous',
+        color: 'gray',
         fillOpacity: 0.3,
         zIndex: 0,
         marker: {
