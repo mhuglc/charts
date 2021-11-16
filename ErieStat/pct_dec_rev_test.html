@@ -128,6 +128,12 @@ Highcharts.chart('container', {
 
     tooltip: {
         crosshairs: true,
+	formatter: function () {
+	    return this.points.reduce(function (s, point) {
+		    return s + '<br/>' + point.series.name + ': ' +
+                    point.y + '%';
+            }, '<b>' + this.x + '</b>');
+        },
         shared: true,
         valueSuffix: '%'
     },
@@ -160,7 +166,13 @@ Highcharts.chart('container', {
         zIndex: 0,
         marker: {
             enabled: false
-        }
+        },
+	tooltip: {
+	    pointFormatter: function() { 
+		return this.series.name + ' : <b>' +  ((this.points[0].point.high - this.points[0].point.low)/2 )</b><br/>'; 
+        },
+        shared: true
+    },
     }, {
 	name: "Target",
 	data: target,
