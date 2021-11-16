@@ -130,7 +130,12 @@ Highcharts.chart('container', {
 
     tooltip: {
         crosshairs: true,
-
+	formatter: function () {
+	    return this.points.reduce(function (s, point) {
+		    return s + '<br/>' + point.series.name + ': ' +
+                    point.y + '%';
+            }, '<b>' + this.x + '</b>');
+        },
         shared: true,
         valueSuffix: '%'
     },
@@ -140,6 +145,9 @@ Highcharts.chart('container', {
         data: percents,
 	type: 'scatter',
         zIndex: 2,
+	tooltip: {
+	    shared: false,
+	},
         color: '#0D5E87',
    }, {
         name: '5 Year Average',
