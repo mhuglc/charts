@@ -92,6 +92,21 @@ var ranges = [
         [2018, -36.07],
         [2019, 1.99],
         [2020, -30.12]
+    ],
+        target = [
+	[2008, -40],
+        [2009, -40],
+        [2010, -40],
+        [2011, -40],
+        [2012, -40],
+        [2013, -40.],
+        [2014, -40],
+        [2015, -40],
+        [2016, -40],
+        [2017, -40],
+        [2018, -40],
+        [2019, -40],
+        [2020, -40]
     ];
 
 
@@ -130,11 +145,11 @@ Highcharts.chart('container', {
         name: '5 Year Average',
         data: averages,
         zIndex: 1,
-        marker: {
-            fillColor: 'white',
-            lineWidth: 2,
-            lineColor: 'black'
-        }
+	type: 'spline',
+	color: '#0092B0',
+	marker: {
+                    radius: 0,
+                },
     }, {
         name: 'St. Dev. of 5Y Average',
         data: ranges,
@@ -149,7 +164,16 @@ Highcharts.chart('container', {
         marker: {
             enabled: false
         }
-    }]
+    }, {
+	name: "Target",
+	data: target,
+        type: 'line',
+        lineWidth: 3,
+        marker: {
+                radius: 0
+        },
+        color: "#E07000"
+    }
 });
 	
 </script>
