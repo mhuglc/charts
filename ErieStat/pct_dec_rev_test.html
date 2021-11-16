@@ -172,6 +172,7 @@ Highcharts.chart('container', {
 
     tooltip: {
         crosshairs: true,
+	shared: true,
         valueSuffix: '%'
     },
 
@@ -198,7 +199,6 @@ Highcharts.chart('container', {
 			    point.y + '%';
 		    }, '<b>' + this.x + '</b>');
 		},
-		shared: true,
         },
 	marker: {
                     radius: 0,
@@ -221,8 +221,7 @@ Highcharts.chart('container', {
 	    pointFormatter: function() { 
 		return this.series.name + ' : <b>' +  ((-this.points[0].point.high - -this.points[0].point.low)/2 ) + '</b><br/>'; 
         },
-        shared: true
-    },
+   },
     }, {
 	name: "Target",
 	data: target,
