@@ -127,6 +127,21 @@ Highcharts.chart('container', {
             text: 'Percent change'
         }
     },
+	
+    annotations: [{
+        labels: [{
+            point: {
+                x: 2008,
+                y: 0,
+                xAxis: 0,
+                yAxis: 0
+            },
+            text: 'Baseline Year: 2008'
+        }],
+        labelOptions: {
+            x: 40, y: -10
+        }
+    }],
 
     tooltip: {
         crosshairs: true,
