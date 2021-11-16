@@ -172,13 +172,6 @@ Highcharts.chart('container', {
 
     tooltip: {
         crosshairs: true,
-	formatter: function () {
-	    return this.points.reduce(function (s, point) {
-		    return s + '<br/>' + point.series.name + ': ' +
-                    point.y + '%';
-            }, '<b>' + this.x + '</b>');
-        },
-        shared: true,
         valueSuffix: '%'
     },
 
@@ -186,7 +179,7 @@ Highcharts.chart('container', {
 	name: 'Percent change',
         data: percents,
 	type: 'scatter',
-        zIndex: 2,
+        zIndex: 0,
 	tooltip: {
 	    shared: false,
 	},
@@ -198,6 +191,15 @@ Highcharts.chart('container', {
 	type: 'spline',
 	lineWidth: 4,
 	color: '#0092B0',
+	tooltip: {
+		formatter: function () {
+		    return this.points.reduce(function (s, point) {
+			    return s + '<br/>' + point.series.name + ': ' +
+			    point.y + '%';
+		    }, '<b>' + this.x + '</b>');
+		},
+		shared: true,
+        },
 	marker: {
                     radius: 0,
                 },
