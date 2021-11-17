@@ -182,11 +182,15 @@ Highcharts.chart('container', {
         crosshairs: true,
 		shared: true,
 		formatter: function () {
-			return this.points.reduce(function (s, point) {
-			    return s + '<br/>' + point.series.name + ': ' +
-			    point.y + '%';
-		    }, '<b>' + this.x + '</b>');
-		},
+        	var s = '<b>' + this.x + '</b>';
+			$.each(this.points, function () {
+				if (this.series.name != 'St. Dev. of 5Y Average') {
+					s += '<br/>' + this.series.name + ': ' + this.y + 'm';
+				}                       
+			});
+			return s;
+		 },
+	    
         valueSuffix: '%'
     },
 
@@ -209,7 +213,7 @@ Highcharts.chart('container', {
     }, {
         name: 'St. Dev. of 5Y Average',
         data: ranges,
-        type: 'arearange',
+        type: 'areasplinerange',
         lineWidth: 0,
         linkedTo: ':previous',
 	threshold: -26.67,
@@ -220,13 +224,13 @@ Highcharts.chart('container', {
         marker: {
             enabled: false
         },
-    tooltip: {
-        enabled: false
-    },
+    	tooltip: {
+        	enabled: false
+   	},
      }, {
         name: 'St. Dev. of 5Y Average',
         data: ranges,
-        type: 'arearange',
+        type: 'areasplinerange',
         lineWidth: 0,
         linkedTo: ':previous',
 	threshold: -13.33,
@@ -238,8 +242,8 @@ Highcharts.chart('container', {
             enabled: false
         },
 	tooltip: {
-        enabled: false
-    },
+        	enabled: false
+    	},
     }, {
 	name: "Target",
 	data: target,
@@ -322,7 +326,7 @@ Highcharts.chart('container2', {
     }, {
         name: 'St. Dev. of 5Y Average',
         data: ranges,
-        type: 'arearange',
+        type: 'areasplinerange',
         lineWidth: 0,
         color: '#0D5E87',
         fillOpacity: 0.3,
