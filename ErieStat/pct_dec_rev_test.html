@@ -233,6 +233,7 @@ Highcharts.chart('container', {
 		marker: {
         	radius: 0,
         },
+		legendIndex: 2
     }, {
 		name: "Target",
 		data: target,
@@ -241,12 +242,14 @@ Highcharts.chart('container', {
         marker: {
         	radius: 0
         },
+		legendIndex: 3,
         color: "#E07000"
     }, {
 		name: 'Percent change',
         data: percents,
 		type: 'line',
         lineWidth: 0,
+		legendIndex: 1,
         states: {
         	hover: {
           		lineWidthPlus: 0
@@ -320,6 +323,7 @@ Highcharts.chart('container2', {
         	}
         },
 		zIndex: 2,
+		legendIndex: 1,
         color: '#0D5E87',
    }, {
         name: '5 Year Average',
@@ -327,6 +331,7 @@ Highcharts.chart('container2', {
         zIndex: 1,
 	lineWidth: 4,
 	type: 'spline',
+	legendIndex: 2,
 	color: '#0D5E87',
 	marker: {
                     radius: 0,
@@ -339,6 +344,7 @@ Highcharts.chart('container2', {
         color: '#0D5E87',
         fillOpacity: 0.3,
         zIndex: 0,
+		legendIndex: 3,
         marker: {
             enabled: false
         },
@@ -355,6 +361,7 @@ Highcharts.chart('container2', {
 		data: target,
         type: 'line',
         lineWidth: 3,
+		legendIndex: 4,
         marker: {
                 radius: 0
         },
