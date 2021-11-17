@@ -397,6 +397,14 @@ var drawGraph = function(){
 			.attr('r', 12)
 			.attr('fill', function(d){return d < percentNumber ? twitterFillActive : twitterFill;})
 			.style('stroke', 'black');
+	
+	svg.append("text")
+		.attr("x", (width / 2))             
+		.attr("y", 0 - (margin.top / 2))
+		.attr("text-anchor", "middle")  
+		.style("font-size", "16px") 
+		.style("text-decoration")  
+		.text("3 out of 9");
 
 }
 
