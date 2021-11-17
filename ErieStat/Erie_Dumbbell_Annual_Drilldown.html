@@ -63,23 +63,13 @@
 // Create the chart
 Highcharts.chart('container', {
     chart: {
-        type: 'dumbbell',
-	inverted: true,
-	backgroundColor: {
-		linearGradient: {x1: 0, x2: 1, y1: 1, y2: 0},
-		stops: [
-			[0, 'rgb(255,255,255)'],
-       			[1, '#F2FAFF']
-    		]
-	},
+        type: 'column'
     },
     title: {
-        text: 'Progress towards annual phosphorus targets for Erie priority tributaries'
+        text: 'Browser market shares. January, 2018'
     },
     subtitle: {
-        useHTML: true,
-	verticalAlign: 'bottom',
-	text: '<span class="startDot size" style="font-size: 400%; vertical-align: sub">&bull;</span> <b>Annual TP load in baseline year (2008) <br> Current TP load (5-year average, 2016-2020): </b><span class="greenDot size" style="font-size: 400%; vertical-align: sub">&bull;</span> Progress on track or better     <span class="yellowDot size" style="font-size: 400%; vertical-align: sub">&bull;</span> Slower progress     <span class="redDot size" style="font-size: 400%; vertical-align: sub">&bull;</span> Negative progress     <span class="blackDot size" style="font-size: 400%; vertical-align: sub">&bull;</span> Target not established<br/><span class="targetLine2025 size" style="color:#E07000; vertical-align: sub; line-height: 2" >&vert;</span><b> 2025 Target</b>'
+        text: 'Click the columns to view versions. Source: <a href="http://statcounter.com" target="_blank">statcounter.com</a>'
     },
     accessibility: {
         announceNewData: {
