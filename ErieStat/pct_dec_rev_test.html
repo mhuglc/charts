@@ -195,22 +195,6 @@ Highcharts.chart('container', {
     },
 
     series: [{
-	name: 'Percent change',
-        data: percents,
-	type: 'scatter',
-        zIndex: 0,
-        color: '#0D5E87',
-   }, {
-        name: '5 Year Average +/- 1 Std. Dev.',
-        data: averages,
-        zIndex: 1,
-	type: 'spline',
-	lineWidth: 4,
-	color: '#0D5E87',
-	marker: {
-                    radius: 0,
-                },
-    }, {
         name: 'St. Dev. of 5Y Average',
         data: ranges,
         type: 'areasplinerange',
@@ -237,13 +221,21 @@ Highcharts.chart('container', {
         color: '#ffd4c5',
         negativeColor: 'transparent',
         fillOpacity: 1,
-        zIndex: 0,
         marker: {
             enabled: false
         },
 	tooltip: {
         	enabled: false
     	},
+    }, {
+	name: '5 Year Average +/- 1 Std. Dev.',
+        data: averages,
+	type: 'spline',
+	lineWidth: 4,
+	color: '#0D5E87',
+	marker: {
+                    radius: 0,
+                },
     }, {
 	name: "Target",
 	data: target,
@@ -253,7 +245,13 @@ Highcharts.chart('container', {
                 radius: 0
         },
         color: "#E07000"
-    }]
+    }, {
+	name: 'Percent change',
+        data: percents,
+	type: 'scatter',
+        zIndex: 0,
+        color: '#0D5E87',
+   }]
 });
 	
 	
