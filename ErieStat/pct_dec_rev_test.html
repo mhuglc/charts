@@ -301,7 +301,7 @@ Highcharts.chart('container2', {
 		formatter: function () {
         	var s = '<b>' + this.x + '</b>';
 			$.each(this.points, function () {
-				if (this.series.name != 'St. Dev. of 5Y Average') {
+				if (this.series.name != 'St. Dev. of 5Y Average' && this.series.name != 'Baseline Year (2008)') {
 					s += '<br/>' + this.series.name + ': ' + this.y + '%';
 				}                       
 			});
@@ -312,8 +312,14 @@ Highcharts.chart('container2', {
     series: [{
 	name: 'Percent change',
         data: percents,
-	type: 'scatter',
-        zIndex: 2,
+		type: 'line',
+        lineWidth: 0,
+        states: {
+        	hover: {
+          		lineWidthPlus: 0
+        	}
+        },
+		zIndex: 2,
         color: '#0D5E87',
    }, {
         name: '5 Year Average',
