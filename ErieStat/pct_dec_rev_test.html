@@ -185,13 +185,11 @@ Highcharts.chart('container', {
         	var s = '<b>' + this.x + '</b>';
 			$.each(this.points, function () {
 				if (this.series.name != 'St. Dev. of 5Y Average') {
-					s += '<br/>' + this.series.name + ': ' + this.y + 'm';
+					s += '<br/>' + this.series.name + ': ' + this.y + '%';
 				}                       
 			});
 			return s;
-		 },
-	    
-        valueSuffix: '%'
+		 },	    
     },
 
     series: [{
@@ -299,14 +297,16 @@ Highcharts.chart('container2', {
 
     tooltip: {
         crosshairs: true,
-        shared: true,
+		shared: true,
 		formatter: function () {
-		    return this.points.reduce(function (s, point) {
-			    return s + '<br/>' + point.series.name + ': ' +
-			    point.y + '%';
-		    }, '<b>' + this.x + '</b>');
-		},
-        valueSuffix: '%'
+        	var s = '<b>' + this.x + '</b>';
+			$.each(this.points, function () {
+				if (this.series.name != 'St. Dev. of 5Y Average') {
+					s += '<br/>' + this.series.name + ': ' + this.y + '%';
+				}                       
+			});
+			return s;
+		 },	    
     },
 
     series: [{
@@ -343,14 +343,6 @@ Highcharts.chart('container2', {
 			symbolHeight: 11,
 			symbolWidth: 11,
 			symbolRadius: 0
-		},
-		tooltip: {
-			pointFormatter: function() { 
-			var low = this.series.point[0].point.low;
-			var min = this.series.points[0].y
-			return this.series.name + ' : <b> low ' + low + ' min ' + min + '</b><br/>'; 
-			},
-			shared: true
 		},
     }, {
 		name: "Target",
