@@ -44,12 +44,15 @@
 <body>
 	
 <figure class="highcharts-figure">
+    <h2> Options for revised versions of the percent decrease chart in the ErieStat Explore tab <a href="https://blueaccountdev.wpengine.com/metric/central-lake-erie-basin-hypoxia">dashboards</a></h2>
+    <br>
     <div id="container"></div>
     <p class="highcharts-description">
-        V1: Just plotting % change seems less confusing than % decrease <br>
-	Add shading to 5-year average to show standard deviation <br>
-	Color red or green on respective sides of the target line to make it clear which direction is 'good' <br>
-	Annotate baseline year
+        V1: Plotting percent change is probably more intuitive than percent decrease. <br>
+	Added a shaded confidence interval to the smoothed 5-year average line to better emphasize interannual variation.<br>
+	The confidence interval width shown here is one standard deviation of the 5 annual values used in each 5-year average. <br>
+	The shaded confidence interval could be colored to match the progress gauge to make the interpretation clearer <br>
+	Annotating the baseline year could also help with chart interpretation, especially for colorblind users.
     </p>
 	<br>
 	<br>
@@ -57,9 +60,9 @@
 	<br>
     <div id="container2"></div>
     <p class="highcharts-description">
-        V2: Add gray shading to 5-year average to show standard deviation <br>
-	Color whole background red or green on respective sides of the target line to make it clear which direction is 'good' <br>
-	Add actual line to mark baseline year
+        V2: This version uses the same shaded standard deviation confidence interval but uses one color.<br>
+	Instead, the whole background is colored to match the progress gauge. <br>
+	Also shows the option of adding another line to highlight the baseline year rather than an annotation.
     </p>
 </figure>
 
@@ -140,7 +143,7 @@ var ranges = [
 Highcharts.chart('container', {
 
     title: {
-        text: 'Maumee River Percent Change in TP Load Relative to 2008'
+        text: 'Maumee River Percent Change in Annual TP Load'
     },
 
     xAxis: {
@@ -152,7 +155,7 @@ Highcharts.chart('container', {
 
     yAxis: {
         title: {
-            text: 'Percent change'
+            text: 'Percent change relative to 2008'
         }
     },
 	
@@ -187,12 +190,12 @@ Highcharts.chart('container', {
 	},
         color: '#0D5E87',
    }, {
-        name: '5 Year Average',
+        name: '5 Year Average +/- 1 Std. Dev.',
         data: averages,
         zIndex: 1,
 	type: 'spline',
 	lineWidth: 4,
-	color: '#0092B0',
+	color: '#0D5E87',
 	tooltip: {
 		formatter: function () {
 		    return this.points.reduce(function (s, point) {
@@ -210,10 +213,10 @@ Highcharts.chart('container', {
         type: 'arearange',
         lineWidth: 0,
         linkedTo: ':previous',
-	threshold: -40,
-        color: '#D91F26',
-        negativeColor: '#68B044',
-        fillOpacity: 0.3,
+	threshold: -26.67,
+        color: '#ffffbd',
+        negativeColor: '#8dc39f',
+        fillOpacity: 1,
         zIndex: 0,
         marker: {
             enabled: false
@@ -223,6 +226,21 @@ Highcharts.chart('container', {
 		var low = this.series.point[0].point.low;
 		var min = this.series.points[0].y
 		return this.series.name + ' : <b> low ' + low + ' min ' + min + '</b><br/>'; 
+        },
+   },
+       }, {
+        name: 'St. Dev. of 5Y Average',
+        data: ranges,
+        type: 'arearange',
+        lineWidth: 0,
+        linkedTo: ':previous',
+	threshold: -13.33,
+        color: '#ffd4c5',
+        negativeColor: '#transparent',
+        fillOpacity: 1,
+        zIndex: 0,
+        marker: {
+            enabled: false
         },
    },
     }, {
@@ -242,7 +260,7 @@ Highcharts.chart('container', {
 Highcharts.chart('container2', {
 
     title: {
-        text: 'Maumee River Percent Change in TP Load Relative to 2008'
+        text: 'Maumee River Percent Change in Annual TP Load'
     },
 
     xAxis: {
@@ -254,14 +272,14 @@ Highcharts.chart('container2', {
 
     yAxis: {
         title: {
-            text: 'Percent change'
+            text: 'Percent change relative to 2008'
         },
 	plotBands: [{ // green 
-            color: '#d1e7c7',
+            color: '#8dc39f',
             from: -80,
             to: -40
 	}, { // red
-	    color: '#f4bbbd',
+	    color: '#ffd4c5',
             from: -40,
             to: 20
         }],
@@ -281,12 +299,12 @@ Highcharts.chart('container2', {
         zIndex: 2,
         color: '#0D5E87',
    }, {
-        name: '5 Year Average',
+        name: '5 Year Average +/1 1 Std. Dev.',
         data: averages,
         zIndex: 1,
 	lineWidth: 4,
 	type: 'spline',
-	color: '#0092B0',
+	color: '#0D5E87',
 	marker: {
                     radius: 0,
                 },
@@ -296,7 +314,7 @@ Highcharts.chart('container2', {
         type: 'arearange',
         lineWidth: 0,
         linkedTo: ':previous',
-        color: '#0092B0',
+        color: '#0D5E87',
         fillOpacity: 0.3,
         zIndex: 0,
         marker: {
