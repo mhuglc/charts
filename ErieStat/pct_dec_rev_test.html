@@ -228,7 +228,20 @@ Highcharts.chart('container', {
 		return this.series.name + ' : <b> low ' + low + ' min ' + min + '</b><br/>'; 
             },
 	},
-
+     }, {
+        name: 'St. Dev. of 5Y Average',
+        data: ranges,
+        type: 'arearange',
+        lineWidth: 0,
+        linkedTo: ':previous',
+	threshold: -13.33,
+        color: '#ffd4c5',
+        negativeColor: 'transparent',
+        fillOpacity: 1,
+        zIndex: 0,
+        marker: {
+            enabled: false
+        },
     }, {
 	name: "Target",
 	data: target,
