@@ -276,10 +276,14 @@ Highcharts.chart('container2', {
 	plotBands: [{ // green 
             color: '#8dc39f',
             from: -80,
-            to: -40
+            to: -26.67
+	}, { // yellow
+	    color: '#ffffbd',
+            from: -26.67,
+            to: -13.33
 	}, { // red
 	    color: '#ffd4c5',
-            from: -40,
+            from: -13.33,
             to: 20
         }],
     },
@@ -298,7 +302,7 @@ Highcharts.chart('container2', {
         zIndex: 2,
         color: '#0D5E87',
    }, {
-        name: '5 Year Average +/1 1 Std. Dev.',
+        name: '5 Year Average',
         data: averages,
         zIndex: 1,
 	lineWidth: 4,
@@ -312,7 +316,6 @@ Highcharts.chart('container2', {
         data: ranges,
         type: 'arearange',
         lineWidth: 0,
-        linkedTo: ':previous',
         color: '#0D5E87',
         fillOpacity: 0.3,
         zIndex: 0,
