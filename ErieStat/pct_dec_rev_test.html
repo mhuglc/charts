@@ -180,7 +180,13 @@ Highcharts.chart('container', {
 
     tooltip: {
         crosshairs: true,
-	shared: true,
+		shared: true,
+		formatter: function () {
+			return this.points.reduce(function (s, point) {
+			    return s + '<br/>' + point.series.name + ': ' +
+			    point.y + '%';
+		    }, '<b>' + this.x + '</b>');
+		},
         valueSuffix: '%'
     },
 
@@ -189,9 +195,6 @@ Highcharts.chart('container', {
         data: percents,
 	type: 'scatter',
         zIndex: 0,
-	tooltip: {
-	    shared: false,
-	},
         color: '#0D5E87',
    }, {
         name: '5 Year Average +/- 1 Std. Dev.',
@@ -200,14 +203,6 @@ Highcharts.chart('container', {
 	type: 'spline',
 	lineWidth: 4,
 	color: '#0D5E87',
-	tooltip: {
-		formatter: function () {
-		    return this.points.reduce(function (s, point) {
-			    return s + '<br/>' + point.series.name + ': ' +
-			    point.y + '%';
-		    }, '<b>' + this.x + '</b>');
-		},
-        },
 	marker: {
                     radius: 0,
                 },
@@ -225,13 +220,9 @@ Highcharts.chart('container', {
         marker: {
             enabled: false
         },
-	tooltip: {
-	    pointFormatter: function() { 
-		var low = this.series.point[0].point.low;
-		var min = this.series.points[0].y
-		return this.series.name + ' : <b> low ' + low + ' min ' + min + '</b><br/>'; 
-            },
-	},
+    tooltip: {
+        enabled: false
+    },
      }, {
         name: 'St. Dev. of 5Y Average',
         data: ranges,
@@ -246,6 +237,9 @@ Highcharts.chart('container', {
         marker: {
             enabled: false
         },
+	tooltip: {
+        enabled: false
+    },
     }, {
 	name: "Target",
 	data: target,
@@ -300,6 +294,12 @@ Highcharts.chart('container2', {
     tooltip: {
         crosshairs: true,
         shared: true,
+		formatter: function () {
+		    return this.points.reduce(function (s, point) {
+			    return s + '<br/>' + point.series.name + ': ' +
+			    point.y + '%';
+		    }, '<b>' + this.x + '</b>');
+		},
         valueSuffix: '%'
     },
 
@@ -328,6 +328,9 @@ Highcharts.chart('container2', {
         fillOpacity: 0.3,
         zIndex: 0,
         marker: {
+            enabled: false
+        },
+		tooltip: {
             enabled: false
         },
 		legend: {
@@ -360,6 +363,9 @@ Highcharts.chart('container2', {
 		dashStyle: 'dot',
         marker: {
                 radius: 0
+        },
+		tooltip: {
+            enabled: false
         },
         color: "gray"
     }]
