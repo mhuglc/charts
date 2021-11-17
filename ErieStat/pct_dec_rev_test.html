@@ -330,17 +330,22 @@ Highcharts.chart('container2', {
         marker: {
             enabled: false
         },
-	tooltip: {
-	    pointFormatter: function() { 
-		var low = this.series.point[0].point.low;
-		var min = this.series.points[0].y
-		return this.series.name + ' : <b> low ' + low + ' min ' + min + '</b><br/>'; 
-        },
-        shared: true
-    },
+		legend: {
+			symbolHeight: 11,
+			symbolWidth: 11,
+			symbolRadius: 0
+		},
+		tooltip: {
+			pointFormatter: function() { 
+			var low = this.series.point[0].point.low;
+			var min = this.series.points[0].y
+			return this.series.name + ' : <b> low ' + low + ' min ' + min + '</b><br/>'; 
+			},
+			shared: true
+		},
     }, {
-	name: "Target",
-	data: target,
+		name: "Target",
+		data: target,
         type: 'line',
         lineWidth: 3,
         marker: {
@@ -348,11 +353,11 @@ Highcharts.chart('container2', {
         },
         color: "#E07000"
     }, {
-	name: "Baseline Year (2008)",
-	data: baseline,
+		name: "Baseline Year (2008)",
+		data: baseline,
         type: 'line',
         lineWidth: 3,
-	dashStyle: 'dot',
+		dashStyle: 'dot',
         marker: {
                 radius: 0
         },
