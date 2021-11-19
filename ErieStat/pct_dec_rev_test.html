@@ -65,6 +65,15 @@
 	Instead, the whole background is colored to match the progress gauge. <br>
 	Also shows the option of adding another line to highlight the baseline year rather than an annotation.
     </p>
+	<br>
+	<br>
+	<br>
+	<br>
+    <div id="container3"></div>
+    <p class="highcharts-description">
+        V2: Background colored to match the progress gauge <br>
+	Dotted line to highlight the baseline year.
+    </p>
 </figure>
 
 
@@ -389,6 +398,107 @@ Highcharts.chart('container2', {
 	
 
 
+	
+	
+Highcharts.chart('container3', {
+
+    title: {
+        text: 'Maumee River Percent Change in Annual TP Load',
+	style: {
+            color: '#000000',
+            fontWeight: 'bold'
+        }
+    },
+
+    xAxis: {
+        type: 'linear',
+        accessibility: {
+            rangeDescription: 'Year: 2008 to 2020.'
+        }
+    },
+
+    yAxis: {
+        title: {
+            text: 'Percent change relative to 2008'
+        },
+	plotBands: [{ // green 
+            color: '#8dc39f',
+            from: -80,
+            to: -26.67
+	}, { // yellow
+	    color: '#ffffbd',
+            from: -26.67,
+            to: -13.33
+	}, { // red
+	    color: '#ffd4c5',
+            from: -13.33,
+            to: 20
+        }],
+    },
+	
+
+    tooltip: {
+        crosshairs: true,
+		shared: true,
+		formatter: function () {
+        	var s = '<b>' + this.x + '</b>';
+			$.each(this.points, function () {
+				s += '<br/>' + this.series.name + ': ' + this.y + '%';                      
+			});
+			return s;
+		 },	    
+    },
+
+    series: [{
+	name: 'Percent change',
+        data: percents,
+		type: 'line',
+        lineWidth: 0,
+        states: {
+        	hover: {
+          		lineWidthPlus: 0
+        	}
+        },
+		zIndex: 2,
+		legendIndex: 1,
+        color: '#0D5E87',
+   }, {
+        name: '5 Year Average',
+        data: averages,
+        zIndex: 1,
+	lineWidth: 4,
+	type: 'spline',
+	legendIndex: 2,
+	color: '#0D5E87',
+	marker: {
+                    radius: 0,
+                },
+
+    }, {
+		name: "Target",
+		data: target,
+        type: 'line',
+        lineWidth: 3,
+		legendIndex: 4,
+        marker: {
+                radius: 0
+        },
+        color: "#E07000"
+    }, {
+		name: "Baseline Year (2008)",
+		data: baseline,
+        type: 'line',
+        lineWidth: 3,
+		dashStyle: 'dot',
+        marker: {
+                radius: 0
+        },
+		tooltip: {
+            enabled: false
+        },
+        color: "gray"
+    }]
+});
 	
 </script>
 	
