@@ -73,6 +73,7 @@
     <p class="highcharts-description">
         V2: Background colored to match the progress gauge <br>
 	Dotted line to highlight the baseline year.
+	No smoothing of the 5-year average line between data points
     </p>
 </figure>
 
@@ -343,7 +344,7 @@ Highcharts.chart('container2', {
         data: averages,
         zIndex: 1,
 	lineWidth: 4,
-	type: 'spline',
+	type: 'line',
 	legendIndex: 2,
 	color: '#0D5E87',
 	marker: {
