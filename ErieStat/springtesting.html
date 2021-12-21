@@ -162,9 +162,9 @@
     var searchParams = new URLSearchParams(window.location.search);
     if (searchParams.has("init") == true){
 		var init = searchParams.get("init");
-		if(ws_array.includes(init) == true){
-			var initWatershed = ws_array.find(x => x.init === init).ws;
-		}else{var initWatershed = 'Maumee'
+		var initWatershed = ws_array.find(x => x.init === init).ws;
+	    	if (typeof initWatershed == 'undefined'){
+		    var initWatershed = 'Maumee'
 		};			
 		console.log(initWatershed);
     }else{
