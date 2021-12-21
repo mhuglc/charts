@@ -158,6 +158,7 @@
     if (searchParams.has("init") == true){
 	var init = searchParams.get("init");
 	var initWatershed = ws_array.find(x => x.init === init).ws;
+	console.log(initWatershed);
     }else{
     var initWatershed = 'Maumee'
     };
