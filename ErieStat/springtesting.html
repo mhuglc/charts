@@ -156,11 +156,14 @@
     
     var searchParams = new URLSearchParams(window.location.search);
     if (searchParams.has("init") == true){
-	var init = searchParams.get("init");
-	var initWatershed = ws_array.find(x => x.init === init).ws;
-	console.log(initWatershed);
+		var init = searchParams.get("init");
+		if(ws_array.includes(init) == true){
+			var initWatershed = ws_array.find(x => x.init === init).ws;
+		}else{var initWatershed = 'Maumee'
+		};			
+		console.log(initWatershed);
     }else{
-    var initWatershed = 'Maumee'
+    	var initWatershed = 'Maumee'
     };
 	
     var selectedFeature;
