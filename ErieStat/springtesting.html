@@ -106,7 +106,7 @@
               <select id="display" name="display" style="font-family: 'Montserrat', font-size: 16, sans-serif;">
                   <option value="Loading and Discharge" selected="selected">Total Loading</option>
                   <option value="Flow-Weighted Mean Concentration">FWMC</option>
-		  <option value="Percent Decrease">Percent Decrease</option>
+		  <!-- <option value="Percent Decrease">Percent Decrease</option> -->
               </select>
 
           </fieldset>
@@ -376,7 +376,7 @@
 				$("#container").html("<i>* Data under development.</i>");
 			}
 		}
-	    	if(phos == "Total Phosphorus" && metric == "Percent Decrease"){
+	    	/*if(phos == "Total Phosphorus" && metric == "Percent Decrease"){
 			var s5_data = ES.getWatershedData(name, metric5.name);
         	var s6_data = ES.getWatershedData(name, metric6.name);
         	var s5_data_array = dataToArray(s5_data);
@@ -413,7 +413,7 @@
 			else {
 				$("#container").html("<i>* Data under development.</i>");
 			}
-		}
+		} */
 	}
 
     function renderWatershed(label) {
