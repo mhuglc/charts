@@ -140,7 +140,7 @@ body{
 li {
     font-size: small;
     text-align: left;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 .tooltip {
