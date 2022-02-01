@@ -138,16 +138,23 @@
 	{init: "Thames", ws: "Thames"},
     ];
     var ES = new ErieStat();
-	var searchParams = new URLSearchParams(window.location.search);
-	if (searchParams.has("init") == true){
-		var init = searchParams.get("init")
-		var initWatershed = ws_array.find(x => x.init === init).ws;
-	}else{var initWatershed = 'Maumee'
-	};
+    var searchParams = new URLSearchParams(window.location.search);
+    if (searchParams.has("init") == true){
+        var init = searchParams.get("init")
+	var initWatershed = ws_array.find(x => x.init === init).ws;
+	if (typeof initWatershed == 'undefined'){
+	    var initWatershed = 'Maumee'
+	};			
+	console.log(initWatershed);
+    }else{
+    	var initWatershed = 'Maumee'
+    };
+	
     var metric1 = ES.metrics.TP_L;
     var metric2 = ES.metrics.AnnPercentReduction;
     var metric3 = ES.metrics.AnnPercentReduction5Y;
     var selectedFeature;
+	
 	
     // Map setup
     // Basemaps
