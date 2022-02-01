@@ -266,7 +266,7 @@
                     if (ES.buildNarratives(name)) {
 						var metric = $( "select#display option:selected" ).val();
 						console.log(metric);
-                        loadChart(metric, name);
+                        loadChart("Total Loading", name);
                     } else {
                         $(".charts").html("");
                     }
@@ -278,14 +278,7 @@
 
     });
 
-	// Handle switch between parameters
-	$('#display').selectmenu({
-		change: function (event, data) {
 
-			chart = null;
-			loadChart(data.item.value, ES.watershedNames[initWatershed]);
-		}
-	})
 				
     function loadChart(metric, name) {
         function dataToArray(vals){
