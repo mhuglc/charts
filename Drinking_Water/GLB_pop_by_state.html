@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+      integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+      crossorigin=""
+    ></script>
+    <script src="https://unpkg.com/leaflet-arc/bin/leaflet-arc.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="states_geojson.js"></script>
+    <script src="geojsonarea.js"></script>
+    <script src="statepop2.js"></script>
+    <script src="stateshift2.js"></script>
+  </head>
+  <body onload="">
+    <style>
+      #containerdiv {
+        width: 100%;
+        position: relative;
+        text-align: center;
+      }
+      #mapid {
+        width: 750px;
+        height: 500px;
+      }
+
+      #animatebutton {
+        width: 240px;
+        padding: 6px;
+        background-color: lightyellow;
+        border-radius: 3px;
+        position: absolute;
+        right: 10px;
+        top: 80%;
+        z-index: 1000;
+        font-size: 12px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        #containerdiv {
+          width: 100%;
+          position: relative;
+        }
+        #animatebutton {
+          position: relative;
+          left: 10px;
+          top: 0px;
+          margin: 0 auto;
+          width: 90%;
+        }
+      }
+    </style>
+
+    <div id="containerdiv">
+      <div id="mapid"></div>
+      <button id="animatebutton" onclick="animatemap()"></button>
+    </div>
+
+    <script>
+      function resizeAK() {
+        origAKCenter = [-154.616, 63.706];
+        newAKCenter = [-110.616, 22.706];
+
+        offsetLat = newAKCenter[1] - origAKCenter[1];
+        offsetLon = newAKCenter[0] - origAKCenter[0];
+
+        AKcoord = statesGeo["features"][1].geometry.coordinates;
+        Nsubpolygons = AKcoord.length;
+        for (var i = 0; i < Nsubpolygons; i++) {
+          for (var j = 0; j < AKcoord[i][0].length; j++) {
+            coordLon = AKcoord[i][0][j][0];
+            coordLat = AKcoord[i][0][j][1];
+            newCoordLat = coordLat + offsetLat;
+
+            //calc real distance b/t center and coordinate by calculating degree distance and multiplying by long distance at that latitude
+            dist = (coordLon - origAKCenter[0]) * londist(coordLat);
+
+            //calc new coordinates by taking distance calced above and figuring out lon degrees at new latitude
+            newcoordLon =
+              origAKCenter[0] + offsetLon + dist / londist(newCoordLat);
+
+            AKcoord[i][0][j] = [newcoordLon, newCoordLat];
+          }
+        }
+      }
+
+      function moveHI() {
+        translateGeoJSON(statesGeo["features"][11], [70, 0]);
+      }
+
+      function londist(latdeg) {
+        //Length of 1 degree of Longitude = cosine (latitude in decimal degrees) * length of degree (miles) at equator
+
+        lonkmeq = 111.321;
+        latrad = (latdeg * Math.PI) / 180;
+
+        return Math.cos(latrad) * lonkmeq;
+      }
+
+      function resizeState(ind) {
+        //set geojsonshape
+
+        var geojsonshape = scaledStatesGeo["features"][ind];
+
+        sf = geojsonshape.properties.popsf;
+        var centerlat = geojsonshape.properties.center[1];
+        var centerlon = geojsonshape.properties.center[0];
+        var polytype = geojsonshape.geometry.type;
+        var offsetlat = geojsonshape.properties.offset[1] * offsetfraction;
+        var offsetlon = geojsonshape.properties.offset[0] * offsetfraction;
+
+        if (polytype == "MultiPolygon") {
+          var coord = geojsonshape.geometry.coordinates;
+          Nsubpolygons = coord.length;
+          for (var i = 0; i < Nsubpolygons; i++) {
+            Npolypoints = coord[i][0].length;
+            for (var j = 0; j < Npolypoints; j++) {
+              //calc new coordinates by taking current distance (in deg) between coordinates and center and multiplying by a scale factor (to shrink polygon)
+              // new coordlon = (origcoordlon - centerlon) * shrink factor + centerlon
+              // new coordlat = (origcoordlat - centerlat) * shrink factor + centerlat
+              origLat = coord[i][0][j][1];
+              origLon = coord[i][0][j][0];
+              newLat = (origLat - centerlat) * calcScaleFactor(sf) + centerlat;
+              newLon = (origLon - centerlon) * calcScaleFactor(sf) + centerlon;
+
+              // coord[i][0][j]=[coord[i][0][j][0]+offsetlonlat[0],coord[i][0][j][1]+offsetlonlat[1]];
+              coord[i][0][j] = [newLon + offsetlon, newLat + offsetlat];
+            }
+          }
+        } else if (polytype == "Polygon") {
+          var coord = geojsonshape.geometry.coordinates[0];
+
+          Npolypoints = coord.length;
+          for (var i = 0; i < coord.length; i++) {
+            origLat = coord[i][1];
+            origLon = coord[i][0];
+            newLat = (origLat - centerlat) * calcScaleFactor(sf) + centerlat;
+            newLon = (origLon - centerlon) * calcScaleFactor(sf) + centerlon;
+
+            coord[i] = [newLon + offsetlon, newLat + offsetlat];
+            // coord[i]=[coord[i][0]+offsetlonlat[0],coord[i][1]+offsetlonlat[1]];
+          }
+        }
+      }
+
+      function calcScaleFactor(targetscale) {
+        var fraction = stepindex / animationsteps;
+
+        return 1 - (1 - targetscale) * fraction;
+      }
+
+      function calcScaleOffset() {
+        return stepindex / animationsteps;
+      }
+
+      function scaleStatesByPop() {
+        if (newcalcs) {
+          mymap.removeLayer(scaled);
+        }
+        //copy original geoJSONdata
+        scaledStatesGeo = JSON.parse(JSON.stringify(statesGeo));
+
+        scaledGeo = scaledStatesGeo["features"];
+
+        for (var i = 0; i < scaledGeo.length; i++) {
+          resizeState(i);
+        }
+
+        scaled = L.geoJson(scaledStatesGeo, {
+          style: stylescaled,
+
+          // onEachFeature: onEachFeature
+        })
+          .bindTooltip(function (layer) {
+            return layer.feature.properties.popuptxt;
+          })
+          .addTo(mymap);
+
+        newcalcs = 1;
+      }
+
+      offsetfraction = 1;
+      function animatemap() {
+        myanimation = setInterval(function () {
+          offsetfraction = calcScaleOffset();
+
+          if (dir == 0) {
+            if (stepindex >= animationsteps) {
+              dir = 1;
+              $("#animatebutton").html("Click to Show Physical Size");
+              stop();
+            } else {
+              stepindex += 1;
+            }
+          } else if (dir == 1) {
+            if (stepindex <= 0) {
+              dir = 0;
+              $("#animatebutton").html("Click to Show Population Size");
+              stop();
+            } else {
+              stepindex -= 1;
+            }
+          }
+
+          scaleStatesByPop();
+        }, 1000 / animationsteps);
+      }
+
+      function stop() {
+        clearInterval(myanimation);
+      }
+
+      function polygonCenter(ind) {
+        //set geojsonshape
+        var geojsonshape = statesGeo["features"][ind];
+
+        var polytype = geojsonshape.geometry.type;
+
+        if (polytype == "MultiPolygon") {
+          var coord = geojsonshape.geometry.coordinates;
+
+          var maxlat = (minlat = coord[0][0][0][1]);
+          var maxlon = (minlon = coord[0][0][0][0]);
+
+          for (var i = 0; i < coord.length; i++) {
+            for (var j = 0; j < coord[i][0].length; j++) {
+              currlat = coord[i][0][j][1];
+              currlon = coord[i][0][j][0];
+
+              if (currlon > maxlon) {
+                maxlon = currlon;
+              } else if (currlon < minlon) {
+                minlon = currlon;
+              }
+
+              if (currlat > maxlat) {
+                maxlat = currlat;
+              } else if (currlat < minlat) {
+                minlat = currlat;
+              }
+            }
+          }
+        } else if (polytype == "Polygon") {
+          var coord = geojsonshape.geometry.coordinates[0];
+
+          var maxlat = (minlat = coord[0][1]);
+          var maxlon = (minlon = coord[0][0]);
+
+          for (var i = 0; i < coord.length; i++) {
+            currlat = coord[i][1];
+            currlon = coord[i][0];
+
+            if (currlon > maxlon) {
+              maxlon = currlon;
+            } else if (currlon < minlon) {
+              minlon = currlon;
+            }
+
+            if (currlat > maxlat) {
+              maxlat = currlat;
+            } else if (currlat < minlat) {
+              minlat = currlat;
+            }
+          }
+        }
+
+        var center = [(minlon + maxlon) / 2, (minlat + maxlat) / 2];
+
+        return center;
+      }
+
+      function translateGeoJSON(geojsonshape, offsetlonlat) {
+        //offsetlonlat is [lonoffset, latoffset]
+
+        var polytype = geojsonshape.geometry.type;
+
+        if (polytype == "MultiPolygon") {
+          var coord = geojsonshape.geometry.coordinates;
+
+          for (var i = 0; i < coord.length; i++) {
+            for (var j = 0; j < coord[i][0].length; j++) {
+              coord[i][0][j] = [
+                coord[i][0][j][0] + offsetlonlat[0],
+                coord[i][0][j][1] + offsetlonlat[1],
+              ];
+            }
+          }
+        } else if (polytype == "Polygon") {
+          var coord = geojsonshape.geometry.coordinates[0];
+          for (var i = 0; i < coord.length; i++) {
+            coord[i] = [
+              coord[i][0] + offsetlonlat[0],
+              coord[i][1] + offsetlonlat[1],
+            ];
+          }
+        }
+      }
+
+      function combineData() {
+        //add data to the geoJSON file for each state
+        for (var i = 0; i < statesGeo["features"].length; i++) {
+          //get name from data object
+          var state = statesGeo["features"][i].properties.name;
+
+          //look in energydata and find the object with the same name
+          var newdata = statesdata.filter((obj) => {
+            return obj.name === state;
+          });
+
+          var shiftdata = stateoffset.filter((obj) => {
+            return obj.name === state;
+          });
+
+          statesGeo["features"][i].properties.pop = newdata[0].Population;
+
+          statesGeo["features"][i].properties.center = polygonCenter(i);
+          // this is the scale factor for each dimension x,y
+          statesGeo["features"][i].properties.popsf = newdata[0].rCAx;
+
+          statesGeo["features"][i].properties.offset = shiftdata[0].offset;
+
+          //tooltip text
+          statesGeo["features"][i].properties.popuptxt =
+            state +
+            " has " +
+            newdata[0].Population.toLocaleString() +
+            " people and  <br>the new size is  " +
+            newdata[0].rCA +
+            " of the original size";
+        }
+
+        //copy original geoJSONdata
+        scaledStatesGeo = JSON.parse(JSON.stringify(statesGeo));
+      }
+
+      function stylebase(feature) {
+        return {
+          weight: 1,
+          opacity: 1,
+          color: "grey",
+          dashArray: "0",
+          fillOpacity: 0.2,
+          fillColor: "black",
+          // fillColor: getColor(feature.properties.pop)
+        };
+      }
+
+      function stylescaled(feature) {
+        return {
+          weight: 0.4,
+          opacity: 1,
+          color: "black",
+          dashArray: "0",
+          fillOpacity: 0.8,
+          // fillColor:'red',
+          fillColor: getColor(feature.properties.pop),
+        };
+      }
+
+      function getColor(d) {
+        return d > 20000000
+          ? "#800026"
+          : d > 10000000
+          ? "#BD0026"
+          : d > 5000000
+          ? "#E31A1C"
+          : // d > 100  ? '#FC4E2A' :
+          // d > 50   ? '#FD8D3C' :
+          d > 2000000
+          ? "#FEB24C"
+          : d > 1000000
+          ? "#FED976"
+          : "#FFEDA0";
+      }
+
+      function initialize() {
+        w = window.innerWidth;
+
+        mapdiv = document.getElementById("mapid");
+        buttondiv = document.getElementById("animatebutton");
+
+        switch (true) {
+          case w > 900:
+            mapdiv.style.width = "900px";
+            mapdiv.style.height = "700px";
+            buttondiv.style.top = "650px";
+            buttondiv.style.left = "600px";
+            zlevel = 4.2;
+            break;
+
+          default:
+            mapdiv.style.width = w - 10 + "px";
+            mapdiv.style.height = (w - 10) * 0.7 + "px";
+            if (w > 600) {
+              buttondiv.style.top = (w - 10) * 0.7 - 50 + "px";
+              buttondiv.style.left = w - 300 + "px";
+            } else {
+              buttondiv.style.top = "0px";
+            }
+            zlevel = w * 0.0028 + 1.8;
+            break;
+        }
+
+        mymap = L.map("mapid", {
+          renderer: L.canvas(),
+          center: [33, -94], //33,-100
+          zoomSnap: 0.01,
+          maxZoom: zlevel,
+          zoom: zlevel,
+          minZoom: zlevel,
+          zoomControl: false,
+
+          maxBounds: [
+            [52, -62],
+            [9, -135],
+          ],
+          maxBoundsViscosity: 1,
+        });
+        animationsteps = 20;
+        stepindex = animationsteps;
+        dir = 1;
+
+        geojson = L.geoJson(statesGeo, {
+          style: stylebase,
+          attribution: "<b>engaging-data.com</b>",
+          // onEachFeature: onEachFeature
+        })
+          .bindTooltip(function (layer) {
+            return layer.feature.properties.popuptxt;
+          })
+          .addTo(mymap);
+
+        $("#animatebutton").html("Click to Show Population Size");
+
+        scaleStatesByPop();
+      }
+
+      sfm = 1;
+      newcalcs = 0;
+
+      function polygonCenterArea(arr) {
+        // area calculated based on http://www.mathopenref.com/coordpolygonarea.html
+        var total = 0;
+        var maxlat = (minlat = arr[0][1]);
+        var maxlon = (minlon = arr[0][0]);
+
+        for (var i = 0; i < arr.length - 1; i++) {
+          total += arr[i][0] * arr[i + 1][1] - arr[i + 1][0] * arr[i][1];
+
+          if (arr[i][0] > maxlon) {
+            maxlon = arr[i][0];
+          } else if (arr[i][0] < minlon) {
+            minlon = arr[i][0];
+          }
+          if (arr[i][1] > maxlat) {
+            maxlat = arr[i][1];
+          } else if (arr[i][1] < minlat) {
+            minlat = arr[i][1];
+          }
+        }
+        var center = [(minlon + maxlon) / 2, (minlat + maxlat) / 2];
+        var degreearea = Math.abs(total / 2);
+        var realarea = degreetokmArea(Math.abs(total / 2), center[1]);
+        var area = [degreearea, realarea];
+
+        return [center, area];
+      }
+
+      function degreetokmArea(degarea, lat) {
+        //converts area in degrees squared into km2
+        //this is based on the area shown in the mercator projection and not a real area
+        //this inflates areas more as you go to poles and will be used to deflate sizes to show real size
+
+        lats = [0, 23.5, 90];
+        kms = [110.567, 110.948, 111.699];
+
+        lonkm = 111.321;
+
+        latkm = interpolate(Math.abs(lat), lats, kms);
+
+        return degarea * lonkm * latkm;
+      }
+
+      function interpolate(x, arr1, arr2) {
+        for (i = 0; i < arr1.length; i++) {
+          if (x >= arr1[i] && x <= arr1[i + 1]) {
+            var fraction = (x - arr1[i]) / (arr1[i + 1] - arr1[i]);
+            var output = arr2[i] + fraction * (arr2[i + 1] - arr2[i]);
+
+            return output;
+          }
+        }
+
+        return false;
+      }
+
+      $(document).ready(function () {
+        //resizes iframe in parent (wordpress) page after entire page loads
+        // parent.resizemercatormap();
+
+        resizeAK();
+        moveHI();
+        combineData();
+        // translateGeoJSON(statesGeo["features"][1],[30,-40]);
+        initialize();
+        scaleStatesByPop();
+
+        parent.resizestatesmap();
+      });
+    </script>
+  </body>
+</html>
