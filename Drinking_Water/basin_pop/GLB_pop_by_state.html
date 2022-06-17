@@ -19,7 +19,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="states_geojson.js"></script>
-    <script src="geojsonarea.js"></script>
     <script src="statepop2.js"></script>
     <script src="stateshift2.js"></script>
   </head>
@@ -68,36 +67,7 @@
     </div>
 
     <script>
-      function resizeAK() {
-        origAKCenter = [-154.616, 63.706];
-        newAKCenter = [-110.616, 22.706];
 
-        offsetLat = newAKCenter[1] - origAKCenter[1];
-        offsetLon = newAKCenter[0] - origAKCenter[0];
-
-        AKcoord = statesGeo["features"][1].geometry.coordinates;
-        Nsubpolygons = AKcoord.length;
-        for (var i = 0; i < Nsubpolygons; i++) {
-          for (var j = 0; j < AKcoord[i][0].length; j++) {
-            coordLon = AKcoord[i][0][j][0];
-            coordLat = AKcoord[i][0][j][1];
-            newCoordLat = coordLat + offsetLat;
-
-            //calc real distance b/t center and coordinate by calculating degree distance and multiplying by long distance at that latitude
-            dist = (coordLon - origAKCenter[0]) * londist(coordLat);
-
-            //calc new coordinates by taking distance calced above and figuring out lon degrees at new latitude
-            newcoordLon =
-              origAKCenter[0] + offsetLon + dist / londist(newCoordLat);
-
-            AKcoord[i][0][j] = [newcoordLon, newCoordLat];
-          }
-        }
-      }
-
-      function moveHI() {
-        translateGeoJSON(statesGeo["features"][11], [70, 0]);
-      }
 
       function londist(latdeg) {
         //Length of 1 degree of Longitude = cosine (latitude in decimal degrees) * length of degree (miles) at equator
@@ -509,8 +479,7 @@
         //resizes iframe in parent (wordpress) page after entire page loads
         // parent.resizemercatormap();
 
-        resizeAK();
-        moveHI();
+
         combineData();
         // translateGeoJSON(statesGeo["features"][1],[30,-40]);
         initialize();
