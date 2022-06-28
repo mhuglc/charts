@@ -57,7 +57,7 @@ Highcharts.chart("chart", {
     },
     xAxis: {
         accessibility: {
-            description: "Years from 2012 to 2021 (to date)"
+            description: "Years from 2010 to 2021"
         },
         style: {
             fontSize: "13px"
@@ -89,7 +89,7 @@ Highcharts.chart("chart", {
         enabled: false,
     },
     caption: {
-        text: '<b>Source: </b><em>US EPA Enforcement and Compliance History Online (ECHO), 2021, <a href="https://echo.epa.gov/">https://echo.epa.gov/</a></em>'
+        text: '<b>Source: </b><em>US EPA Enforcement and Compliance History Online (ECHO), 2021, <a href="https://echo.epa.gov/">https://echo.epa.gov/</a><br>VOCs: Volatile Organic Chemicals</em>'
     },
 
     tooltip: {
@@ -109,7 +109,7 @@ Highcharts.chart("chart", {
             label: {
                 connectorAllowed: false
             },
-            pointStart: 2012
+            pointStart: 2010
         }
     },
 
@@ -155,42 +155,38 @@ Highcharts.chart("chart", {
     series: [
         {
             name: "Microbials",
-            data: [4594, 4735, 4637, 4607, 3439, 3526, 4458, 5296, 5301, 4832],
+            data: [180, 216, 204, 191, 204, 203, 149, 137, 147, 146, 161, 167],
             color: "#0D5E87"
         },
         {
             name: "Lead & Copper Rule",
-            data: [421, 471, 448, 385, 405, 428, 493, 530, 546, 513],
+            data: [291, 293, 299, 302, 304, 309, 315, 321, 331, 331, 343, 349],
             color: "#0092B0"
         },
         {
             name: "Disinfectants & disinfection byproducts",
-            data: [814, 310, 666, 979, 1018, 897, 706, 795, 713, 370],
+            data: [133, 147, 137, 88, 149, 173, 155, 172, 170, 160, 166, 174],
             color: "#00C7C3"
         },
       
         {
-            name: "Other inorganic compounds",
-            data: [1104, 1166, 1082, 801, 709, 765, 861, 825, 561, 198],
+            name: "Inorganic chemicals",
+            data: [28, 23, 20, 19, 44, 30, 22, 25, 17, 21, 13, 15],
             color: "#27651F"
         },
       
         {
             name: "Radionuclides",
-            data: [527, 571, 529, 481, 528, 518, 455, 360, 224, 56],
+            data: [9, 6, 4, 9, 1, 2, 6, 9, 7, 6, 0, 4],
             color: "#FFC461"
         },
 
         {
-            name: "Volatile organic compounds",
-            data: [41, 48, 45, 21, 24, 18, 9, 4, 19, 5],
-            color: "#7CFAC3"
+            name: "VOCs or SOCs",
+            data: [3, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            color: "#7CFAC3" //color: "#102A58"
         },
-        {
-            name: "Synthetic  organic compounds",
-            data: [8, 10, 13, 9, 4, 13, 7, 3, 12, 0],
-            color: "#102A58"
-        },
+
 
     ]
 });
