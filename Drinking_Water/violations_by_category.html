@@ -43,11 +43,11 @@ Highcharts.chart("chart", {
             ]
         },
         accessibility: {
-            description: 'Chart displays the number of violations of health-based rules under the US Safe Drinking Water Act (SDWA) in the Great Lakes states. The Total Coliform and Revised Total Coliform Rules were associated with the most violations, approximately half of the health-based violations documented by US EPA for these states between 2012 and 2021 Q2.'
+            description: 'Chart displays the number of violations of health-based rules under the US Safe Drinking Water Act (SDWA) incurred by community water systems located in the Great Lakes Basin. The Total Coliform and Revised Total Coliform Rules were associated with the most violations, approximately half of the health-based violations documented by US EPA for these states between 2012 and 2021 Q2.'
         }
     },
     title: {
-        text: 'Annual Health-based Violations of Safe Drinking Water Act Rules in Great Lakes States by Rule Group',
+        text: 'Annual Health-based Violations of Safe Drinking Water Act Rules in the Great Lakes Basin',
         margin: 20,
         widthAdjust: -370,
         style: {
@@ -75,6 +75,9 @@ Highcharts.chart("chart", {
         }
     },
     legend: {
+        title: {
+            text: 'Rule Group'
+        },
         width: 720,
         itemWidth: 180,
         useHTML: 'True',
