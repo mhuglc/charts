@@ -3,7 +3,7 @@ statesdata=[
  {
    "name": "Illinois",
    "PopDensity": "232",
-   "Population": 12802023,
+   "Population": 6523589,
    "rCA": 0.943,
    "rNJ": 0.192,
    "rCAx": 0.971,
@@ -12,7 +12,7 @@ statesdata=[
  {
    "name": "Indiana",
    "PopDensity": "183.4",
-   "Population": 6666818,
+   "Population": 1370026,
    "rCA": 0.745,
    "rNJ": 0.152,
    "rCAx": 0.863,
@@ -21,7 +21,7 @@ statesdata=[
  {
    "name": "Michigan",
    "PopDensity": "175",
-   "Population": 9962311,
+   "Population": 9897200,
    "rCA": 0.711,
    "rNJ": 0.145,
    "rCAx": 0.843,
@@ -30,7 +30,7 @@ statesdata=[
  {
    "name": "Minnesota",
    "PopDensity": "68.1",
-   "Population": 5576606,
+   "Population": 120547,
    "rCA": 0.277,
    "rNJ": 0.056,
    "rCAx": 0.526,
@@ -39,7 +39,7 @@ statesdata=[
  {
    "name": "New York",
    "PopDensity": "417",
-   "Population": 19849399,
+   "Population": 4180721,
    "rCA": 1.694,
    "rNJ": 0.345,
    "rCAx": 1.302,
@@ -48,7 +48,7 @@ statesdata=[
  {
    "name": "Ohio",
    "PopDensity": "283.2",
-   "Population": 11658609,
+   "Population": 4419481,
    "rCA": 1.151,
    "rNJ": 0.234,
    "rCAx": 1.073,
@@ -57,7 +57,7 @@ statesdata=[
  {
    "name": "Pennsylvania",
    "PopDensity": "285.5",
-   "Population": 12805537,
+   "Population": 294809,
    "rCA": 1.16,
    "rNJ": 0.236,
    "rCAx": 1.077,
@@ -66,7 +66,7 @@ statesdata=[
  {
    "name": "Wisconsin",
    "PopDensity": "106",
-   "Population": 5795483,
+   "Population": 2753981,
    "rCA": 0.431,
    "rNJ": 0.088,
    "rCAx": 0.656,
