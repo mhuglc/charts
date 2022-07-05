@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <title></title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+
+    <!--<script src="https://code.highcharts.com/modules/export-data.js"></script> this module is not behaving as expected-->
+
+    <script src="../../js/BlueAccounting_test.js"></script>
+    <script src="../../js/ErieStat_2019.js"></script>
+    <script src="../../js/export-csv_glc.js"></script>
+
+    <link rel="stylesheet" href="../../css/BA_Style.css">
+
+</head>
+<body>
+<style>
+  .label {
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    text-align: center;
+    margin-top: -1em;
+    font-size: 11px;
+    opacity: 0.5;
+  }
+
+  .label div {
+    position: relative;
+    left: -50%;
+    top: 10px;
+    /* text-shadow: 0px 2px 1px rgba(255,255,255,0.85); */
+  }
+
+   
+
+</style>
+<div>
+    <div id="chart"></div>
+
+</div>
+
+
+<script>
+    var data;
+    var BA = new BlueAccounting();
+    var ES = new ErieStat();
+    
+    
+    // left hand chart
+    Highcharts.setOptions({
+        lang: {
+            numericSymbols: null,
+            thousandsSep: ','
+        }
+    });
+
+    Highcharts.chart("chart", {
+        chart: {
+            type: "column",
+            height: 600,
+            backgroundColor: "#ffffff",
+            accessibility: {
+                description: 'Chart displays the estimated population in each state that gets their drinking water from the Great Lakes Basin, subdivided into domestic well users and community water system (CWS) customers who are and are not covered by a source water protection plan.'
+            },
+        },
+        title: {
+            text: 'Population in Each Jurisdiction that Relies on the Great Lakes Basin for Drinking Water',
+            margin: 20,
+            widthAdjust: -70,
+            style: {
+                color: '#000000',
+                fontWeight: 'bold'
+            }
+        },
+        xAxis: {
+            accessibility: {
+                description: "Jurisdiction"
+            },
+            categories: ['IL', 'IN', 'MI', 'MN', 'NY', 'OH', 'PA', 'WI'],
+            style: {
+                fontSize: "13px"
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Population Inside Great Lakes Basin'
+            },
+            accessibility: {
+                description: "Estimated population in each jurisdiction that uses Great Lakes Basin water as their domestic supply, broken out by municipal/nonmunicipal and source water protection status"
+            },
+            style: {
+                fontSize: "13px"
+            }
+        },
+        legend: {
+            width: 900,
+            itemWidth: 180,
+            useHTML: 'True',
+            align: 'left',
+            itemMarginBottom: 8,
+            itemStyle : { "word-wrap": "break-word", "textOverflow": "undefined"},
+            symbolHeight: 11,
+            symbolWidth: 11,
+            symbolRadius: 0
+        },
+        credits: {
+            enabled: false,
+        },
+        caption: {
+            text: '<b>Sources: </b><em>US EPA Enforcement and Compliance History Online (ECHO), 2021, <a href="https://echo.epa.gov/">https://echo.epa.gov/</a></br>USGS, https://www.sciencebase.gov/catalog/item/5b9fffe6e4b08583a5c2779e</em>'
+        },
+
+        tooltip: {
+            formatter: function() {
+                  return '<b>' + this.x + '</b><br/>'+
+                  this.series.name + ': ' + Highcharts.numberFormat(this.y,0,',') + '<br/>'+
+                  'Total for ' + this.x + ': ' + Highcharts.numberFormat(this.point.total,0,',')
+            }
+        },
+
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                groupPadding: 0.1,
+            },
+            series: {
+                label: {
+                    connectorAllowed: false
+                },
+            }
+        },
+
+ 
+
+        series: [
+            {
+                name: "CWS Users Protected by Source Water Plan",
+                data: [ 6381680, 1058321, 6179880, 37742, 3534137, 3646487, 246727, 428346],
+                color: "#0D5E87",
+            },
+            {
+                name: "CWS Users Not Protected by Source Water Plan",
+                data: [129747, 2178, 1269634, 22943, 2972, 235985, 5948, 1796492],
+                color: "#0092B0"
+            },
+            {
+                name: "Domestic Well Users",
+                data: [12162, 309527, 2447686, 59862, 643612, 537009, 42134, 529143],
+                color: "#00C7C3"
+            },
+
+        ]
+    });
+
+    
+
+
+    
+
+</script>
+</body>
+</html>
