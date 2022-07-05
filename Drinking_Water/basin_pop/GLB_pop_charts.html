@@ -489,7 +489,7 @@
 
           statesGeo["features"][i].properties.center = polygonCenter(i);
           // this is the scale factor for each dimension x,y
-          statesGeo["features"][i].properties.popsf = newdata[0].rCAx;
+          statesGeo["features"][i].properties.popsf = newdata[0].rMIx;
 
           statesGeo["features"][i].properties.offset = shiftdata[0].offset;
 
@@ -499,7 +499,7 @@
             " has " +
             newdata[0].Population.toLocaleString() +
             " people and  <br>the new size is  " +
-            newdata[0].rCA +
+            newdata[0].rMI +
             " of the original size";
         }
 
