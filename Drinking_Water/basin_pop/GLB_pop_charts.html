@@ -190,8 +190,8 @@
         tooltip: {
             formatter: function() {
                   return '<b>' + this.x + '</b><br/>'+
-                  this.series.name + ': ' + this.y + ' MTA<br/>'+
-                  'Total for ' + this.x + ' :' + this.point.total + ' MTA'
+                  this.series.name + ': {this.y:,.0f} <br/>'+
+                  'Total for ' + this.x + ' :' + this.point.total
             }
         },
 
@@ -503,10 +503,7 @@
           statesGeo["features"][i].properties.popuptxt =
             newdata[0].Population.toLocaleString() +
             " people rely on Great Lakes <br>Basin water in " +
-            state +
-            " <br>(" +
-            newdata[0].rCA +
-            " of the original size)";
+            state;
         }
 
         //copy original geoJSONdata
