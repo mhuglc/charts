@@ -2,11 +2,11 @@ stateoffset=[
 
  {
    "name": "Illinois",
-   "offset": [-0.5,0]
+   "offset": [-0.5,-0.5]
  },
  {
    "name": "Indiana",
-   "offset": [-0.2,0]
+   "offset": [0,0]
  },
  {
    "name": "Michigan",
@@ -18,7 +18,7 @@ stateoffset=[
  },
  {
    "name": "New York",
-   "offset": [0.5,1]
+   "offset": [0,0]
  },
  {
    "name": "Ohio",
