@@ -137,7 +137,7 @@
         title: {
             text: 'Population in Each Jurisdiction that Relies on the Great Lakes Basin for Drinking Water',
             margin: 20,
-            widthAdjust: -170,
+            widthAdjust: -370,
             style: {
                 color: '#000000',
                 fontWeight: 'bold'
@@ -489,7 +489,7 @@
 
           statesGeo["features"][i].properties.center = polygonCenter(i);
           // this is the scale factor for each dimension x,y
-          statesGeo["features"][i].properties.popsf = newdata[0].rMIx;
+          statesGeo["features"][i].properties.popsf = newdata[0].rCAx;
 
           statesGeo["features"][i].properties.offset = shiftdata[0].offset;
 
@@ -499,7 +499,7 @@
             " has " +
             newdata[0].Population.toLocaleString() +
             " people and  <br>the new size is  " +
-            newdata[0].rMI +
+            newdata[0].rCA +
             " of the original size";
         }
 
