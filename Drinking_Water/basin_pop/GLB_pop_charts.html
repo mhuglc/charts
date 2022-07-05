@@ -93,7 +93,7 @@
     <div id="right-panel">
         <div id="intro"></div>
         <div id="narrative-section">
-            <p id="narrative-caption">Relative Great Lakes Basin Populations</p>
+            <p id="narrative-caption" style="color: #000000, fontWeight: bold">Relative Great Lakes Basin Populations</p>
         </div>
         <div id="mapid">
             <div class="leaflet-bottom leaflet-left" style="pointer-events: auto">
@@ -137,7 +137,7 @@
         title: {
             text: 'Population in Each Jurisdiction that Relies on the Great Lakes Basin for Drinking Water',
             margin: 20,
-            widthAdjust: -370,
+            widthAdjust: -70,
             style: {
                 color: '#000000',
                 fontWeight: 'bold'
@@ -596,7 +596,6 @@
 
         geojson = L.geoJson(statesGeo, {
           style: stylebase,
-          attribution: "<b>engaging-data.com</b>",
           // onEachFeature: onEachFeature
         })
           .bindTooltip(function (layer) {
