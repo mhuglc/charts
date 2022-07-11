@@ -44,7 +44,7 @@
                 ]
             },
             accessibility: {
-                description: 'Chart displays the annual severity index for cyanobacterial algae blooms in western Lake Erie for the years 2001 to 2021 The chart also shows the annual severity index target of a maximum of 2.9.'
+                description: 'Chart displays the annual severity index for cyanobacterial algae blooms in western Lake Erie for the years 2001 to 2021 and the current predicted bloom severity for 2022 as projected by the NOAA National Centers for Coastal Ocean Science.  The chart also shows the annual severity index target of a maximum of 2.9.'
             },
             /* events: {
                 load: function () {
@@ -163,21 +163,22 @@
                 3.6, 
                 7.3, 
                 3, 
-                6.0
+                6.0,
+                null
             ],
             color: '#0D5E87'
         }, {
-            /* name: 'Likely Range of 2021 <br>Bloom Severity',
+            name: 'Likely Range of 2022 <br>Bloom Severity',
             type: 'errorbar',
             whiskerLength: 3,
             stemWidth: 2,
             tooltip: {
                 pointFormat: 'Likely range: <b>{point.low}-{point.high}</b><br>'
             },
-            data: [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [2, 4.5]],
+            data: [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [2, 4]],
             color: 'black'
         }, { 
-            name: 'Seasonal forecast of <br>2021 bloom severity <br>(with likely range)',
+            name: 'Seasonal forecast of <br>2022 bloom severity <br>(with likely range)',
             type: 'scatter',
             marker: {
                 radius: 7,
@@ -187,7 +188,7 @@
                 pointFormat: 'NOAA forecast: <b>{point.y:.1f}</b><br>'
 
             },
-            data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 3.0],
+            data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 3.5],
             color: '#6FC212'
         }, { */
             name: "Target",
@@ -196,7 +197,7 @@
             marker: {
                 radius: 0
             },
-            data: [2.9 , 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9],
+            data: [2.9 , 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9, 2.9],
             color: "#E07000"
         }],
     });
