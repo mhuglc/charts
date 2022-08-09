@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Health-Based Drinking Water Violations by Rule Namee</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="//code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Montserrat font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <script src="../js/export-csv_glc.js"></script>
+    <script src="../js/BlueAccounting.js"></script>
+    <link rel="stylesheet" href="../css/BA_Style.css">
+</head>
+<body>
+    <div id="chart" style="margin-right: 20px">
+    </div>
+
+<script>
+    var BA = new BlueAccounting;
+Highcharts.setOptions({
+    lang: {
+        numericSymbols: null,
+        thousandsSep: ','
+    }
+});
+
+Highcharts.chart("chart", {
+    chart: {
+        type: "column",
+        height: 600,
+        backgroundColor: {
+            linearGradient: {x1: 0, x2: 1, y1: 1, y2: 0},
+            stops: [
+               [0, 'rgb(255,255,255)'],
+               [1, '#F2FAFF']
+            ]
+        },
+        accessibility: {
+            description: 'Chart displays the number of violations of health-based rules under the US Safe Drinking Water Act (SDWA) incurred by community water systems located in the Great Lakes Basin. The Total Coliform and Revised Total Coliform Rules were associated with the most violations, approximately half of the health-based violations documented by US EPA for these states between 2012 and 2021 Q2.'
+        }
+    },
+    title: {
+        text: 'Annual Health-based Violations of Safe Drinking Water Act Rules in the Great Lakes Basin',
+        margin: 20,
+        widthAdjust: -370,
+        style: {
+            color: '#000000',
+            fontWeight: 'bold'
+        }
+    },
+    xAxis: {
+        accessibility: {
+            description: "Years from 2010 to 2021"
+        },
+        style: {
+            fontSize: "13px"
+        }
+    },
+    yAxis: {
+        title: {
+            text: 'Number of violations'
+        },
+        accessibility: {
+            description: "Total number of health-based violations that were unresolved in each year"
+        },
+        style: {
+            fontSize: "13px"
+        }
+    },
+    legend: {
+        title: {
+            text: 'Rule Group<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>'
+        },
+        width: 720,
+        itemWidth: 180,
+        useHTML: 'True',
+        align: 'left',
+        itemMarginBottom: 5,
+        itemStyle : { "word-wrap": "break-word", "textOverflow": "undefined"},
+        symbolHeight: 11,
+        symbolWidth: 11,
+        symbolRadius: 0
+    },
+    credits: {
+        enabled: false,
+    },
+    caption: {
+        text: '<b>Source: </b><em>US EPA Enforcement and Compliance History Online (ECHO), 2022, <a href="https://echo.epa.gov/">https://echo.epa.gov/</a></em><br><b>Notes: </b><em>VOCs: Volatile Organic Chemicals; SOCs: Synthetic Organic Chemicals; Inorganic Chemicals includes nitrates, arsenic, and other chemicals.</em>'
+    },
+
+    tooltip: {
+        formatter: function() {
+              return '<b>' + this.x + '</b><br/>'+
+              this.series.name + ': ' + this.y + ' violations<br/>'+
+              'Total for ' + this.x + ' :' + this.point.total + ' violations'
+        }
+    },
+    
+    plotOptions: {
+        column: {
+            stacking: 'normal',
+            groupPadding: 0.1,
+        },
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            pointStart: 2010
+        }
+    },
+
+    // series: [
+    //     // alternative color theme: Blue 2547316
+    //     {
+    //         name: "Load, all sources",
+    //         data: [23437,27944,26977,23724,18077,22271,20485],
+    //         color: "#7C5B40"
+    //     },
+    //     {
+    //         name: "Adjustment for Unmonitored Area",
+    //         data: [null, null, null, null, null, null, null,2028,956,2705,2011,3272,1140,1608,1163,1670,1063,1931,1421,1753,1293,1329,828,2858,1249,638,1543,981,1621,2378,4345,2669,1088,1626,1391,1635,1148,1747,1382,1398,2010,1243,930,661,1627,1441,1872,1688,1283,984],
+    //         color: "#FFC000"
+    //     },
+    //     {
+    //         name: "Tributary Monitored NPS",
+    //         data: [null, null, null, null, null, null, null,7679,3619,4397,3818,8471,3856,6985,4508,6448,4566,6545,5872,5447,2970,2508,4154,6205,6060,3914,7092,3120,2784,5613,8546,6192,2007,2915,2536,4332,4009,4488,4883,4281,6763,6373,4337,2783,6515,4351,4662,4173,3549,2272],
+    //         color: "#3618E8"
+    //     },
+    //     {
+    //         name: "Lake Huron Input",
+    //         data: [null, null, null, null, null, null, null,822,799,758,665,653,708,743,710,656,681,651,698,740,675,582,515,463,467,476,485,501,482,506,560,528,435,406,398,406,366,364,354,335,325,321,321,321,321,321,321,321,321,321],
+    //         color: "#FFFF99"
+    //     },
+    //     {
+    //         name: "Atmospheric Deposition",
+    //         data: [null, null, null, null, null, null, null,560,560,1119,1119,879,1550,1550,729,660,362,392,291,357,471,372,310,467,333,264,337,403,377,516,520,694,485,788,537,694,813,511,363,632,432,380,503,318,424,237,434,270,345,334],
+    //         color: "#ED1313"
+    //     },
+    //     {
+    //         name: "Indirect Point Sources",
+    //         data: [null, null, null, null, null, null, null,1284,1284,1156,1467,1566,1467,1275,1074,1035,840,900,881,754,757,777,653,589,587,554,547,473,404,663,562,532,529,478,454,536,433,485,467,494,489,437,422,349,390,356,370,327,337,332],
+    //         color: "#16EA48"
+    //     },
+    //     {
+    //         name: "Direct Point Sources",
+    //         data: [null, null, null, null, null, null, null,7103,5735,4959,5081,4163,2848,2357,1901,1455,1970,2027,1671,1727,1811,1774,1542,1701,1804,1523,1539,1681,1503,1334,1800,1543,1419,1569,1335,1456,1256,1410,1444,1476,1519,1419,1266,1117,1112,904,771,797,912,916],
+    //         color: "#00B0F0"
+    //     }
+    // ],
+
+    series: [
+        {
+            name: "Microbials",
+            data: [180, 216, 204, 191, 204, 203, 149, 137, 147, 146, 161, 167],
+            color: "#0D5E87"
+        },
+        {
+            name: "Disinfectants & disinfection byproducts",
+            data: [133, 147, 137, 88, 149, 173, 155, 172, 170, 160, 166, 174],
+            color: "#00C7C3"
+        },
+      
+        {
+            name: "Inorganic chemicals",
+            data: [28, 23, 20, 19, 44, 30, 22, 25, 17, 21, 13, 15],
+            color: "#27651F"
+        },
+      
+        {
+            name: "Radionuclides",
+            data: [9, 6, 4, 9, 1, 2, 6, 9, 7, 6, 0, 4],
+            color: "#FFC461"
+        },
+
+        {
+            name: "VOCs or SOCs",
+            data: [3, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            color: "#7CFAC3" //color: "#102A58"
+        },
+
+
+    ]
+});
+</script>
+</body>
+</html>
