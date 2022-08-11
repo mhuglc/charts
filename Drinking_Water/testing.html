@@ -90,7 +90,7 @@ function get_chart() {
 		series: []
 
 	}; 
-	$.getJSON("test_file.json", function(json) {
+	$.getJSON("../data/test_file.json", function(json) {
 		options.xAxis.categories = json[0]['data'];
 		options.series[0] = json[1];
 		options.series[1] = json[2];
