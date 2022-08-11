@@ -2,6 +2,7 @@ function DrinkingWater() {
     this.dw_data = null;
     this.xAxis_start = 2010;
     this.jurisdictionNames = {
+        "All": "All Jurisdictions",
         "IL": "Illinois",
         "IN": "Indiana",
         "MI": "Michigan",
