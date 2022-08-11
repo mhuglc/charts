@@ -72,14 +72,17 @@
     $.getJSON("../data/test_file.json", function(d){
         data = d;
     }).done(function () {
-	var returnedData = $.grep(data, function (element, index) {
-		return element.State === (initJurisdiction);
+		var returnedData = $.grep(data, function (element, index) {
+			return element.State === (initJurisdiction);
+		});
+
+
+		for(let i =0;i < returnedData.length;i++){console.log(returnedData[i].State + "  " + returnedData[i].Rule);
+    	};
 	});
-    });
 
-
-for(let i =0;i < returnedData.length;i++){console.log(returnedData[i].State + "  " + returnedData[i].Rule);
-    };
+	    
+	  
 	/*
     function loadChart(name) {
         function dataToArray(vals){
