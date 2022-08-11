@@ -72,8 +72,23 @@
     }).done(function () {
         DW.init(data);
 	console.log(DW.jurisdictionNames[initJurisdiction]);
-        //loadChart(DW.jurisdictionNames[initJurisdiction]);
+        loadChart(DW.jurisdictionNames[initJurisdiction]);
     });
+	
+    function loadChart(name) {
+        function dataToArray(vals){
+            let array = []
+            for(let i =0;i < vals.length;i++){array.push(vals.get(i))}
+            return array;
+        }
+	    
+
+		var s1_data = DW.getJurisdictionData(name);
+		var s1_data_array = dataToArray(s1_data);
+	    	console.log( s1_data_array );
+
+
+    }
 
 Highcharts.chart("chart", {
     chart: {
