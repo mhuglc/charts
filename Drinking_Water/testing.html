@@ -51,103 +51,53 @@
 
       </fieldset>
     </div>
-    <div id="container"></div>
+    <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
     </div>
 
 <script>
-var chart1;
-var data = [
-  [1583595673000, 21.3, 45.0, 12.7, 66.0, 11.4, 6.5, 0.0, 1005.8, 7222, 1],
-  [1583595973000, 21.3, 45.0, 12.6, 67.0, 11.6, 6.6, 0.0, 1005.7, 6145, 1],
-  [1583596273000, 21.3, 45.0, 12.6, 68.0, 11.4, 6.8, 0.0, 1005.7, 6211, 1],
-  [1583596573000, 21.2, 44.0, 12.5, 68.0, 11.3, 6.8, 0.0, 1005.6, 6418, 1],
-  [1583596873000, 21.2, 44.0, 12.5, 68.0, 10.6, 6.8, 0.0, 1005.6, 5055, 1],
-  [1583597173000, 21.2, 45.0, 12.4, 68.0, 11.1, 6.7, 0.0, 1005.5, 8063, 1],
-  [1583597473000, 21.2, 45.0, 12.4, 68.0, 11.4, 6.7, 0.0, 1005.5, 5779, 1],
-  [1583597773000, 21.2, 45.0, 12.4, 68.0, 10.9, 6.7, 0.0, 1005.5, 3800, 1],
-  [1583598073000, 21.2, 45.0, 12.3, 68.0, 10.8, 6.6, 0.0, 1005.5, 3250, 1],
-  [1583598373000, 21.1, 45.0, 12.2, 68.0, 10.2, 6.5, 0.0, 1005.2, 2573, 1],
-  [1583598673000, 21.1, 45.0, 12.2, 68.0, 11.2, 6.5, 0.0, 1005.5, 2512, 1],
-  [1583598973000, 21.1, 45.0, 12.1, 67.0, 10.0, 6.2, 0.0, 1005.2, 2710, 1],
-  [1583599273000, 21.1, 46.0, 12.1, 66.0, 10.5, 5.9, 0.0, 1005.4, 2338, 1],
-  [1583599573000, 21.2, 46.0, 12.1, 65.0, 10.6, 5.7, 0.0, 1005.2, 2320, 1],
-  [1583599873000, 21.2, 46.0, 12.2, 64.0, 10.0, 5.6, 0.0, 1005.2, 2606, 1],
-  [1583600173000, 21.2, 47.0, 12.2, 64.0, 10.2, 5.6, 0.0, 1005.3, 3142, 1],
-  [1583600473000, 21.3, 49.0, 12.2, 64.0, 10.0, 5.6, 0.0, 1005.1, 2916, 1],
-  [1583600773000, 21.4, 49.0, 12.2, 63.0, 10.2, 5.4, 0.0, 1005.1, 2663, 1],
-  [1583601073000, 21.5, 50.0, 12.2, 63.0, 10.4, 5.4, 0.0, 1005.2, 2089, 0],
-  [1583601373000, 21.5, 52.0, 12.2, 63.0, 9.5, 5.4, 0.0, 1005.1, 2334, 0]
-];
+function get_chart() {
+	var options =   {
+		chart: {
+			type: 'column',
+			renderTo:'container'
+		},
+		title: {
+			text: 'Twitter Data'
+		},
+		xAxis: {
+			categories: []
+		},
 
-$(document).ready(function() {
-  chart1 = new Highcharts.chart({
-    chart: {
-      renderTo: 'container',
-      type: 'line',
-      marginLeft: 87,
-      zoomType: 'x',
-      events: {
-        load: getChart1data
-      },
-      title: {
-        text: 'TEST',
-      },
-    },
-    xAxis: {
-      //today
+		plotOptions: {
+			series: {
+				stacking: 'normal',
+				dataLabels: {
+					enabled: true,
+					style: {
+						textShadow: '0 0 3px black'
+					}
+				}, point: {
+					events: {
+						click: function () {
+							alert('Category: ' + this.category + ', value: ' + this.y);
+						}
+					}
+				}
+			}
 
-      type: 'datetime',
-      labels: {
-        format: '{value:%b %e}'
-      },
-    },
-    yAxis: {
-      labels: {
-        format: '{value} In'
-      },
-    },
+		},
 
-    series: [{
-      name: 'First Series',
-      data: [],
-    }, {
-      name: 'Second Series',
-      data: [],
-    }, {
-      name: 'Third Series',
-      data: [],
-    }, {
-      name: 'Fouth Series',
-      data: [],
-    }],
-    plotOptions: {
-      line: {
-        lineWidth: 1,
-        states: {
-          hover: {
-            lineWidth: 2
-          }
-        },
-        marker: {
-          enabled: false
-        },
-      },
-    },
-    credits: {
-      enabled: false
-    },
-  });
-});
+		series: []
 
-function getChart1data() {
-  setTimeout(function() {
-    for (let i = 0; i < 4; i++) {
-      chart1.series[i].setData(
-        data.map(el => [el[0], el[i + 1]])
-      );
-    }
-  }, 1000);
-}
+	}; 
+	$.getJSON("test_file.json", function(json) {
+		options.xAxis.categories = json[0]['data'];
+		options.series[0] = json[1];
+		options.series[1] = json[2];
+		chart = new Highcharts.Chart(options);
+	   });
+	  }
+	  get_chart(); //call this get_chart function in your controller where you want, I called it here.
 </script>
 </body>
 </html>
