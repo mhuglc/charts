@@ -70,6 +70,8 @@
     var DW = new DrinkingWater();
 	
     var series = [];
+	
+    var colors: ["#0D5E87", "#0092B0", "#00C7C3", "#27651F", "#FFC461", "#7CFAC3", "#102A58"];
     
     $.getJSON("../data/test_file.json", function(d){
         data = d;
@@ -82,7 +84,8 @@
 		for(let i =0;i < returnedData.length;i++){
 			series.push({
 				name: returnedData[i].Rule,
-				data: returnedData[i].data
+				data: returnedData[i].data,
+				color: colors[i],
 			});
 		};
 	});
