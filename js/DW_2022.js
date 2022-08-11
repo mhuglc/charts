@@ -79,7 +79,7 @@ function DrinkingWater() {
 
     this.getJurisdictionData = function (jurisdictionName) {
         var vals = $(this.dw_data).filter(function(i, n) {
-            return n.River===(jurisdictionName) /*&& n.Value !== ""*/ // n.River===w_name
+            return n.State===(jurisdictionName) /*&& n.Value !== ""*/ // n.River===w_name
         });
         vals.sort(function(a, b){
             return (a.Year > b.Year) ? 1 : ((a.Year < b.Year) ? -1 : 0);
