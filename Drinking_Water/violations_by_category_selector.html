@@ -15,6 +15,7 @@
     <!-- Montserrat font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
     <script src="../js/export-csv_glc.js"></script>
+    <script src="../js/DW_2022.js"></script>
     <script src="../js/BlueAccounting.js"></script>
     <link rel="stylesheet" href="../css/BA_Style.css">
 </head>
@@ -55,11 +56,23 @@
 
 <script>
     var BA = new BlueAccounting;
+    var initJurisdiction = 'All'
+    
     Highcharts.setOptions({
         lang: {
             numericSymbols: null,
             thousandsSep: ','
         }
+    });
+	
+    var DW = new DrinkingWater();
+	
+    $.getJSON("../data/test_file.json", function(d){
+        data = d;
+    }).done(function () {
+        DW.init(data);
+	console.log(DW.jurisdictionNames[initJurisdiction]);
+        //loadChart(DW.jurisdictionNames[initJurisdiction]);
     });
 
 Highcharts.chart("chart", {
