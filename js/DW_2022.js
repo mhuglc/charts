@@ -3,16 +3,16 @@ function DrinkingWater() {
     this.xAxis_start = 2010;
     this.jurisdictionNames = {
         "All": "All Jurisdictions",
-        "IL": "Illinois",
-        "IN": "Indiana",
-        "MI": "Michigan",
-        "MN": "Minnesota",
-        "NY": "New York",
-        "OH": "Ohio",
-        "PA": "Pennsylvania",
-        "WI": "Wisconsin",
-        "EPA Region 5 (Tribal)": "EPA Region 5 (Tribal)",
-        "EPA Region 2 (Tribal)": "EPA Region 2 (Tribal)",
+        "IL": "IL",
+        "IN": "IN",
+        "MI": "MI",
+        "MN": "MN",
+        "NY": "NY",
+        "OH": "OH",
+        "PA": "PA",
+        "WI": "WI",
+        "R5": "EPA Region 5 (Tribal)",
+        "R2": "EPA Region 2 (Tribal)",
     };
     this.metrics = {
         "Arsenic": {
