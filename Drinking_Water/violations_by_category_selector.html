@@ -71,7 +71,7 @@
         data = d;
     }).done(function () {
 	var returnedData = $.grep(data, function (element, index) {
-		return element.State === (jurisdictionName);
+		return element.State === (initJurisdiction);
 });
 
 
