@@ -80,12 +80,9 @@ function DrinkingWater() {
         var vals = $(this.dw_data).filter(function(i, n) {
             return n.State===(jurisdictionName) /*&& n.Value !== ""*/ // n.River===w_name
         });
-        vals.sort(function(a, b){
-            return (a.Year > b.Year) ? 1 : ((a.Year < b.Year) ? -1 : 0);
-        });
 
         return vals.map(function (v){
-            return vals[v].Value
+            return vals[v].data
         } );
     };
 
