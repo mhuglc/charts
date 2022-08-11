@@ -70,12 +70,15 @@
     $.getJSON("../data/test_file.json", function(d){
         data = d;
     }).done(function () {
-        DW.init(data);
-	console.log(DW.jurisdictionNames[initJurisdiction]);
-        loadChart(DW.jurisdictionNames[initJurisdiction]);
+	var returnedData = $.grep(data, function (element, index) {
+		return element.State === (jurisdictionName);
+});
+
+
+alert(returnedData[0].State + "  " + returnedData[0].Rule);
     });
 	
-    function loadChart(name) {
+    /*function loadChart(name) {
         function dataToArray(vals){
             let array = []
             for(let i =0;i < vals.length;i++){array.push(vals.get(i))}
@@ -88,7 +91,7 @@
 	    	console.log( s1_data_array );
 
 
-    }
+    } */
 
 Highcharts.chart("chart", {
     chart: {
