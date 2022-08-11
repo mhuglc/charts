@@ -76,9 +76,9 @@ function DrinkingWater() {
         };
     };
     
-        this.getJurisdictionData = function (jurisdictionName) {
+        this.getJurisdictionData = function (jurisdictionName, ruleName) {
             var vals = $.grep(this.dw_data, function (element, index) {
-                return element.State == (jurisdictionName);
+                return element.State == (jurisdictionName)&& n.Rule===ruleName;
             });
         };
 
