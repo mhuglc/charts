@@ -2,7 +2,7 @@ function DrinkingWater() {
     this.dw_data = null;
     this.xAxis_start = 2010;
     this.jurisdictionNames = {
-        "All": "All Jurisdictions",
+        "All": "All",
         "IL": "IL",
         "IN": "IN",
         "MI": "MI",
@@ -11,8 +11,7 @@ function DrinkingWater() {
         "OH": "OH",
         "PA": "PA",
         "WI": "WI",
-        "R5": "EPA Region 5 (Tribal)",
-        "R2": "EPA Region 2 (Tribal)",
+        "EPA": "EPA",
     };
     this.metrics = {
         "Arsenic": {
