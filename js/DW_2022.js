@@ -75,10 +75,17 @@ function DrinkingWater() {
             }
         };
     };
+    
+        this.getJurisdictionData = function (jurisdictionName) {
+            var vals = $.grep(this.dw_data, function (element, index) {
+                return element.State == (jurisdictionName);
+            });
+        };
 
+/*
     this.getJurisdictionData = function (jurisdictionName) {
         var vals = $(this.dw_data).filter(function(i, n) {
-            return n.State===(jurisdictionName) /*&& n.Value !== ""*/ // n.River===w_name
+            return n.State===(jurisdictionName) 
         });
 
         return vals.map(function (v){
@@ -86,4 +93,5 @@ function DrinkingWater() {
         } );
     };
 
+*/
 }
