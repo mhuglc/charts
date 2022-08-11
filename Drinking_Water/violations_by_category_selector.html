@@ -69,6 +69,8 @@
 	
     var DW = new DrinkingWater();
 	
+    var series = [];
+    
     $.getJSON("../data/test_file.json", function(d){
         data = d;
     }).done(function () {
@@ -77,8 +79,12 @@
 		});
 
 
-		for(let i =0;i < returnedData.length;i++){console.log(returnedData[i].State + "  " + returnedData[i].Rule);
-    	};
+		for(let i =0;i < returnedData.length;i++){
+			series.push({
+				name: returnedData[i].Rule,
+				data: returnedData[i].data
+			});
+		});
 	});
 
 	    
