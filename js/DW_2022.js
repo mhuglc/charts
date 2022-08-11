@@ -78,7 +78,7 @@ function DrinkingWater() {
     
         this.getJurisdictionData = function (jurisdictionName, ruleName) {
             var vals = $.grep(this.dw_data, function (element, index) {
-                return element.State == (jurisdictionName)&& element.Rule===ruleName;
+                return element.State===(jurisdictionName)&& element.Rule===ruleName;
             });
         };
 
