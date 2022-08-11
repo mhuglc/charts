@@ -50,7 +50,7 @@ function DrinkingWater() {
 
 
     this.init = function(data){
-        this.es_data = data;
+        this.dw_data = data;
         Highcharts.setOptions({
             lang: {
                 numericSymbols: null,
@@ -77,8 +77,8 @@ function DrinkingWater() {
         };
     };
 
-    this.getWatershedData = function (jurisdictionName) {
-        var vals = $(this.es_data).filter(function(i, n) {
+    this.getJurisdictionData = function (jurisdictionName) {
+        var vals = $(this.dw_data).filter(function(i, n) {
             return n.River===(jurisdictionName) /*&& n.Value !== ""*/ // n.River===w_name
         });
         vals.sort(function(a, b){
