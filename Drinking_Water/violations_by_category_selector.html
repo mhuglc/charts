@@ -71,7 +71,7 @@
 	
     var series = [];
 	
-    var colors: ["#0D5E87", "#0092B0", "#00C7C3", "#27651F", "#FFC461", "#7CFAC3", "#102A58"];
+    var colors = ["#0D5E87", "#0092B0", "#00C7C3", "#27651F", "#FFC461", "#7CFAC3", "#102A58"];
     
     $.getJSON("../data/test_file.json", function(d){
         data = d;
@@ -109,6 +109,48 @@
 
 
     } */
+	
+    
+    ex_series: [
+        {
+            name: "Microbials",
+            data: [180, 216, 204, 191, 204, 203, 149, 137, 147, 146, 161, 167],
+            color: "#0D5E87"
+        },
+        {
+            name: "Lead & Copper Rule",
+            data: [291, 293, 299, 302, 304, 309, 315, 321, 331, 331, 343, 349],
+            color: "#0092B0"
+        },
+        {
+            name: "Disinfectants & disinfection byproducts",
+            data: [133, 147, 137, 88, 149, 173, 155, 172, 170, 160, 166, 174],
+            color: "#00C7C3"
+        },
+      
+        {
+            name: "Inorganic chemicals",
+            data: [28, 23, 20, 19, 44, 30, 22, 25, 17, 21, 13, 15],
+            color: "#27651F"
+        },
+      
+        {
+            name: "Radionuclides",
+            data: [9, 6, 4, 9, 1, 2, 6, 9, 7, 6, 0, 4],
+            color: "#FFC461"
+        },
+
+        {
+            name: "VOCs or SOCs",
+            data: [3, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            color: "#7CFAC3" //color: "#102A58"
+        },
+
+
+    ]
+	
+    console.log(ex_series);
+   
 
 Highcharts.chart("chart", {
     chart: {
@@ -198,45 +240,7 @@ Highcharts.chart("chart", {
     series: series
 
 
-/*
-    series: [
-        {
-            name: "Microbials",
-            data: [180, 216, 204, 191, 204, 203, 149, 137, 147, 146, 161, 167],
-            color: "#0D5E87"
-        },
-        {
-            name: "Lead & Copper Rule",
-            data: [291, 293, 299, 302, 304, 309, 315, 321, 331, 331, 343, 349],
-            color: "#0092B0"
-        },
-        {
-            name: "Disinfectants & disinfection byproducts",
-            data: [133, 147, 137, 88, 149, 173, 155, 172, 170, 160, 166, 174],
-            color: "#00C7C3"
-        },
-      
-        {
-            name: "Inorganic chemicals",
-            data: [28, 23, 20, 19, 44, 30, 22, 25, 17, 21, 13, 15],
-            color: "#27651F"
-        },
-      
-        {
-            name: "Radionuclides",
-            data: [9, 6, 4, 9, 1, 2, 6, 9, 7, 6, 0, 4],
-            color: "#FFC461"
-        },
 
-        {
-            name: "VOCs or SOCs",
-            data: [3, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            color: "#7CFAC3" //color: "#102A58"
-        },
-
-
-    ]
-    */
 });
 </script>
 </body>
