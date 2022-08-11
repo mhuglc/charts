@@ -1,0 +1,352 @@
+[
+  {
+    "State": "IL",
+    "Rule": "Arsenic",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "IL",
+    "Rule": "Disinfectants & Disinfection Byproducts",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "IL",
+    "Rule": "Microbials",
+    "data": [3, 4, 7, 5, 3, 0, 0, 0, 0, 3, 0, 0, 0]
+  },
+  {
+    "State": "IL",
+    "Rule": "Nitrates",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "IL",
+    "Rule": "Other Inorganic Chemicals",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "IL",
+    "Rule": "Radionuclides",
+    "data": [2, 3, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "IL",
+    "Rule": "VOCs or SOCs",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "IN",
+    "Rule": "Arsenic",
+    "data": [0, 0, 2, 3, 4, 1, 0, 0, 0, 0, 0, 1, 0]
+  },
+  {
+    "State": "IN",
+    "Rule": "Disinfectants & Disinfection Byproducts",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "IN",
+    "Rule": "Microbials",
+    "data": [8, 12, 8, 5, 14, 5, 0, 2, 0, 1, 2, 1, 3]
+  },
+  {
+    "State": "IN",
+    "Rule": "Nitrates",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "IN",
+    "Rule": "Other Inorganic Chemicals",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "IN",
+    "Rule": "Radionuclides",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "IN",
+    "Rule": "VOCs or SOCs",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "MI",
+    "Rule": "Arsenic",
+    "data": [11, 8, 6, 8, 20, 12, 12, 12, 5, 7, 8, 12, 1]
+  },
+  {
+    "State": "MI",
+    "Rule": "Disinfectants & Disinfection Byproducts",
+    "data": [10, 6, 0, 2, 8, 22, 5, 6, 11, 1, 6, 17, 3]
+  },
+  {
+    "State": "MI",
+    "Rule": "Microbials",
+    "data": [62, 78, 63, 68, 78, 73, 37, 21, 22, 9, 14, 17, 6]
+  },
+  {
+    "State": "MI",
+    "Rule": "Nitrates",
+    "data": [3, 5, 0, 0, 2, 0, 0, 2, 3, 4, 2, 0, 0]
+  },
+  {
+    "State": "MI",
+    "Rule": "Other Inorganic Chemicals",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+  },
+  {
+    "State": "MI",
+    "Rule": "Radionuclides",
+    "data": [0, 3, 1, 5, 1, 0, 6, 3, 5, 4, 0, 2, 1]
+  },
+  {
+    "State": "MI",
+    "Rule": "VOCs or SOCs",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "MN",
+    "Rule": "Arsenic",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "MN",
+    "Rule": "Disinfectants & Disinfection Byproducts",
+    "data": [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "MN",
+    "Rule": "Microbials",
+    "data": [0, 2, 2, 2, 1, 0, 0, 1, 0, 2, 0, 0, 0]
+  },
+  {
+    "State": "MN",
+    "Rule": "Nitrates",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "MN",
+    "Rule": "Other Inorganic Chemicals",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "MN",
+    "Rule": "Radionuclides",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "MN",
+    "Rule": "VOCs or SOCs",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "NY",
+    "Rule": "Arsenic",
+    "data": [10, 6, 9, 8, 10, 12, 8, 7, 5, 3, 1, 0, 0]
+  },
+  {
+    "State": "NY",
+    "Rule": "Disinfectants & Disinfection Byproducts",
+    "data": [67, 77, 54, 23, 48, 59, 60, 55, 44, 49, 45, 39, 12]
+  },
+  {
+    "State": "NY",
+    "Rule": "Microbials",
+    "data": [36, 44, 49, 29, 22, 32, 26, 17, 22, 17, 9, 14, 5]
+  },
+  {
+    "State": "NY",
+    "Rule": "Nitrates",
+    "data": [0, 0, 0, 0, 0, 1, 2, 2, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "NY",
+    "Rule": "Other Inorganic Chemicals",
+    "data": [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "NY",
+    "Rule": "Radionuclides",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "NY",
+    "Rule": "VOCs or SOCs",
+    "data": [1, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "OH",
+    "Rule": "Arsenic",
+    "data": [0, 4, 2, 0, 8, 1, 0, 0, 3, 4, 0, 0, 0]
+  },
+  {
+    "State": "OH",
+    "Rule": "Disinfectants & Disinfection Byproducts",
+    "data": [30, 31, 41, 13, 40, 28, 24, 38, 38, 29, 27, 29, 11]
+  },
+  {
+    "State": "OH",
+    "Rule": "Microbials",
+    "data": [9, 12, 5, 10, 8, 10, 4, 3, 2, 1, 8, 3, 0]
+  },
+  {
+    "State": "OH",
+    "Rule": "Nitrates",
+    "data": [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "OH",
+    "Rule": "Other Inorganic Chemicals",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "OH",
+    "Rule": "Radionuclides",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "OH",
+    "Rule": "VOCs or SOCs",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "PA",
+    "Rule": "Arsenic",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "PA",
+    "Rule": "Disinfectants & Disinfection Byproducts",
+    "data": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 6, 3, 0]
+  },
+  {
+    "State": "PA",
+    "Rule": "Microbials",
+    "data": [3, 5, 6, 4, 2, 2, 2, 6, 3, 2, 6, 1, 0]
+  },
+  {
+    "State": "PA",
+    "Rule": "Nitrates",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "PA",
+    "Rule": "Other Inorganic Chemicals",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "PA",
+    "Rule": "Radionuclides",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "PA",
+    "Rule": "VOCs or SOCs",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "WI",
+    "Rule": "Arsenic",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 1, 0]
+  },
+  {
+    "State": "WI",
+    "Rule": "Disinfectants & Disinfection Byproducts",
+    "data": [0, 2, 0, 0, 1, 6, 5, 5, 7, 4, 4, 4, 1]
+  },
+  {
+    "State": "WI",
+    "Rule": "Microbials",
+    "data": [15, 11, 9, 5, 9, 9, 5, 5, 4, 4, 3, 1, 1]
+  },
+  {
+    "State": "WI",
+    "Rule": "Nitrates",
+    "data": [0, 0, 1, 0, 0, 2, 0, 2, 0, 1, 0, 0, 0]
+  },
+  {
+    "State": "WI",
+    "Rule": "Other Inorganic Chemicals",
+    "data": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "WI",
+    "Rule": "Radionuclides",
+    "data": [7, 0, 3, 3, 0, 2, 0, 6, 2, 2, 0, 1, 0]
+  },
+  {
+    "State": "WI",
+    "Rule": "VOCs or SOCs",
+    "data": [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "EPA",
+    "Rule": "Arsenic",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "EPA",
+    "Rule": "Disinfectants & Disinfection Byproducts",
+    "data": [0, 0, 0, 0, 0, 0, 0, 1, 0, 2, 1, 2, 1]
+  },
+  {
+    "State": "EPA",
+    "Rule": "Microbials",
+    "data": [0, 0, 0, 2, 1, 1, 0, 0, 0, 0, 1, 0, 0]
+  },
+  {
+    "State": "EPA",
+    "Rule": "Nitrates",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "EPA",
+    "Rule": "Other Inorganic Chemicals",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "EPA",
+    "Rule": "Radionuclides",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "EPA",
+    "Rule": "VOCs or SOCs",
+    "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  {
+    "State": "All",
+    "Rule": "Arsenic",
+    "data": [21, 18, 19, 19, 42, 26, 20, 19, 14, 16, 11, 14, 1]
+  },
+  {
+    "State": "All",
+    "Rule": "Disinfectants & Disinfection Byproducts",
+    "data": [107, 116, 95, 39, 97, 115, 94, 106, 100, 86, 89, 94, 28]
+  },
+  {
+    "State": "All",
+    "Rule": "Microbials",
+    "data": [136, 168, 149, 130, 138, 132, 74, 55, 53, 39, 43, 37, 15]
+  },
+  {
+    "State": "All",
+    "Rule": "Nitrates",
+    "data": [6, 5, 1, 0, 2, 3, 2, 6, 3, 5, 2, 0, 0]
+  },
+  {
+    "State": "All",
+    "Rule": "Other Inorganic Chemicals",
+    "data": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0]
+  },
+  {
+    "State": "All",
+    "Rule": "Radionuclides",
+    "data": [9, 6, 4, 9, 1, 2, 6, 9, 7, 6, 0, 3, 1]
+  },
+  {
+    "State": "All",
+    "Rule": "VOCs or SOCs",
+    "data": [3, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  }
+]
