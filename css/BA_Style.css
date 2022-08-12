@@ -327,7 +327,7 @@ li {
     stroke-dasharray: 10
 }
 select {
-    padding-left:100px;
+    padding-left:200px;
     height:40px;
     position:relative;
     border:1px solid #333;
