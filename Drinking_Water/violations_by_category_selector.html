@@ -24,30 +24,41 @@
     <link rel="stylesheet" href="../css/BA_Style.css">
 	
     <style>
-
+      #page-content {
+        margin: 0 0 15px 60%;
+        display: flex;
+	      flex-wrap: wrap;
+      }
   </style>
 </head>
 <body>
 
     
-      <div id="selectors">
-	      <label>Select Jurisdiction:</label>
-	      <select id="location" name="location" style="font-family: 'Montserrat', sans-serif; font-size: 16">
-		      <option value="All" selected="selected">All Jurisdictions</option>
-		      <option value="IL">Illinois</option>
-		      <option value="IN">Indiana</option>
-		      <option value="MI">Michigan</option>
-		      <option value="MN">Minnesota</option>
-		      <option value="NY">New York</option>
-		      <option value="OH">Ohio</option>
-		      <option value="PA">Pennsylvania</option>
-		      <option value="WI">Wisconsin</option>
-		      <option value="EPA">EPA (Tribal Systems)</option>
-		</select>
+      <div class="page-content" id="selectors">
+        <fieldset class="field_set">
+          <legend style="font-size: 16">Select Jurisdiction</legend>
+          <select id="location" name="location" style="font-family: 'Montserrat', sans-serif; font-size: 16">
+              <option value="All" selected="selected">All Jurisdictions</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="NY">New York</option>
+              <option value="OH">Ohio</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="WI">Wisconsin</option>
+              <option value="EPA">EPA (Tribal Systems)</option>
+          </select>
+          <!--<select id="display" name="display" style="font-family: 'Montserrat', font-size: 16, sans-serif;">
+              <option value="Loading and Discharge" selected="selected">Total Loading</option>
+              <option value="Flow-Weighted Mean Concentration">FWMC</option>
+   	      <option value="Percent Decrease">Percent Decrease</option> 
+          </select>-->
 
-    	</div>
-	    <div id="chart" style="margin-right: 20px">
-	    </div>
+      </fieldset>
+    </div>
+    <div id="chart" style="margin-right: 20px">
+    </div>
 
 <script>
     var BA = new BlueAccounting;
@@ -84,8 +95,9 @@
 					color: colors[i],
 				});
 			};
+				console.log(series[0]);
 
-		}).done(function () {
+		}).done(function () {console.log(series[0]);
 
 
 
@@ -108,7 +120,7 @@
 		title: {
 			text: 'Annual Treatment-Related Violations of Health-based Safe Drinking Water Act Rules in the Great Lakes Basin',
 			margin: 20,
-			widthAdjust: -200,
+			widthAdjust: -370,
 			style: {
 				color: '#000000',
 				fontWeight: 'bold'
