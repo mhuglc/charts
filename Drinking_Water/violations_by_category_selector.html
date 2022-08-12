@@ -33,7 +33,7 @@
       <div class="page-content" id="selectors">
         <fieldset class="field_set">
           <legend>Select Jurisdiction</legend>
-          <select id="measure" name="measure" style="font-family: 'Montserrat', sans-serif; font-size: 16">
+          <select id="location" name="location" style="font-family: 'Montserrat', sans-serif; font-size: 16">
               <option value="All" selected="selected">All Jurisdictions</option>
               <option value="IL">Illinois</option>
               <option value="IN">Indiana</option>
@@ -74,118 +74,131 @@
 	
     var colors = ["#0D5E87", "#0092B0", "#00C7C3", "#27651F", "#FFC461", "#7CFAC3", "#102A58"];
     
-    $.getJSON("../data/test_file.json", function(d){
-        data = d;
-    }).done(function () {
-		var returnedData = $.grep(data, function (element, index) {
-			return element.State === (initJurisdiction);
-		});
-
-
-		for(i;i < returnedData.length;i++){
-			series.push({
-				name: returnedData[i].Rule,
-				data: returnedData[i].data,
-				color: colors[i],
+	function loadChart(loc) {
+		$.getJSON("../data/test_file.json", function(d){
+			data = d;
+		}).done(function () {
+			var returnedData = $.grep(data, function (element, index) {
+				return element.State === (loc);
 			});
-		};
-	    	console.log(series[0]);
-
-	}).done(function () {console.log(series[0]);
 
 
-   
+			for(i;i < returnedData.length;i++){
+				series.push({
+					name: returnedData[i].Rule,
+					data: returnedData[i].data,
+					color: colors[i],
+				});
+			};
+				console.log(series[0]);
 
-Highcharts.chart("chart", {
-    chart: {
-        type: "column",
-        height: 600,
-        backgroundColor: {
-            linearGradient: {x1: 0, x2: 1, y1: 1, y2: 0},
-            stops: [
-               [0, 'rgb(255,255,255)'],
-               [1, '#F2FAFF']
-            ]
-        },
-        accessibility: {
-            description: 'Chart displays the number of violations of health-based rules under the US Safe Drinking Water Act (SDWA) incurred by community water systems located in the Great Lakes Basin. The Total Coliform and Revised Total Coliform Rules were associated with the most violations, approximately half of the health-based violations documented by US EPA for these states between 2012 and 2021 Q2.'
-        }
-    },
-    title: {
-        text: 'Annual Health-based Violations of Safe Drinking Water Act Rules in the Great Lakes Basin',
-        margin: 20,
-        widthAdjust: -370,
-        style: {
-            color: '#000000',
-            fontWeight: 'bold'
-        }
-    },
-    xAxis: {
-        accessibility: {
-            description: "Years from 2010 to 2021"
-        },
-        style: {
-            fontSize: "13px"
-        }
-    },
-    yAxis: {
-        title: {
-            text: 'Number of violations'
-        },
-        accessibility: {
-            description: "Total number of health-based violations that were unresolved in each year"
-        },
-        style: {
-            fontSize: "13px"
-        }
-    },
-    legend: {
-        title: {
-            text: 'Rule Group<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>'
-        },
-        width: 720,
-        itemWidth: 180,
-        useHTML: 'True',
-        align: 'left',
-        itemMarginBottom: 5,
-        itemStyle : { "word-wrap": "break-word", "textOverflow": "undefined"},
-        symbolHeight: 11,
-        symbolWidth: 11,
-        symbolRadius: 0
-    },
-    credits: {
-        enabled: false,
-    },
-    caption: {
-        text: '<b>Source: </b><em>US EPA Enforcement and Compliance History Online (ECHO), 2022, <a href="https://echo.epa.gov/">https://echo.epa.gov/</a></em><br><b>Notes: </b><em>VOCs: Volatile Organic Chemicals; SOCs: Synthetic Organic Chemicals; Inorganic Chemicals includes nitrates, arsenic, and other chemicals.</em>'
-    },
+		}).done(function () {console.log(series[0]);
 
-    tooltip: {
-        formatter: function() {
-              return '<b>' + this.x + '</b><br/>'+
-              this.series.name + ': ' + this.y + ' violations<br/>'+
-              'Total for ' + this.x + ' :' + this.point.total + ' violations'
-        }
-    },
-    
-    plotOptions: {
-        column: {
-            stacking: 'normal',
-            groupPadding: 0.1,
-        },
-        series: {
-            label: {
-                connectorAllowed: false
-            },
-            pointStart: 2010
-        }
-    },
+
+
+
+	Highcharts.chart("chart", {
+		chart: {
+			type: "column",
+			height: 600,
+			backgroundColor: {
+				linearGradient: {x1: 0, x2: 1, y1: 1, y2: 0},
+				stops: [
+				   [0, 'rgb(255,255,255)'],
+				   [1, '#F2FAFF']
+				]
+			},
+			accessibility: {
+				description: 'Chart displays the number of violations of health-based rules under the US Safe Drinking Water Act (SDWA) incurred by community water systems located in the Great Lakes Basin. The Total Coliform and Revised Total Coliform Rules were associated with the most violations, approximately half of the health-based violations documented by US EPA for these states between 2012 and 2021 Q2.'
+			}
+		},
+		title: {
+			text: 'Annual Health-based Violations of Safe Drinking Water Act Rules in the Great Lakes Basin',
+			margin: 20,
+			widthAdjust: -370,
+			style: {
+				color: '#000000',
+				fontWeight: 'bold'
+			}
+		},
+		xAxis: {
+			accessibility: {
+				description: "Years from 2010 to 2021"
+			},
+			style: {
+				fontSize: "13px"
+			}
+		},
+		yAxis: {
+			title: {
+				text: 'Number of violations'
+			},
+			accessibility: {
+				description: "Total number of health-based violations that were unresolved in each year"
+			},
+			style: {
+				fontSize: "13px"
+			}
+		},
+		legend: {
+			title: {
+				text: 'Rule Group<br/><span style="font-size: 9px; color: #666; font-weight: normal">(Click to hide)</span>'
+			},
+			width: 720,
+			itemWidth: 180,
+			useHTML: 'True',
+			align: 'left',
+			itemMarginBottom: 5,
+			itemStyle : { "word-wrap": "break-word", "textOverflow": "undefined"},
+			symbolHeight: 11,
+			symbolWidth: 11,
+			symbolRadius: 0
+		},
+		credits: {
+			enabled: false,
+		},
+		caption: {
+			text: '<b>Source: </b><em>US EPA Enforcement and Compliance History Online (ECHO), 2022, <a href="https://echo.epa.gov/">https://echo.epa.gov/</a></em><br><b>Notes: </b><em>VOCs: Volatile Organic Chemicals; SOCs: Synthetic Organic Chemicals; Inorganic Chemicals includes nitrates, arsenic, and other chemicals.</em>'
+		},
+
+		tooltip: {
+			formatter: function() {
+				  return '<b>' + this.x + '</b><br/>'+
+				  this.series.name + ': ' + this.y + ' violations<br/>'+
+				  'Total for ' + this.x + ' :' + this.point.total + ' violations'
+			}
+		},
+
+		plotOptions: {
+			column: {
+				stacking: 'normal',
+				groupPadding: 0.1,
+			},
+			series: {
+				label: {
+					connectorAllowed: false
+				},
+				pointStart: 2010
+			}
+		},
+
+		series: series
+
+
+
+	});
+	});
+	};
 	
-    series: series
-
-
-
-});
+loadChart(initJurisdiction);
+	
+// Handle switch between parameters
+$('#location').selectmenu({
+	change: function (event, data) {
+		chart = null;
+		var state = $( "select#location option:selected" ).val();
+		loadChart(state);
+	}
 });
 </script>
 </body>
