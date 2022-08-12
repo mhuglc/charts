@@ -69,7 +69,8 @@
 	
     var DW = new DrinkingWater();
 	
-    var series = [];
+    var series = [],
+	i = 0;
 	
     var colors = ["#0D5E87", "#0092B0", "#00C7C3", "#27651F", "#FFC461", "#7CFAC3", "#102A58"];
     
@@ -81,8 +82,8 @@
 		});
 
 
-		for(let i =0;i < returnedData.length;i++){
-			series[i].push({
+		for(i;i < returnedData.length;i++){
+			series.push({
 				name: returnedData[i].Rule,
 				data: [returnedData[i].data],
 				color: colors[i],
