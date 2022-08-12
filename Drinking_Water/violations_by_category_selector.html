@@ -62,7 +62,7 @@
 
 <script>
     var BA = new BlueAccounting;
-    var initJurisdiction = 'MI'
+    var initJurisdiction = 'All'
     
     Highcharts.setOptions({
         lang: {
@@ -72,13 +72,14 @@
     });
 	
     var DW = new DrinkingWater();
-	
-    var series = [],
-	i = 0;
+
 	
     var colors = ["#0D5E87", "#0092B0", "#00C7C3", "#27651F", "#FFC461", "#7CFAC3", "#102A58"];
     
 	function loadChart(loc) {
+		    var series = [],
+			i = 0;
+		
 		$.getJSON("../data/test_file.json", function(d){
 			data = d;
 		}).done(function () {
