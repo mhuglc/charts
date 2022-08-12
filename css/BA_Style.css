@@ -326,31 +326,3 @@ li {
     stroke: #f00;
     stroke-dasharray: 10
 }
-.ui-selectmenu-button {
-    padding-left:200px;
-    height:40px;
-    position:relative;
-    border:1px solid #333;
-    width:300px;
-    display:block;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
-    -ms-appearance: none;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-}
-label {
-    position:absolute;
-    z-index:1;
-    height:40px;
-    line-height:40px;
-    pointer-events:none;
-    text-indent:10px;
-    font-weight:bold;
-}
-label, select {
-    font-family:Arial;
-    font-size:15px;
-}
