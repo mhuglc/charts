@@ -72,48 +72,6 @@
     var series = [],
 	i = 0;
 	
-    var colors = ["#0D5E87", "#0092B0", "#00C7C3", "#27651F", "#FFC461", "#7CFAC3", "#102A58"];
-    
-    $.getJSON("../data/test_file.json", function(d){
-        data = d;
-    }).done(function () {
-		var returnedData = $.grep(data, function (element, index) {
-			return element.State === (initJurisdiction);
-		});
-
-
-		for(i;i < returnedData.length;i++){
-			series.push({
-				name: returnedData[i].Rule,
-				data: returnedData[i].data,
-				color: colors[i],
-			});
-		};
-	    	console.log(series[0]);
-
-	});
-	
-	console.log(series[0]);
-
-	    
-	  
-	/*
-    function loadChart(name) {
-        function dataToArray(vals){
-            let array = []
-            for(let i =0;i < vals.length;i++){array.push(vals.get(i))}
-            return array;
-        }
-	    
-
-		var s1_data = DW.getJurisdictionData(name);
-		var s1_data_array = dataToArray(s1_data);
-	    	console.log( s1_data_array );
-
-
-    } */
-	
-    
     ex_series = [
         {
             name: "Microbials",
@@ -150,13 +108,30 @@
         },
 
 
-    ]
+    ];
 	
     console.log(ex_series[0]);
-   
+	
+    var colors = ["#0D5E87", "#0092B0", "#00C7C3", "#27651F", "#FFC461", "#7CFAC3", "#102A58"];
+    
+    $.getJSON("../data/test_file.json", function(d){
+        data = d;
+    }).done(function () {
+		var returnedData = $.grep(data, function (element, index) {
+			return element.State === (initJurisdiction);
+		});
 
-Highcharts.chart("chart", {
-    chart: {
+
+		for(i;i < returnedData.length;i++){
+			series.push({
+				name: returnedData[i].Rule,
+				data: returnedData[i].data,
+				color: colors[i],
+			});
+		};
+	    	console.log(series[0]);
+	    
+	$('#container').highcharts({
         type: "column",
         height: 600,
         backgroundColor: {
@@ -168,25 +143,25 @@ Highcharts.chart("chart", {
         },
         accessibility: {
             description: 'Chart displays the number of violations of health-based rules under the US Safe Drinking Water Act (SDWA) incurred by community water systems located in the Great Lakes Basin. The Total Coliform and Revised Total Coliform Rules were associated with the most violations, approximately half of the health-based violations documented by US EPA for these states between 2012 and 2021 Q2.'
-        }
-    },
-    title: {
-        text: 'Annual Health-based Violations of Safe Drinking Water Act Rules in the Great Lakes Basin',
-        margin: 20,
-        widthAdjust: -370,
-        style: {
-            color: '#000000',
-            fontWeight: 'bold'
-        }
-    },
-    xAxis: {
-        accessibility: {
-            description: "Years from 2010 to 2021"
         },
-        style: {
-            fontSize: "13px"
-        }
-    },
+	title: {
+        	text: 'Annual Health-based Violations of Safe Drinking Water Act Rules in the Great Lakes Basin',
+        	margin: 20,
+        	widthAdjust: -370,
+		style: {
+		    color: '#000000',
+		    fontWeight: 'bold'
+		}
+    	},
+    	xAxis: {
+		
+		accessibility: {
+		    description: "Years from 2010 to 2022"
+		},
+		style: {
+		    fontSize: "13px"
+		}
+	    },
     yAxis: {
         title: {
             text: 'Number of violations'
@@ -241,6 +216,11 @@ Highcharts.chart("chart", {
     },
 	
     series: ex_series
+
+	});
+	
+
+	    
 
 
 
