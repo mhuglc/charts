@@ -326,7 +326,7 @@ li {
     stroke: #f00;
     stroke-dasharray: 10
 }
-select {
+.ui-selectmenu-button {
     padding-left:200px;
     height:40px;
     position:relative;
