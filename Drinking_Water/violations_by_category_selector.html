@@ -93,64 +93,7 @@
 
 	}).done(function () {console.log(series[0]);
 
-	    
-	  
-	/*
-    function loadChart(name) {
-        function dataToArray(vals){
-            let array = []
-            for(let i =0;i < vals.length;i++){array.push(vals.get(i))}
-            return array;
-        }
-	    
 
-		var s1_data = DW.getJurisdictionData(name);
-		var s1_data_array = dataToArray(s1_data);
-	    	console.log( s1_data_array );
-
-
-    } */
-	
-    
-    ex_series = [
-        {
-            name: "Microbials",
-            data: [180, 216, 204, 191, 204, 203, 149, 137, 147, 146, 161, 167],
-            color: "#0D5E87"
-        },
-        {
-            name: "Lead & Copper Rule",
-            data: [291, 293, 299, 302, 304, 309, 315, 321, 331, 331, 343, 349],
-            color: "#0092B0"
-        },
-        {
-            name: "Disinfectants & disinfection byproducts",
-            data: [133, 147, 137, 88, 149, 173, 155, 172, 170, 160, 166, 174],
-            color: "#00C7C3"
-        },
-      
-        {
-            name: "Inorganic chemicals",
-            data: [28, 23, 20, 19, 44, 30, 22, 25, 17, 21, 13, 15],
-            color: "#27651F"
-        },
-      
-        {
-            name: "Radionuclides",
-            data: [9, 6, 4, 9, 1, 2, 6, 9, 7, 6, 0, 4],
-            color: "#FFC461"
-        },
-
-        {
-            name: "VOCs or SOCs",
-            data: [3, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            color: "#7CFAC3" //color: "#102A58"
-        },
-
-
-    ];
-	
-    console.log(ex_series[0]);
    
 
 Highcharts.chart("chart", {
