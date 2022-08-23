@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring SRP Loading in ErieStat Watersheds</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- subresource integrity is a security feature ensuring that fetched resources are not manipulated -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+    <!-- script src="https://leaflet.github.io/Leaflet.label/leaflet.label.js"></script> -->
+    <!-- Load Esri Leaflet from CDN -->
+    <script src="https://unpkg.com/esri-leaflet@3.0.1/dist/esri-leaflet.js"
+        integrity="sha512-JmpptMCcCg+Rd6x0Dbg6w+mmyzs1M7chHCd9W8HPovnImG2nLAQWn3yltwxXRM7WjKKFFHOAKjjF2SC4CgiFBg=="
+        crossorigin=""></script>
+            <!--mapbox-gl-js is a dependency for esri-leaflet-vector -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://unpkg.com/esri-leaflet-vector@3.0.0/dist/esri-leaflet-vector.js"
+            integrity="sha512-i3LCZC/OnZR2VtZJ7ftXbZivyjPVBKeOqWuJ9SqaBnuiG18GyzTrHWYPgf1geE1LmI9yRENWSEI3jcpKx1dgqg=="
+            crossorigin=""></script>
+    <script src="//code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <!--<script src="https://code.highcharts.com/modules/export-data.js"></script> this module is not behaving as expected-->
+
+    <script src="../js/BlueAccounting_test.js"></script>
+    <script src="../js/ErieStat_2019.js"></script>
+    <script src="../js/export-csv_glc.js"></script>
+
+    <link rel="stylesheet" href="../css/BA_Style.css">
+
+</head>
+<body>
+<!-- // New line  -->
+<style>
+  .label {
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    text-align: center;
+    margin-top: -1em;
+    font-size: 11px;
+    opacity: 0.5;
+  }
+
+  .label div {
+    position: relative;
+    left: -50%;
+    top: 10px;
+    /* text-shadow: 0px 2px 1px rgba(255,255,255,0.85); */
+  }
+	
+  .field_set {
+    /*border-width: 0px;*/
+  }
+	
+  #wrapper {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+  }
+	
+  #page-content {
+	  margin: 0 0 0 60%;
+	  display: flex;
+	  flex-wrap: wrap;
+  }
+	
+  .ui-widget {
+      font-size: 90% !important;
+      font-family: 'Montserrat'
+  }
+	  
+  .ui-selectmenu-button.ui-button {
+    width: 14em !important;
+}
+
+</style>
+
+<div>
+    <div id="map"></div>
+    <div class="vl"></div>
+    <div id="right-panel">
+        <div id="intro"></div>
+        <div id="narrative-section">
+            <p id="narrative-caption"></p>
+            <p id="narrative-content"></p>
+        </div>
+        <!-- Tab links -->
+        <!-- Selectors -->
+        <div class="page-content" id="selectors">
+            <fieldset class="field_set">
+	      <legend>Select Chart Parameters</legend>
+	      <select id="measure" name="measure" style="font-family: 'Montserrat', font-size: 16, sans-serif;">
+                  <option value="Total Phosphorus" selected="selected">Total Phosphorus</option>
+                  <option value="Soluble Reactive Phosphorus">Soluble Reactive Phosphorus</option>
+              </select>
+              <select id="display" name="display" style="font-family: 'Montserrat', font-size: 16, sans-serif;">
+                  <option value="Loading and Discharge" selected="selected">Total Loading</option>
+                  <option value="Flow-Weighted Mean Concentration">FWMC</option>
+		  <!-- <option value="Percent Decrease">Percent Decrease</option> -->
+              </select>
+
+          </fieldset>
+        </div>
+
+        <!-- Tab content -->
+        <div id="container" class="charts">
+	    </div>
+    </div>
+    
+    <div id="wrapper" title="Toggle full screen">
+        <svg id="svgOpen" class="fullscreen_button" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill="#828282">
+            <path d="M0 0h24v24H0V0z" fill="none"/>
+            <path d="M6 14c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1h3c.55 0 1-.45 1-1s-.45-1-1-1H7v-2c0-.55-.45-1-1-1zm0-4c.55 0 1-.45 1-1V7h2c.55 0 1-.45 1-1s-.45-1-1-1H6c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm11 7h-2c-.55 0-1 .45-1 1s.45 1 1 1h3c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1s-1 .45-1 1v2zM14 6c0 .55.45 1 1 1h2v2c0 .55.45 1 1 1s1-.45 1-1V6c0-.55-.45-1-1-1h-3c-.55 0-1 .45-1 1z"/>
+        </svg>
+        <svg id="svgClose" style="display: none;" class="fullscreen_button" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="36px" viewBox="0 0 24 24" width="36px" fill="#828282"><rect fill="none" height="24" width="24"/>
+            <path d="M21.29,4.12l-4.59,4.59l1.59,1.59c0.63,0.63,0.18,1.71-0.71,1.71H13c-0.55,0-1-0.45-1-1V6.41c0-0.89,1.08-1.34,1.71-0.71 l1.59,1.59l4.59-4.59c0.39-0.39,1.02-0.39,1.41,0v0C21.68,3.1,21.68,3.73,21.29,4.12z M4.12,21.29l4.59-4.59l1.59,1.59 c0.63,0.63,1.71,0.18,1.71-0.71V13c0-0.55-0.45-1-1-1H6.41c-0.89,0-1.34,1.08-0.71,1.71l1.59,1.59l-4.59,4.59 c-0.39,0.39-0.39,1.02,0,1.41l0,0C3.1,21.68,3.73,21.68,4.12,21.29z"/>
+        </svg>
+<!--span class="fullscreen_button" onclick="toggleMaker()" id="fullToggle">View<br>Fullscreen</span-->
+
+    </div>
+    
+</div>
+
+
+<script>
+    var data;
+    var serviceURL = "https://services7.arcgis.com/Tk0IbKIKhaoYn5sa/arcgis/rest/services/ErieStat_SpringSRP_Map_WFL1/FeatureServer";
+    var BA = new BlueAccounting();
+    var ws_array = [
+        {init: "Ohio", ws: "Maumee"},
+	{init: "Michigan", ws: "Raisin"},
+	{init: "Indiana", ws: "Maumee"},
+	{init: "Ontario", ws: "Thames"},
+	{init: "Maumee", ws: "Maumee"},
+	{init: "Lake Erie", ws: "Maumee"},
+	{init: "Cedar-Toussaint", ws: "Cedar-Toussaint"},
+	{init: "Portage", ws: "Portage"},
+	{init: "Sandusky", ws: "Sandusky"},
+	{init: "Huron", ws: "Huron"},
+	{init: "Raisin", ws: "Raisin"},
+	{init: "Thames", ws: "Thames"},
+	{init: "Leamington", ws: "Leamington"},
+    ];
+    var ES = new ErieStat();
+    var metric1 = ES.metrics.SRP_L_S;
+    var metric2 = ES.metrics.SRP_FWMC_S;
+    var metric3 = ES.metrics.TP_L_S;
+    var metric4 = ES.metrics.TP_FWMS_S;
+    var metric5 = ES.metrics.S_TP_PercentReduction;
+    var metric6 = ES.metrics.S_TP_PercentReduction5Y;
+    var metric7 = ES.metrics.S_SRP_PercentReduction;
+    var metric8 = ES.metrics.S_SRP_PercentReduction5Y;
+
+    var metric_discharge = ES.metrics.Discharge_S;
+    
+    var searchParams = new URLSearchParams(window.location.search);
+    if (searchParams.has("init") == true){
+		var init = searchParams.get("init");
+		var initWatershed = ws_array.find(x => x.init === init).ws;
+	    	if (typeof initWatershed == 'undefined'){
+		    var initWatershed = 'Maumee'
+		};			
+		console.log(initWatershed);
+    }else{
+    	var initWatershed = 'Maumee'
+    };
+	
+    var selectedFeature;
+
+    var gray1 = L.esri.Vector.vectorTileLayer("5f7becb4a173426ab8070691bc30bdcc", {apiKey: "AAPK58650c913093468cb730b917301196e0ivsVrrT_ghV_VjFooGm75QCtdR285831SeUdRcXWoPZhtUVAKzA-50tVTLWV-1ZU"});
+  
+    var topo = L.esri.basemapLayer("Topographic"),
+        sat = L.esri.basemapLayer("Imagery");
+  
+    var baseMaps = {
+      "Accessible Grayscale": gray1,
+      "Topographic": topo,
+      "Satellite": sat
+    };
+  
+    var map = L.map("map", {scrollWheelZoom: false, layers: [gray1]}).setView([42.1, -82.0], 7);
+    
+    L.control.layers(baseMaps).addTo(map);
+
+    const IS_EMPTY = (val) => val == "";
+    
+    var srp_watershed_individual = L.esri.featureLayer({
+        url: serviceURL + "/2",
+        simplifyFactor: 0.7,
+        weight: 1,
+        style: {
+            color: "#93866E",
+            fillColor: "#FFC461",
+            fillOpacity: 0.5,
+        }
+    }).addTo(map);
+
+    var srp_watershed_combined = L.esri.featureLayer({
+        url: serviceURL + "/1",
+        opacity: 0.5,
+        simplifyFactor: 0.7,
+        weight: 2,
+        style: {
+            color: "#80735D",
+            fillColor: "#FFC461",
+            fillOpacity: 0
+        }
+    }).addTo(map);
+
+    var watersheds = L.esri.featureLayer({
+        url: serviceURL + "/0",
+        opacity: 0.7,
+        simplifyFactor: 0.7,
+        weight: 2,
+        style: {
+            color: "#80735D",
+            fill: false,
+        }
+    }).addTo(map);
+
+    var labels = {};
+
+    srp_watershed_combined.on('createfeature', function (e) {
+      var id = e.feature.id;
+      var feature = srp_watershed_combined.getFeature(id);
+      var center = feature.getBounds().getCenter();
+      // var label = L.marker(center, {
+      //   icon: L.divIcon({
+      //     iconSize: null,
+      //     className: 'label',
+      //     html: '<div>' + e.feature.properties.Label + '</div>'
+      //   })
+      // }).addTo(map);
+       // labels[id] = label;
+    });
+
+    srp_watershed_combined.on('addfeature', function (e){
+      var label = labels[e.feature.id];
+      if (label){
+        label.addTo(map);
+      }
+    });
+
+	// init 
+    $.getJSON("../data/ErieStat_2021_test2.json", function(d){
+        data = d;
+    }).done(function () {
+        ES.init(data);
+
+        // Default to Maumee river when page initialize
+        ES.buildNarratives(ES.watershedNames[initWatershed]);
+        loadChart("Total Phosphorus", "Loading and Discharge", ES.watershedNames[initWatershed]);
+        renderWatershed(initWatershed);
+    });
+
+
+    map.on("click", function (e){
+
+        srp_watershed_combined.query().nearby(e.latlng, 100).simplify(map, 0.5).run(function (error, featureCollection){
+            if(featureCollection.features.length >0){
+                $("#intro").css("visibility", "hidden");
+                if (featureCollection.features.length > 0) {
+                    var name = ES.watershedNames[featureCollection.features[0].properties["MergeNm"]];
+                    // var label = featureCollection.features[0].properties["Label"];
+                    if (ES.buildNarratives(name)) {
+                        var metric = $( "select#display option:selected" ).val();
+						var phos = $( "select#measure option:selected" ).val();
+                        loadChart(phos, metric, name);
+                    } else {
+                        $(".charts").html("");
+                    }
+                    renderWatershed(featureCollection.features[0].properties["MergeNm"]);
+                    initWatershed = featureCollection.features[0].properties["MergeNm"];
+                }
+            }
+        })
+    });
+    
+	// Handle switch between parameters
+	$('#display').selectmenu({
+		change: function (event, data) {
+			chart = null;
+			var phos = $( "select#measure option:selected" ).val();
+			loadChart(phos, data.item.value, ES.watershedNames[initWatershed]);
+		}
+	});
+	
+	$('#measure').selectmenu({
+		change: function (event, data) {
+			chart = null;
+			var metric = $( "select#display option:selected" ).val();
+			loadChart(data.item.value, metric, ES.watershedNames[initWatershed]);
+		}
+	});
+
+    function loadChart(phos, metric, name) {
+        function dataToArray(vals){
+            let array = []
+            for(let i =0;i < vals.length;i++){array.push(vals.get(i))}
+            return array;
+        }
+	    
+		if(phos == "Total Phosphorus" && metric == "Loading and Discharge"){
+			var s3_data = ES.getWatershedData(name, metric3.name);
+			var discharge_data = ES.getWatershedData(name, metric_discharge.name);
+			var s3_data_array = dataToArray(s3_data);
+			var discharge_data_array = dataToArray(discharge_data);
+			if(!s3_data_array.every(IS_EMPTY) || !discharge_data_array.every(IS_EMPTY)){
+				var chart = BA.buildDualAxesChart(s3_data_array, metric3.name, metric3.unit, '#0D5E87', "column",
+					discharge_data_array, metric_discharge.name, metric_discharge.unit, "#0092B0", "line",
+					"container",  "<b>" + name + " " + metric3.name + " and " + metric_discharge.name + "</b>", "<i>*TP: Total phosphorus</i>",
+					'Chart displays two datasets, spring (March-July) discharge and spring total phosphorus loading, to the Western Basin of Lake Erie for the selected watershed for the years 2008 to 2020. A target line on the chart marks the spring TP loading target for the watershed.',
+					ES.xAxis_start, ES.targets[name][metric3.name], null, //ES.targets[name][metric2.name],
+					'<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data is provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
+					(window.innerHeight - $("#narrative-section").height() - $("#selectors").height())*0.9
+				);
+			}else{
+				$("#container").html("<i>* Data under development.</i>");
+			}
+		}
+
+		if(phos == "Soluble Reactive Phosphorus" && metric == "Loading and Discharge"){
+			var s1_data = ES.getWatershedData(name, metric1.name);
+			var discharge_data = ES.getWatershedData(name, metric_discharge.name);
+			var s1_data_array = dataToArray(s1_data);
+			var discharge_data_array = dataToArray(discharge_data);
+			if(!s1_data_array.every(IS_EMPTY) || !discharge_data_array.every(IS_EMPTY)){
+				var chart = BA.buildDualAxesChart(s1_data_array, metric1.name, metric1.unit, '#0D5E87', "column",
+				discharge_data_array, metric_discharge.name, metric_discharge.unit, "#0092B0", "line",
+				"container", "<b>" + name + " " + metric1.name + " and " + metric_discharge.name + "</b>", "<i>*SRP: Soluble reactive phosphorus</i>",
+				'Chart displays two datasets, spring (March-July) discharge and spring soluble reactive phosphorus loading, to the Western Basin of Lake Erie for the selected watershed for the years 2008 to 2020. A target line on the chart marks the spring SRP loading target for the watershed.',
+				ES.xAxis_start, ES.targets[name][metric1.name], null, //ES.targets[name][metric2.name],
+				'<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data are provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
+				(window.innerHeight - $("#narrative-section").height() - $("#selectors").height())*0.9
+			);
+			}else{
+				$("#container").html("<i>* Data under development.</i>");
+			}
+		}
+
+		if(phos == "Total Phosphorus" && metric == "Flow-Weighted Mean Concentration"){
+			var s4_data = ES.getWatershedData(name, metric4.name);
+			var s4_data_array = dataToArray(s4_data);
+			if(!s4_data_array.every(IS_EMPTY)){
+			var chart = BA.buildSingleChart("line", s4_data_array, metric4.name, metric4.unit, '#0D5E87',
+				ES.xAxis_start, "<b>" + name + " " + metric4.name + "</b>", "<i>*TP: Total phosphorus</i><br><i>*FWMC: Flow-weighted mean concentration</i>",
+				'Chart displays the flow-weighted mean concentration of spring (March-July) total phosphorus loading, or TP, to the Western Basin of Lake Erie for the selected watershed for the years 2008 to 2020. A target line on the chart marks the spring TP FWMC target for the watershed.',
+				ES.targets[name][metric4.name], "container", 
+				'<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data is provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
+				(window.innerHeight - $("#narrative-section").height() - $("#selectors").height())*0.9
+			);
+			}else{
+				$("#container").html("<i>* Data under development.</i>");
+			}
+		}
+
+		if(phos == "Soluble Reactive Phosphorus" && metric == "Flow-Weighted Mean Concentration"){
+			var s2_data = ES.getWatershedData(name, metric2.name);
+			var s2_data_array = dataToArray(s2_data);
+			if(!s2_data_array.every(IS_EMPTY)){
+			var chart = BA.buildSingleChart("line", s2_data_array, metric2.name, metric2.unit, '#0D5E87',
+				ES.xAxis_start,  "<b>" + name + " " + metric2.name + "</b>", "<i>*SRP: Soluble reactive phosphorus</i><br><i>*FWMC: Flow-weighted mean concentration</i>",
+				'Chart displays the flow-weighted mean concentration of spring (March-July) soluble reactive phosphorus loading, or SRP, to the Western Basin of Lake Erie for the selected watershed for the years 2008 to 2020. A target line on the chart marks the spring SRP FWMC target for the watershed.',
+				ES.targets[name][metric2.name], "container", 
+				'<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data is provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
+				(window.innerHeight - $("#narrative-section").height() - $("#selectors").height())*0.9
+				);
+			}
+			else {
+				$("#container").html("<i>* Data under development.</i>");
+			}
+		}
+	    	/*if(phos == "Total Phosphorus" && metric == "Percent Decrease"){
+			var s5_data = ES.getWatershedData(name, metric5.name);
+        	var s6_data = ES.getWatershedData(name, metric6.name);
+        	var s5_data_array = dataToArray(s5_data);
+        	var s6_data_array = dataToArray(s6_data);
+			if(!s5_data_array.every(IS_EMPTY) || !s6_data_array.every(IS_EMPTY)){
+				var chart = BA.buildDualChartSingleAxis(s5_data_array, metric5.name, '#0D5E87', "scatter",
+					s6_data_array, metric6.name, "#0092B0", "spline", metric5.unit, "container", 
+					"<b>" + name + " " + metric5.name + "</b>", "<i>*TP: Total phosphorus</i>",
+					'Chart displays the percent decrease in spring (March-July) total phosphorus loading for the selected watershed for the years 2008 to 2020, relative to the baseline year of 2008 established by the binational Domestic Action Plans for Lake Erie. A target line on the chart marks the percent decrease target for the watershed if one has been established.',
+					ES.xAxis_start, ES.targets[name][metric5.name], 
+					'<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data is provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
+					(window.innerHeight - $("#narrative-section").height() - $("#selectors").height())*0.9, null, null
+				);
+			}
+			else {
+				$("#container").html("<i>* Data under development.</i>");
+			}
+		}
+	    	if(phos == "Soluble Reactive Phosphorus" && metric == "Percent Decrease"){
+			var s7_data = ES.getWatershedData(name, metric7.name);
+        	var s8_data = ES.getWatershedData(name, metric8.name);
+        	var s7_data_array = dataToArray(s7_data);
+        	var s8_data_array = dataToArray(s8_data);
+			if(!s7_data_array.every(IS_EMPTY) || !s8_data_array.every(IS_EMPTY)){
+				var chart = BA.buildDualChartSingleAxis(s7_data_array, metric7.name, '#0D5E87', "scatter",
+					s8_data_array, metric8.name, "#0092B0", "spline", metric7.unit, "container", 
+					"<b>" + name + " " + metric7.name + "</b>", "<i>*SRP: Soluble Reactive phosphorus</i>",
+					'Chart displays the percent decrease in spring (March-July) soluble reactive phosphorus loading for the selected watershed for the years 2008 to 2020, relative to the baseline year of 2008 established by the binational Domestic Action Plans for Lake Erie. A target line on the chart marks the percent decrease target for the watershed if one has been established.',
+					ES.xAxis_start, ES.targets[name][metric7.name], 
+					'<b>Source: </b><em>Great Lakes Commission, Blue Accounting, 2020, <a href="https://www.blueaccounting.org/progress/phosphorus-targets">https://www.blueaccounting.org/progress/phosphorus-targets</a> <br /> Data is provided to ErieStat through the GLWQA Annex 4 subcommittee</em>',
+					(window.innerHeight - $("#narrative-section").height() - $("#selectors").height())*0.9, null, null
+				);
+			}
+			else {
+				$("#container").html("<i>* Data under development.</i>");
+			}
+		} */
+	}
+
+    function renderWatershed(label) {
+        srp_watershed_combined.query().where("MergeNm='" + label + "'").simplify(map, 0.5).run(function (error, featureCollection) {
+            if (featureCollection.features.length > 0) {
+                $("#intro").css("visibility", "hidden");
+                if(selectedFeature){
+                    map.removeLayer(selectedFeature);
+                }
+                for (var i = 0; i < featureCollection.features.length; i++) {
+                    selectedFeature = L.geoJSON(featureCollection.features[i]);
+                    selectedFeature.setStyle({
+                        fillColor: "#E07000",
+                        weight: 4,
+                        opacity: 1,
+                        color: "#2C2C2C"
+                    });
+                    selectedFeature.addTo(map);
+                    selectedFeature.bringToFront();
+                }
+                
+            }
+        });
+    }
+
+    $(document).ready(function(){
+	$(".fullscreen_button").on("click", function() {
+		   $('#svgOpen').toggle();
+   		   $('#svgClose').toggle();
+		document.fullScreenElement && null !== document.fullScreenElement || !document.mozFullScreen && !document.webkitIsFullScreen ? document.documentElement.requestFullScreen ? document.documentElement.requestFullScreen() : document.documentElement.mozRequestFullScreen ? document.documentElement.mozRequestFullScreen() : document.documentElement.webkitRequestFullScreen && document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT) : document.cancelFullScreen ? document.cancelFullScreen() : document.mozCancelFullScreen ? document.mozCancelFullScreen() : document.webkitCancelFullScreen && document.webkitCancelFullScreen();
+		document.getElementById('right-panel').contentDocument.location.reload(true);
+
+	});
+
+    });
+				
+</script>
+</body>
+</html>
