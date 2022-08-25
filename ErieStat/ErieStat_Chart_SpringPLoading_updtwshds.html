@@ -287,7 +287,7 @@
             if(featureCollection.features.length >0){
                 $("#intro").css("visibility", "hidden");
                 if (featureCollection.features.length > 0) {
-                    var name = ES.watershedNames[featureCollection.features[0].properties["MergeNm"]];
+                    var name = ES.watershedNames[featureCollection.features[0].properties["Watershed_Name"]];
                     // var label = featureCollection.features[0].properties["Label"];
                     if (ES.buildNarratives(name)) {
                         var metric = $( "select#display option:selected" ).val();
@@ -296,8 +296,8 @@
                     } else {
                         $(".charts").html("");
                     }
-                    renderWatershed(featureCollection.features[0].properties["MergeNm"]);
-                    initWatershed = featureCollection.features[0].properties["MergeNm"];
+                    renderWatershed(featureCollection.features[0].properties["Watershed_Name"]);
+                    initWatershed = featureCollection.features[0].properties["Watershed_Name"];
                 }
             }
         })
@@ -438,7 +438,7 @@
 	}
 
     function renderWatershed(label) {
-        srp_watershed_combined.query().where("MergeNm='" + label + "'").simplify(map, 0.5).run(function (error, featureCollection) {
+        srp_watershed_combined.query().where("Watershed_Name='" + label + "'").simplify(map, 0.5).run(function (error, featureCollection) {
             if (featureCollection.features.length > 0) {
                 $("#intro").css("visibility", "hidden");
                 if(selectedFeature){
