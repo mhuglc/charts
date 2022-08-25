@@ -195,7 +195,7 @@
     const IS_EMPTY = (val) => val == "";
     
     var srp_watershed_individual = L.esri.featureLayer({
-        url: serviceURL + "/2",
+        url: serviceURL + "/4",
         simplifyFactor: 0.7,
         weight: 1,
         style: {
@@ -206,7 +206,7 @@
     }).addTo(map);
 
     var srp_watershed_combined = L.esri.featureLayer({
-        url: serviceURL + "/1",
+        url: serviceURL + "/3",
         opacity: 0.5,
         simplifyFactor: 0.7,
         weight: 2,
@@ -218,7 +218,7 @@
     }).addTo(map);
 
     var watersheds = L.esri.featureLayer({
-        url: serviceURL + "/0",
+        url: serviceURL + "/2",
         opacity: 0.7,
         simplifyFactor: 0.7,
         weight: 2,
