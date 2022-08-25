@@ -138,18 +138,18 @@
     var BA = new BlueAccounting();
     var ws_array = [
         {init: "Ohio", ws: "Maumee"},
-	{init: "Michigan", ws: "Raisin"},
-	{init: "Indiana", ws: "Maumee"},
-	{init: "Ontario", ws: "Thames"},
-	{init: "Maumee", ws: "Maumee"},
-	{init: "Lake Erie", ws: "Maumee"},
-	{init: "Cedar-Toussaint", ws: "Cedar-Toussaint"},
-	{init: "Portage", ws: "Portage"},
-	{init: "Sandusky", ws: "Sandusky"},
-	{init: "Huron", ws: "Huron"},
-	{init: "Raisin", ws: "Raisin"},
-	{init: "Thames", ws: "Thames"},
-	{init: "Leamington", ws: "Leamington"},
+		{init: "Michigan", ws: "Raisin"},
+		{init: "Indiana", ws: "Maumee"},
+		{init: "Ontario", ws: "Thames"},
+		{init: "Maumee", ws: "Maumee"},
+		{init: "Lake Erie", ws: "Maumee"},
+		{init: "Cedar-Toussaint", ws: "Cedar-Toussaint"},
+		{init: "Portage", ws: "Portage"},
+		{init: "Sandusky", ws: "Sandusky"},
+		{init: "Huron", ws: "Huron"},
+		{init: "Raisin", ws: "Raisin"},
+		{init: "Thames", ws: "Thames"},
+		{init: "Leamington", ws: "Leamington"},
     ];
     var ES = new ErieStat();
     var metric1 = ES.metrics.SRP_L_S;
@@ -167,7 +167,7 @@
     if (searchParams.has("init") == true){
 		var init = searchParams.get("init");
 		var initWatershed = ws_array.find(x => x.init === init).ws;
-	    	if (typeof initWatershed == 'undefined'){
+	    if (typeof initWatershed == 'undefined'){
 		    var initWatershed = 'Maumee'
 		};			
 		console.log(initWatershed);
@@ -256,6 +256,23 @@
         data = d;
     }).done(function () {
         ES.init(data);
+	}).then(function () {
+        L.esri.featureLayer({
+            url: "https://services7.arcgis.com/Tk0IbKIKhaoYn5sa/arcgis/rest/services/ErieStat_Monitoring/FeatureServer/0",
+            where: "SPRING = 'Y'",
+            pointToLayer: function (geojson, latlng) {
+                var p = L.circle(latlng, {
+                    radius: 50,
+                    color: "#A80084"
+                });
+
+                p.bindPopup("<table>" +
+                    //                    "<tr><th>Program: </th><td>{{geojson.properties.Program}}</td></tr>" +
+                    "<tr><th>Monitoring Station: </th><td>" + geojson.properties.Station + "</td></tr>" +
+                    "</table>");
+                return p;
+            }
+        }).addTo(map);
 
         // Default to Maumee river when page initialize
         ES.buildNarratives(ES.watershedNames[initWatershed]);
